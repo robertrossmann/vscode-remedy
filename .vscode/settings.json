@@ -1,0 +1,29 @@
+{
+  "editor.wordWrapColumn": 100,
+  "eslint.autoFixOnSave": true,
+  "eslint.enable": true,
+  "eslint.options": {
+    "reportUnusedDisableDirectives": true
+  },
+  "files.exclude": {
+    "**/*.log": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    ".eslintcache": true,
+    ".nyc_output": true,
+    "{src,packages}/**/*.js": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "javascript.format.enable": false,
+  "javascript.validate.enable": true,
+  "triggerTaskOnSave.on": true,
+  "triggerTaskOnSave.tasks": {
+    "make:themes": [
+      "**/*.mjs",
+      "babel.config.js",
+    ]
+  },
+  "typescript.format.enable": false
+}

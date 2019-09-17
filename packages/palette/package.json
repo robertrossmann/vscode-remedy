@@ -1,0 +1,7 @@
+{
+  "name": "@remedy/palette",
+  "version": "1.0.0",
+  "devDependencies": {
+    "color": "*"
+  }
+}

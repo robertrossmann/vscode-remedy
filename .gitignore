@@ -1,0 +1,40 @@
+# Dependencies
+node_modules
+
+# Local configuration
+.env
+.bashrc
+.npmrc
+local.mk
+
+# Compiled files
+**/*.js
+**/*.js.map
+!babel.config.js
+!**/.*.js
+!samples/**/*.js
+/themes
+
+# Generated files
+/.nvmrc
+/docs
+/coverage
+/gh-pages
+
+# Garbage
+*.lerna_backup
+*.log
+*~
+*#
+.DS_Store
+.nyc_output
+.eslintcache
+
+# IDE stuff
+.netbeans
+nbproject
+.idea
+.node_history
+*.sublime-*
+*.atom-*
+.tern-*

@@ -1,0 +1,14 @@
+.vscode/**
+.vscode-test/**
+.gitignore
+vsc-extension-quickstart.md
+.editorconfig
+.eslintignore
+.eslintrc.js
+.remarkrc.js
+babel.config.js
+makefile
+src/**
+packages/**
+samples/**
+node_modules/**

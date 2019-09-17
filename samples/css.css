@@ -1,0 +1,144 @@
+/*!
+ * GitHub Light v0.4.1
+ * Copyright (c) 2012 - 2017 GitHub, Inc.
+ * Licensed under MIT (https://github.com/primer/github-syntax-theme-generator/blob/master/LICENSE)
+ */
+
+.pl-c2:before {
+  content: "^M"
+}
+
+.cm-fat-cursor-mark {
+  background-color: rgba(20, 255, 20, .5);
+  animation: blink 1.06s steps(1) infinite
+}
+
+.cm-animate-fat-cursor {
+  width: auto;
+  border: 0;
+  animation: blink 1.06s steps(1) infinite;
+  background-color: #7e7
+}
+
+@keyframes blink {
+  50% {
+      background-color: initial
+  }
+}
+
+.CodeMirror-gutter-wrapper {
+  position: absolute;
+  z-index: 4;
+  background: none !important;
+  border: none !important
+}
+
+.CodeMirror-line::selection, .CodeMirror-line > span::selection,
+.CodeMirror-line > span > span::selection {
+  background: #d7d4f0
+}
+
+.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection,
+.CodeMirror-line > span > span::-moz-selection {
+  background: #d7d4f0
+}
+
+.cm-searching {
+  background-color: #ffa;
+  background-color: rgba(255, 255, 0, .4)
+}
+
+.cm-force-border {
+  padding-right: .1px
+}
+
+@media print {
+  .CodeMirror div.CodeMirror-cursors {
+      visibility: hidden
+  }
+}
+
+.CodeMirror-merge-pane {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top
+}
+
+.CodeMirror-merge-pane-rightmost {
+  position: absolute;
+  right: 0;
+  z-index: 1
+}
+
+.CodeMirror-merge-gap {
+  z-index: 2;
+  display: inline-block;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  position: relative;
+  background: #f8f8f8
+}
+
+.CodeMirror-merge-scrolllock-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 50%
+}
+
+.CodeMirror-merge-scrolllock {
+  position: relative;
+  left: -50%;
+  cursor: pointer;
+  color: #555;
+  line-height: 1
+}
+
+.CodeMirror-merge-scrolllock:after {
+  content: "\21db\00a0\00a0\21da"
+}
+
+.CodeMirror-merge-scrolllock.CodeMirror-merge-scrolllock-enabled:after {
+  content: "\21db\21da"
+}
+
+.CodeMirror-merge-copybuttons-left .CodeMirror-merge-copy {
+  left: 2px
+}
+
+.CodeMirror-merge-copybuttons-right .CodeMirror-merge-copy {
+  right: 2px
+}
+
+.CodeMirror-merge-l-inserted, .CodeMirror-merge-r-inserted {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGUlEQVQI12MwuCXy3+CWyH8GBgYGJgYkAABZbAQ9ELXurwAAAABJRU5ErkJggg==);
+  background-position: 0 100%;
+  background-repeat: repeat-x
+}
+
+.CodeMirror-merge-l-deleted, .CodeMirror-merge-r-deleted {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGUlEQVQI12M4Kyb2/6yY2H8GBgYGJgYkAABURgPz6Ks7wQAAAABJRU5ErkJggg==);
+  background-position: 0 100%;
+  background-repeat: repeat-x
+}
+
+.CodeMirror-merge-l-chunk-end {
+  border-bottom: 1px solid #88e
+}
+
+.CodeMirror-merge-l-connect {
+  fill: #eef;
+  stroke: #88e;
+  stroke-width: 1px
+}
+
+.CodeMirror-merge-collapsed-widget:before {
+  content: "(...)"
+}
+
+
+.CodeMirror-merge-collapsed-line .CodeMirror-gutter-elt {
+  display: none
+}

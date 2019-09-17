@@ -1,0 +1,88 @@
+import { code, colours } from '@remedy/palette'
+import { prescope } from '@remedy/tools'
+
+const css = prescope.bind(null, [
+  'source.css',
+  'meta.embedded.block.css',
+  'meta.embedded.block.less',
+])
+
+const ids = {
+  scope: css([
+    'entity.other.attribute-name.id',
+  ]),
+  settings: {
+    fontStyle: 'italic',
+    foreground: colours.normal.red.hex(),
+  },
+}
+
+const tags = {
+  scope: css([
+    'entity.name.tag',
+  ]),
+  settings: {
+    fontStyle: 'italic',
+    foreground: code.classes,
+  },
+}
+
+const classes = {
+  scope: css([
+    'entity.other.attribute-name.class',
+  ]),
+  settings: {
+    fontStyle: 'italic',
+    foreground: colours.bright.green.hex(),
+  },
+}
+
+const pseudo = {
+  scope: css([
+    'entity.other.attribute-name.pseudo-element',
+  ]),
+  settings: {
+    fontStyle: 'italic',
+    foreground: colours.normal.cyan.hex(),
+  },
+}
+
+const variables = {
+  scope: css([
+    'variable',
+  ]),
+  settings: {
+    foreground: code.constants,
+  },
+}
+
+const constants = {
+  scope: css([
+    'constant.numeric',
+    'constant.other.color',
+    'keyword.other.unit',
+    'support.constant.property-value',
+  ]),
+  settings: {
+    foreground: code.primitives,
+  },
+}
+
+const functions = {
+  scope: css([
+    'support.function',
+  ]),
+  settings: {
+    foreground: code.functions,
+  },
+}
+
+export default [
+  tags,
+  classes,
+  ids,
+  pseudo,
+  variables,
+  constants,
+  functions,
+]
