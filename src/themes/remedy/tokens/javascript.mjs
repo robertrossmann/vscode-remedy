@@ -77,6 +77,7 @@ const italics = {
     'meta.embedded.block.typescript storage.type.function.ts',
     ...jsts([
       'storage.type.class',
+      'storage.type.interface',
       'storage.modifier',
       'keyword.operator.expression.instanceof',
       'keyword.operator.expression.typeof',
