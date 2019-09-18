@@ -24,6 +24,27 @@ use). I believe I achieved that goal. 😍
 Go to the [Marketplace][marketplace-link] and install the theme from there. Alternatively, open the Extensions view in
 VS Code and search for `@id:robertrossmann.remedy`.
 
+## Language support
+
+Most languages should provide reasonably well-defined colouring, though due to the TextMate grammars
+not really using a standardised way of tokenising the code there might be slight deviations (ie.
+some parts of code will have generic white-ish colour or language tokens will not be italicised).
+The following languages have been manually tweaked to provide best experience:
+
+- C / C++
+- C#
+- Go
+- HTML & CSS & Less
+- Java
+- JavaScript & React
+- JSON
+- Make
+- Markdown
+- PHP
+- Shell
+- TypeScript & React
+- YAML
+
 ## Screenshots
 
 ### UI
