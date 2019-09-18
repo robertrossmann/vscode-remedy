@@ -19,6 +19,11 @@ use). I believe I achieved that goal. 😍
 
 </div>
 
+## Installation
+
+Go to the [Marketplace][marketplace-link] and install the theme from there. Alternatively, open the Extensions view in
+VS Code and search for `@id:robertrossmann.remedy`.
+
 ## Screenshots
 
 ### UI
@@ -56,11 +61,6 @@ use). I believe I achieved that goal. 😍
 ### TypeScript
 
 ![TypeScript][screen-typescript]
-
-## Installation
-
-Go to the [Marketplace][marketplace-link] and install the theme from there. Alternatively, open the Extensions view in
-VS Code and search for `@id:robertrossmann.remedy`.
 
 ## License
 
