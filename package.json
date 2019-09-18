@@ -1,69 +1,69 @@
 {
-	"name": "remedy",
-	"description": "A dark theme with reddish accents with roots in Base16 - Eighties colour theme",
-	"version": "0.0.1",
-	"author": "Robert Rossmann <rr.rossmann@me.com>",
-	"bugs": {
-		"url": "https://github.com/robertrossmann/vscode-remedy/issues"
-	},
-	"categories": [
-		"Themes"
-	],
-	"contributes": {
-		"themes": [
-			{
-				"label": "Remedy",
-				"uiTheme": "vs-dark",
-				"path": "./themes/remedy-color-theme.json"
-			}
-		]
-	},
-	"dependencies": {
-		"@remedy/palette": "file:packages/palette",
-		"@remedy/tools": "file:packages/tools"
-	},
-	"devDependencies": {
-		"@babel/cli": "^7.5.5",
-		"@babel/core": "^7.5.5",
-		"@babel/plugin-syntax-object-rest-spread": "^7.2.0",
-		"@babel/plugin-transform-modules-commonjs": "^7.5.0",
-		"@strv/commitlint-config": "^1.1.0",
-		"@strv/eslint-config-node": "^2.0.0",
-		"@strv/remark-config": "^1.0.2",
-		"babel-eslint": "^10.0.2",
-		"color": "^3.1.2",
-		"commitlint": "^8.2.0",
-		"eslint": "^6.1.0",
-		"remark-cli": "^7.0.0",
-		"source-map-support": "^0.5.13",
-		"vsce": "^1.66.0"
-	},
-	"displayName": "Remedy",
-	"engines": {
-		"vscode": "^1.37.0"
-	},
-	"galleryBanner": {
-		"color": "#353432",
-		"theme": "dark"
-	},
-	"homepage": "https://github.com/robertrossmann/vscode-remedy",
-	"icon": "resources/vscode-remedy-icon.png",
-	"keywords": [
-		"base16",
-		"eighties",
-		"red",
-		"theme",
-		"italics"
-	],
-	"license": "SEE LICENSE IN LICENSE",
-	"publisher": "robertrossmann",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/robertrossmann/vscode-remedy.git"
-	},
-	"__metadata": {
-		"id": "5f2bb8f7-dc95-49f9-be2f-0278fa401434",
-		"publisherDisplayName": "Robert Rossmann",
-		"publisherId": "98352602-a18a-4e10-af4f-20f27045849c"
-	}
+  "name": "remedy",
+  "description": "A dark theme with reddish accents with roots in Base16 - Eighties colour theme",
+  "version": "1.0.0",
+  "author": "Robert Rossmann <rr.rossmann@me.com>",
+  "bugs": {
+    "url": "https://github.com/robertrossmann/vscode-remedy/issues"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Remedy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/remedy-color-theme.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "@remedy/palette": "file:packages/palette",
+    "@remedy/tools": "file:packages/tools"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "@strv/commitlint-config": "^1.1.0",
+    "@strv/eslint-config-node": "^2.0.0",
+    "@strv/remark-config": "^1.0.2",
+    "babel-eslint": "^10.0.2",
+    "color": "^3.1.2",
+    "commitlint": "^8.2.0",
+    "eslint": "^6.1.0",
+    "remark-cli": "^7.0.0",
+    "source-map-support": "^0.5.13",
+    "vsce": "^1.66.0"
+  },
+  "displayName": "Remedy",
+  "engines": {
+    "vscode": "^1.37.0"
+  },
+  "galleryBanner": {
+    "color": "#353432",
+    "theme": "dark"
+  },
+  "homepage": "https://github.com/robertrossmann/vscode-remedy",
+  "icon": "resources/vscode-remedy-icon.png",
+  "keywords": [
+    "base16",
+    "eighties",
+    "red",
+    "theme",
+    "italics"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "publisher": "robertrossmann",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertrossmann/vscode-remedy.git"
+  },
+  "__metadata": {
+    "id": "5f2bb8f7-dc95-49f9-be2f-0278fa401434",
+    "publisherDisplayName": "Robert Rossmann",
+    "publisherId": "98352602-a18a-4e10-af4f-20f27045849c"
+  }
 }
