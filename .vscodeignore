@@ -10,6 +10,7 @@ node_modules
 src
 packages
 samples
+utils
 
 # Static
 resources/screenshots
@@ -17,7 +18,9 @@ resources/screenshots
 # Configurations
 .editorconfig
 .eslintignore
-.eslintrc.js
-.remarkrc.js
-babel.config.js
+.*rc.js
+*.config.js
 makefile
+
+# Generated files
+*.vsix

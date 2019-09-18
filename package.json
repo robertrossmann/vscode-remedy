@@ -27,6 +27,8 @@
     "@babel/core": "^7.5.5",
     "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
     "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/exec": "^3.3.6",
     "@strv/commitlint-config": "^1.1.0",
     "@strv/eslint-config-node": "^2.0.0",
     "@strv/remark-config": "^1.0.2",
@@ -35,6 +37,7 @@
     "commitlint": "^8.2.0",
     "eslint": "^6.1.0",
     "remark-cli": "^7.0.0",
+    "semantic-release": "^15.13.24",
     "source-map-support": "^0.5.13",
     "vsce": "^1.66.0"
   },

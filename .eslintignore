@@ -1,4 +1,4 @@
 *.js
 !.*.js
 node_modules
-!babel.config.js
+!*.config.js

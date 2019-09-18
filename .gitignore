@@ -10,7 +10,7 @@ local.mk
 # Compiled files
 **/*.js
 **/*.js.map
-!babel.config.js
+!*.config.js
 !**/.*.js
 !samples/**/*.js
 /themes
@@ -20,6 +20,7 @@ local.mk
 /docs
 /coverage
 /gh-pages
+*.vsix
 
 # Garbage
 *.lerna_backup
