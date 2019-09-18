@@ -15,8 +15,10 @@ module.exports = {
       prepareCmd: 'npx vsce package',
       publishCmd: 'npx vsce publish --pat $VSCE_TOKEN',
     }],
+    '@semantic-release/git',
     ['@semantic-release/github', {
-      assets: [{ path: '*.vsix', label: 'VS Code Extension' }],
+      // eslint-disable-next-line no-template-curly-in-string
+      assets: [{ path: '*.vsix', label: 'remedy-${version}.vsix' }],
     }],
   ],
 }
