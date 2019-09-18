@@ -67,16 +67,16 @@ VS Code and search for `@id:robertrossmann.remedy`.
 See the [LICENSE](LICENSE) file for information.
 
 [make-badge]: https://img.shields.io/badge/Built%20with-GNU%20Make-brightgreen.svg?style=flat-square
-[remedy-icon]: resources/vscode-remedy-icon.png
+[remedy-icon]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/vscode-remedy-icon.png
 [marketplace-badge]: https://img.shields.io/badge/Download%20On-Marketplace-brightgreen.svg?style=flat-square
 [marketplace-link]: https://marketplace.visualstudio.com/items?itemName=robertrossmann.remedy
 [operator-link]: https://www.typography.com/fonts/operator/styles/operatormono
-[sceen-ui]: resources/screenshots/ui.png
-[screen-peek-view]: resources/screenshots/peek-view.png
-[screen-find-replace]: resources/screenshots/find-replace.png
-[screen-json]: resources/screenshots/json.png
-[screen-makefile]: resources/screenshots/makefile.png
-[screen-markdown]: resources/screenshots/markdown.png
-[screen-php]: resources/screenshots/php.png
-[screen-shell]: resources/screenshots/shell.png
-[screen-typescript]: resources/screenshots/typescript.png
+[sceen-ui]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/ui.png
+[screen-peek-view]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/peek-view.png
+[screen-find-replace]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/find-replace.png
+[screen-json]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/json.png
+[screen-makefile]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/makefile.png
+[screen-markdown]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/markdown.png
+[screen-php]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/php.png
+[screen-shell]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/shell.png
+[screen-typescript]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/typescript.png
