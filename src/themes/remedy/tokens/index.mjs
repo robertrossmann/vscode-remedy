@@ -11,6 +11,7 @@ import markdown from './markdown'
 import terraform from './terraform'
 import shell from './shell'
 import php from './php'
+import html from './html'
 
 export default [
   ...common,
@@ -26,4 +27,5 @@ export default [
   ...terraform,
   ...shell,
   ...php,
+  ...html,
 ]
