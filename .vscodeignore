@@ -1,14 +1,20 @@
-.vscode/**
-.vscode-test/**
+# Metadata / Editor configurations
+.github
 .gitignore
-vsc-extension-quickstart.md
+.vscode
+
+# Dependencies
+node_modules
+
+# Source files
+src
+packages
+samples
+
+# Configurations
 .editorconfig
 .eslintignore
 .eslintrc.js
 .remarkrc.js
 babel.config.js
 makefile
-src/**
-packages/**
-samples/**
-node_modules/**
