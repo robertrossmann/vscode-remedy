@@ -2,7 +2,7 @@ import ui from './ui'
 import tokens from './tokens'
 
 export default {
-  name: 'remedy',
+  name: 'Remedy',
   type: 'dark',
   colors: ui,
   tokenColors: tokens,

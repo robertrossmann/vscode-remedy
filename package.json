@@ -12,7 +12,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "remedy",
+        "label": "Remedy",
         "uiTheme": "vs-dark",
         "path": "./themes/remedy-color-theme.json"
       }
