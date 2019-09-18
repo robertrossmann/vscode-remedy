@@ -10,6 +10,7 @@ import yaml from './yaml'
 import markdown from './markdown'
 import terraform from './terraform'
 import shell from './shell'
+import php from './php'
 
 export default [
   ...common,
@@ -24,4 +25,5 @@ export default [
   ...markdown,
   ...terraform,
   ...shell,
+  ...php,
 ]
