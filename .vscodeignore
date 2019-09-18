@@ -11,6 +11,9 @@ src
 packages
 samples
 
+# Static
+resources/screenshots
+
 # Configurations
 .editorconfig
 .eslintignore
