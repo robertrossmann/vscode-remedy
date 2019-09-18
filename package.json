@@ -41,10 +41,11 @@
     "vscode": "^1.37.0"
   },
   "galleryBanner": {
-    "color": "#2C2B2A",
+    "color": "#353432",
     "theme": "dark"
   },
   "homepage": "https://github.com/robertrossmann/vscode-remedy",
+  "icon": "resources/vscode-remedy-icon.png",
   "keywords": [
     "base16",
     "eighties",
