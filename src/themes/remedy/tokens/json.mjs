@@ -1,10 +1,5 @@
 import { code } from '@remedy/palette'
-import { prescope } from '@remedy/tools'
-
-const json = prescope.bind(null, [
-  'source.json',
-  'meta.embedded.block.json',
-])
+import { json } from '@remedy/tools/tmscopes'
 
 const keys = {
   scope: json([

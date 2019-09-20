@@ -1,7 +1,5 @@
 import { code } from '@remedy/palette'
-import { prescope } from '@remedy/tools'
-
-const cpp = prescope.bind(null, ['source.cpp', 'meta.embedded.block.cpp'])
+import { cpp } from '@remedy/tools/tmscopes'
 
 const language = {
   scope: cpp([

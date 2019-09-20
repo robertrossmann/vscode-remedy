@@ -1,7 +1,5 @@
 import { code } from '@remedy/palette'
-import { prescope } from '@remedy/tools'
-
-const cs = prescope.bind(null, ['source.cs', 'meta.embedded.block.csharp'])
+import { cs } from '@remedy/tools/tmscopes'
 
 const classes = {
   scope: cs([

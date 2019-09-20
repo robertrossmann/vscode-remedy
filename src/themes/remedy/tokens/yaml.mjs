@@ -1,10 +1,5 @@
 import { code } from '@remedy/palette'
-import { prescope } from '@remedy/tools'
-
-const yaml = prescope.bind(null, [
-  'source.yaml',
-  'meta.embedded.block.yaml',
-])
+import { yaml } from '@remedy/tools/tmscopes'
 
 const keys = {
   scope: yaml([

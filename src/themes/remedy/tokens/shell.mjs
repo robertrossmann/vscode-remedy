@@ -1,10 +1,5 @@
 import { code } from '@remedy/palette'
-import { prescope } from '@remedy/tools'
-
-const shell = prescope.bind(null, [
-  'source.shell',
-  'meta.embedded.block.shellscript',
-])
+import { shell } from '@remedy/tools/tmscopes'
 
 const variables = {
   scope: shell([

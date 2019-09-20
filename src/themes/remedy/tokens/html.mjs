@@ -1,10 +1,5 @@
 import { code } from '@remedy/palette'
-import { prescope } from '@remedy/tools'
-
-const html = prescope.bind(null, [
-  'text.html',
-  'meta.embedded.block.html',
-])
+import { html } from '@remedy/tools/tmscopes'
 
 const attributes = {
   scope: html([

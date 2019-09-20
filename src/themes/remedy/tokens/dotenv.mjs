@@ -1,9 +1,5 @@
 import { code } from '@remedy/palette'
-import { prescope } from '@remedy/tools'
-
-const dotenv = prescope.bind(null, [
-  'source.env',
-])
+import { dotenv } from '@remedy/tools/tmscopes'
 
 const variables = {
   scope: dotenv([

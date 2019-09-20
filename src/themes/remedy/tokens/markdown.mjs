@@ -1,10 +1,5 @@
 import { code, colours } from '@remedy/palette'
-import { prescope } from '@remedy/tools'
-
-const markdown = prescope.bind(null, [
-  'text.html.markdown',
-  'meta.embedded.block.markdown',
-])
+import { markdown } from '@remedy/tools/tmscopes'
 
 const quotes = {
   scope: markdown([

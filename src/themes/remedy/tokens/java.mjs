@@ -1,7 +1,5 @@
 import { code } from '@remedy/palette'
-import { prescope } from '@remedy/tools'
-
-const java = prescope.bind(null, ['source.java', 'meta.embedded.block.java'])
+import { java } from '@remedy/tools/tmscopes'
 
 const variables = {
   scope: java([

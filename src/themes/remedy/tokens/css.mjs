@@ -1,11 +1,5 @@
 import { code, colours } from '@remedy/palette'
-import { prescope } from '@remedy/tools'
-
-const css = prescope.bind(null, [
-  'source.css',
-  'meta.embedded.block.css',
-  'meta.embedded.block.less',
-])
+import { css } from '@remedy/tools/tmscopes'
 
 const ids = {
   scope: css([

@@ -1,10 +1,5 @@
 import { code, colours } from '@remedy/palette'
-import { prescope } from '@remedy/tools'
-
-const makefile = prescope.bind(null, [
-  'source.makefile',
-  'meta.embedded.block.makefile',
-])
+import { makefile } from '@remedy/tools/tmscopes'
 
 const variables = {
   scope: makefile([

@@ -7,22 +7,24 @@
  * with the intended `prefixes` and then simply pass the actual scopes to this bound function. It
  * will then generate all the scopes with the scope prefix applied.
  *
- * @param   {String[]}    prefixes  Array of scope prefixes to apply to all given scopes
- * @param   {String[]}    scopes    The scopes to apply prefixes on to
- * @return  {String[]}              All scopes expanded with all prefixes applied
+ * @param   {String[]}    prefixes  Array of scope prefixes to use
+ * @return  {Function}              A function whose input scopes will be prefixed with provided
+ *                                  scopes
  */
-function prescope(prefixes = [], scopes = []) {
-  const result = []
+function mkscope(prefixes = []) {
+  return function prescope(scopes = []) {
+    const result = []
 
-  for (const prefix of prefixes) {
-    for (const scope of scopes) {
-      result.push(`${prefix} ${scope}`)
+    for (const prefix of prefixes) {
+      for (const scope of scopes) {
+        result.push(`${prefix} ${scope}`)
+      }
     }
-  }
 
-  return result
+    return result
+  }
 }
 
 export {
-  prescope,
+  mkscope,
 }

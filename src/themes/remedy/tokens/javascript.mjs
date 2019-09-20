@@ -1,12 +1,5 @@
 import { code } from '@remedy/palette'
-import { prescope } from '@remedy/tools'
-
-const jsts = prescope.bind(null, [
-  'source.js',
-  'source.ts',
-  'meta.embedded.block.javascript',
-  'meta.embedded.block.typescript',
-])
+import { jsts } from '@remedy/tools/tmscopes'
 
 const builtins = {
   scope: jsts([

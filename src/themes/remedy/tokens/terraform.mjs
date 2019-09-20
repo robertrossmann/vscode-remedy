@@ -1,7 +1,5 @@
 import { code } from '@remedy/palette'
-import { prescope } from '@remedy/tools'
-
-const terraform = prescope.bind(null, ['source.terraform', 'meta.embedded.block.terraform'])
+import { terraform } from '@remedy/tools/tmscopes'
 
 const punctuation = {
   scope: terraform([

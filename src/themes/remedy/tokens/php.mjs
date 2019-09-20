@@ -1,6 +1,4 @@
-import { prescope } from '@remedy/tools'
-
-const php = prescope.bind(null, ['source.php', 'meta.embedded.block.php'])
+import { php } from '@remedy/tools/tmscopes'
 
 const italics = {
   scope: php([
