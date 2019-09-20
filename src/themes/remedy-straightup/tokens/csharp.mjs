@@ -19,18 +19,7 @@ const types = {
   },
 }
 
-const italics = {
-  scope: cs([
-    'keyword.other',
-    'storage.modifier',
-  ]),
-  settings: {
-    fontStyle: 'italic',
-  },
-}
-
 export default [
   classes,
   types,
-  italics,
 ]

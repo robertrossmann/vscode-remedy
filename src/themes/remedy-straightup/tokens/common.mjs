@@ -21,7 +21,6 @@ const comments = {
     'punctuation.definition.comment',
   ],
   settings: {
-    fontStyle: 'italic',
     foreground: code.comments,
   },
 }
@@ -56,7 +55,6 @@ const preprocessor = {
     'entity.name.function.preprocessor',
   ],
   settings: {
-    fontStyle: 'italic',
     foreground: code.preprocessor,
   },
 }
@@ -141,7 +139,6 @@ const strings = {
     'string',
   ],
   settings: {
-    fontStyle: 'italic',
     foreground: code.strings,
   },
 }
@@ -220,16 +217,6 @@ const links = {
   },
 }
 
-const italics = {
-  name: 'Extra italic tokens',
-  scope: [
-    'keyword.control',
-  ],
-  settings: {
-    fontStyle: 'italic',
-  },
-}
-
 export default [
   primitives,
   comments,
@@ -249,5 +236,4 @@ export default [
   headings,
   docblocks,
   links,
-  italics,
 ]

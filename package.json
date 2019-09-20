@@ -12,9 +12,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Remedy",
+        "label": "Remedy - Straight Up",
         "uiTheme": "vs-dark",
-        "path": "./themes/remedy-color-theme.json"
+        "path": "./themes/remedy-straightup-color-theme.json"
+      },
+      {
+        "label": "Remedy - Tilted",
+        "uiTheme": "vs-dark",
+        "path": "./themes/remedy-tilted-color-theme.json"
       }
     ]
   },

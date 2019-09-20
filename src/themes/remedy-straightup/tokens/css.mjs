@@ -6,7 +6,6 @@ const ids = {
     'entity.other.attribute-name.id',
   ]),
   settings: {
-    fontStyle: 'italic',
     foreground: colours.normal.red.hex(),
   },
 }
@@ -16,7 +15,6 @@ const tags = {
     'entity.name.tag',
   ]),
   settings: {
-    fontStyle: 'italic',
     foreground: code.classes,
   },
 }
@@ -26,7 +24,6 @@ const classes = {
     'entity.other.attribute-name.class',
   ]),
   settings: {
-    fontStyle: 'italic',
     foreground: colours.bright.green.hex(),
   },
 }
@@ -36,7 +33,6 @@ const pseudo = {
     'entity.other.attribute-name.pseudo-element',
   ]),
   settings: {
-    fontStyle: 'italic',
     foreground: colours.normal.cyan.hex(),
   },
 }

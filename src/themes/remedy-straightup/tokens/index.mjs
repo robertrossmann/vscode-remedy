@@ -7,7 +7,6 @@ import cpp from './cpp'
 import makefile from './makefile'
 import markdown from './markdown'
 import shell from './shell'
-import php from './php'
 import html from './html'
 import keyvaluelike from './keyvaluelike'
 
@@ -21,7 +20,6 @@ export default [
   ...makefile,
   ...markdown,
   ...shell,
-  ...php,
   ...html,
   ...keyvaluelike,
 ]

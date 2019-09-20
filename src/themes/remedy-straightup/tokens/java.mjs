@@ -11,17 +11,6 @@ const variables = {
   },
 }
 
-const italics = {
-  scope: java([
-    'keyword.other',
-    'storage.modifier',
-  ]),
-  settings: {
-    fontStyle: 'italic',
-  },
-}
-
 export default [
   variables,
-  italics,
 ]

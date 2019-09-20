@@ -10,16 +10,6 @@ const attributes = {
   },
 }
 
-const italics = {
-  scope: html([
-    'entity.other.attribute-name',
-  ]),
-  settings: {
-    fontStyle: 'italic',
-  },
-}
-
 export default [
   attributes,
-  italics,
 ]

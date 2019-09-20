@@ -19,22 +19,7 @@ const classes = {
   },
 }
 
-const italics = {
-  scope: cpp([
-    'storage.type.enum',
-    'storage.type.namespace',
-    'storage.type.class',
-    'storage.type.modifier',
-    'storage.modifier',
-    'keyword.operator.cast',
-  ]),
-  settings: {
-    fontStyle: 'italic',
-  },
-}
-
 export default [
   classes,
   language,
-  italics,
 ]

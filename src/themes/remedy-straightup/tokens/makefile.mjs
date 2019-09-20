@@ -15,7 +15,6 @@ const prerequisites = {
     'meta.scope.prerequisites',
   ]),
   settings: {
-    fontStyle: 'italic',
     foreground: colours.normal.yellow.hex(),
   },
 }
@@ -48,20 +47,10 @@ const functioncalls = {
   },
 }
 
-const straights = {
-  scope: makefile([
-    'support.function',
-  ]),
-  settings: {
-    fontStyle: '',
-  },
-}
-
 export default [
   variables,
   prerequisites,
   targets,
   builtintargets,
   functioncalls,
-  straights,
 ]
