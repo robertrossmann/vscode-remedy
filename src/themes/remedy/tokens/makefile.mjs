@@ -11,7 +11,7 @@ const variables = {
     'variable.other',
   ]),
   settings: {
-    foreground: code.markuplike.keys,
+    foreground: code.keyvaluelike.keys,
   },
 }
 

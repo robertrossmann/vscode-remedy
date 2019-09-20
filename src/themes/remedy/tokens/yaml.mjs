@@ -13,7 +13,7 @@ const keys = {
   settings: {
     // Reset italic font style due to tags actually being considered strings 🤷‍♂️
     fontStyle: '',
-    foreground: code.markuplike.keys,
+    foreground: code.keyvaluelike.keys,
   },
 }
 

@@ -17,7 +17,7 @@ const variables = {
     'source.terraform.embedded.source variable.other.terraform',
   ]),
   settings: {
-    foreground: code.markuplike.keys,
+    foreground: code.keyvaluelike.keys,
   },
 }
 

@@ -28,7 +28,7 @@ const links = normal.cyan.hex()
 const headings = bright.red.hex()
 
 // JSON, YAML etc.
-const markuplike = {
+const keyvaluelike = {
   keys: bright.red.hex(),
 }
 
@@ -52,5 +52,5 @@ export {
   quotes,
   links,
   headings,
-  markuplike,
+  keyvaluelike,
 }

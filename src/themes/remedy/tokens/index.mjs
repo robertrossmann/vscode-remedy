@@ -12,6 +12,7 @@ import terraform from './terraform'
 import shell from './shell'
 import php from './php'
 import html from './html'
+import dotenv from './dotenv'
 
 export default [
   ...common,
@@ -28,4 +29,5 @@ export default [
   ...shell,
   ...php,
   ...html,
+  ...dotenv,
 ]
