@@ -17,8 +17,7 @@ module.exports = {
     }],
     '@semantic-release/git',
     ['@semantic-release/github', {
-      // eslint-disable-next-line no-template-curly-in-string
-      assets: [{ path: '*.vsix', label: 'remedy-${version}.vsix' }],
+      assets: [{ path: '*.vsix', label: 'remedy.vsix' }],
     }],
   ],
 }
