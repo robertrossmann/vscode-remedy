@@ -1,3 +1,16 @@
+# [2.1.0](https://github.com/robertrossmann/vscode-remedy/compare/2.0.0...2.1.0) (2019-09-25)
+
+
+### Bug Fixes
+
+* treat curly braces as punctuation ([0f2d601](https://github.com/robertrossmann/vscode-remedy/commit/0f2d601))
+
+
+### Features
+
+* improve GraphQL syntax colouring ([1f4fd7e](https://github.com/robertrossmann/vscode-remedy/commit/1f4fd7e))
+* improve italicising of language keywords ([f3564d3](https://github.com/robertrossmann/vscode-remedy/commit/f3564d3))
+
 # [2.0.0](https://github.com/robertrossmann/vscode-remedy/compare/1.2.0...2.0.0) (2019-09-20)
 
 
