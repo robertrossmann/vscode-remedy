@@ -20,6 +20,7 @@ const preprocessor = {
   scope: [
     'punctuation.definition.directive',
     'entity.name.function.preprocessor',
+    'entity.name.function.directive',
   ],
   settings,
 }

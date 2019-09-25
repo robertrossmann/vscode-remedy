@@ -53,6 +53,7 @@ const preprocessor = {
     'punctuation.definition.directive',
     'keyword.control.directive',
     'entity.name.function.preprocessor',
+    'entity.name.function.directive',
   ],
   settings: {
     foreground: code.preprocessor,
@@ -93,6 +94,7 @@ const types = {
     'entity.name.type',
     // PHP uses this in docblock type annotations
     'keyword.other.type',
+    'support.type',
   ],
   settings: {
     foreground: code.types,
