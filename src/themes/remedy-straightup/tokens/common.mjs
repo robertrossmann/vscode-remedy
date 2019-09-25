@@ -127,6 +127,7 @@ const punctuation = {
     'meta.brace.angle',
     'meta.brace.round',
     'meta.brace.square',
+    'meta.brace.curly',
   ],
   settings: {
     foreground: code.punctuation,
