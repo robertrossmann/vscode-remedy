@@ -33,11 +33,8 @@ const strings = {
 
 const language = {
   scope: [
-    'keyword.control',
-    'keyword.operator.cast',
+    'keyword',
     'keyword.operator.expression',
-    'keyword.operator.new',
-    'keyword.other',
     'storage.modifier',
     'storage.type.class',
     'storage.type.enum',

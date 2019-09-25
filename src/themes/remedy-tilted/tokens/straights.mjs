@@ -4,6 +4,7 @@ import {
   yaml,
   makefile,
   css,
+  cs,
 } from '@remedy/tools/tmscopes'
 
 const settings = {
@@ -14,6 +15,13 @@ const stringkeys = {
   scope: [
     ...json(['support.type.property-name']),
     ...yaml(['entity.name.tag']),
+  ],
+  settings,
+}
+
+const language = {
+  scope: [
+    'keyword.operator',
   ],
   settings,
 }
@@ -33,8 +41,17 @@ const constants = {
   settings,
 }
 
+const types = {
+  scope: [
+    ...cs(['keyword.type']),
+  ],
+  settings,
+}
+
 export default [
   stringkeys,
+  language,
   functions,
   constants,
+  types,
 ]
