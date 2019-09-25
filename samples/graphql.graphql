@@ -1,0 +1,43 @@
+type College {
+   id:ID!
+   name:String
+   location:String
+   rating:Float
+}
+
+type Student {
+   id:ID!
+   firstName:String
+   lastName:String
+   fullName:String
+   college:College
+}
+
+query getUserWithProjects {
+  user(id: 2) {
+    firstname
+    lastname
+    projects {
+      name
+      tasks {
+        description
+      }
+    }
+  }
+}
+
+mutation createProject {
+  createProject(input: { name: "New Project", UserId: 2}) {
+    id
+    name
+  }
+}
+
+mutation {
+  updateCategory(id: 1, name: "Juicy Fruits", products: [7]) {
+    name
+    products {
+      name
+    }
+  }
+}
