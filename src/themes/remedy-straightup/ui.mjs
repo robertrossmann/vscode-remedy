@@ -143,6 +143,7 @@ export default {
    * The Minimap shows a minified version of the current file.
    */
   'minimap.findMatchHighlight': ui.accent.hex(),
+  'minimap.selectionHighlight': `${ui.accent.hex()}66`,
 
   /**
    * Editor Groups & Tabs
