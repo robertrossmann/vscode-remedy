@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/robertrossmann/vscode-remedy/compare/2.1.0...2.2.0) (2019-10-09)
+
+
+### Features
+
+* implement minimap's selectionHighlight ([d3c3463](https://github.com/robertrossmann/vscode-remedy/commit/d3c3463))
+
 # [2.1.0](https://github.com/robertrossmann/vscode-remedy/compare/2.0.0...2.1.0) (2019-09-25)
 
 
