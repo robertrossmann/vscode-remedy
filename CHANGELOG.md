@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/robertrossmann/vscode-remedy/compare/2.2.0...2.2.1) (2019-10-23)
+
+
+### Bug Fixes
+
+* make black & white terminal colours more prominent ([3c3f2dd](https://github.com/robertrossmann/vscode-remedy/commit/3c3f2dd))
+
 # [2.2.0](https://github.com/robertrossmann/vscode-remedy/compare/2.1.0...2.2.0) (2019-10-09)
 
 
