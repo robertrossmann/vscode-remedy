@@ -6,7 +6,7 @@ const background = {
 }
 
 const border = background.panel.darken(0.2)
-const accent = bright.red
+const accent = normal.orange
 
 const scm = {
   added: bright.green,

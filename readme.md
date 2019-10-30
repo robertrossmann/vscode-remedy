@@ -7,9 +7,9 @@
 ![Built with GNU Make][make-badge]
 [![Marketplace][marketplace-badge]][marketplace-link]
 
-> A dark theme with reddish accents with roots in Base16 - Eighties colour theme
+> A dark theme with orange accents with roots in Base16 - Eighties colour theme
 
-The theme features a reddish accent throughout the UI. Code colours are based in the Base16 -
+The theme features a orange accent throughout the UI. Code colours are based in the Base16 -
 Eighties colours. My goal is to provide a very consistent colour coding for various tokens, so that
 they look identical not just for a single language but also across all languages (ie. strings, type
 annotations, classes, language keywords etc. have the same colour regardless of the language you
