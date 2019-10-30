@@ -92,9 +92,9 @@ export default {
    */
   'tree.indentGuidesStroke': `${ui.text.hex()}44`,
   'list.activeSelectionBackground': `${ui.accent.hex()}99`,
-  'list.focusBackground': `${ui.accent.hex()}66`,
+  'list.focusBackground': `${ui.accent.hex()}BB`,
   'list.hoverBackground': `${ui.accent.hex()}22`,
-  'listFilterWidget.background': `${ui.accent.hex()}99`,
+  'listFilterWidget.background': `${ui.accent.hex()}AA`,
   'list.inactiveSelectionBackground': `${ui.accent.hex()}22`,
   'list.highlightForeground': ui.accent.hex(),
   // 'list.activeSelectionForeground': '#ff0000',
