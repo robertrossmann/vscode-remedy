@@ -335,7 +335,7 @@ export default {
   'statusBar.debuggingBorder': ui.border.hex(),
   'statusBar.foreground': ui.text.hex(),
   'statusBar.noFolderBackground': ui.background.panel.hex(),
-  'statusBarItem.hoverBackground': `${ui.background.panel.lighten(0.5).hex()}AA`,
+  'statusBarItem.hoverBackground': `${ui.background.panel.lighten(0.7).hex()}66`,
   'statusBarItem.remoteBackground': ui.accent.hex(),
   'statusBarItem.remoteForeground': ui.text.hex(),
   // 'statusBar.debuggingForeground': '#FF0000',
