@@ -217,8 +217,8 @@ export default {
   // CodeLens
   'editorCodeLens.foreground': `${ui.text.darken(0.6).desaturate(0.6).hex()}`,
   // Bracket Matches
-  'editorBracketMatch.background': `${ui.accent.hex()}22`,
-  'editorBracketMatch.border': `${ui.accent.lighten(0.2).hex()}66`,
+  'editorBracketMatch.background': `${ui.accent.lighten(0.2).hex()}22`,
+  'editorBracketMatch.border': `${ui.accent.lighten(0.2).hex()}44`,
   // Overview Ruler
   'editorOverviewRuler.border': ui.border.hex(),
   'editorOverviewRuler.bracketMatchForeground': ui.text.hex(),
