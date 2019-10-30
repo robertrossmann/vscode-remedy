@@ -8,7 +8,7 @@ export default {
   focusBorder: `${ui.accent.hex()}66`,
   foreground: ui.text.hex(),
   'widget.shadow': ui.border.hex(),
-  'selection.background': `${ui.text.hex()}66`,
+  'selection.background': `${ui.text.hex()}22`,
   descriptionForeground: ui.text.hex(),
 
   /**
@@ -143,7 +143,7 @@ export default {
    * The Minimap shows a minified version of the current file.
    */
   'minimap.findMatchHighlight': ui.accent.hex(),
-  'minimap.selectionHighlight': `${ui.accent.hex()}66`,
+  'minimap.selectionHighlight': `${ui.text.hex()}44`,
 
   /**
    * Editor Groups & Tabs
@@ -190,8 +190,8 @@ export default {
   'editor.findRangeHighlightBackground': `${ui.accent.hex()}22`,
   'editor.foreground': ui.text.hex(),
   'editor.hoverHighlightBackground': `${ui.accent.hex()}33`,
-  'editor.lineHighlightBackground': `${ui.accent.hex()}22`,
-  'editor.selectionBackground': `${ui.accent.hex()}66`,
+  'editor.lineHighlightBackground': `${ui.text.hex()}09`,
+  'editor.selectionBackground': `${ui.text.hex()}22`,
   'editor.selectionHighlightBackground': `${ui.accent.hex()}33`,
   'editor.wordHighlightBackground': `${ui.accent.hex()}33`,
   'editor.wordHighlightStrongBackground': `${ui.accent.hex()}66`,
@@ -400,7 +400,7 @@ export default {
   'terminal.border': ui.border.hex(),
   'terminal.foreground': ui.text.hex(),
   'terminalCursor.foreground': ui.text.hex(),
-  'terminal.selectionBackground': `${ui.text.hex()}66`,
+  'terminal.selectionBackground': `${ui.text.hex()}22`,
   'terminal.ansiBlack': ui.terminal.normal.black.lighten(0.5).hex(),
   'terminal.ansiBlue': ui.terminal.normal.blue.hex(),
   'terminal.ansiCyan': ui.terminal.normal.cyan.hex(),
