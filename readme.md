@@ -49,39 +49,23 @@ The following languages have been manually tweaked to provide best experience:
 
 ### UI
 
-![UI][sceen-ui]
+![UI][sceen-gui]
 
 ### Peek View
 
-![Peek View][screen-peek-view]
+![Peek View][screen-peekview]
 
 ### Find & Replace
 
-![Find & Replace][screen-find-replace]
+![Find & Replace][screen-search]
 
-### JSON
+### GitLens
 
-![JSON][screen-json]
+![GitLens][screen-gitlens]
 
-### Makefile
+### Diffs
 
-![Makefile][screen-makefile]
-
-### Markdown
-
-![Markdown][screen-markdown]
-
-### PHP
-
-![PHP][screen-php]
-
-### Shell
-
-![Shell][screen-shell]
-
-### TypeScript
-
-![TypeScript][screen-typescript]
+![Diffs][screen-diffs]
 
 ## License
 
@@ -92,12 +76,8 @@ See the [LICENSE](LICENSE) file for information.
 [marketplace-badge]: https://img.shields.io/badge/Download%20On-Marketplace-brightgreen.svg?style=flat-square
 [marketplace-link]: https://marketplace.visualstudio.com/items?itemName=robertrossmann.remedy
 [operator-link]: https://www.typography.com/fonts/operator/styles/operatormono
-[sceen-ui]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/ui.png
-[screen-peek-view]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/peek-view.png
-[screen-find-replace]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/find-replace.png
-[screen-json]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/json.png
-[screen-makefile]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/makefile.png
-[screen-markdown]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/markdown.png
-[screen-php]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/php.png
-[screen-shell]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/shell.png
-[screen-typescript]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/typescript.png
+[sceen-gui]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/gui.png
+[screen-peekview]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/peekview.png
+[screen-search]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/search.png
+[screen-gitlens]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/gitlens.png
+[screen-diffs]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/diffs.png
