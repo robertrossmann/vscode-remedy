@@ -67,7 +67,7 @@ The following languages have been manually tweaked to provide best experience:
 
 ### Diffs
 
-![Diffs][screen-diffs]
+![Diffs][screen-diff]
 
 ## License
 
@@ -82,4 +82,4 @@ See the [LICENSE](LICENSE) file for information.
 [screen-peekview]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/peekview.png
 [screen-search]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/search.png
 [screen-gitlens]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/gitlens.png
-[screen-diffs]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/diffs.png
+[screen-diff]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/diff.png
