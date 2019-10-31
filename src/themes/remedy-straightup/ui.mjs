@@ -495,4 +495,9 @@ export default {
   'gitlens.lineHighlightOverviewRulerColor': `${ui.scm.added.hex()}22`,
   // 'gitlens.trailingLineBackgroundColor': '#FF0000',
   // 'gitlens.trailingLineForegroundColor': '#FF0000',
+
+  /**
+   * LintLens
+   */
+  'lintlens.annotationColor': `${ui.text.hex()}33`,
 }
