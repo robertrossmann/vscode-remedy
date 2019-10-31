@@ -133,7 +133,7 @@ export default {
   'sideBar.foreground': ui.text.hex(),
   'sideBarSectionHeader.background': ui.background.panel.hex(),
   'sideBarSectionHeader.border': ui.border.hex(),
-  'sideBar.dropBackground': `${ui.text.hex()}44`,
+  'sideBar.dropBackground': `${ui.text.hex()}22`,
   // 'sideBarTitle.foreground': '#FF0000',
   // 'sideBarSectionHeader.foreground': '#FF0000',
 
@@ -152,7 +152,7 @@ export default {
    * container of an editor. Multiple Tabs can be opened in one editor group.
    */
   'editorGroup.border': ui.border.hex(),
-  'editorGroup.dropBackground': `${ui.text.hex()}44`,
+  'editorGroup.dropBackground': `${ui.text.hex()}22`,
   'editorGroupHeader.noTabsBackground': ui.background.panel.hex(),
   'editorGroupHeader.tabsBackground': ui.background.panel.hex(),
   'tab.activeBackground': ui.background.code.hex(),
