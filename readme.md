@@ -34,6 +34,7 @@ The following languages have been manually tweaked to provide best experience:
 - C / C++
 - C#
 - Go
+- GraphQL
 - HTML & CSS & Less
 - Java
 - JavaScript & React
@@ -42,6 +43,7 @@ The following languages have been manually tweaked to provide best experience:
 - Markdown
 - PHP
 - Shell
+- SQL
 - TypeScript & React
 - YAML
 
