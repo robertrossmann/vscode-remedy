@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/robertrossmann/vscode-remedy/compare/3.0.0...3.0.1) (2019-10-31)
+
+
+### Bug Fixes
+
+* use correct link for Git Diff screenshot ([a826242](https://github.com/robertrossmann/vscode-remedy/commit/a826242))
+
 # [3.0.0](https://github.com/robertrossmann/vscode-remedy/compare/2.2.1...3.0.0) (2019-10-31)
 
 
