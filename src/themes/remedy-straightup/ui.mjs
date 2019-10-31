@@ -481,4 +481,18 @@ export default {
   'editor.snippetFinalTabstopHighlightBackground': ui.text.hex(),
   'editor.snippetFinalTabstopHighlightBorder': `${ui.accent.hex()}99`,
   // 'editor.snippetTabstopHighlightBorder': '#FF0000',
+
+
+  // EXTENSIONS
+
+  /**
+   * GitLens
+   */
+  'gitlens.gutterForegroundColor': `${ui.text.hex()}66`,
+  'gitlens.gutterBackgroundColor': ui.background.code.hex(),
+  'gitlens.gutterUncommittedForegroundColor': ui.scm.untracked.hex(),
+  'gitlens.lineHighlightBackgroundColor': `${ui.scm.added.hex()}22`,
+  'gitlens.lineHighlightOverviewRulerColor': `${ui.scm.added.hex()}22`,
+  // 'gitlens.trailingLineBackgroundColor': '#FF0000',
+  // 'gitlens.trailingLineForegroundColor': '#FF0000',
 }
