@@ -1,3 +1,15 @@
+# [3.1.0](https://github.com/robertrossmann/vscode-remedy/compare/3.0.2...3.1.0) (2019-11-01)
+
+
+### Bug Fixes
+
+* update Marketplace description ([ab992bc](https://github.com/robertrossmann/vscode-remedy/commit/ab992bc65322c11b8f209931432ff7492e29182d))
+
+
+### Features
+
+* include MacOS Terminal profile 🍎 ([ab72975](https://github.com/robertrossmann/vscode-remedy/commit/ab729754ae176abb56a22e006a6e744c4311e8e7))
+
 ## [3.0.2](https://github.com/robertrossmann/vscode-remedy/compare/3.0.1...3.0.2) (2019-11-01)
 
 
