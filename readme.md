@@ -69,6 +69,12 @@ The following languages have been manually tweaked to provide best experience:
 
 ![Diffs][screen-diff]
 
+## Additional resources
+
+### MacOS Terminal
+
+A MacOS Terminal profile [is also available](resources/terminal) if you'd like to have a consistent colour scheme in both Terminal & VS Code. ❤️
+
 ## License
 
 See the [LICENSE](LICENSE) file for information.

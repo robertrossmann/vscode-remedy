@@ -17,7 +17,10 @@ module.exports = {
     }],
     '@semantic-release/git',
     ['@semantic-release/github', {
-      assets: [{ path: '*.vsix', label: 'remedy.vsix' }],
+      assets: [
+        { path: '*.vsix', label: 'remedy.vsix' },
+        { path: 'resources/terminal/Remedy.terminal', label: 'Remedy.terminal' },
+      ],
     }],
   ],
 }
