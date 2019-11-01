@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/robertrossmann/vscode-remedy/compare/3.0.1...3.0.2) (2019-11-01)
+
+
+### Bug Fixes
+
+* use accent colour for menu selection background ([1cd0d30](https://github.com/robertrossmann/vscode-remedy/commit/1cd0d305077a70cbd7c3c40123e980654a33ed38)), closes [#2](https://github.com/robertrossmann/vscode-remedy/issues/2)
+
 ## [3.0.1](https://github.com/robertrossmann/vscode-remedy/compare/3.0.0...3.0.1) (2019-10-31)
 
 
