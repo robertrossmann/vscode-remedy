@@ -4,7 +4,7 @@
 
 ## Installation
 
-Download the _Terminal.profile_ file from the [latest release assets][github-releases] on Github or from this directory and open it. It will get added to your Terminal's profiles from where you can make this profile the default one - all subsequent Terminal windows will then use this profile.
+Download the _Remedy.terminal_ file from the [latest release assets][github-releases] on Github or from this directory and open it. It will get added to your Terminal's profiles from where you can make this profile the default one - all subsequent Terminal windows will then use this profile.
 
 After the intallation you will likely want to fix/change the following settings:
 
