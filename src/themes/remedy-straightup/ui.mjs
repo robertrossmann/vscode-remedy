@@ -363,7 +363,7 @@ export default {
   'menu.foreground': ui.text.hex(),
   'menu.background': ui.background.panel.hex(),
   'menu.selectionForeground': ui.text.hex(),
-  'menu.selectionBackground': ui.background.panel.hex(),
+  'menu.selectionBackground': ui.accent.hex(),
   'menu.separatorBackground': ui.border.hex(),
   // 'menubar.selectionBorder': '#FF0000',
   // 'menu.selectionBorder': '#FF0000',
