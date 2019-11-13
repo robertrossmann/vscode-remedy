@@ -12,6 +12,22 @@ export default {
   descriptionForeground: ui.text.hex(),
 
   /**
+   * Windows
+   */
+  // 'window.activeBorder': '#ff0000',
+  // 'window.inactiveBorder': '#ff0000',
+
+  /**
+   * Icons
+   */
+  'problemsErrorIcon.foreground': ui.problems.error.hex(),
+  'problemsWarningIcon.foreground': ui.problems.warning.hex(),
+  'problemsInfoIcon.foreground': ui.problems.info.hex(),
+  'notificationsErrorIcon.foreground': ui.problems.error.hex(),
+  'notificationsInfoIcon.foreground': ui.problems.info.hex(),
+  'notificationsWarningIcon.foreground': ui.problems.warning.hex(),
+
+  /**
    * Lightbulb
    */
   'editorLightBulb.foreground': ui.accent.hex(),
