@@ -12,6 +12,12 @@ export default {
   descriptionForeground: ui.text.hex(),
 
   /**
+   * Lightbulb
+   */
+  'editorLightBulb.foreground': ui.accent.hex(),
+  'editorLightBulbAutoFix.foreground': ui.accent.hex(),
+
+  /**
    * Text colours
    *
    * Colors inside a text document, such as the welcome page.
