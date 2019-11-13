@@ -468,7 +468,7 @@ export default {
   /**
    * Breadcrumbs
    */
-  'breadcrumb.foreground': ui.text.darken(0.6).desaturate(0.6).hex(),
+  'breadcrumb.foreground': `${ui.text.hex()}66`,
   'breadcrumb.focusForeground': ui.text.hex(),
   'breadcrumb.activeSelectionForeground': ui.text.hex(),
   'breadcrumbPicker.background': ui.background.panel.hex(),
