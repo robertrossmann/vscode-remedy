@@ -1,3 +1,17 @@
+# [3.2.0](https://github.com/robertrossmann/vscode-remedy/compare/3.1.0...3.2.0) (2019-11-13)
+
+
+### Bug Fixes
+
+* update breadcrumb colours to better fit into the UI ([715e59b](https://github.com/robertrossmann/vscode-remedy/commit/715e59bf86b977e119466ba4d5131b46fbc8e83c))
+
+
+### Features
+
+* style the lightbulb's colour ([eb1d654](https://github.com/robertrossmann/vscode-remedy/commit/eb1d6546cefadd9f402c0890865d98eabfc56bca))
+* use accent colour for activity bar's border ❤️ ([d760008](https://github.com/robertrossmann/vscode-remedy/commit/d76000805ff5364ff8f50e7ba2fd02bf30b2b83c))
+* use theme colours for some notification icons ([7ecda0c](https://github.com/robertrossmann/vscode-remedy/commit/7ecda0c12ae130fb292caacf36256928d9a82692))
+
 # [3.1.0](https://github.com/robertrossmann/vscode-remedy/compare/3.0.2...3.1.0) (2019-11-01)
 
 
