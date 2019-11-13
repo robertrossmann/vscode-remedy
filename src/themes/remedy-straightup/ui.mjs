@@ -115,11 +115,13 @@ export default {
    * The Activity Bar is displayed either on the far left or right of the workbench and allows
    * fast switching between views of the Side Bar.
    */
+  'activityBar.activeBorder': ui.accent.hex(),
   'activityBar.background': ui.background.panel.hex(),
   'activityBar.border': ui.border.hex(),
   'activityBar.foreground': ui.text.hex(),
   'activityBar.inactiveForeground': ui.text.darken(0.6).desaturate(0.8).hex(),
   'activityBarBadge.background': ui.accent.hex(),
+  // 'activityBar.activeBackground': '#ff0000',
   // 'activityBar.dropBackground': '#ff0000',
   // 'activityBarBadge.foreground': '#ff0000',
 
