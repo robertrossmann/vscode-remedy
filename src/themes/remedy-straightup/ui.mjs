@@ -30,8 +30,8 @@ export default {
   /**
    * Lightbulb
    */
-  'editorLightBulb.foreground': ui.accent.hex(),
-  'editorLightBulbAutoFix.foreground': ui.accent.hex(),
+  'editorLightBulb.foreground': ui.problems.warning.hex(),
+  'editorLightBulbAutoFix.foreground': ui.problems.info.hex(),
 
   /**
    * Text colours
