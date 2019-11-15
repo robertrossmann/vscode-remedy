@@ -1,4 +1,4 @@
-import { ui } from '@remedy/palette'
+import { ui, code } from '@remedy/palette'
 
 export default {
 
@@ -26,6 +26,39 @@ export default {
   'notificationsErrorIcon.foreground': ui.problems.error.hex(),
   'notificationsInfoIcon.foreground': ui.problems.info.hex(),
   'notificationsWarningIcon.foreground': ui.problems.warning.hex(),
+  'symbolIcon.arrayForeground': code.types,
+  'symbolIcon.booleanForeground': code.primitives,
+  'symbolIcon.classForeground': code.classes,
+  'symbolIcon.constantForeground': code.primitives,
+  'symbolIcon.constructorForeground': code.language,
+  'symbolIcon.fieldForeground': code.raw,
+  'symbolIcon.functionForeground': code.functions,
+  'symbolIcon.interfaceForeground': code.types,
+  'symbolIcon.methodForeground': code.functions,
+  'symbolIcon.moduleForeground': code.types,
+  'symbolIcon.namespaceForeground': code.types,
+  'symbolIcon.propertyForeground': code.constants,
+  'symbolIcon.stringForeground': code.strings,
+  'symbolIcon.structForeground': code.types,
+  'symbolIcon.variableForeground': code.language,
+  // 'symbolIcon.colorForeground': '#ff0000',
+  // 'symbolIcon.enumeratorForeground': '#ff0000',
+  // 'symbolIcon.enumeratorMemberForeground': '#ff0000',
+  // 'symbolIcon.eventForeground': '#ff0000',
+  // 'symbolIcon.fileForeground': '#ff0000',
+  // 'symbolIcon.folderForeground': '#ff0000',
+  // 'symbolIcon.keyForeground': '#ff0000',
+  // 'symbolIcon.keywordForeground': '#ff0000',
+  // 'symbolIcon.nullForeground': '#ff0000',
+  // 'symbolIcon.numberForeground': '#ff0000',
+  // 'symbolIcon.objectForeground': '#ff0000',
+  // 'symbolIcon.operatorForeground': '#ff0000',
+  // 'symbolIcon.packageForeground': '#ff0000',
+  // 'symbolIcon.referenceForeground': '#ff0000',
+  // 'symbolIcon.snippetForeground': '#ff0000',
+  // 'symbolIcon.textForeground': '#ff0000',
+  // 'symbolIcon.typeParameterForeground': '#ff0000',
+  // 'symbolIcon.unitForeground': '#ff0000',
 
   /**
    * Lightbulb
