@@ -1,3 +1,15 @@
+# [3.3.0](https://github.com/robertrossmann/vscode-remedy/compare/3.2.0...3.3.0) (2019-11-15)
+
+
+### Bug Fixes
+
+* use more appropriate colour for lightbulb ([dd92c42](https://github.com/robertrossmann/vscode-remedy/commit/dd92c42da582e9c8ce69824da6b6db72cf640ad4))
+
+
+### Features
+
+* use theme colours for some Outline & breadcrumb symbols ([7f92495](https://github.com/robertrossmann/vscode-remedy/commit/7f92495996049e1451237ed06207762244df048c))
+
 # [3.2.0](https://github.com/robertrossmann/vscode-remedy/compare/3.1.0...3.2.0) (2019-11-13)
 
 
