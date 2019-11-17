@@ -272,7 +272,7 @@ export default {
   // 'editor.selectionForeground': '#FF0000',
   // 'editor.findRangeHighlightBorder': '#FF0000',
   // CodeLens
-  'editorCodeLens.foreground': `${ui.text.darken(0.6).desaturate(0.6).hex()}`,
+  'editorCodeLens.foreground': `${ui.text.hex()}66`,
   // Bracket Matches
   'editorBracketMatch.background': `${ui.accent.lighten(0.2).hex()}22`,
   'editorBracketMatch.border': `${ui.accent.lighten(0.2).hex()}44`,
