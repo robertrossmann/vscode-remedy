@@ -1,3 +1,10 @@
+## [3.3.1](https://github.com/robertrossmann/vscode-remedy/compare/3.3.0...3.3.1) (2019-11-17)
+
+
+### Bug Fixes
+
+* make editor code lens text fit better into the colour scheme ([ce24489](https://github.com/robertrossmann/vscode-remedy/commit/ce244890ba67a9a5af0af445ddec0f574f97928a))
+
 # [3.3.0](https://github.com/robertrossmann/vscode-remedy/compare/3.2.0...3.3.0) (2019-11-15)
 
 
