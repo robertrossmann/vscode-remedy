@@ -1,3 +1,10 @@
+# [3.4.0](https://github.com/robertrossmann/vscode-remedy/compare/3.3.1...3.4.0) (2019-11-26)
+
+
+### Features
+
+* define custom theme colours for Error Lens ([f775695](https://github.com/robertrossmann/vscode-remedy/commit/f7756951d2f1e7703349c7786b01bd895d4c5621)), closes [usernamehw/vscode-error-lens#30](https://github.com/usernamehw/vscode-error-lens/issues/30)
+
 ## [3.3.1](https://github.com/robertrossmann/vscode-remedy/compare/3.3.0...3.3.1) (2019-11-17)
 
 
