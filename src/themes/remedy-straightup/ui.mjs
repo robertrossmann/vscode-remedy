@@ -543,6 +543,23 @@ export default {
   // EXTENSIONS
 
   /**
+   * Error Lens
+   */
+  'errorLens.errorBackground': `${ui.problems.error.hex()}22`,
+  'errorLens.errorForeground': ui.problems.error.hex(),
+  'errorLens.warningBackground': `${ui.problems.warning.hex()}22`,
+  'errorLens.warningForeground': ui.problems.warning.hex(),
+  'errorLens.infoBackground': `${ui.problems.info.hex()}22`,
+  'errorLens.infoForeground': ui.problems.info.hex(),
+  'errorLens.hintBackground': `${ui.problems.hint.hex()}22`,
+  'errorLens.hintForeground': ui.problems.hint.hex(),
+
+  // 'errorLens.errorMessageBackground': '#ff0000',
+  // 'errorLens.warningMessageBackground': '#ff0000',
+  // 'errorLens.infoMessageBackground': '#ff0000',
+  // 'errorLens.hintMessageBackground': '#ff0000',
+
+  /**
    * GitLens
    */
   'gitlens.gutterForegroundColor': `${ui.text.hex()}66`,
