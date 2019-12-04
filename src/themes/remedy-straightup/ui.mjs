@@ -545,13 +545,13 @@ export default {
   /**
    * Error Lens
    */
-  'errorLens.errorBackground': `${ui.problems.error.hex()}22`,
+  'errorLens.errorBackground': `${ui.problems.error.hex()}11`,
   'errorLens.errorForeground': ui.problems.error.hex(),
-  'errorLens.warningBackground': `${ui.problems.warning.hex()}22`,
+  'errorLens.warningBackground': `${ui.problems.warning.hex()}11`,
   'errorLens.warningForeground': ui.problems.warning.hex(),
-  'errorLens.infoBackground': `${ui.problems.info.hex()}22`,
+  'errorLens.infoBackground': `${ui.problems.info.hex()}11`,
   'errorLens.infoForeground': ui.problems.info.hex(),
-  'errorLens.hintBackground': `${ui.problems.hint.hex()}22`,
+  'errorLens.hintBackground': `${ui.problems.hint.hex()}11`,
   'errorLens.hintForeground': ui.problems.hint.hex(),
 
   // 'errorLens.errorMessageBackground': '#ff0000',
