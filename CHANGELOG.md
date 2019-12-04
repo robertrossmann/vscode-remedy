@@ -1,3 +1,10 @@
+## [3.4.1](https://github.com/robertrossmann/vscode-remedy/compare/3.4.0...3.4.1) (2019-12-04)
+
+
+### Bug Fixes
+
+* use more subtle background for error lens extension ([6e1f244](https://github.com/robertrossmann/vscode-remedy/commit/6e1f24422ab973cb7acaa1fe4a36751a40a86def))
+
 # [3.4.0](https://github.com/robertrossmann/vscode-remedy/compare/3.3.1...3.4.0) (2019-11-26)
 
 
