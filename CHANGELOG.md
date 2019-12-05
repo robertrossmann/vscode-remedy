@@ -1,3 +1,10 @@
+## [3.4.2](https://github.com/robertrossmann/vscode-remedy/compare/3.4.1...3.4.2) (2019-12-05)
+
+
+### Bug Fixes
+
+* the `new` operator should be italic! 😱 ([b386a8e](https://github.com/robertrossmann/vscode-remedy/commit/b386a8ee5c0b6e491136d554ec5be24ff7e3172d))
+
 ## [3.4.1](https://github.com/robertrossmann/vscode-remedy/compare/3.4.0...3.4.1) (2019-12-04)
 
 
