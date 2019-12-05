@@ -8,9 +8,6 @@ on:
 
 jobs:
   release:
-    needs:
-      - validate
-
     runs-on: ubuntu-18.04
     timeout-minutes: 10
     env:

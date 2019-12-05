@@ -3,7 +3,8 @@ name: Validate
 
 on:
   push:
-    branches:
+    branches-ignore:
+      # Commits in master must already pass the Validate check done on another branch/PR.
       - master
   pull_request:
 
