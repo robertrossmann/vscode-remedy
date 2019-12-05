@@ -36,6 +36,7 @@ const language = {
   scope: [
     'keyword',
     'keyword.operator.expression',
+    'keyword.operator.new',
     'storage.modifier',
     'storage.type.class',
     'storage.type.enum',
