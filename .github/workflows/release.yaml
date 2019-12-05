@@ -29,6 +29,7 @@ jobs:
         if: steps.cache.outputs.cache-hit == 'true'
 
       - run: make install
+      - run: make precompile
       - run: make themes
 
       - name: Publish to Visual Studio Marketplace
