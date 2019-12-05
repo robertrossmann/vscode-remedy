@@ -30,5 +30,6 @@ jobs:
         if: steps.cache.outputs.cache-hit == 'true'
 
       - run: make install
+      - run: make precompile
       - run: make lint
       - run: make themes
