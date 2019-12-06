@@ -20,6 +20,7 @@ export default {
   /**
    * Icons
    */
+  'icon.foreground': ui.text.hex(),
   'problemsErrorIcon.foreground': ui.problems.error.hex(),
   'problemsWarningIcon.foreground': ui.problems.warning.hex(),
   'problemsInfoIcon.foreground': ui.problems.info.hex(),
