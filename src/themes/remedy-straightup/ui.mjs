@@ -485,8 +485,23 @@ export default {
    */
   'debugToolBar.background': ui.background.panel.hex(),
   'debugToolBar.border': ui.border.hex(),
-  'editor.stackFrameHighlightBackground': `${ui.debug.frame.hex()}66`,
-  'editor.focusedStackFrameHighlightBackground': `${ui.debug.focusedFrame.hex()}33`,
+  'editor.stackFrameHighlightBackground': `${ui.debug.frame.normal.hex()}33`,
+  'editor.focusedStackFrameHighlightBackground': `${ui.debug.frame.focused.hex()}22`,
+  'debugIcon.breakpointForeground': ui.debug.breakpoint.active.hex(),
+  'debugIcon.breakpointDisabledForeground': `${ui.debug.breakpoint.disabled.hex()}66`,
+  'debugIcon.breakpointUnverifiedForeground': ui.debug.breakpoint.unverified.hex(),
+  'debugIcon.breakpointStackframeForeground': `${ui.debug.frame.normal.hex()}99`,
+  'debugIcon.breakpointCurrentStackframeForeground': ui.debug.frame.focused.hex(),
+  'debugIcon.startForeground': ui.debug.icon.start.hex(),
+  'debugIcon.continueForeground': ui.debug.icon.continue.hex(),
+  'debugIcon.pauseForeground': ui.debug.icon.pause.hex(),
+  'debugIcon.stepOverForeground': ui.debug.icon.next.hex(),
+  'debugIcon.stepBackForeground': ui.debug.icon.back.hex(),
+  'debugIcon.stepIntoForeground': ui.debug.icon.into.hex(),
+  'debugIcon.stepOutForeground': ui.debug.icon.out.hex(),
+  'debugIcon.stopForeground': ui.debug.icon.stop.hex(),
+  'debugIcon.disconnectForeground': ui.debug.icon.stop.hex(),
+  'debugIcon.restartForeground': ui.debug.icon.restart.hex(),
 
   /**
    * Welcome Page

@@ -30,8 +30,26 @@ const problems = {
 }
 
 const debug = {
-  frame: normal.green,
-  focusedFrame: bright.green,
+  breakpoint: {
+    active: bright.red,
+    disabled: normal.red,
+    unverified: normal.white,
+  },
+  frame: {
+    normal: normal.green,
+    focused: bright.green,
+  },
+  icon: {
+    start: normal.orange,
+    pause: normal.orange,
+    continue: normal.orange,
+    next: bright.blue,
+    back: bright.blue,
+    into: bright.blue,
+    out: bright.blue,
+    restart: bright.green,
+    stop: normal.red,
+  },
 }
 
 const terminal = {
