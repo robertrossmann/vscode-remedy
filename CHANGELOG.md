@@ -1,3 +1,12 @@
+# [3.5.0](https://github.com/robertrossmann/vscode-remedy/compare/3.4.2...3.5.0) (2019-12-06)
+
+
+### Features
+
+* add custom colours for the debug UI buttons 😍 ([1468bc5](https://github.com/robertrossmann/vscode-remedy/commit/1468bc513c62442dd93b421d1fe4b969d7369a07))
+* add theme colours to minimap gutter for SCM highlights ([6565600](https://github.com/robertrossmann/vscode-remedy/commit/6565600b4fe4f51aeab02748e2089852615d0438))
+* use text colour as default icon colour where applicable ([85048b5](https://github.com/robertrossmann/vscode-remedy/commit/85048b5eb0a6dfc9192e61e7296af7f810c8af91))
+
 ## [3.4.2](https://github.com/robertrossmann/vscode-remedy/compare/3.4.1...3.4.2) (2019-12-05)
 
 
