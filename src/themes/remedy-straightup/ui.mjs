@@ -201,6 +201,9 @@ export default {
    */
   'minimap.findMatchHighlight': ui.accent.hex(),
   'minimap.selectionHighlight': `${ui.text.hex()}44`,
+  'minimapGutter.addedBackground': ui.scm.added.hex(),
+  'minimapGutter.modifiedBackground': ui.scm.modified.hex(),
+  'minimapGutter.deletedBackground': ui.scm.deleted.hex(),
 
   /**
    * Editor Groups & Tabs
