@@ -1,3 +1,10 @@
+## [3.5.1](https://github.com/robertrossmann/vscode-remedy/compare/3.5.0...3.5.1) (2019-12-09)
+
+
+### Bug Fixes
+
+* use correct theme colour for minimap error/warning highlight ([bfc6235](https://github.com/robertrossmann/vscode-remedy/commit/bfc623538f6e3654ff58168b169e563a7b664155))
+
 # [3.5.0](https://github.com/robertrossmann/vscode-remedy/compare/3.4.2...3.5.0) (2019-12-06)
 
 
