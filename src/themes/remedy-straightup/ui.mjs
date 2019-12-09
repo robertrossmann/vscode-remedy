@@ -202,6 +202,8 @@ export default {
    */
   'minimap.findMatchHighlight': ui.accent.hex(),
   'minimap.selectionHighlight': `${ui.text.hex()}44`,
+  'minimap.errorHighlight': ui.problems.error.hex(),
+  'minimap.warningHighlight': ui.problems.warning.hex(),
   'minimapGutter.addedBackground': ui.scm.added.hex(),
   'minimapGutter.modifiedBackground': ui.scm.modified.hex(),
   'minimapGutter.deletedBackground': ui.scm.deleted.hex(),
