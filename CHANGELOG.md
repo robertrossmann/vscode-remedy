@@ -1,3 +1,10 @@
+## [3.6.1](https://github.com/robertrossmann/vscode-remedy/compare/3.6.0...3.6.1) (2019-12-10)
+
+
+### Bug Fixes
+
+* use theme colours for problem decorations in tree views 🤦‍♂️ ([4c209e6](https://github.com/robertrossmann/vscode-remedy/commit/4c209e66c28d76a9ad2c748345e95626ab8bb52a))
+
 # [3.6.0](https://github.com/robertrossmann/vscode-remedy/compare/3.5.1...3.6.0) (2019-12-10)
 
 
