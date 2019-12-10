@@ -1,3 +1,15 @@
+# [3.6.0](https://github.com/robertrossmann/vscode-remedy/compare/3.5.1...3.6.0) (2019-12-10)
+
+
+### Bug Fixes
+
+* use consistent drop background colour ([0339dae](https://github.com/robertrossmann/vscode-remedy/commit/0339daee1cca5e67423e8aa37a30043ca302254e))
+
+
+### Features
+
+* use accent colour for breadcrumb highlights ([40189a5](https://github.com/robertrossmann/vscode-remedy/commit/40189a578677c80d58e69268cc6c60dad9df1e1f))
+
 ## [3.5.1](https://github.com/robertrossmann/vscode-remedy/compare/3.5.0...3.5.1) (2019-12-09)
 
 
