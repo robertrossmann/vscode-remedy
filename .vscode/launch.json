@@ -10,7 +10,7 @@
       "type": "extensionHost",
       "request": "launch",
       "runtimeExecutable": "${execPath}",
-      "preLaunchTask": "make:themes",
+      "preLaunchTask": "${defaultBuildTask}",
       "args": [
         "--extensionDevelopmentPath=${workspaceFolder}"
       ]
