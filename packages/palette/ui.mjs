@@ -3,6 +3,7 @@ import { base, text, normal, bright } from './colours'
 const background = {
   code: base.lighten(0.2).desaturate(0.1),
   panel: base,
+  drop: text,
 }
 
 const border = background.panel.darken(0.2)

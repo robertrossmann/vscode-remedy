@@ -153,8 +153,8 @@ export default {
   'listFilterWidget.background': `${ui.accent.hex()}AA`,
   'list.inactiveSelectionBackground': `${ui.accent.hex()}22`,
   'list.highlightForeground': ui.accent.hex(),
+  'list.dropBackground': `${ui.background.drop.hex()}22`,
   // 'list.activeSelectionForeground': '#ff0000',
-  // 'list.dropBackground': '#ff0000',
   // 'list.focusForeground': '#ff0000',
   // 'list.hoverForeground': '#ff0000',
   // 'list.inactiveSelectionForeground': '#ff0000',
@@ -177,8 +177,8 @@ export default {
   'activityBar.foreground': ui.text.hex(),
   'activityBar.inactiveForeground': ui.text.darken(0.6).desaturate(0.8).hex(),
   'activityBarBadge.background': ui.accent.hex(),
+  'activityBar.dropBackground': `${ui.background.drop.hex()}22`,
   // 'activityBar.activeBackground': '#ff0000',
-  // 'activityBar.dropBackground': '#ff0000',
   // 'activityBarBadge.foreground': '#ff0000',
 
   /**
@@ -191,7 +191,7 @@ export default {
   'sideBar.foreground': ui.text.hex(),
   'sideBarSectionHeader.background': ui.background.panel.hex(),
   'sideBarSectionHeader.border': ui.border.hex(),
-  'sideBar.dropBackground': `${ui.text.hex()}22`,
+  'sideBar.dropBackground': `${ui.background.drop.hex()}22`,
   // 'sideBarTitle.foreground': '#FF0000',
   // 'sideBarSectionHeader.foreground': '#FF0000',
 
@@ -215,7 +215,7 @@ export default {
    * container of an editor. Multiple Tabs can be opened in one editor group.
    */
   'editorGroup.border': ui.border.hex(),
-  'editorGroup.dropBackground': `${ui.text.hex()}22`,
+  'editorGroup.dropBackground': `${ui.background.drop.hex()}22`,
   'editorGroupHeader.noTabsBackground': ui.background.panel.hex(),
   'editorGroupHeader.tabsBackground': ui.background.panel.hex(),
   'tab.activeBackground': ui.background.code.hex(),
@@ -386,7 +386,7 @@ export default {
   'panel.border': ui.border.hex(),
   'panelTitle.activeBorder': ui.accent.hex(),
   'panelTitle.activeForeground': ui.text.hex(),
-  // 'panel.dropBackground': '#FF0000',
+  'panel.dropBackground': `${ui.background.drop.hex()}22`,
   // 'panelTitle.inactiveForeground': '#FF0000',
 
   /**
