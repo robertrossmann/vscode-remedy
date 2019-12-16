@@ -594,5 +594,5 @@ export default {
   /**
    * LintLens
    */
-  'lintlens.annotationColor': `${ui.text.hex()}33`,
+  'lintlens.annotationColor': `${ui.problems.hint.hex()}99`,
 }
