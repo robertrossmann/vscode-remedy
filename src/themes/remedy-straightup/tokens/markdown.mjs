@@ -22,11 +22,21 @@ const raw = {
 
 const links = {
   scope: markdown([
-    'string.other.link',
+    'constant.other.reference.link',
+    'markup.underline.link',
     'meta.link.reference',
   ]),
   settings: {
     foreground: code.links,
+  },
+}
+
+const linktitles = {
+  scope: markdown([
+    'string.other.link.title',
+  ]),
+  settings: {
+    foreground: code.headings,
   },
 }
 
@@ -54,6 +64,7 @@ export default [
   quotes,
   raw,
   links,
+  linktitles,
   bolds,
   italics,
 ]
