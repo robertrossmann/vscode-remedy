@@ -194,6 +194,7 @@ const headings = {
     'punctuation.definition.heading',
   ],
   settings: {
+    fontStyle: 'bold',
     foreground: code.headings,
   },
 }
