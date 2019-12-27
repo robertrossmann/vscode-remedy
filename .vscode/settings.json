@@ -1,6 +1,5 @@
 {
   "editor.wordWrapColumn": 100,
-  "eslint.autoFixOnSave": true,
   "eslint.enable": true,
   "eslint.options": {
     "reportUnusedDisableDirectives": true
@@ -22,8 +21,11 @@
   "triggerTaskOnSave.tasks": {
     "make:themes": [
       "**/*.mjs",
-      "babel.config.js",
+      "babel.config.js"
     ]
   },
-  "typescript.format.enable": false
+  "typescript.format.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
