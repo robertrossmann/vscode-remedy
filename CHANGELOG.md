@@ -1,3 +1,18 @@
+# [3.7.0](https://github.com/robertrossmann/vscode-remedy/compare/3.6.1...3.7.0) (2019-12-27)
+
+
+### Bug Fixes
+
+* change lintlens' decoration to be a problems->hint colour ([14b8111](https://github.com/robertrossmann/vscode-remedy/commit/14b811183332cf23d145b7213920b0cc25770022))
+* change markdown links to have consistent colouring ([0d70610](https://github.com/robertrossmann/vscode-remedy/commit/0d70610ab5f3fb2d5e9a88b77331132e1527f30b))
+* treat codeblock language IDs as punctuation ([7496b1c](https://github.com/robertrossmann/vscode-remedy/commit/7496b1cf43f9b809fce3062ad43a379f2f1b7947))
+* treat Front Matter code blocks as YAML ([749ae7e](https://github.com/robertrossmann/vscode-remedy/commit/749ae7ea5d17494d0dba813116ab0db95e8ed981))
+
+
+### Features
+
+* make all heading tokens bold ([ef2a120](https://github.com/robertrossmann/vscode-remedy/commit/ef2a120b97c458103d8351cf4e3eb06a3f8e8479))
+
 ## [3.6.1](https://github.com/robertrossmann/vscode-remedy/compare/3.6.0...3.6.1) (2019-12-10)
 
 
