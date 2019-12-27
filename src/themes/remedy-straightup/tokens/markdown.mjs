@@ -40,6 +40,15 @@ const linktitles = {
   },
 }
 
+const languages = {
+  scope: markdown([
+    'fenced_code.block.language',
+  ]),
+  settings: {
+    foreground: code.punctuation,
+  },
+}
+
 const bolds = {
   scope: markdown([
     'markup.bold',
@@ -65,6 +74,7 @@ export default [
   raw,
   links,
   linktitles,
+  languages,
   bolds,
   italics,
 ]
