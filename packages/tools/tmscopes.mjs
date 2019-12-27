@@ -18,7 +18,7 @@ const markdown = mkscope(['text.html.markdown', 'meta.embedded.block.markdown'])
 const php = mkscope(['source.php', 'meta.embedded.block.php'])
 const shell = mkscope(['source.shell', 'meta.embedded.block.shellscript'])
 const terraform = mkscope(['source.terraform', 'meta.embedded.block.terraform'])
-const yaml = mkscope(['source.yaml', 'meta.embedded.block.yaml'])
+const yaml = mkscope(['source.yaml', 'meta.embedded.block.yaml', 'meta.embedded.block.frontmatter'])
 
 export {
   cpp,
