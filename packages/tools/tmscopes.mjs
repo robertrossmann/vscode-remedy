@@ -1,4 +1,4 @@
-import { mkscope } from './prescope'
+import { mkscope } from '.'
 
 const cpp = mkscope(['source.cpp', 'meta.embedded.block.cpp'])
 const cs = mkscope(['source.cs', 'meta.embedded.block.csharp'])

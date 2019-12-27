@@ -1,5 +1,7 @@
-import { prescope } from './prescope'
+import { mkscope } from './mkscope'
+import * as tmscopes from './tmscopes'
 
 export {
-  prescope,
+  mkscope,
+  tmscopes,
 }
