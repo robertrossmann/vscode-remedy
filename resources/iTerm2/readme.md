@@ -1,4 +1,4 @@
-# Remedy - Terminal
+# Remedy - iTerm 2
 
 > An iTerm 2 profile matching the colours used in VS Code's Remedy theme. 🎨
 
