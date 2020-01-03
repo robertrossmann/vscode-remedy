@@ -20,6 +20,7 @@ module.exports = {
       assets: [
         { path: '*.vsix', label: 'remedy.vsix' },
         { path: 'resources/terminal/Remedy.terminal', label: 'Remedy.terminal' },
+        { path: 'resources/iTerm2/Remedy.itermcolors', label: 'Remedy.itermcolors'}
       ],
     }],
   ],
