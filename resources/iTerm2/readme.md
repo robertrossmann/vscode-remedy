@@ -15,10 +15,10 @@
 - Select the _Remedy.itermcolors_ file
 - Click on **Color Presets** and choose the Remedy color scheme
 
-After the installation you will likely want to fix/change the following settings:
+If you would like to make iTerm look like in the screenshot, you might want to customise the following settings:
 
 - Font (I use _Operator Mono_ with ligatures hacked into it 🤷‍)
-- Cursor
+- Cursor (I'm using 'Box')
 - Any other, non-colour-related settings
 
 Enjoy!
