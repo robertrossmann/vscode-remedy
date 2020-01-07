@@ -1,3 +1,10 @@
+## [3.7.1](https://github.com/robertrossmann/vscode-remedy/compare/3.7.0...3.7.1) (2020-01-07)
+
+
+### Bug Fixes
+
+* use correct outline icon colour for numbers ([716bfda](https://github.com/robertrossmann/vscode-remedy/commit/716bfda7fd8dc70be204c2dc9b69607cf08fd0a8))
+
 # [3.7.0](https://github.com/robertrossmann/vscode-remedy/compare/3.6.1...3.7.0) (2019-12-27)
 
 
