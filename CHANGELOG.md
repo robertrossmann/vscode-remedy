@@ -1,3 +1,17 @@
+# [3.8.0](https://github.com/robertrossmann/vscode-remedy/compare/3.7.1...3.8.0) (2020-01-07)
+
+
+### Bug Fixes
+
+* add color scheme to release assets ([cb50c20](https://github.com/robertrossmann/vscode-remedy/commit/cb50c20bd210703ce68920effdbe655040ba7157))
+* readme heading ([06f888a](https://github.com/robertrossmann/vscode-remedy/commit/06f888abeb0be747f7c1f8a059ed0bb9717a101f))
+* readme post-installation settings ([e07d66a](https://github.com/robertrossmann/vscode-remedy/commit/e07d66acc1a5db82966bb545bbb03d21f5172cbc))
+
+
+### Features
+
+* add iTerm2 color scheme ([41d5e96](https://github.com/robertrossmann/vscode-remedy/commit/41d5e964bf1f6d4ce5f974c87621b1dfdff2949d))
+
 ## [3.7.1](https://github.com/robertrossmann/vscode-remedy/compare/3.7.0...3.7.1) (2020-01-07)
 
 
