@@ -25,5 +25,5 @@ Enjoy!
 
 ![iTerm 2][screen-terminal]
 
-[screen-terminal]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/iterm2/iterm2.png
+[screen-terminal]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/iTerm2/iterm2.png
 [github-releases]: https://github.com/robertrossmann/vscode-remedy/releases/latest
