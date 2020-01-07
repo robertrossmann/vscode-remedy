@@ -1,0 +1,28 @@
+---
+name: Merge release into develop
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  sync:
+    runs-on: ubuntu-18.04
+    timeout-minutes: 5
+    env:
+      CI: 'true'
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Merge tag into develop
+        run: |
+          set -o errexit
+
+          git checkout develop
+          git merge ${{ github.ref }}
+
+          git status
+          git log --oneline
+
+          git push
