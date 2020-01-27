@@ -73,9 +73,12 @@ The following languages have been manually tweaked to provide best experience:
 
 ## Additional resources
 
-### MacOS Terminal
+### Terminals
 
-A MacOS Terminal profile [is also available](resources/terminal) if you'd like to have a consistent colour scheme in both Terminal & VS Code. ❤️
+We have some terminal profiles available for download as well. ❤️
+
+- [MacOS Terminal](resouces/terminal)
+- [iTerm2](resources/iTerm2)
 
 ## License
 
