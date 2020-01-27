@@ -151,7 +151,8 @@ export default {
   'list.activeSelectionForeground': ui.text.hex(),
   'list.focusBackground': `${ui.accent.hex()}BB`,
   'list.hoverBackground': `${ui.accent.hex()}22`,
-  'listFilterWidget.background': `${ui.accent.hex()}AA`,
+  'listFilterWidget.background': ui.accent.hex(),
+  'listFilterWidget.noMatchesOutline': ui.problems.error.hex(),
   'list.inactiveSelectionBackground': `${ui.accent.hex()}22`,
   'list.highlightForeground': ui.accent.hex(),
   'list.dropBackground': `${ui.background.drop.hex()}22`,
@@ -162,7 +163,6 @@ export default {
   // 'list.inactiveSelectionForeground': '#ff0000',
   // 'list.inactiveFocusBackground': '#ff0000',
   // 'listFilterWidget.outline': '#ff0000',
-  // 'listFilterWidget.noMatchesOutline': '#ff0000',
   // 'list.invalidItemForeground': '#ff0000',
 
   /**
