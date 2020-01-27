@@ -534,14 +534,14 @@ export default {
   'settings.checkboxBackground': ui.background.panel.hex(),
   'settings.textInputBackground': ui.background.panel.hex(),
   'settings.numberInputBackground': ui.background.panel.hex(),
-  // 'settings.dropdownForeground': '#FF0000',
+  'settings.dropdownForeground': code.raw,
+  'settings.textInputForeground': code.strings,
+  'settings.numberInputForeground': code.primitives,
   // 'settings.dropdownBorder': '#FF0000',
   // 'settings.dropdownListBorder': '#FF0000',
   // 'settings.checkboxForeground': '#FF0000',
   // 'settings.checkboxBorder': '#FF0000',
-  // 'settings.textInputForeground': '#FF0000',
   // 'settings.textInputBorder': '#FF0000',
-  // 'settings.numberInputForeground': '#FF0000',
   // 'settings.numberInputBorder': '#FF0000',
 
   /**
