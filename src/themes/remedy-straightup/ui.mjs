@@ -77,7 +77,7 @@ export default {
   'textBlockQuote.background': ui.background.panel.hex(),
   'textBlockQuote.border': ui.accent.hex(),
   'textCodeBlock.background': ui.background.code.hex(),
-  // 'textPreformat.foreground': '#FF0000',
+  'textPreformat.foreground': code.raw,
 
   /**
    * Button Control
