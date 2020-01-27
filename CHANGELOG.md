@@ -1,3 +1,20 @@
+# [3.9.0](https://github.com/robertrossmann/vscode-remedy/compare/3.8.0...3.9.0) (2020-01-27)
+
+
+### Bug Fixes
+
+* use the same colour for preformatted text in UI and Markdown ([1ee76a2](https://github.com/robertrossmann/vscode-remedy/commit/1ee76a20ecfe8e5ae7de8c63093d324be27400a7))
+* use theme text colour for active items in lists ([f1d8150](https://github.com/robertrossmann/vscode-remedy/commit/f1d8150ec7f943a13f4584723b2b454c4092382b))
+* use theme text colour for activity bar badges ([c19b6ad](https://github.com/robertrossmann/vscode-remedy/commit/c19b6ad7fd7c15c0a9e027f6fc44e0c5ac187543))
+
+
+### Features
+
+* improve list filter widget colouring ([f41c4bf](https://github.com/robertrossmann/vscode-remedy/commit/f41c4bffa32bba796741fbf0ee39c0de2974160c))
+* make input placeholders more dim ([55acd3e](https://github.com/robertrossmann/vscode-remedy/commit/55acd3efa9a2a829eaa7296e69cfc9492d37794c))
+* style settings' input foregrounds according to code tokens ([379d47e](https://github.com/robertrossmann/vscode-remedy/commit/379d47e0c5a19630c9b20874b18188b4069ab976))
+* use theme colours for input validation boxes ([2d7e0c2](https://github.com/robertrossmann/vscode-remedy/commit/2d7e0c27b83f301aad4f3254615476f535c6b848))
+
 # [3.8.0](https://github.com/robertrossmann/vscode-remedy/compare/3.7.1...3.8.0) (2020-01-07)
 
 
