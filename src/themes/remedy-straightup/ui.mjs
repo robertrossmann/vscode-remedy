@@ -107,17 +107,18 @@ export default {
    */
   'input.background': ui.background.code.hex(),
   'input.placeholderForeground': `${ui.text.hex()}99`,
+  'inputValidation.errorBackground': ui.problems.error.hex(),
+  'inputValidation.errorBorder': ui.problems.error.hex(),
+  'inputValidation.warningBackground': ui.problems.warning.hex(),
+  'inputValidation.warningBorder': ui.problems.warning.hex(),
+  'inputValidation.infoBackground': ui.problems.info.hex(),
+  'inputValidation.infoBorder': ui.problems.info.hex(),
   // 'input.border': '#FF0000',
-  // 'input.foreground': '#FF0000',
+  // 'input.foreground': '#ff0000',
   // 'inputOption.activeBorder': '#FF0000',
-  // 'inputValidation.errorBackground': '#FF0000',
   // 'inputValidation.errorForeground': '#FF0000',
-  // 'inputValidation.errorBorder': '#FF0000',
-  // 'inputValidation.infoBackground': '#FF0000',
+  // 'inputValidation.warningForeground': '#ff0000',
   // 'inputValidation.infoForeground': '#FF0000',
-  // 'inputValidation.infoBorder': '#FF0000',
-  // 'inputValidation.warningBackground': '#FF0000',
-  // 'inputValidation.warningForeground': '#FF0000',
 
   /**
    * Scrollbar Control
