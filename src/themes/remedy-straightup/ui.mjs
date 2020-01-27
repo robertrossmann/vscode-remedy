@@ -106,7 +106,7 @@ export default {
    * Colors for input controls such as in the Search view or the Find/Replace dialog.
    */
   'input.background': ui.background.code.hex(),
-  'input.placeholderForeground': `${ui.text.hex()}99`,
+  'input.placeholderForeground': `${ui.text.hex()}44`,
   'inputValidation.errorBackground': ui.problems.error.hex(),
   'inputValidation.errorBorder': ui.problems.error.hex(),
   'inputValidation.warningBackground': ui.problems.warning.hex(),
