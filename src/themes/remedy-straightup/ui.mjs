@@ -178,9 +178,9 @@ export default {
   'activityBar.foreground': ui.text.hex(),
   'activityBar.inactiveForeground': ui.text.darken(0.6).desaturate(0.8).hex(),
   'activityBarBadge.background': ui.accent.hex(),
+  'activityBarBadge.foreground': ui.text.hex(),
   'activityBar.dropBackground': `${ui.background.drop.hex()}22`,
   // 'activityBar.activeBackground': '#ff0000',
-  // 'activityBarBadge.foreground': '#ff0000',
 
   /**
    * Side Bar
