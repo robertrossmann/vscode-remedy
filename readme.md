@@ -15,7 +15,9 @@ they look identical not just for a single language but also across all languages
 annotations, classes, language keywords etc. have the same colour regardless of the language you
 use). I believe I achieved that goal. 😍
 
-**Best used with [Operator Mono][operator-link].**
+> Best used with [Operator Mono][operator-link].
+
+![Showcase][screen-main]
 
 </div>
 
@@ -84,6 +86,7 @@ See the [LICENSE](LICENSE) file for information.
 [marketplace-badge]: https://img.shields.io/badge/Download%20On-Marketplace-brightgreen.svg?style=flat-square
 [marketplace-link]: https://marketplace.visualstudio.com/items?itemName=robertrossmann.remedy
 [operator-link]: https://www.typography.com/fonts/operator/styles/operatormono
+[screen-main]: https://user-images.githubusercontent.com/3058150/73192537-758f1f80-4129-11ea-82b6-730062082ebc.png
 [sceen-gui]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/gui.png
 [screen-peekview]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/peekview.png
 [screen-search]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/search.png
