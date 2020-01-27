@@ -148,6 +148,7 @@ export default {
    */
   'tree.indentGuidesStroke': `${ui.text.hex()}44`,
   'list.activeSelectionBackground': `${ui.accent.hex()}99`,
+  'list.activeSelectionForeground': ui.text.hex(),
   'list.focusBackground': `${ui.accent.hex()}BB`,
   'list.hoverBackground': `${ui.accent.hex()}22`,
   'listFilterWidget.background': `${ui.accent.hex()}AA`,
@@ -156,7 +157,6 @@ export default {
   'list.dropBackground': `${ui.background.drop.hex()}22`,
   'list.errorForeground': ui.problems.error.hex(),
   'list.warningForeground': ui.problems.warning.hex(),
-  // 'list.activeSelectionForeground': '#ff0000',
   // 'list.focusForeground': '#ff0000',
   // 'list.hoverForeground': '#ff0000',
   // 'list.inactiveSelectionForeground': '#ff0000',
