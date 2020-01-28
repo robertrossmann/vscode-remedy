@@ -8,7 +8,7 @@ export default {
   focusBorder: `${ui.accent.hex()}66`,
   foreground: ui.text.hex(),
   'widget.shadow': ui.border.hex(),
-  'selection.background': `${ui.text.hex()}22`,
+  'selection.background': `${ui.text.hex()}44`,
   descriptionForeground: ui.text.hex(),
 
   /**
