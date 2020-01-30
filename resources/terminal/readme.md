@@ -6,15 +6,15 @@
 
 Download the _Remedy.terminal_ file from the [latest release assets][github-releases] on Github or from this directory and open it. It will get added to your Terminal's profiles from where you can make this profile the default one - all subsequent Terminal windows will then use this profile.
 
-After the intallation you will likely want to fix/change the following settings:
+Since a Terminal profile contains almost all the available settings and not just colours, you will likely want to fix/change the following settings after installation:
 
-- Font (I use _Operator Mono_ with ligatures hacked into it 🤷‍)
+- Font (I use _Operator Mono_ with ligatures hacked into it 🤷‍). You probably won't have the same font installed as I have.
 - Cursor
 - Any other, non-colour-related settings
 
 Enjoy!
 
-![Terminal][sceen-terminal]
+[![Terminal screenshot][sceen-terminal]][sceen-terminal]
 
 [sceen-terminal]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/terminal/terminal.png
 [github-releases]: https://github.com/robertrossmann/vscode-remedy/releases/latest

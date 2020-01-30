@@ -5,20 +5,13 @@
 ## Installation
 
 - Download the _Remedy.itermcolors_ file from the [latest release assets][github-releases] on Github or from this directory
-- Launch iTerm 2
-- Click on **iTerm2** menu title
-- Select **Preferences...** option
-- Select **Profiles**
-- Navigate to **Colors** tab
-- Click on **Color Presets**
-- Click on **Import**
-- Select the _Remedy.itermcolors_ file
-- Click on **Color Presets** and choose the Remedy color scheme
+- Open the downloaded _Remedy.itermcolors_ file - it should be imported to iTerm autoamtically
+- To activate the colour theme, go to iTerm's _Preferences_ -> _Profiles_ -> _Colors_ -> _Color Presets_ and select _Remedy_ from the list
 
 If you would like to make iTerm look like in the screenshot, you might want to customise the following settings:
 
 - Font (I use _Operator Mono_ with ligatures hacked into it 🤷‍)
-- Cursor (I'm using 'Box')
+- Cursor (I'm using _Box_)
 - Any other, non-colour-related settings
 
 Enjoy!
