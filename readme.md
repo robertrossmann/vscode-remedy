@@ -77,7 +77,7 @@ The following languages have been manually tweaked to provide best experience:
 
 We have some terminal profiles available for download as well. ❤️
 
-- [MacOS Terminal](resouces/terminal)
+- [MacOS Terminal](resources/terminal)
 - [iTerm2](resources/iTerm2)
 
 ## License
