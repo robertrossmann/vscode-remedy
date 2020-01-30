@@ -17,7 +17,7 @@ use). I believe I achieved that goal. 😍
 
 > Best used with [Operator Mono][operator-link].
 
-![Showcase][screen-main]
+[![Showcase][screen-main]][screen-main]
 
 </div>
 
@@ -53,23 +53,23 @@ The following languages have been manually tweaked to provide best experience:
 
 ### UI
 
-![UI][sceen-gui]
+[![UI][screen-gui]][screen-gui]
 
 ### Peek View
 
-![Peek View][screen-peekview]
+[![Peek View][screen-peekview]][screen-peekview]
 
 ### Find & Replace
 
-![Find & Replace][screen-search]
+[![Find & Replace][screen-search]][screen-search]
 
 ### GitLens
 
-![GitLens][screen-gitlens]
+[![GitLens][screen-gitlens]][screen-gitlens]
 
 ### Diffs
 
-![Diffs][screen-diff]
+[![Diffs][screen-diff]][screen-diff]
 
 ## Additional resources
 
@@ -90,7 +90,7 @@ See the [LICENSE](LICENSE) file for information.
 [marketplace-link]: https://marketplace.visualstudio.com/items?itemName=robertrossmann.remedy
 [operator-link]: https://www.typography.com/fonts/operator/styles/operatormono
 [screen-main]: https://user-images.githubusercontent.com/3058150/73192537-758f1f80-4129-11ea-82b6-730062082ebc.png
-[sceen-gui]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/gui.png
+[screen-gui]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/gui.png
 [screen-peekview]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/peekview.png
 [screen-search]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/search.png
 [screen-gitlens]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/gitlens.png
