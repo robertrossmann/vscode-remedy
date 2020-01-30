@@ -1,3 +1,11 @@
+## [3.9.1](https://github.com/robertrossmann/vscode-remedy/compare/3.9.0...3.9.1) (2020-01-30)
+
+
+### Bug Fixes
+
+* make workbench text selections more prominent ([5e12098](https://github.com/robertrossmann/vscode-remedy/commit/5e12098bb63358b13a4da4b83111b57ae2515ecb))
+* use correct link to Terminal profile in readme ([3cf0b6c](https://github.com/robertrossmann/vscode-remedy/commit/3cf0b6c9f2bf53b8ffa516571654b63b6573b793))
+
 # [3.9.0](https://github.com/robertrossmann/vscode-remedy/compare/3.8.0...3.9.0) (2020-01-27)
 
 
