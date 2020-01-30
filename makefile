@@ -69,6 +69,9 @@ distclean: clean
 pristine: distclean
 	rm -rf node_modules
 
+release: force
+	@utils/make/release.sh
+
 .PHONY: force
 
 -include local.mk

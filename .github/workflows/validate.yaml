@@ -3,9 +3,6 @@ name: Validate
 
 on:
   push:
-    branches-ignore:
-      # Commits in master must already pass the Validate check done on another branch/PR.
-      - master
   pull_request:
 
 jobs:
@@ -16,7 +13,10 @@ jobs:
       CI: 'true'
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 50
+
       - uses: actions/setup-node@v1
         with:
           node-version: 12

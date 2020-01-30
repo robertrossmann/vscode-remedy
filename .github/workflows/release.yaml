@@ -4,7 +4,7 @@ name: Release
 on:
   push:
     branches:
-      - master
+      - release
 
 jobs:
   release:
@@ -14,7 +14,10 @@ jobs:
       CI: 'true'
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 50
+
       - uses: actions/setup-node@v1
         with:
           node-version: 12
@@ -37,3 +40,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
+
+      - name: Post-release sync
+        run: ./utils/ci/sync.sh
+        if: success()
