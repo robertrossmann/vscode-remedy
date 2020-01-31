@@ -23,6 +23,17 @@ const scm = {
   },
 }
 
+const highlight = {
+  line: text,
+  word: {
+    current: text,
+    source: accent,
+  },
+  selection: text,
+  hover: text,
+  range: text,
+}
+
 const problems = {
   error: normal.red,
   warning: normal.yellow,
@@ -82,6 +93,7 @@ export {
   text,
   accent,
   scm,
+  highlight,
   problems,
   debug,
   terminal,
