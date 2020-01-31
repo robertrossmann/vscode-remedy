@@ -3,7 +3,7 @@
 module.exports = {
   // eslint-disable-next-line no-template-curly-in-string
   tagFormat: '${version}',
-  branch: 'master',
+  branch: 'release',
   plugins: [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
@@ -20,7 +20,7 @@ module.exports = {
       assets: [
         { path: '*.vsix', label: 'remedy.vsix' },
         { path: 'resources/terminal/Remedy.terminal', label: 'Remedy.terminal' },
-        { path: 'resources/iTerm2/Remedy.itermcolors', label: 'Remedy.itermcolors'}
+        { path: 'resources/iTerm2/Remedy.itermcolors', label: 'Remedy.itermcolors' },
       ],
     }],
   ],
