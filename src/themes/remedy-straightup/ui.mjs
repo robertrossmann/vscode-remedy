@@ -279,7 +279,7 @@ export default {
   // 'editor.selectionForeground': '#FF0000',
   // 'editor.findRangeHighlightBorder': '#FF0000',
   // CodeLens
-  'editorCodeLens.foreground': `${ui.text.hex()}66`,
+  'editorCodeLens.foreground': ui.text.darken(0.6).desaturate(0.7).hex(),
   // Bracket Matches
   'editorBracketMatch.background': `${ui.text.hex()}11`,
   'editorBracketMatch.border': `${ui.text.hex()}33`,
@@ -547,7 +547,7 @@ export default {
   /**
    * Breadcrumbs
    */
-  'breadcrumb.foreground': `${ui.text.hex()}66`,
+  'breadcrumb.foreground': ui.text.darken(0.6).desaturate(0.7).hex(),
   'breadcrumb.focusForeground': ui.accent.hex(),
   'breadcrumb.activeSelectionForeground': ui.accent.hex(),
   'breadcrumbPicker.background': ui.background.panel.hex(),
