@@ -1,3 +1,11 @@
+# [3.10.0](https://github.com/robertrossmann/vscode-remedy/compare/3.9.1...3.10.0) (2020-01-31)
+
+
+### Features
+
+* completely overhaul selections, highlights, ranges 🎉 ([931c0cb](https://github.com/robertrossmann/vscode-remedy/commit/931c0cba81d9f4d55a06295efb7e7241ad4a5209))
+* match codelens & breadcrumbs' colour to gutter line numbers ([bd61655](https://github.com/robertrossmann/vscode-remedy/commit/bd616557d0010374732440ec40f0e64e979fab53))
+
 ## [3.9.1](https://github.com/robertrossmann/vscode-remedy/compare/3.9.0...3.9.1) (2020-01-30)
 
 
