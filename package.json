@@ -12,20 +12,20 @@
   "contributes": {
     "themes": [
       {
-        "label": "Remedy - Straight Up",
-        "uiTheme": "vs-dark",
-        "path": "./themes/remedy-straightup-color-theme.json"
+        "label": "Remedy - Bright",
+        "uiTheme": "vs",
+        "path": "./themes/bright-color-theme.json"
       },
       {
-        "label": "Remedy - Tilted",
+        "label": "Remedy - Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/remedy-tilted-color-theme.json"
+        "path": "./themes/dark-color-theme.json"
       }
     ]
   },
   "dependencies": {
-    "@remedy/palette": "file:packages/palette",
-    "@remedy/tools": "file:packages/tools"
+    "@remedy/tools": "file:packages/tools",
+    "@remedy/generators": "file:packages/generators"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",

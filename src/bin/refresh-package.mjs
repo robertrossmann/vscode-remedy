@@ -11,7 +11,7 @@ const metadata = themefiles.map(file => {
 
   return {
     label: theme.name,
-    uiTheme: `vs-${theme.type}`,
+    uiTheme: theme.type,
     path: `${file.replace('src/', './')}-color-theme.json`,
   }
 })

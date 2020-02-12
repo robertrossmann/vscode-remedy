@@ -1,13 +1,25 @@
-import { base, text, normal, bright } from './colours'
+import { base, foreground, normal, bright } from './colours'
 
-const background = {
-  code: base.lighten(0.2).desaturate(0.1),
-  panel: base,
-  drop: text,
+const text = {
+  primary: foreground,
+  secondary: foreground.lighten(1).desaturate(0.5),
+  dimmed: foreground.lighten(2).desaturate(0.8),
 }
 
-const border = background.panel.darken(0.2)
+const background = {
+  code: base.lighten(0.035),
+  panel: base,
+  drop: text.primary,
+}
+
+const border = background.panel.darken(0.15).desaturate(0.3)
+const shadow = text.dimmed
 const accent = normal.orange
+
+const icon = {
+  foreground: text.primary,
+  inactive: text.dimmed,
+}
 
 const scm = {
   added: bright.green,
@@ -15,7 +27,7 @@ const scm = {
   deleted: bright.red,
   conflicting: bright.yellow,
   untracked: normal.white,
-  ignored: text.darken(0.6).desaturate(0.8),
+  ignored: text.dimmed,
   conflicts: {
     current: bright.green,
     incoming: bright.blue,
@@ -24,14 +36,14 @@ const scm = {
 }
 
 const highlight = {
-  line: text,
+  line: text.primary,
   word: {
-    current: text,
+    current: text.primary,
     source: accent,
   },
-  selection: text,
-  hover: text,
-  range: text,
+  selection: text.primary,
+  hover: text.primary,
+  range: text.primary,
 }
 
 const problems = {
@@ -90,8 +102,10 @@ const terminal = {
 export {
   background,
   border,
+  shadow,
   text,
   accent,
+  icon,
   scm,
   highlight,
   problems,

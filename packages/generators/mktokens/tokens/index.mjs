@@ -9,17 +9,19 @@ import markdown from './markdown'
 import shell from './shell'
 import html from './html'
 import keyvaluelike from './keyvaluelike'
+import tilted from './tilted'
 
-export default [
-  ...common,
-  ...javascript,
-  ...java,
-  ...css,
-  ...csharp,
-  ...cpp,
-  ...makefile,
-  ...markdown,
-  ...shell,
-  ...html,
-  ...keyvaluelike,
-]
+export {
+  common,
+  javascript,
+  java,
+  css,
+  csharp,
+  cpp,
+  makefile,
+  markdown,
+  shell,
+  html,
+  keyvaluelike,
+  tilted,
+}

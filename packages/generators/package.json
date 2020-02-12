@@ -1,0 +1,7 @@
+{
+  "name": "@remedy/generators",
+  "version": "1.0.0",
+  "dependencies": {
+    "@remedy/tools": "*"
+  }
+}
