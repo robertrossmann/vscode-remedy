@@ -1,3 +1,17 @@
+# [4.0.0](https://github.com/robertrossmann/vscode-remedy/compare/3.10.0...4.0.0) (2020-02-12)
+
+
+### Features
+
+* implement bright variant 🎉 ([b592fac](https://github.com/robertrossmann/vscode-remedy/commit/b592fac60f55e34cc11842e0b1baefd0293f2ac4))
+
+
+### BREAKING CHANGES
+
+* The theme now offers both dark and bright variant!
+
+The tilted variants have been removed, for now, at least. I might add them back in a later release.
+
 # [3.10.0](https://github.com/robertrossmann/vscode-remedy/compare/3.9.1...3.10.0) (2020-01-31)
 
 
