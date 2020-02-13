@@ -91,7 +91,7 @@ See the [LICENSE](LICENSE) file for information.
 [marketplace-link]: https://marketplace.visualstudio.com/items?itemName=robertrossmann.remedy
 [operator-link]: https://www.typography.com/fonts/operator/styles/operatormono
 [screen-dark]: https://user-images.githubusercontent.com/3058150/73192537-758f1f80-4129-11ea-82b6-730062082ebc.png
-[screen-bright]: https://user-images.githubusercontent.com/3058150/74385316-91fead80-4df3-11ea-93d2-099405d61f9c.png
+[screen-bright]: https://user-images.githubusercontent.com/3058150/74436488-d7a88e00-4e66-11ea-8d06-ce9129de16f1.png
 [screen-gui]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/gui.png
 [screen-peekview]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/peekview.png
 [screen-search]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/search.png
