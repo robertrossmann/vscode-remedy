@@ -27,7 +27,7 @@
         "path": "./themes/dark-color-theme.json"
       },
       {
-        "label": "Remedy - Dark (tilted)",
+        "label": "Remedy - Dark (Tilted)",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-tilted-color-theme.json"
       }
