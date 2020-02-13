@@ -1,6 +1,6 @@
 import * as tokens from './tokens'
 
-function mktokens({ code, colours }) {
+function mktokens({ code, colours, tilts = false }) {
   return [
     ...tokens.common({ code }),
     ...tokens.cpp({ code }),
@@ -13,7 +13,7 @@ function mktokens({ code, colours }) {
     ...tokens.makefile({ code, colours }),
     ...tokens.markdown({ code, colours }),
     ...tokens.shell({ code }),
-    ...tokens.tilted,
+    ...tilts ? tokens.tilted : [],
   ]
 }
 

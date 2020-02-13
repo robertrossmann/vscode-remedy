@@ -4,7 +4,7 @@ import * as code from './code'
 import * as colours from './colours'
 
 export default {
-  name: 'Remedy - Bright',
+  name: 'Remedy - Bright (Straight)',
   type: 'vs',
   colors: mkui({ ui, code }),
   tokenColors: mktokens({ code, colours }),

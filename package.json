@@ -12,14 +12,24 @@
   "contributes": {
     "themes": [
       {
-        "label": "Remedy - Bright",
+        "label": "Remedy - Bright (Straight)",
         "uiTheme": "vs",
         "path": "./themes/bright-color-theme.json"
       },
       {
-        "label": "Remedy - Dark",
+        "label": "Remedy - Bright (Tilted)",
+        "uiTheme": "vs",
+        "path": "./themes/bright-tilted-color-theme.json"
+      },
+      {
+        "label": "Remedy - Dark (Straight)",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-color-theme.json"
+      },
+      {
+        "label": "Remedy - Dark (tilted)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-tilted-color-theme.json"
       }
     ]
   },
