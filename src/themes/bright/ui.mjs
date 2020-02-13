@@ -3,11 +3,11 @@ import { base, foreground, normal, bright } from './colours'
 const text = {
   primary: foreground,
   secondary: foreground.lighten(1).desaturate(0.5),
-  dimmed: foreground.lighten(2).desaturate(0.8),
+  dimmed: foreground.lighten(2).desaturate(0.5),
 }
 
 const background = {
-  code: base.lighten(0.035),
+  code: base.lighten(0.03).desaturate(0.2),
   panel: base,
   drop: text.primary,
 }

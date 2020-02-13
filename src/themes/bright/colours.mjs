@@ -1,6 +1,6 @@
 import * as color from 'color'
 
-const base = color('#f0e4d1')
+const base = color('#F9E7C4')
 const normal = {
   black: color('#282A2E'),
   blue: color('#5F819D'),
