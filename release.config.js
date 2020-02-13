@@ -3,7 +3,7 @@
 module.exports = {
   // eslint-disable-next-line no-template-curly-in-string
   tagFormat: '${version}',
-  branch: 'release',
+  branches: 'release',
   plugins: [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
