@@ -1,3 +1,11 @@
+# [4.1.0](https://github.com/robertrossmann/vscode-remedy/compare/4.0.0...4.1.0) (2020-02-13)
+
+
+### Features
+
+* re-introduce straight & tilted variants 🍻 ([2fb504c](https://github.com/robertrossmann/vscode-remedy/commit/2fb504ce2ec7788cebda85c67cf378e771d24d76)), closes [#7](https://github.com/robertrossmann/vscode-remedy/issues/7)
+* use the same colour for bright's base as dark's text ([40668ce](https://github.com/robertrossmann/vscode-remedy/commit/40668ce41de01c9ef3a15e137388f8290ae15943))
+
 # [4.0.0](https://github.com/robertrossmann/vscode-remedy/compare/3.10.0...4.0.0) (2020-02-12)
 
 
