@@ -1,3 +1,10 @@
+# [4.2.0](https://github.com/robertrossmann/vscode-remedy/compare/4.1.0...4.2.0) (2020-02-29)
+
+
+### Features
+
+* add support for Bookmarks' v11 colour contributions 🎨 ([5eb3e02](https://github.com/robertrossmann/vscode-remedy/commit/5eb3e02ad4c6f1b6b03fcdd75db64b18de8bc880)), closes [/github.com/alefragnani/vscode-bookmarks/blob/master/CHANGELOG.md#1100---2020-02-17](https://github.com//github.com/alefragnani/vscode-bookmarks/blob/master/CHANGELOG.md/issues/1100---2020-02-17)
+
 # [4.1.0](https://github.com/robertrossmann/vscode-remedy/compare/4.0.0...4.1.0) (2020-02-13)
 
 
