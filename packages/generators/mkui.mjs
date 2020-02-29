@@ -601,6 +601,13 @@ function mkui({ ui, code }) {
      * LintLens
      */
     'lintlens.annotationColor': `${ui.problems.hint.hex()}99`,
+
+    /**
+     * Bookmarks
+     */
+    'bookmarks.overviewRuler': ui.problems.info.hex(),
+    'bookmarks.lineBackground': `${ui.problems.info.hex()}11`,
+    'bookmarks.lineBorder': `${ui.problems.info.hex()}66`,
   }
 }
 
