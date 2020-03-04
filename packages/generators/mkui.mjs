@@ -199,6 +199,7 @@ function mkui({ ui, code }) {
      *
      * The Minimap shows a minified version of the current file.
      */
+    'minimap.background': ui.background.panel.hex(),
     'minimap.findMatchHighlight': `${ui.highlight.word.current.hex()}44`,
     'minimap.selectionHighlight': `${ui.text.primary.hex()}AA`,
     'minimap.errorHighlight': ui.problems.error.hex(),
@@ -206,6 +207,8 @@ function mkui({ ui, code }) {
     'minimapGutter.addedBackground': ui.scm.added.hex(),
     'minimapGutter.modifiedBackground': ui.scm.modified.hex(),
     'minimapGutter.deletedBackground': ui.scm.deleted.hex(),
+    // 'minimapSlider.hoverBackground': '#ff0000',
+    // 'minimapSlider.background': '#ff0000',
 
     /**
      * Editor Groups & Tabs
