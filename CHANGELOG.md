@@ -1,3 +1,10 @@
+# [4.3.0](https://github.com/robertrossmann/vscode-remedy/compare/4.2.0...4.3.0) (2020-03-10)
+
+
+### Features
+
+* use panel background colour for minimap ([dca6802](https://github.com/robertrossmann/vscode-remedy/commit/dca680221f585ba4796d66b575244d473bc6f126))
+
 # [4.2.0](https://github.com/robertrossmann/vscode-remedy/compare/4.1.0...4.2.0) (2020-02-29)
 
 
