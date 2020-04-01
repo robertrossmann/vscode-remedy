@@ -421,9 +421,9 @@ function mkui({ ui, code }) {
      */
     'titleBar.border': ui.border.hex(),
     'titleBar.activeBackground': ui.background.panel.hex(),
+    'titleBar.inactiveBackground': ui.background.code.hex(),
     'titleBar.activeForeground': ui.text.primary.hex(),
-    // 'titleBar.inactiveBackground': '#FF0000',
-    // 'titleBar.inactiveForeground': '#FF0000',
+    'titleBar.inactiveForeground': ui.text.secondary.hex(),
 
     /**
      * Menu Bar Colours
