@@ -388,8 +388,8 @@ function mkui({ ui, code }) {
     'panel.border': ui.border.hex(),
     'panelTitle.activeBorder': ui.accent.hex(),
     'panelTitle.activeForeground': ui.text.primary.hex(),
+    'panelTitle.inactiveForeground': ui.text.secondary.hex(),
     'panel.dropBackground': `${ui.background.drop.hex()}22`,
-    // 'panelTitle.inactiveForeground': '#FF0000',
 
     /**
      * Status Bar Colours
