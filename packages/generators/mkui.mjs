@@ -105,7 +105,7 @@ function mkui({ ui, code }) {
      */
     'input.background': ui.background.code.hex(),
     'input.border': ui.border.hex(),
-    'input.placeholderForeground': `${ui.text.primary.hex()}44`,
+    'input.placeholderForeground': ui.text.secondary.hex(),
     'inputValidation.errorBackground': ui.problems.error.hex(),
     'inputValidation.errorBorder': ui.problems.error.hex(),
     'inputValidation.warningBackground': ui.problems.warning.hex(),
