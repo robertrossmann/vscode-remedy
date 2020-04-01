@@ -542,6 +542,7 @@ function mkui({ ui, code }) {
     'settings.checkboxBackground': ui.background.panel.hex(),
     'settings.textInputBackground': ui.background.panel.hex(),
     'settings.numberInputBackground': ui.background.panel.hex(),
+    'settings.checkboxForeground': code.primitives,
     'settings.dropdownForeground': code.raw,
     'settings.textInputForeground': code.strings,
     'settings.numberInputForeground': code.primitives,
@@ -550,7 +551,6 @@ function mkui({ ui, code }) {
     'settings.checkboxBorder': ui.border.hex(),
     'settings.textInputBorder': ui.border.hex(),
     'settings.numberInputBorder': ui.border.hex(),
-    // 'settings.checkboxForeground': '#FF0000',
 
     /**
      * Breadcrumbs
