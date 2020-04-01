@@ -1,3 +1,19 @@
+# [4.5.0](https://github.com/robertrossmann/vscode-remedy/compare/4.4.0...4.5.0) (2020-04-01)
+
+
+### Bug Fixes
+
+* apply theme colours to the app's title bar when inactive ([bdc30be](https://github.com/robertrossmann/vscode-remedy/commit/bdc30be55de885e406d3fbfcfa7ebf59439fa942))
+* use a colour for input placeholder text with better contrast ([c477f92](https://github.com/robertrossmann/vscode-remedy/commit/c477f92b096833c8fc3197d4f966d9ddf5125067))
+
+
+### Features
+
+* add border around active input options ([2114256](https://github.com/robertrossmann/vscode-remedy/commit/2114256559624c8f0976d3074d9114f68de750bf))
+* apply theme colours to input borders ([fc2914c](https://github.com/robertrossmann/vscode-remedy/commit/fc2914c0dd4bdd0aabdc08bd057b811df7944057))
+* use the same colour for Settings' checkboxes as booleans in code ([c98eefe](https://github.com/robertrossmann/vscode-remedy/commit/c98eefefac579f6b0c48cc4df685229cbfcd16bb))
+* use theme colour for inactive panel titles ([4a16cb7](https://github.com/robertrossmann/vscode-remedy/commit/4a16cb773571c88b2cf98712a30d1e9d3046dce0))
+
 # [4.4.0](https://github.com/robertrossmann/vscode-remedy/compare/4.3.0...4.4.0) (2020-04-01)
 
 
