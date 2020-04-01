@@ -95,8 +95,8 @@ function mkui({ ui, code }) {
      */
     'dropdown.background': ui.background.panel.hex(),
     'dropdown.foreground': ui.text.primary.hex(),
+    'dropdown.border': ui.border.hex(),
     // 'dropdown.listBackground': '#FF0000',
-    // 'dropdown.border': '#FF0000',
 
     /**
      * Input Control
@@ -104,6 +104,7 @@ function mkui({ ui, code }) {
      * Colors for input controls such as in the Search view or the Find/Replace dialog.
      */
     'input.background': ui.background.code.hex(),
+    'input.border': ui.border.hex(),
     'input.placeholderForeground': `${ui.text.primary.hex()}44`,
     'inputValidation.errorBackground': ui.problems.error.hex(),
     'inputValidation.errorBorder': ui.problems.error.hex(),
@@ -111,7 +112,6 @@ function mkui({ ui, code }) {
     'inputValidation.warningBorder': ui.problems.warning.hex(),
     'inputValidation.infoBackground': ui.problems.info.hex(),
     'inputValidation.infoBorder': ui.problems.info.hex(),
-    // 'input.border': '#FF0000',
     // 'input.foreground': '#ff0000',
     // 'inputOption.activeBorder': '#FF0000',
     // 'inputValidation.errorForeground': '#FF0000',
@@ -545,12 +545,12 @@ function mkui({ ui, code }) {
     'settings.dropdownForeground': code.raw,
     'settings.textInputForeground': code.strings,
     'settings.numberInputForeground': code.primitives,
-    // 'settings.dropdownBorder': '#FF0000',
-    // 'settings.dropdownListBorder': '#FF0000',
+    'settings.dropdownBorder': ui.border.hex(),
+    'settings.dropdownListBorder': ui.border.hex(),
+    'settings.checkboxBorder': ui.border.hex(),
+    'settings.textInputBorder': ui.border.hex(),
+    'settings.numberInputBorder': ui.border.hex(),
     // 'settings.checkboxForeground': '#FF0000',
-    // 'settings.checkboxBorder': '#FF0000',
-    // 'settings.textInputBorder': '#FF0000',
-    // 'settings.numberInputBorder': '#FF0000',
 
     /**
      * Breadcrumbs
