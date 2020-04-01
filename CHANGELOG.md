@@ -1,3 +1,17 @@
+# [4.4.0](https://github.com/robertrossmann/vscode-remedy/compare/4.3.0...4.4.0) (2020-04-01)
+
+
+### Bug Fixes
+
+* apply theme colours to inactive tab foregrounds ([a8f6b4e](https://github.com/robertrossmann/vscode-remedy/commit/a8f6b4e509f4e34ffe61716f2f3083d3e17ac1ab))
+* update colours for secondary and dimmed text variants ([19e18dd](https://github.com/robertrossmann/vscode-remedy/commit/19e18ddfbacf6eb2267f412aee5a5c81a780c578))
+* use colour contributions for light themes for Error Lens ([2fa4519](https://github.com/robertrossmann/vscode-remedy/commit/2fa4519f1800b95656eed8f558a68f10e798a992))
+
+
+### Features
+
+* add border below tab groups ([36b031b](https://github.com/robertrossmann/vscode-remedy/commit/36b031bc74b65a8d2c7db975cbd3cd3ad88eddb2))
+
 # [4.3.0](https://github.com/robertrossmann/vscode-remedy/compare/4.2.0...4.3.0) (2020-03-10)
 
 
