@@ -2,8 +2,8 @@ import { base, foreground, normal, bright } from './colours'
 
 const text = {
   primary: foreground,
-  secondary: foreground.lighten(1).desaturate(0.5),
-  dimmed: foreground.lighten(2).desaturate(0.5),
+  secondary: foreground.lighten(0.9).desaturate(0.5),
+  dimmed: foreground.lighten(1.6).desaturate(0.5),
 }
 
 const background = {
