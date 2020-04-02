@@ -4,7 +4,23 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "make:install",
+      "detail": "Install Node.js dependencies",
+      "type": "process",
+      "command": "make",
+      "args": [
+        "install"
+      ],
+      "group": "build",
+      "presentation": {
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
       "label": "make:themes",
+      "detail": "Compile the sources into the final theme files",
       "type": "process",
       "command": "make",
       "args": [
@@ -18,6 +34,39 @@
         "reveal": "silent",
         "clear": true
       },
+      "problemMatcher": []
+    },
+    {
+      "label": "make:lint",
+      "detail": "Lint the project",
+      "type": "process",
+      "command": "make",
+      "args": [
+        "lint"
+      ],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "silent",
+        "clear": true
+      },
+      "problemMatcher": "$eslint-stylish"
+    },
+    {
+      "label": "make:pristine",
+      "detail": "Remove all compiled artifacts and drop node_modules",
+      "type": "process",
+      "command": "make",
+      "args": [
+        "pristine"
+      ],
+      "group": "none",
+      "presentation": {
+        "clear": true
+      },
+      "problemMatcher": []
     }
   ]
 }
