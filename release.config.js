@@ -19,7 +19,8 @@ module.exports = {
     ['@semantic-release/github', {
       assets: [
         { path: '*.vsix', label: 'remedy.vsix' },
-        { path: 'resources/terminal/Remedy.terminal', label: 'Remedy.terminal' },
+        { path: 'resources/terminal/Remedy - Dark.terminal', label: 'Remedy - Dark.terminal' },
+        { path: 'resources/terminal/Remedy - Bright.terminal', label: 'Remedy - Bright.terminal' },
         { path: 'resources/iTerm2/Remedy.itermcolors', label: 'Remedy.itermcolors' },
       ],
     }],
