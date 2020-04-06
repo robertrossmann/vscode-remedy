@@ -1,3 +1,11 @@
+# [4.6.0](https://github.com/robertrossmann/vscode-remedy/compare/4.5.0...4.6.0) (2020-04-06)
+
+
+### Features
+
+* add Remedy - Bright iTerm2 colour profile ([6fec000](https://github.com/robertrossmann/vscode-remedy/commit/6fec000f38565b9b8c0a6b55c0964a7b2fa0b8c8))
+* add Remedy - Bright MacOS Terminal profile ([82beda0](https://github.com/robertrossmann/vscode-remedy/commit/82beda0748c2465589822d73fd2a237f4eea290d))
+
 # [4.5.0](https://github.com/robertrossmann/vscode-remedy/compare/4.4.0...4.5.0) (2020-04-01)
 
 
