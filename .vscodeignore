@@ -12,12 +12,16 @@ packages
 samples
 utils
 
-# Static
-resources/screenshots
+# Screenshots
+resources/**/*.png
+# The extension icon must be part of the final VSIX package
+!resources/vscode-remedy-icon.png
 
 # Configurations
 .editorconfig
 .eslintignore
+.eslintcache
+.remarkignore
 .*rc.js
 *.config.js
 makefile
