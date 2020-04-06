@@ -39,3 +39,5 @@ nbproject
 *.sublime-*
 *.atom-*
 .tern-*
+# VS Code - Bookmarks plugin
+.vscode/bookmarks.json
