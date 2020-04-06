@@ -1,3 +1,10 @@
+## [4.6.1](https://github.com/robertrossmann/vscode-remedy/compare/4.6.0...4.6.1) (2020-04-06)
+
+
+### Bug Fixes
+
+* reduce extension size from 5MB to 50KB by excluding images ([3fc79f4](https://github.com/robertrossmann/vscode-remedy/commit/3fc79f487fb8b6897b3d79134abc3683f613180b))
+
 # [4.6.0](https://github.com/robertrossmann/vscode-remedy/compare/4.5.0...4.6.0) (2020-04-06)
 
 
