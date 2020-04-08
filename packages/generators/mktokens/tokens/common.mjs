@@ -53,6 +53,7 @@ function common({ code }) {
       'keyword.control.directive',
       'entity.name.function.preprocessor',
       'entity.name.function.directive',
+      'entity.name.label',
     ],
     settings: {
       foreground: code.preprocessor,
