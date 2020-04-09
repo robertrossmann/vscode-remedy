@@ -157,6 +157,7 @@ function mkui({ ui, code }) {
     'list.dropBackground': `${ui.background.drop.hex()}22`,
     'list.errorForeground': ui.problems.error.hex(),
     'list.warningForeground': ui.problems.warning.hex(),
+    'list.deemphasizedForeground': ui.scm.ignored.hex(),
     // 'list.focusForeground': '#ff0000',
     // 'list.hoverForeground': '#ff0000',
     // 'list.inactiveSelectionForeground': '#ff0000',
