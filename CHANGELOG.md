@@ -1,3 +1,11 @@
+## [4.6.2](https://github.com/robertrossmann/vscode-remedy/compare/4.6.1...4.6.2) (2020-04-09)
+
+
+### Bug Fixes
+
+* add new list.deemphasizedForeground colour contribution ([766029b](https://github.com/robertrossmann/vscode-remedy/commit/766029bc9562b106857d46adf94cc2ae3b33b30b))
+* treat labels as preprocessor statements ([9c795ae](https://github.com/robertrossmann/vscode-remedy/commit/9c795aef85f505dd53b5ab0f071c6473581a9c5a))
+
 ## [4.6.1](https://github.com/robertrossmann/vscode-remedy/compare/4.6.0...4.6.1) (2020-04-06)
 
 
