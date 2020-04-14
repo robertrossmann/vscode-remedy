@@ -37,8 +37,12 @@ themes/%-color-theme.json: src/themes/% $(DSTFILES)
 	@mkdir -p themes
 	node src/bin/generate $< $@
 
+*.vsix: $(DSTTHEME)
+	vsce package --out $@
 
 # TASK DEFINITIONS
+
+extension: remedy.vsix
 
 themes: $(DSTTHEME)
 	node src/bin/refresh-package $(SRCTHEME)
