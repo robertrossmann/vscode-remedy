@@ -130,6 +130,7 @@ function common({ code }) {
       'meta.brace.round',
       'meta.brace.square',
       'meta.brace.curly',
+      'meta.brackets',
     ],
     settings: {
       foreground: code.punctuation,
