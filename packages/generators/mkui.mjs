@@ -512,6 +512,17 @@ function mkui({ ui, code }) {
     'debugIcon.stopForeground': ui.debug.icon.stop.hex(),
     'debugIcon.disconnectForeground': ui.debug.icon.stop.hex(),
     'debugIcon.restartForeground': ui.debug.icon.restart.hex(),
+    'debugView.exceptionLabelForeground': ui.text.primary.hex(),
+    'debugView.exceptionLabelBackground': ui.problems.error.hex(),
+    'debugView.stateLabelForeground': ui.text.primary.hex(),
+    'debugView.stateLabelBackground': ui.problems.info.hex(),
+    'debugView.valueChangedHighlight': `${ui.problems.info.hex()}99`,
+    'debugTokenExpression.name': code.variables,
+    'debugTokenExpression.value': ui.text.dimmed.hex(),
+    'debugTokenExpression.string': code.strings,
+    'debugTokenExpression.boolean': code.primitives,
+    'debugTokenExpression.number': code.primitives,
+    'debugTokenExpression.error': ui.problems.error.hex(),
 
     /**
      * Welcome Page
