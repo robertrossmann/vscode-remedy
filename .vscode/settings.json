@@ -28,5 +28,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "debug.javascript.usePreview": false
+  "debug.javascript.usePreview": false,
+  "todo-tree.filtering.excludeGlobs": [
+    "samples/"
+  ]
 }
