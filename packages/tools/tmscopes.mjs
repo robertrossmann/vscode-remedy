@@ -1,5 +1,6 @@
 import { mkscope } from '.'
 
+const cc = mkscope(['source.c', 'meta.embedded.block.c'])
 const cpp = mkscope(['source.cpp', 'meta.embedded.block.cpp'])
 const cs = mkscope(['source.cs', 'meta.embedded.block.csharp'])
 const css = mkscope(['source.css', 'meta.embedded.block.css', 'meta.embedded.block.less'])
@@ -21,6 +22,7 @@ const terraform = mkscope(['source.terraform', 'meta.embedded.block.terraform'])
 const yaml = mkscope(['source.yaml', 'meta.embedded.block.yaml', 'meta.embedded.block.frontmatter'])
 
 export {
+  cc,
   cpp,
   cs,
   css,

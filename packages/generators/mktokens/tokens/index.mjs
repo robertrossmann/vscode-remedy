@@ -3,6 +3,7 @@ import javascript from './javascript'
 import java from './java'
 import css from './css'
 import csharp from './csharp'
+import cc from './cc'
 import cpp from './cpp'
 import makefile from './makefile'
 import markdown from './markdown'
@@ -17,6 +18,7 @@ export {
   java,
   css,
   csharp,
+  cc,
   cpp,
   makefile,
   markdown,
