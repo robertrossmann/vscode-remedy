@@ -1,3 +1,16 @@
+# [4.7.0](https://github.com/robertrossmann/vscode-remedy/compare/4.6.2...4.7.0) (2020-04-15)
+
+
+### Bug Fixes
+
+* add meta.brackets to punctuation scope ([499c8b9](https://github.com/robertrossmann/vscode-remedy/commit/499c8b9e037cd94e04599e5d0b240d1044a6f6a9))
+* use correct colour for C hex constants, straighten some brackets ([3992712](https://github.com/robertrossmann/vscode-remedy/commit/39927125d6b71fd28cd9294f3c5230755e6a528d))
+
+
+### Features
+
+* add theming for new debug-related colour contributions 🎨 ([d3bc557](https://github.com/robertrossmann/vscode-remedy/commit/d3bc5570c6d3008fb08cedd7b5f0f4a923ca85ee)), closes [microsoft/vscode#94838](https://github.com/microsoft/vscode/issues/94838)
+
 ## [4.6.2](https://github.com/robertrossmann/vscode-remedy/compare/4.6.1...4.6.2) (2020-04-09)
 
 
