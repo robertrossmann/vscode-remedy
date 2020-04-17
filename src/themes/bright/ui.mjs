@@ -39,7 +39,8 @@ const scm = {
 const highlight = {
   line: text.primary,
   word: {
-    current: text.primary,
+    highlight: text.primary,
+    matches: normal.cyan,
     source: accent,
   },
   selection: text.primary,
