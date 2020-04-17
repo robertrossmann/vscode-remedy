@@ -132,7 +132,7 @@ function mkui({ ui, code }) {
      * Badges are small information labels, for example, search results count.
      */
     'badge.background': ui.accent.hex(),
-    'badge.foreground': ui.text.primary.hex(),
+    'badge.foreground': ui.text.contrast.hex(),
 
     /**
      * Progress Bar
@@ -177,7 +177,7 @@ function mkui({ ui, code }) {
     'activityBar.foreground': ui.icon.foreground.hex(),
     'activityBar.inactiveForeground': ui.icon.inactive.hex(),
     'activityBarBadge.background': ui.accent.hex(),
-    'activityBarBadge.foreground': ui.text.primary.hex(),
+    'activityBarBadge.foreground': ui.text.contrast.hex(),
     'activityBar.dropBackground': `${ui.background.drop.hex()}22`,
     // 'activityBar.activeBackground': '#ff0000',
 
@@ -398,6 +398,7 @@ function mkui({ ui, code }) {
     'statusBar.background': ui.background.panel.hex(),
     'statusBar.border': ui.border.hex(),
     'statusBar.debuggingBackground': ui.accent.hex(),
+    'statusBar.debuggingForeground': ui.text.contrast.hex(),
     'statusBar.debuggingBorder': ui.border.hex(),
     'statusBar.foreground': ui.text.primary.hex(),
     'statusBar.noFolderBackground': ui.background.panel.hex(),
@@ -409,7 +410,6 @@ function mkui({ ui, code }) {
     ].join(''),
     'statusBarItem.remoteBackground': ui.accent.hex(),
     'statusBarItem.remoteForeground': ui.text.primary.hex(),
-    // 'statusBar.debuggingForeground': '#FF0000',
     // 'statusBar.noFolderForeground': '#FF0000',
     // 'statusBar.noFolderBorder': '#FF0000',
     // 'statusBarItem.activeBackground': '#FF0000',
@@ -512,9 +512,9 @@ function mkui({ ui, code }) {
     'debugIcon.stopForeground': ui.debug.icon.stop.hex(),
     'debugIcon.disconnectForeground': ui.debug.icon.stop.hex(),
     'debugIcon.restartForeground': ui.debug.icon.restart.hex(),
-    'debugView.exceptionLabelForeground': ui.text.primary.hex(),
+    'debugView.exceptionLabelForeground': ui.text.contrast.hex(),
     'debugView.exceptionLabelBackground': ui.problems.error.hex(),
-    'debugView.stateLabelForeground': ui.text.primary.hex(),
+    'debugView.stateLabelForeground': ui.text.contrast.hex(),
     'debugView.stateLabelBackground': ui.problems.info.hex(),
     'debugView.valueChangedHighlight': `${ui.problems.info.hex()}99`,
     'debugTokenExpression.name': code.variables,
