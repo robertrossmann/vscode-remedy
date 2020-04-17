@@ -1,3 +1,17 @@
+# [4.8.0](https://github.com/robertrossmann/vscode-remedy/compare/4.7.0...4.8.0) (2020-04-17)
+
+
+### Bug Fixes
+
+* remove those ugly word highlight borders ([8c03efc](https://github.com/robertrossmann/vscode-remedy/commit/8c03efc4e3cb9f55a1d21178cfbacc3e7222abbb))
+* use better text colours for badges, debugging status bar ([0fd4546](https://github.com/robertrossmann/vscode-remedy/commit/0fd454658dee0144b9d6d8966c728221633d13bf))
+* use blue highlight for active frame to avoid clash with diffs ([1b6f7fe](https://github.com/robertrossmann/vscode-remedy/commit/1b6f7fe0f8b3047e180570387db2890efd661002))
+
+
+### Features
+
+* overhaul search highlights 🎨 ([5aebbbc](https://github.com/robertrossmann/vscode-remedy/commit/5aebbbc57cad7983087186bed42a52bfb8e2067c))
+
 # [4.7.0](https://github.com/robertrossmann/vscode-remedy/compare/4.6.2...4.7.0) (2020-04-15)
 
 
