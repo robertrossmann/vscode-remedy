@@ -272,7 +272,7 @@ function mkui({ ui, code }) {
     'editorLink.activeForeground': ui.accent.hex(),
     'editor.rangeHighlightBackground': `${ui.highlight.range.hex()}11`,
     'editorCursor.background': ui.background.panel.hex(),
-    // 'editor.wordHighlightBorder': `${ui.highlight.word.current.hex()}22`,
+    // 'editor.wordHighlightBorder': '#FF0000',
     // 'editor.inactiveSelectionBackground': '#FF0000',
     // 'editor.selectionHighlightBorder': '#FF0000',
     // 'editor.findMatchHighlightBorder': '#FF0000',
@@ -367,6 +367,7 @@ function mkui({ ui, code }) {
     'peekViewResult.selectionForeground': ui.text.primary.hex(),
     'peekViewTitle.background': ui.background.panel.hex(),
     'peekViewTitleDescription.foreground': ui.text.secondary.hex(),
+    // 'peekViewEditor.matchHighlightBorder': '#FF0000',
 
     /**
      * Merge Conflicts
