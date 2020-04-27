@@ -286,6 +286,7 @@ function mkui({ ui, code }) {
     'editorBracketMatch.background': `${ui.text.primary.hex()}11`,
     'editorBracketMatch.border': `${ui.text.primary.hex()}33`,
     // Overview Ruler
+    'editorOverviewRuler.background': ui.background.panel.hex(),
     'editorOverviewRuler.border': ui.border.hex(),
     'editorOverviewRuler.bracketMatchForeground': ui.text.primary.hex(),
     'editorOverviewRuler.findMatchForeground': `${ui.highlight.word.matches.hex()}AA`,
