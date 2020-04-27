@@ -1,3 +1,15 @@
+# [4.9.0](https://github.com/robertrossmann/vscode-remedy/compare/4.8.0...4.9.0) (2020-04-27)
+
+
+### Features
+
+* customise the overview ruler's background ([f99c258](https://github.com/robertrossmann/vscode-remedy/commit/f99c2587a7177a3cccc78cb982c11297a73ab36e)), closes [microsoft/vscode#93732](https://github.com/microsoft/vscode/issues/93732)
+
+
+### Reverts
+
+* Revert "feat: add border below tab groups" ([9597105](https://github.com/robertrossmann/vscode-remedy/commit/95971057d880bd7532dc2bd3862dfafe2f44bcb9))
+
 # [4.8.0](https://github.com/robertrossmann/vscode-remedy/compare/4.7.0...4.8.0) (2020-04-17)
 
 

@@ -1,7 +1,7 @@
 {
   "name": "remedy",
   "description": "A dark theme with orange accents with roots in Base16 - Eighties colour theme",
-  "version": "4.8.0",
+  "version": "4.9.0",
   "author": "Robert Rossmann <rr.rossmann@me.com>",
   "bugs": {
     "url": "https://github.com/robertrossmann/vscode-remedy/issues"
