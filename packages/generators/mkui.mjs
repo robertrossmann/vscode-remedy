@@ -322,6 +322,7 @@ function mkui({ ui, code }) {
      * Diff Editor Colours
      */
     'diffEditor.border': ui.border.hex(),
+    'diffEditor.diagonalFill': `${ui.text.secondary.hex()}44`,
     'diffEditor.insertedTextBackground': `${ui.scm.added.hex()}22`,
     'diffEditor.removedTextBackground': `${ui.scm.deleted.hex()}22`,
     // 'diffEditor.insertedTextBorder': '#FF0000',
