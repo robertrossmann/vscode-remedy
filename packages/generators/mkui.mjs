@@ -84,7 +84,7 @@ function mkui({ ui, code }) {
      * window
      */
     'button.background': ui.accent.hex(),
-    'button.foreground': ui.text.primary.hex(),
+    'button.foreground': ui.text.contrast.hex(),
     // 'button.hoverBackground': '#FF0000',
 
     /**
@@ -456,7 +456,7 @@ function mkui({ ui, code }) {
     /**
      * Extensions
      */
-    'extensionButton.prominentForeground': ui.text.primary.hex(),
+    'extensionButton.prominentForeground': ui.text.contrast.hex(),
     'extensionButton.prominentBackground': ui.accent.hex(),
     'extensionButton.prominentHoverBackground': ui.accent.lighten(0.25).hex(),
 
