@@ -192,7 +192,7 @@ function mkui({ ui, code }) {
     'sideBarSectionHeader.background': ui.background.panel.hex(),
     'sideBarSectionHeader.border': ui.border.hex(),
     'sideBar.dropBackground': `${ui.background.drop.hex()}22`,
-    // 'sideBarTitle.foreground': '#FF0000',
+    'sideBarTitle.foreground': ui.text.secondary.hex(),
     // 'sideBarSectionHeader.foreground': '#FF0000',
 
     /**
