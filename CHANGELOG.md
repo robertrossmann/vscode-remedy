@@ -1,3 +1,16 @@
+# [4.10.0](https://github.com/robertrossmann/vscode-remedy/compare/4.9.0...4.10.0) (2020-04-30)
+
+
+### Bug Fixes
+
+* mute the sidebar title's foreground ([f64ca8f](https://github.com/robertrossmann/vscode-remedy/commit/f64ca8f128ff87457716874f2af8a556cc88bb4d))
+* use contrasting text colour for button texts ([d58e707](https://github.com/robertrossmann/vscode-remedy/commit/d58e707e2335f553e6bfae526ac896b0b8a81a79))
+
+
+### Features
+
+* customise diff editor's diagonal fill colour ([6455a99](https://github.com/robertrossmann/vscode-remedy/commit/6455a9906d681e7c0a9f2525330799e5af274e6a))
+
 # [4.9.0](https://github.com/robertrossmann/vscode-remedy/compare/4.8.0...4.9.0) (2020-04-27)
 
 
