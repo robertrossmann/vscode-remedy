@@ -107,16 +107,16 @@ function mkui({ ui, code }) {
     'input.border': ui.border.hex(),
     'input.placeholderForeground': ui.text.secondary.hex(),
     'inputValidation.errorBackground': ui.problems.error.hex(),
+    'inputValidation.errorForeground': ui.text.contrast.hex(),
     'inputValidation.errorBorder': ui.problems.error.hex(),
     'inputValidation.warningBackground': ui.problems.warning.hex(),
+    'inputValidation.warningForeground': ui.text.contrast.hex(),
     'inputValidation.warningBorder': ui.problems.warning.hex(),
     'inputValidation.infoBackground': ui.problems.info.hex(),
+    'inputValidation.infoForeground': ui.text.contrast.hex(),
     'inputValidation.infoBorder': ui.problems.info.hex(),
     'inputOption.activeBorder': `${ui.accent.hex()}66`,
     // 'input.foreground': '#ff0000',
-    // 'inputValidation.errorForeground': '#FF0000',
-    // 'inputValidation.warningForeground': '#ff0000',
-    // 'inputValidation.infoForeground': '#FF0000',
 
     /**
      * Scrollbar Control
