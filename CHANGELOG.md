@@ -1,3 +1,15 @@
+# [4.11.0](https://github.com/robertrossmann/vscode-remedy/compare/4.10.0...4.11.0) (2020-05-04)
+
+
+### Bug Fixes
+
+* use contrasting text colours for input validation hovers/messages ([87f7a7e](https://github.com/robertrossmann/vscode-remedy/commit/87f7a7e666ba79e525508aa47bcc034488d4e9c5))
+
+
+### Features
+
+* implement VS Code's semantic colouring engine 🎨 🎉 ([574fe92](https://github.com/robertrossmann/vscode-remedy/commit/574fe92176eaa9bd870c56f957a50330b6c0c4e1))
+
 # [4.10.0](https://github.com/robertrossmann/vscode-remedy/compare/4.9.0...4.10.0) (2020-04-30)
 
 
