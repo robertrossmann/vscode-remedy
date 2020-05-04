@@ -1,7 +1,8 @@
 import { mkui } from './mkui'
-import { mktokens } from './mktokens'
+import { mktokens, mksemantictokens } from './mktokens'
 
 export {
   mkui,
   mktokens,
+  mksemantictokens,
 }

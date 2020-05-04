@@ -1,4 +1,4 @@
-import { mkui, mktokens } from '@remedy/generators'
+import { mkui, mktokens, mksemantictokens } from '@remedy/generators'
 import * as ui from './ui'
 import * as code from './code'
 import * as colours from './colours'
@@ -8,4 +8,5 @@ export default {
   type: 'vs-dark',
   colors: mkui({ ui, code }),
   tokenColors: mktokens({ code, colours }),
+  semanticTokenColors: mksemantictokens({ code, tilts: false }),
 }
