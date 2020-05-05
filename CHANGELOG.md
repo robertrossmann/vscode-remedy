@@ -1,3 +1,15 @@
+# [4.12.0](https://github.com/robertrossmann/vscode-remedy/compare/4.11.0...4.12.0) (2020-05-05)
+
+
+### Bug Fixes
+
+* restore tabs' / breadcrumbs' border ([e73477a](https://github.com/robertrossmann/vscode-remedy/commit/e73477a0c78b2bf4e5ea2d3650006e178a05cce1))
+
+
+### Features
+
+* enable tab foreground hovers ([24bdffd](https://github.com/robertrossmann/vscode-remedy/commit/24bdffd188cf297c8877b604d1371c0aeec260eb))
+
 # [4.11.0](https://github.com/robertrossmann/vscode-remedy/compare/4.10.0...4.11.0) (2020-05-04)
 
 
