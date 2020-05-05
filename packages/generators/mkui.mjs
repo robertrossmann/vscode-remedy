@@ -219,6 +219,7 @@ function mkui({ ui, code }) {
      */
     'editorGroup.border': ui.border.hex(),
     'editorGroup.dropBackground': `${ui.background.drop.hex()}22`,
+    'editorGroupHeader.border': ui.border.hex(),
     'editorGroupHeader.noTabsBackground': ui.background.panel.hex(),
     'editorGroupHeader.tabsBackground': ui.background.panel.hex(),
     'tab.activeBackground': ui.background.code.hex(),
