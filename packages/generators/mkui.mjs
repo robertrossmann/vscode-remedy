@@ -320,6 +320,8 @@ function mkui({ ui, code }) {
     'editorGutter.modifiedBackground': ui.scm.modified.hex(),
     'editorGutter.addedBackground': ui.scm.added.hex(),
     'editorGutter.deletedBackground': ui.scm.deleted.hex(),
+    'editorGutter.foldingControlForeground': ui.text.secondary.hex(),
+    'editor.foldBackground': `${ui.problems.info.hex()}11`,
     // 'editorGutter.background': '#FF0000',
 
     /**
