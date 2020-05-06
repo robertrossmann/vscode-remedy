@@ -76,10 +76,11 @@ The following languages have been manually tweaked to provide best experience:
 
 ### Terminals
 
-We have some terminal profiles available for download as well. ❤️
+We have some terminal profiles and other goodies available for download as well. ❤️
 
 - [MacOS Terminal](resources/terminal)
 - [iTerm2](resources/iTerm2)
+- [Slack](resources/slack)
 
 ## License
 
