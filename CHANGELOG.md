@@ -1,3 +1,18 @@
+# [4.13.0](https://github.com/robertrossmann/vscode-remedy/compare/4.12.0...4.13.0) (2020-05-06)
+
+
+### Bug Fixes
+
+* improve menu contrast by adding a border ([dd60676](https://github.com/robertrossmann/vscode-remedy/commit/dd60676b166216bc14a3b00398b701bfc5356d69))
+
+
+### Features
+
+* add Slack colour palette 😂 🤷‍♂️ ([8764188](https://github.com/robertrossmann/vscode-remedy/commit/8764188e2871f698ea7796a85d5c08144d3f886a))
+* customise folded line highlights and folding chevrons/buttons ([5e5a4a1](https://github.com/robertrossmann/vscode-remedy/commit/5e5a4a1a4476169eb402d1e77ea87a3190a1eb12)), closes [microsoft/vscode#97091](https://github.com/microsoft/vscode/issues/97091)
+* customise invalid list items' foreground 🤷‍♂️ ([98d9e40](https://github.com/robertrossmann/vscode-remedy/commit/98d9e402f05ae733888d736af63416fe88765990))
+* improve consistency of focus foregrounds on tabs and breadcrumbs ([7f6a57a](https://github.com/robertrossmann/vscode-remedy/commit/7f6a57ab5309c5657550fcd20c885a71992854ab))
+
 # [4.12.0](https://github.com/robertrossmann/vscode-remedy/compare/4.11.0...4.12.0) (2020-05-05)
 
 
