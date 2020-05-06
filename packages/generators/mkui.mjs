@@ -158,12 +158,12 @@ function mkui({ ui, code }) {
     'list.errorForeground': ui.problems.error.hex(),
     'list.warningForeground': ui.problems.warning.hex(),
     'list.deemphasizedForeground': ui.scm.ignored.hex(),
+    'list.invalidItemForeground': ui.problems.error.hex(),
     // 'list.focusForeground': '#ff0000',
     // 'list.hoverForeground': '#ff0000',
     // 'list.inactiveSelectionForeground': '#ff0000',
     // 'list.inactiveFocusBackground': '#ff0000',
     // 'listFilterWidget.outline': '#ff0000',
-    // 'list.invalidItemForeground': '#ff0000',
 
     /**
      * Activity Bar
