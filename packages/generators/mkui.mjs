@@ -439,6 +439,7 @@ function mkui({ ui, code }) {
     'menubar.selectionBackground': ui.accent.hex(),
     'menu.foreground': ui.text.primary.hex(),
     'menu.background': ui.background.panel.hex(),
+    'menu.border': `${ui.accent.hex()}66`,
     'menu.selectionForeground': ui.text.primary.hex(),
     'menu.selectionBackground': ui.accent.hex(),
     'menu.separatorBackground': ui.border.hex(),
