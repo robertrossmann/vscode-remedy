@@ -228,12 +228,12 @@ function mkui({ ui, code }) {
     'tab.inactiveForeground': ui.text.secondary.hex(),
     'tab.unfocusedActiveForeground': ui.text.secondary.hex(),
     'tab.unfocusedInactiveForeground': ui.text.secondary.hex(),
-    'tab.unfocusedHoverForeground': ui.accent.hex(),
+    'tab.unfocusedHoverForeground': ui.text.primary.hex(),
     'tab.activeModifiedBorder': ui.accent.hex(),
     'tab.border': ui.background.panel.hex(),
     'tab.inactiveBackground': ui.background.panel.hex(),
     'tab.inactiveModifiedBorder': `${ui.accent.hex()}66`,
-    'tab.hoverForeground': ui.accent.hex(),
+    'tab.hoverForeground': ui.text.primary.hex(),
     'editorPane.background': ui.background.panel.hex(),
     // 'editorGroupHeader.tabsBorder': '#FF0000',
     // 'editorGroup.emptyBackground': '#FF0000',
@@ -575,8 +575,8 @@ function mkui({ ui, code }) {
      * Breadcrumbs
      */
     'breadcrumb.foreground': ui.text.secondary.hex(),
-    'breadcrumb.focusForeground': ui.accent.hex(),
-    'breadcrumb.activeSelectionForeground': ui.accent.hex(),
+    'breadcrumb.focusForeground': ui.text.primary.hex(),
+    'breadcrumb.activeSelectionForeground': ui.text.primary.hex(),
     'breadcrumbPicker.background': ui.background.panel.hex(),
     // 'breadcrumb.background': '#FF0000',
 
