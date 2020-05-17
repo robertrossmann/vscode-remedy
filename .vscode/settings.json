@@ -31,5 +31,10 @@
   "debug.javascript.usePreview": false,
   "todo-tree.filtering.excludeGlobs": [
     "samples/"
+  ],
+  "github-actions.workflows.pinned.refresh.enabled": true,
+  "github-actions.workflows.pinned.refresh.interval": 60,
+  "github-actions.workflows.pinned.workflows": [
+    ".github/workflows/validate.yaml"
   ]
 }
