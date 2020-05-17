@@ -639,6 +639,11 @@ function mkui({ ui, code }) {
     'bookmarks.overviewRuler': ui.problems.info.hex(),
     'bookmarks.lineBackground': `${ui.problems.info.hex()}11`,
     'bookmarks.lineBorder': `${ui.problems.info.hex()}66`,
+
+    /**
+     * Test Explorer
+     */
+    'testExplorer.errorDecorationBackground': `${ui.problems.error.hex()}66`,
   }
 }
 
