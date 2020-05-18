@@ -532,6 +532,11 @@ function mkui({ ui, code }) {
     'debugTokenExpression.boolean': code.primitives,
     'debugTokenExpression.number': code.primitives,
     'debugTokenExpression.error': ui.problems.error.hex(),
+    'debugConsole.errorForeground': ui.problems.error.hex(),
+    'debugConsole.warningForeground': ui.problems.warning.hex(),
+    'debugConsole.infoForeground': ui.problems.info.hex(),
+    'debugConsole.sourceForeground': ui.text.dimmed.hex(),
+    'debugConsoleInputIcon.foreground': ui.text.dimmed.hex(),
 
     /**
      * Welcome Page
