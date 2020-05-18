@@ -1,3 +1,11 @@
+# [4.14.0](https://github.com/robertrossmann/vscode-remedy/compare/4.13.0...4.14.0) (2020-05-18)
+
+
+### Features
+
+* add debug Console colour contributions 🎨 ([9cd02be](https://github.com/robertrossmann/vscode-remedy/commit/9cd02be711f80e61efdb68498c000c4c92e7cba3)), closes [microsoft/vscode#97762](https://github.com/microsoft/vscode/issues/97762)
+* customise colours for Test Explorer UI 🎨 ([0d0568f](https://github.com/robertrossmann/vscode-remedy/commit/0d0568f5da84148234e5c884b51f7cb732fca780)), closes [hbenl/vscode-test-explorer#132](https://github.com/hbenl/vscode-test-explorer/issues/132)
+
 # [4.13.0](https://github.com/robertrossmann/vscode-remedy/compare/4.12.0...4.13.0) (2020-05-06)
 
 
