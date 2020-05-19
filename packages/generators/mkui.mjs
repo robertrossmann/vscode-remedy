@@ -145,7 +145,7 @@ function mkui({ ui, code }) {
      * Colors for list and trees like the File Explorer. An active list/tree has keyboard focus, an
      * inactive does not.
      */
-    'tree.indentGuidesStroke': `${ui.text.primary.hex()}44`,
+    'tree.indentGuidesStroke': `${ui.text.secondary.hex()}99`,
     'list.activeSelectionBackground': `${ui.accent.hex()}99`,
     'list.activeSelectionForeground': ui.text.primary.hex(),
     'list.focusBackground': `${ui.accent.hex()}BB`,
@@ -267,11 +267,11 @@ function mkui({ ui, code }) {
     'editor.wordHighlightStrongBackground': `${ui.highlight.word.source.hex()}33`,
     'editor.wordHighlightStrongBorder': `${ui.highlight.word.source.hex()}AA`,
     'editorCursor.foreground': ui.text.primary.hex(),
-    'editorIndentGuide.activeBackground': `${ui.text.primary.hex()}44`,
-    'editorIndentGuide.background': `${ui.text.primary.hex()}22`,
+    'editorIndentGuide.activeBackground': `${ui.text.secondary.hex()}99`,
+    'editorIndentGuide.background': `${ui.text.secondary.hex()}33`,
     'editorLineNumber.activeForeground': ui.text.primary.hex(),
     'editorLineNumber.foreground': ui.text.secondary.hex(),
-    'editorRuler.foreground': `${ui.text.primary.hex()}22`,
+    'editorRuler.foreground': `${ui.text.secondary.hex()}99`,
     'editorWhitespace.foreground': `${ui.text.primary.hex()}22`,
     'editorLink.activeForeground': ui.accent.hex(),
     'editor.rangeHighlightBackground': `${ui.highlight.range.hex()}11`,
