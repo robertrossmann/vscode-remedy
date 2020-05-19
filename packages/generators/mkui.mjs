@@ -189,11 +189,11 @@ function mkui({ ui, code }) {
     'sideBar.background': ui.background.panel.hex(),
     'sideBar.border': ui.border.hex(),
     'sideBar.foreground': ui.text.primary.hex(),
+    'sideBarSectionHeader.foreground': ui.text.secondary.hex(),
     'sideBarSectionHeader.background': ui.background.panel.hex(),
     'sideBarSectionHeader.border': ui.border.hex(),
     'sideBar.dropBackground': `${ui.background.drop.hex()}22`,
     'sideBarTitle.foreground': ui.text.secondary.hex(),
-    // 'sideBarSectionHeader.foreground': '#FF0000',
 
     /**
      * Minimap
