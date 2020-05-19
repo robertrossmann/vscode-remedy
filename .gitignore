@@ -21,6 +21,7 @@ local.mk
 /coverage
 /gh-pages
 *.vsix
+*.cpuprofile
 
 # Garbage
 *.lerna_backup
