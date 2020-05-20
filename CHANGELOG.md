@@ -1,3 +1,11 @@
+# [4.15.0](https://github.com/robertrossmann/vscode-remedy/compare/4.14.0...4.15.0) (2020-05-20)
+
+
+### Features
+
+* improve colour for indent guides & editor ruler ([ac52282](https://github.com/robertrossmann/vscode-remedy/commit/ac5228236fd26df2daaa82f2765a9d66a47e38f9))
+* improve text in side bar section headers ([15aab68](https://github.com/robertrossmann/vscode-remedy/commit/15aab689f8fe7beb72d77837d6fe1b6125eef8fd))
+
 # [4.14.0](https://github.com/robertrossmann/vscode-remedy/compare/4.13.0...4.14.0) (2020-05-18)
 
 
