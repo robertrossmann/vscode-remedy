@@ -1,3 +1,17 @@
+# [4.16.0](https://github.com/robertrossmann/vscode-remedy/compare/4.15.0...4.16.0) (2020-05-21)
+
+
+### Bug Fixes
+
+* make the notification toast's border less intrusive ([057b829](https://github.com/robertrossmann/vscode-remedy/commit/057b8290ff201352c2c5d04261466cf87868bc44))
+* use contrasting foreground colour for debug button in Status bar ([dfe3161](https://github.com/robertrossmann/vscode-remedy/commit/dfe31616cc25a713b9dee33d7a57f9c2546671fe))
+* use contrasting foreground colour for notification center header ([26efd03](https://github.com/robertrossmann/vscode-remedy/commit/26efd03649dfa8822cfcf9dc80a2eb9d243350d2))
+
+
+### Features
+
+* add new panel-related colour contributions 🎨 ([7a1441d](https://github.com/robertrossmann/vscode-remedy/commit/7a1441d594f5c619b4cf6faac2e568371bd41916)), closes [microsoft/vscode#94041](https://github.com/microsoft/vscode/issues/94041) [microsoft/vscode#94339](https://github.com/microsoft/vscode/issues/94339)
+
 # [4.15.0](https://github.com/robertrossmann/vscode-remedy/compare/4.14.0...4.15.0) (2020-05-20)
 
 
