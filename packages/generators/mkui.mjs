@@ -456,7 +456,7 @@ function mkui({ ui, code }) {
     'notificationCenterHeader.foreground': ui.text.contrast.hex(),
     'notificationCenter.border': ui.border.hex(),
     'notifications.border': ui.border.hex(),
-    'notificationToast.border': ui.accent.hex(),
+    'notificationToast.border': ui.border.hex(),
     'notificationLink.foreground': ui.accent.hex(),
     // 'notifications.foreground': '#FF0000',
 
