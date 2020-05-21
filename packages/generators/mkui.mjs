@@ -417,7 +417,7 @@ function mkui({ ui, code }) {
       '66',
     ].join(''),
     'statusBarItem.remoteBackground': ui.accent.hex(),
-    'statusBarItem.remoteForeground': ui.text.primary.hex(),
+    'statusBarItem.remoteForeground': ui.text.contrast.hex(),
     // 'statusBar.noFolderForeground': '#FF0000',
     // 'statusBar.noFolderBorder': '#FF0000',
     // 'statusBarItem.activeBackground': '#FF0000',
