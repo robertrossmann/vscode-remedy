@@ -7,10 +7,15 @@ export NODE_OPTIONS := --trace-deprecation
 # On developer machines, prefer the generally more flexible `npm install`. 💪
 NPM_I := $(if $(CI), ci, install)
 
+# Do not tamper with these
+BABEL_DEFAULTS = --extensions .mjs --relative --out-dir .
+
+# User-overridable
 BABEL_FLAGS :=
 ESLINT_FLAGS :=
 NPM_FLAGS :=
 
+CODEDIRS := src packages
 GITFILES := $(patsubst utils/githooks/%, .git/hooks/%, $(wildcard utils/githooks/*))
 SRCFILES := $(shell find src packages -type f -name "*.mjs")
 DSTFILES := $(patsubst %.mjs, %.js, $(SRCFILES))
@@ -50,7 +55,10 @@ themes: $(DSTTHEME)
 compile: $(DSTFILES)
 
 precompile: install
-	babel . --extensions .mjs --out-dir . $(BABEL_FLAGS)
+	babel $(CODEDIRS) $(BABEL_FLAGS) $(BABEL_DEFAULTS)
+
+watch/compile: precompile
+	babel $(CODEDIRS) $(BABEL_FLAGS) $(BABEL_DEFAULTS) --watch --skip-initial-build --verbose
 
 install: node_modules $(GITFILES)
 
