@@ -453,11 +453,11 @@ function mkui({ ui, code }) {
      */
     'notifications.background': ui.background.panel.hex(),
     'notificationCenterHeader.background': ui.accent.hex(),
+    'notificationCenterHeader.foreground': ui.text.contrast.hex(),
     'notificationCenter.border': ui.border.hex(),
     'notifications.border': ui.border.hex(),
     'notificationToast.border': ui.accent.hex(),
     'notificationLink.foreground': ui.accent.hex(),
-    // 'notificationCenterHeader.foreground': '#FF0000',
     // 'notifications.foreground': '#FF0000',
 
     /**
