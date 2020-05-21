@@ -172,6 +172,7 @@ function mkui({ ui, code }) {
      * fast switching between views of the Side Bar.
      */
     'activityBar.activeBorder': ui.accent.hex(),
+    'activityBar.dropBorder': ui.accent.hex(),
     'activityBar.background': ui.background.panel.hex(),
     'activityBar.border': ui.border.hex(),
     'activityBar.foreground': ui.icon.foreground.hex(),
@@ -395,10 +396,15 @@ function mkui({ ui, code }) {
      */
     'panel.background': ui.background.panel.hex(),
     'panel.border': ui.border.hex(),
+    'panel.dropBorder': ui.accent.hex(),
     'panelTitle.activeBorder': ui.accent.hex(),
     'panelTitle.activeForeground': ui.text.primary.hex(),
     'panelTitle.inactiveForeground': ui.text.secondary.hex(),
-    'panel.dropBackground': `${ui.background.drop.hex()}22`,
+    'panelSectionHeader.background': ui.background.panel.hex(),
+    'panelSectionHeader.foreground': ui.text.secondary.hex(),
+    'panelSectionHeader.border': ui.border.hex(),
+    'panelSection.border': ui.border.hex(),
+    'panelSection.dropBackground': `${ui.background.drop.hex()}22`,
 
     /**
      * Status Bar Colours
