@@ -1,3 +1,21 @@
+# [4.17.0](https://github.com/robertrossmann/vscode-remedy/compare/4.16.0...4.17.0) (2020-05-28)
+
+
+### Bug Fixes
+
+* enable semantic highlighting in all theme variants ([08b0634](https://github.com/robertrossmann/vscode-remedy/commit/08b06347ec9206e7605bc47ab24ddfaebf3071fc))
+
+
+### Features
+
+* colour more symbol icons ([b45c8c3](https://github.com/robertrossmann/vscode-remedy/commit/b45c8c310cc40ff5435a43614dc332f039bd14fa))
+* improve snippet highlights ([dff5b97](https://github.com/robertrossmann/vscode-remedy/commit/dff5b97f9f9e7ae2c7fc199185d95efd57e11e5b))
+* improve status bar hovers and selects ([595e491](https://github.com/robertrossmann/vscode-remedy/commit/595e491388309834065e8c6c93edbee4792dcda3))
+* use more consistent highlights for lists ([81c45ed](https://github.com/robertrossmann/vscode-remedy/commit/81c45ed071b55ec8385434fbbadbbf4b54dd1100))
+* use secondary colour for bracket match highlights ([c50b367](https://github.com/robertrossmann/vscode-remedy/commit/c50b36701d2074cb819fe1465c0791854499fe7c))
+* use secondary colour for rendered whitespace ([5a4d0cc](https://github.com/robertrossmann/vscode-remedy/commit/5a4d0cc2e8e6e8fae3361dfcc7c4ce83ffcb596a))
+* use secondary colour for status bar foreground ([1d00334](https://github.com/robertrossmann/vscode-remedy/commit/1d0033434251d1d8940abd97b54458b9f877ac2e))
+
 # [4.16.0](https://github.com/robertrossmann/vscode-remedy/compare/4.15.0...4.16.0) (2020-05-21)
 
 
