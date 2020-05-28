@@ -415,7 +415,9 @@ function mkui({ ui, code }) {
     'statusBar.debuggingBackground': ui.accent.hex(),
     'statusBar.debuggingForeground': ui.text.contrast.hex(),
     'statusBar.debuggingBorder': ui.border.hex(),
-    'statusBar.foreground': ui.text.primary.hex(),
+    'statusBar.foreground': ui.background.panel.isDark()
+      ? ui.text.secondary.lighten(0.4).hex()
+      : ui.text.secondary.darken(0.2).hex(),
     'statusBar.noFolderBackground': ui.background.panel.hex(),
     'statusBarItem.hoverBackground': [
       ui.background.panel.isDark()
