@@ -418,15 +418,20 @@ function mkui({ ui, code }) {
     'statusBar.noFolderBackground': ui.background.panel.hex(),
     'statusBarItem.hoverBackground': [
       ui.background.panel.isDark()
-        ? ui.background.panel.lighten(0.7).hex()
-        : ui.background.panel.darken(0.7).hex(),
+        ? ui.background.panel.mix(ui.background.drop, 0.1).hex()
+        : ui.background.panel.mix(ui.background.drop, 0.2).hex(),
       '66',
     ].join(''),
     'statusBarItem.remoteBackground': ui.accent.hex(),
     'statusBarItem.remoteForeground': ui.text.contrast.hex(),
     // 'statusBar.noFolderForeground': '#FF0000',
     // 'statusBar.noFolderBorder': '#FF0000',
-    // 'statusBarItem.activeBackground': '#FF0000',
+    'statusBarItem.activeBackground': [
+      ui.background.panel.isDark()
+        ? ui.background.panel.mix(ui.background.drop, 0.2).hex()
+        : ui.background.panel.mix(ui.background.drop, 0.4).hex(),
+      '66',
+    ].join(''),
     // 'statusBarItem.prominentForeground': '#FF0000',
     // 'statusBarItem.prominentBackground': '#FF0000',
     // 'statusBarItem.prominentHoverBackground': '#FF0000',
