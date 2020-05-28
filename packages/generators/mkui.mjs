@@ -274,7 +274,7 @@ function mkui({ ui, code }) {
     'editorLineNumber.activeForeground': ui.text.primary.hex(),
     'editorLineNumber.foreground': ui.text.secondary.hex(),
     'editorRuler.foreground': `${ui.text.secondary.hex()}99`,
-    'editorWhitespace.foreground': `${ui.text.primary.hex()}22`,
+    'editorWhitespace.foreground': `${ui.text.secondary.hex()}99`,
     'editorLink.activeForeground': ui.accent.hex(),
     'editor.rangeHighlightBackground': `${ui.highlight.range.hex()}11`,
     'editorCursor.background': ui.background.panel.hex(),
