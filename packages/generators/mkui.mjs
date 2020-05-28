@@ -289,12 +289,12 @@ function mkui({ ui, code }) {
     // CodeLens
     'editorCodeLens.foreground': ui.text.secondary.hex(),
     // Bracket Matches
-    'editorBracketMatch.background': `${ui.text.primary.hex()}11`,
-    'editorBracketMatch.border': `${ui.text.primary.hex()}33`,
+    'editorBracketMatch.background': `${ui.text.secondary.hex()}33`,
+    'editorBracketMatch.border': `${ui.text.secondary.hex()}66`,
     // Overview Ruler
     'editorOverviewRuler.background': ui.background.panel.hex(),
     'editorOverviewRuler.border': ui.border.hex(),
-    'editorOverviewRuler.bracketMatchForeground': ui.text.primary.hex(),
+    'editorOverviewRuler.bracketMatchForeground': ui.text.secondary.hex(),
     'editorOverviewRuler.findMatchForeground': `${ui.highlight.word.matches.hex()}AA`,
     'editorOverviewRuler.wordHighlightForeground': `${ui.highlight.word.matches.hex()}99`,
     'editorOverviewRuler.wordHighlightStrongForeground': ui.highlight.word.matches.hex(),
