@@ -180,7 +180,8 @@ function mkui({ ui, code }) {
     'activityBarBadge.background': ui.accent.hex(),
     'activityBarBadge.foreground': ui.text.contrast.hex(),
     'activityBar.dropBackground': `${ui.background.drop.hex()}22`,
-    // 'activityBar.activeBackground': '#ff0000',
+    // TODO: implement panelTitle.activeBackground colour contribution first
+    // 'activityBar.activeBackground': ui.background.code.hex(),
 
     /**
      * Side Bar
