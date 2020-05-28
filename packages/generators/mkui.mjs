@@ -601,10 +601,10 @@ function mkui({ ui, code }) {
     /**
      * Snippets
      */
-    'editor.snippetTabstopHighlightBackground': `${ui.text.primary.hex()}22`,
-    'editor.snippetFinalTabstopHighlightBackground': ui.text.primary.hex(),
-    'editor.snippetFinalTabstopHighlightBorder': `${ui.accent.hex()}99`,
-    // 'editor.snippetTabstopHighlightBorder': '#FF0000',
+    'editor.snippetTabstopHighlightBackground': `${ui.highlight.word.matches.hex()}00`,
+    'editor.snippetFinalTabstopHighlightBackground': `${ui.highlight.word.matches.hex()}33`,
+    'editor.snippetFinalTabstopHighlightBorder': `${ui.highlight.word.matches.hex()}99`,
+    'editor.snippetTabstopHighlightBorder': `${ui.highlight.word.matches.hex()}99`,
 
 
     // EXTENSIONS
