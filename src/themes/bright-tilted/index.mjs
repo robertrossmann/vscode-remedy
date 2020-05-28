@@ -8,5 +8,6 @@ export default {
   type: 'vs',
   colors: mkui({ ui, code }),
   tokenColors: mktokens({ code, colours, tilts: true }),
+  semanticHighlighting: true,
   semanticTokenColors: mksemantictokens({ code, tilts: true }),
 }
