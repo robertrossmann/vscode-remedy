@@ -1,3 +1,10 @@
+## [4.17.1](https://github.com/robertrossmann/vscode-remedy/compare/4.17.0...4.17.1) (2020-05-28)
+
+
+### Bug Fixes
+
+* improve colours for list selections ([7a274e1](https://github.com/robertrossmann/vscode-remedy/commit/7a274e15a61caf00fae34727de7da33875ce6b1a))
+
 # [4.17.0](https://github.com/robertrossmann/vscode-remedy/compare/4.16.0...4.17.0) (2020-05-28)
 
 
