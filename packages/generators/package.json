@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "dependencies": {
     "@remedy/tools": "*"
+  },
+  "devDependencies": {
+    "color": "*"
   }
 }
