@@ -1,3 +1,19 @@
+# [4.18.0](https://github.com/robertrossmann/vscode-remedy/compare/4.17.1...4.18.0) (2020-05-29)
+
+
+### Bug Fixes
+
+* improve contrast among normal vars, constants and unused vars ([7abcf3a](https://github.com/robertrossmann/vscode-remedy/commit/7abcf3a38a5dd389691938893af4701320fc40cc)), closes [#11](https://github.com/robertrossmann/vscode-remedy/issues/11)
+* improve contrast on badges, buttons, notification center ([418692a](https://github.com/robertrossmann/vscode-remedy/commit/418692aea583be31e71cad224f8dbb1cc243f00f))
+* make unused code more dimmed ([7007453](https://github.com/robertrossmann/vscode-remedy/commit/700745338c5041fefda0dcfbbd1abcd50f22d0fc)), closes [#11](https://github.com/robertrossmann/vscode-remedy/issues/11)
+* use a darker shadow for dark theme ([523701d](https://github.com/robertrossmann/vscode-remedy/commit/523701d01ebce10b614e9e4c66fdd443699c377e))
+* use consistent foreground in status bar during debugging ([a339d16](https://github.com/robertrossmann/vscode-remedy/commit/a339d16b6062b314ea6faa53731a759d59c9ce83))
+
+
+### Features
+
+* add colour contributions for mtxr.sqltools ([6e00bf9](https://github.com/robertrossmann/vscode-remedy/commit/6e00bf9237af38d4615aa65eaa5baa43c1bab884))
+
 ## [4.17.1](https://github.com/robertrossmann/vscode-remedy/compare/4.17.0...4.17.1) (2020-05-28)
 
 
