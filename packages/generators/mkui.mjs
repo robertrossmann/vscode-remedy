@@ -663,6 +663,12 @@ function mkui({ ui, code }) {
      * Test Explorer
      */
     'testExplorer.errorDecorationBackground': `${ui.problems.error.hex()}66`,
+
+    /**
+     * SQL Tools
+     */
+    'sqltools.currentQueryBg': `${ui.highlight.word.matches.hex()}22`,
+    'sqltools.currentQueryOutline': '#0000',
   }
 }
 
