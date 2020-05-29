@@ -33,11 +33,9 @@
       }
     ]
   },
-  "dependencies": {
-    "@remedy/tools": "file:packages/tools",
-    "@remedy/generators": "file:packages/generators"
-  },
   "devDependencies": {
+    "@remedy/tools": "file:packages/tools",
+    "@remedy/generators": "file:packages/generators",
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
