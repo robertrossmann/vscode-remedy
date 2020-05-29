@@ -15,7 +15,7 @@ const background = {
 }
 
 const border = background.panel.darken(0.2)
-const shadow = base
+const shadow = base.darken(0.5)
 const accent = normal.orange
 
 const icon = {
