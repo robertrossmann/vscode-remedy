@@ -1,3 +1,4 @@
+import * as Color from 'color'
 import * as tokens from './tokens'
 
 function mktokens({ code, colours, tilts = false }) {
@@ -49,8 +50,8 @@ function mksemantictokens({ code, tilts = false }) {
     typeParameter: code.types,
     variable: code.variables,
 
-    'property.readonly': `${code.variables}BB`,
-    'variable.readonly': `${code.variables}BB`,
+    'property.readonly': Color(code.variables).mix(Color(code.comments), 0.5).hex(),
+    'variable.readonly': Color(code.variables).mix(Color(code.comments), 0.5).hex(),
     'variable.defaultLibrary': code.primitives,
 
     // '*.deprecated': ui.problems.error.hex(),
