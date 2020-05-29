@@ -84,7 +84,7 @@ function mkui({ ui, code }) {
      * window
      */
     'button.background': ui.accent.hex(),
-    'button.foreground': ui.text.contrast.hex(),
+    'button.foreground': ui.text.complimentary.hex(),
     // 'button.hoverBackground': '#FF0000',
 
     /**
@@ -132,7 +132,7 @@ function mkui({ ui, code }) {
      * Badges are small information labels, for example, search results count.
      */
     'badge.background': ui.accent.hex(),
-    'badge.foreground': ui.text.contrast.hex(),
+    'badge.foreground': ui.text.complimentary.hex(),
 
     /**
      * Progress Bar
@@ -178,7 +178,7 @@ function mkui({ ui, code }) {
     'activityBar.foreground': ui.icon.foreground.hex(),
     'activityBar.inactiveForeground': ui.icon.inactive.hex(),
     'activityBarBadge.background': ui.accent.hex(),
-    'activityBarBadge.foreground': ui.text.contrast.hex(),
+    'activityBarBadge.foreground': ui.text.complimentary.hex(),
     'activityBar.dropBackground': `${ui.background.drop.hex()}22`,
     // TODO: implement panelTitle.activeBackground colour contribution first
     // 'activityBar.activeBackground': ui.background.code.hex(),
@@ -467,7 +467,7 @@ function mkui({ ui, code }) {
      */
     'notifications.background': ui.background.panel.hex(),
     'notificationCenterHeader.background': ui.accent.hex(),
-    'notificationCenterHeader.foreground': ui.text.contrast.hex(),
+    'notificationCenterHeader.foreground': ui.text.complimentary.hex(),
     'notificationCenter.border': ui.border.hex(),
     'notifications.border': ui.border.hex(),
     'notificationToast.border': ui.border.hex(),
@@ -477,7 +477,7 @@ function mkui({ ui, code }) {
     /**
      * Extensions
      */
-    'extensionButton.prominentForeground': ui.text.contrast.hex(),
+    'extensionButton.prominentForeground': ui.text.complimentary.hex(),
     'extensionButton.prominentBackground': ui.accent.hex(),
     'extensionButton.prominentHoverBackground': ui.accent.lighten(0.25).hex(),
 
