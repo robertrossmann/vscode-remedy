@@ -27,7 +27,6 @@ const bright = {
 
 const foreground = bright.yellow.darken(0.7).desaturate(0.3)
 
-
 export {
   base,
   foreground,
