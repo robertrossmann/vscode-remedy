@@ -316,8 +316,8 @@ function mkui({ ui, code }) {
     // 'editorInfo.border': '#FF0000',
     // 'editorHint.border': '#FF0000',
     // Unused Source Code
+    'editorUnnecessaryCode.opacity': '#00000055',
     // 'editorUnnecessaryCode.border': '#FF0000',
-    // 'editorUnnecessaryCode.opacity': '#00000099',
     // Gutter
     'editorGutter.modifiedBackground': ui.scm.modified.hex(),
     'editorGutter.addedBackground': ui.scm.added.hex(),
