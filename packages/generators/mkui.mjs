@@ -116,6 +116,8 @@ function mkui({ ui, code }) {
     'inputValidation.infoForeground': ui.text.contrast.hex(),
     'inputValidation.infoBorder': ui.problems.info.hex(),
     'inputOption.activeBorder': `${ui.accent.hex()}66`,
+    // TODO(vscode): Implement inputOption.foreground colour contribution
+    // 'inputOption.activeForeground': '#ff0000',
     // 'input.foreground': '#ff0000',
 
     /**
@@ -180,7 +182,7 @@ function mkui({ ui, code }) {
     'activityBarBadge.background': ui.accent.hex(),
     'activityBarBadge.foreground': ui.text.complimentary.hex(),
     'activityBar.dropBackground': `${ui.background.drop.hex()}22`,
-    // TODO: implement panelTitle.activeBackground colour contribution first
+    // TODO(vscode): implement panelTitle.activeBackground colour contribution
     // 'activityBar.activeBackground': ui.background.code.hex(),
 
     /**
