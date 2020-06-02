@@ -611,6 +611,17 @@ function mkui({ ui, code }) {
     'editor.snippetFinalTabstopHighlightBorder': `${ui.highlight.word.matches.hex()}99`,
     'editor.snippetTabstopHighlightBorder': `${ui.highlight.word.matches.hex()}99`,
 
+    /**
+     * Notebook
+     */
+    'notebook.cellBorderColor': `${ui.accent.hex()}66`,
+    'notebook.cellStatusBarItemHoverBackground': ui.accent.hex(),
+    'notebook.cellToolbarSeperator': ui.accent.hex(),
+    'notebook.focusedCellIndicator': ui.accent.hex(),
+    'notebook.outputContainerBackgroundColor': ui.background.panel.hex(),
+    'notebookStatusErrorIcon.foreground': ui.icon.error.hex(),
+    'notebookStatusRunningIcon.foreground': ui.icon.foreground.hex(),
+    'notebookStatusSuccessIcon.foreground': ui.icon.success.hex(),
 
     // EXTENSIONS
 

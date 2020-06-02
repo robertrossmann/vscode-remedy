@@ -21,6 +21,8 @@ const accent = normal.orange
 const icon = {
   foreground: text.primary,
   inactive: text.dimmed,
+  error: normal.red,
+  success: normal.green,
 }
 
 const scm = {
