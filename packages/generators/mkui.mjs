@@ -188,7 +188,6 @@ function mkui({ ui, code }) {
     'activityBar.inactiveForeground': ui.icon.inactive.hex(),
     'activityBarBadge.background': ui.accent.hex(),
     'activityBarBadge.foreground': ui.text.complimentary.hex(),
-    'activityBar.dropBackground': `${ui.background.drop.hex()}22`,
     // TODO(vscode): implement panelTitle.activeBackground colour contribution
     // 'activityBar.activeBackground': ui.background.code.hex(),
 
