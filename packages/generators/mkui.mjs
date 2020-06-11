@@ -622,10 +622,11 @@ function mkui({ ui, code }) {
     /**
      * Notebook
      */
-    'notebook.cellBorderColor': `${ui.accent.hex()}66`,
+    'notebook.cellBorderColor': ui.border.hex(),
     'notebook.cellStatusBarItemHoverBackground': ui.accent.hex(),
-    'notebook.cellToolbarSeperator': ui.accent.hex(),
+    'notebook.cellToolbarSeperator': `${ui.accent.hex()}66`,
     'notebook.focusedCellIndicator': ui.accent.hex(),
+    'notebook.focusedEditorIndicator': ui.accent.hex(),
     'notebook.outputContainerBackgroundColor': ui.background.panel.hex(),
     'notebookStatusErrorIcon.foreground': ui.icon.error.hex(),
     'notebookStatusRunningIcon.foreground': ui.icon.foreground.hex(),
