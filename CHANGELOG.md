@@ -1,3 +1,13 @@
+# [4.19.0](https://github.com/robertrossmann/vscode-remedy/compare/4.18.0...4.19.0) (2020-06-11)
+
+
+### Features
+
+* add colour contribution for commenting range gutter line ([c48565c](https://github.com/robertrossmann/vscode-remedy/commit/c48565cb61cb818ec7a0f971425f29b7da880c8a))
+* add colour contributions for Search Editor ([685ccc3](https://github.com/robertrossmann/vscode-remedy/commit/685ccc387f484e760b12a5e54e5677b901ad6822))
+* add theme colours for notebooks ([891e8eb](https://github.com/robertrossmann/vscode-remedy/commit/891e8eb592f90814c5cdd34c89f0137c6ff186e5)), closes [microsoft/vscode#97696](https://github.com/microsoft/vscode/issues/97696)
+* improve notebook colour contributions ([b298ae5](https://github.com/robertrossmann/vscode-remedy/commit/b298ae515c43797fdbf477e0ab7719d49f501986))
+
 # [4.18.0](https://github.com/robertrossmann/vscode-remedy/compare/4.17.1...4.18.0) (2020-05-29)
 
 
