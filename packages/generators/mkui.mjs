@@ -121,6 +121,13 @@ function mkui({ ui, code }) {
     // 'input.foreground': '#ff0000',
 
     /**
+     * Search Editor
+     */
+    'searchEditor.findMatchBorder': `${ui.highlight.word.matches.hex()}44`,
+    // 'searchEditor.findMatchBackground': '#ff0000',
+    // 'searchEditor.textInputBorder': '#ff0000,
+
+    /**
      * Scrollbar Control
      */
     'scrollbar.shadow': ui.shadow.hex(),
