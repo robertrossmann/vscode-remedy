@@ -333,6 +333,7 @@ function mkui({ ui, code }) {
     'editorGutter.deletedBackground': ui.scm.deleted.hex(),
     'editorGutter.foldingControlForeground': ui.text.secondary.hex(),
     'editor.foldBackground': `${ui.problems.info.hex()}11`,
+    'editorGutter.commentRangeForeground': `${ui.text.secondary.hex()}99`,
     // 'editorGutter.background': '#FF0000',
 
     /**
