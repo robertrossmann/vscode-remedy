@@ -364,9 +364,9 @@ function mkui({ ui, code }) {
     // The editor marker view shows when navigating to errors and warnings in the editor (Go to Next
     // Error or Warning command)
     'editorMarkerNavigation.background': ui.background.panel.hex(),
-    'editorMarkerNavigationError.background': ui.border.hex(),
-    'editorMarkerNavigationWarning.background': ui.border.hex(),
-    'editorMarkerNavigationInfo.background': ui.border.hex(),
+    'editorMarkerNavigationError.background': `${ui.problems.error.hex()}44`,
+    'editorMarkerNavigationWarning.background': `${ui.problems.warning.hex()}44`,
+    'editorMarkerNavigationInfo.background': `${ui.problems.info.hex()}44`,
     'editorSuggestWidget.selectedBackground': ui.accent.hex(),
 
     /**
