@@ -1,3 +1,10 @@
+## [4.20.1](https://github.com/robertrossmann/vscode-remedy/compare/4.20.0...4.20.1) (2020-07-13)
+
+
+### Bug Fixes
+
+* actually remove Error Lens' background colours 🤦‍♂️ ([72e4d78](https://github.com/robertrossmann/vscode-remedy/commit/72e4d7816591e3f4ff36e104e3c413296162d269))
+
 # [4.20.0](https://github.com/robertrossmann/vscode-remedy/compare/4.19.0...4.20.0) (2020-07-13)
 
 
