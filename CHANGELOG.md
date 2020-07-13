@@ -1,3 +1,12 @@
+# [4.20.0](https://github.com/robertrossmann/vscode-remedy/compare/4.19.0...4.20.0) (2020-07-13)
+
+
+### Features
+
+* add new Notebook colour contributions ([e3284d8](https://github.com/robertrossmann/vscode-remedy/commit/e3284d826293d4a8e8306a300c74cf8eaa22baff))
+* remove colour backgrounds from Error Lens' decorations ([9f40aec](https://github.com/robertrossmann/vscode-remedy/commit/9f40aecbe89563a20bb6ef3c0ee9fcaf345a1c25))
+* use problems' colours for editor marker navigations ([3b3e070](https://github.com/robertrossmann/vscode-remedy/commit/3b3e07095ee9d5b1b26d25b46b89ab145ee0129c))
+
 # [4.19.0](https://github.com/robertrossmann/vscode-remedy/compare/4.18.0...4.19.0) (2020-06-11)
 
 
