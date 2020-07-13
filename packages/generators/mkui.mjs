@@ -622,14 +622,21 @@ function mkui({ ui, code }) {
      * Notebook
      */
     'notebook.cellBorderColor': ui.border.hex(),
+    'notebook.cellHoverBackground': `${ui.background.panel.hex()}66`,
+    'notebook.cellInsertionIndicator': ui.accent.hex(),
     'notebook.cellStatusBarItemHoverBackground': ui.accent.hex(),
-    'notebook.cellToolbarSeperator': `${ui.accent.hex()}66`,
-    'notebook.focusedCellIndicator': ui.accent.hex(),
-    'notebook.focusedEditorIndicator': ui.accent.hex(),
+    'notebook.cellToolbarSeparator': ui.border.hex(),
+    'notebook.focusedCellBackground': ui.background.panel.hex(),
+    'notebook.focusedCellBorder': ui.border.hex(),
     'notebook.outputContainerBackgroundColor': ui.background.panel.hex(),
     'notebookStatusErrorIcon.foreground': ui.icon.error.hex(),
     'notebookStatusRunningIcon.foreground': ui.icon.foreground.hex(),
     'notebookStatusSuccessIcon.foreground': ui.icon.success.hex(),
+    // 'notebookScrollbarSlider.activeBackground': '#ff0000',
+    // 'notebookScrollbarSlider.background': '#ff0000',
+    // "notebookScrollbarSlider.hoverBackground": "#ff0000",
+    // 'notebook.symbolHighlightBackground': '#ff0000',
+    // 'notebook.focusedEditorBorder': '#ff0000',
 
     // EXTENSIONS
 
