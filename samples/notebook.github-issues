@@ -1,0 +1,19 @@
+[
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "# test\n\n> This is a test.\n\nAnd here comes some serious MD content."
+  },
+  {
+    "kind": 2,
+    "language": "github-issues",
+    "value": "repo:robertrossmann/vscode-remedy is:issue",
+    "editable": true
+  },
+  {
+    "kind": 2,
+    "language": "github-issues",
+    "value": "repo:robertrossmann/vscode-remedy is:pr",
+    "editable": true
+  }
+]
