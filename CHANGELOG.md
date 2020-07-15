@@ -1,3 +1,10 @@
+# [4.21.0](https://github.com/robertrossmann/vscode-remedy/compare/4.20.1...4.21.0) (2020-07-15)
+
+
+### Features
+
+* add colour contributions for secondary buttons 🎨 ([3ccfefe](https://github.com/robertrossmann/vscode-remedy/commit/3ccfefec81f9bcb6ff8cc58ff56e71be25397dee))
+
 ## [4.20.1](https://github.com/robertrossmann/vscode-remedy/compare/4.20.0...4.20.1) (2020-07-13)
 
 
