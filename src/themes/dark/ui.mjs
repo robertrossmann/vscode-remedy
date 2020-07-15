@@ -18,6 +18,11 @@ const border = background.panel.darken(0.2)
 const shadow = base.darken(0.5)
 const accent = normal.orange
 
+const button = {
+  primary: accent,
+  secondary: normal.yellow,
+}
+
 const icon = {
   foreground: text.primary,
   inactive: text.dimmed,
@@ -105,6 +110,7 @@ const terminal = {
 }
 
 export {
+  button,
   background,
   border,
   shadow,

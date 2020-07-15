@@ -83,9 +83,12 @@ function mkui({ ui, code }) {
      * A set of colors for button widgets such as Open Folder button in the Explorer of a new
      * window
      */
-    'button.background': ui.accent.hex(),
+    'button.background': ui.button.primary.hex(),
     'button.foreground': ui.text.complimentary.hex(),
-    // 'button.hoverBackground': '#FF0000',
+    'button.secondaryForeground': ui.button.secondary.hex(),
+    'button.secondaryBackground': ui.text.complimentary.hex(),
+    // 'button.secondaryHoverBackground': '#ff0000',
+    // 'button.hoverBackground': '#ff0000',
 
     /**
      * Dropdown Control
