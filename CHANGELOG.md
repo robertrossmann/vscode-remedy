@@ -1,3 +1,10 @@
+# [4.22.0](https://github.com/robertrossmann/vscode-remedy/compare/4.21.0...4.22.0) (2020-09-30)
+
+
+### Features
+
+* implement editor.onTypeRenameBackground ([399ccd5](https://github.com/robertrossmann/vscode-remedy/commit/399ccd5fdb6b34a850e53f2e69941902b73af851))
+
 # [4.21.0](https://github.com/robertrossmann/vscode-remedy/compare/4.20.1...4.21.0) (2020-07-15)
 
 
