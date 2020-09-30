@@ -279,6 +279,7 @@ function mkui({ ui, code }) {
     'editor.wordHighlightBackground': `${ui.highlight.word.highlight.hex()}11`,
     'editor.wordHighlightStrongBackground': `${ui.highlight.word.source.hex()}33`,
     'editor.wordHighlightStrongBorder': `${ui.highlight.word.source.hex()}AA`,
+    'editor.onTypeRenameBackground': `${ui.highlight.word.matches.hex()}33`,
     'editorCursor.foreground': ui.text.primary.hex(),
     'editorIndentGuide.activeBackground': `${ui.text.secondary.hex()}99`,
     'editorIndentGuide.background': `${ui.text.secondary.hex()}33`,
