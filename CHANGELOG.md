@@ -1,3 +1,13 @@
+# [4.23.0](https://github.com/robertrossmann/vscode-remedy/compare/4.22.0...4.23.0) (2020-10-05)
+
+
+### Features
+
+* add border between pinned and regular tabs ([0dbda31](https://github.com/robertrossmann/vscode-remedy/commit/0dbda31f92e5cb6122b482f8f62958a627b35b6e))
+* add colour contribution points for charts 🎨 ([e62ad79](https://github.com/robertrossmann/vscode-remedy/commit/e62ad7968baf7d0972337b3d6b25b08156c92b73))
+* match the overview ruler's border with panel background ([10459f4](https://github.com/robertrossmann/vscode-remedy/commit/10459f427d2dac8177e184186616a3a6219d8e5d))
+* remove border below breadcrumbs ([002d319](https://github.com/robertrossmann/vscode-remedy/commit/002d319a580037ae8d8bc473ef5ebb50742b4419))
+
 # [4.22.0](https://github.com/robertrossmann/vscode-remedy/compare/4.21.0...4.22.0) (2020-09-30)
 
 
