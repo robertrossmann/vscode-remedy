@@ -642,6 +642,18 @@ function mkui({ ui, code }) {
     // 'notebook.symbolHighlightBackground': '#ff0000',
     // 'notebook.focusedEditorBorder': '#ff0000',
 
+    /**
+     * Charts
+     */
+    'charts.red': ui.terminal.normal.red.hex(),
+    'charts.blue': ui.terminal.normal.blue.hex(),
+    'charts.yellow': ui.terminal.bright.yellow.hex(),
+    'charts.orange': ui.terminal.normal.yellow.hex(),
+    'charts.green': ui.terminal.normal.green.hex(),
+    'charts.purple': ui.terminal.normal.magenta.hex(),
+    // 'charts.foreground': ui.text.primary.hex(),
+    // 'charts.lines': ui.text.secondary.hex(),
+
     // EXTENSIONS
 
     /**
