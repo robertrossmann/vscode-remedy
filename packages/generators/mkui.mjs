@@ -244,6 +244,7 @@ function mkui({ ui, code }) {
     'tab.unfocusedHoverForeground': ui.text.primary.hex(),
     'tab.activeModifiedBorder': ui.accent.hex(),
     'tab.border': ui.background.panel.hex(),
+    'tab.lastPinnedBorder': ui.border.hex(),
     'tab.inactiveBackground': ui.background.panel.hex(),
     'tab.inactiveModifiedBorder': `${ui.accent.hex()}66`,
     'tab.hoverForeground': ui.text.primary.hex(),
