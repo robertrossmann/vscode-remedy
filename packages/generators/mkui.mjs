@@ -232,7 +232,6 @@ function mkui({ ui, code }) {
      */
     'editorGroup.border': ui.border.hex(),
     'editorGroup.dropBackground': `${ui.background.drop.hex()}22`,
-    'editorGroupHeader.border': ui.border.hex(),
     'editorGroupHeader.noTabsBackground': ui.background.panel.hex(),
     'editorGroupHeader.tabsBackground': ui.background.panel.hex(),
     'tab.activeBackground': ui.background.code.hex(),
@@ -249,6 +248,7 @@ function mkui({ ui, code }) {
     'tab.inactiveModifiedBorder': `${ui.accent.hex()}66`,
     'tab.hoverForeground': ui.text.primary.hex(),
     'editorPane.background': ui.background.panel.hex(),
+    // 'editorGroupHeader.border': ui.border.hex(),
     // 'editorGroupHeader.tabsBorder': '#FF0000',
     // 'editorGroup.emptyBackground': '#FF0000',
     // 'editorGroup.focusedEmptyBorder': '#FF0000',
