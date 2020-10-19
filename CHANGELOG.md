@@ -1,3 +1,15 @@
+# [4.24.0](https://github.com/robertrossmann/vscode-remedy/compare/4.23.0...4.24.0) (2020-10-19)
+
+
+### Bug Fixes
+
+* make list filter widget more readable by reducing background ([5d23f43](https://github.com/robertrossmann/vscode-remedy/commit/5d23f43f73fa61a8bb0210f3044668e16ec7b9ef))
+
+
+### Features
+
+* improve contrast in list views containing word highlights ([9260c21](https://github.com/robertrossmann/vscode-remedy/commit/9260c217a876c44c04697338d774797dd1dd71c5)), closes [#16](https://github.com/robertrossmann/vscode-remedy/issues/16)
+
 # [4.23.0](https://github.com/robertrossmann/vscode-remedy/compare/4.22.0...4.23.0) (2020-10-05)
 
 
