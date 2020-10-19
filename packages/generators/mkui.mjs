@@ -158,9 +158,9 @@ function mkui({ ui, code }) {
      * inactive does not.
      */
     'tree.indentGuidesStroke': `${ui.text.secondary.hex()}99`,
-    'list.activeSelectionBackground': `${ui.accent.hex()}BB`,
+    'list.activeSelectionBackground': `${ui.accent.hex()}AA`,
     'list.activeSelectionForeground': ui.text.primary.hex(),
-    'list.focusBackground': `${ui.accent.hex()}BB`,
+    'list.focusBackground': `${ui.accent.hex()}44`,
     'list.hoverBackground': `${ui.accent.hex()}11`,
     'listFilterWidget.background': `${ui.accent.hex()}88`,
     'listFilterWidget.noMatchesOutline': ui.problems.error.hex(),
@@ -372,7 +372,7 @@ function mkui({ ui, code }) {
     'editorMarkerNavigationError.background': `${ui.problems.error.hex()}44`,
     'editorMarkerNavigationWarning.background': `${ui.problems.warning.hex()}44`,
     'editorMarkerNavigationInfo.background': `${ui.problems.info.hex()}44`,
-    'editorSuggestWidget.selectedBackground': ui.accent.hex(),
+    'editorSuggestWidget.selectedBackground': `${ui.accent.hex()}AA`,
 
     /**
      * Peek View Colours
