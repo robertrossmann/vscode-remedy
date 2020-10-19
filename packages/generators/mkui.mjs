@@ -162,7 +162,7 @@ function mkui({ ui, code }) {
     'list.activeSelectionForeground': ui.text.primary.hex(),
     'list.focusBackground': `${ui.accent.hex()}BB`,
     'list.hoverBackground': `${ui.accent.hex()}11`,
-    'listFilterWidget.background': ui.accent.hex(),
+    'listFilterWidget.background': `${ui.accent.hex()}88`,
     'listFilterWidget.noMatchesOutline': ui.problems.error.hex(),
     'list.inactiveSelectionBackground': `${ui.accent.hex()}22`,
     'list.highlightForeground': ui.accent.hex(),
