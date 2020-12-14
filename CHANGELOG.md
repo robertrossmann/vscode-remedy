@@ -1,3 +1,10 @@
+# [4.25.0](https://github.com/robertrossmann/vscode-remedy/compare/4.24.0...4.25.0) (2020-12-14)
+
+
+### Features
+
+* implement sash.hoverBorder colour contribution ([0d277bb](https://github.com/robertrossmann/vscode-remedy/commit/0d277bb8a415c301677470feb2e48f313fd64593))
+
 # [4.24.0](https://github.com/robertrossmann/vscode-remedy/compare/4.23.0...4.24.0) (2020-10-19)
 
 
