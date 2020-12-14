@@ -325,6 +325,9 @@ function mkui({ ui, code }) {
     'editorWarning.foreground': ui.problems.warning.hex(),
     'editorInfo.foreground': ui.problems.info.hex(),
     'editorHint.foreground': ui.problems.hint.hex(),
+    // 'editorError.background': '#ff0000',
+    // 'editorWarning.background': '#ff0000',
+    // 'editorInfo.background': '#ff0000',
     // 'editorError.border': '#FF0000',
     // 'editorWarning.border': '#FF0000',
     // 'editorInfo.border': '#FF0000',
@@ -453,6 +456,9 @@ function mkui({ ui, code }) {
     // 'statusBarItem.prominentForeground': '#FF0000',
     // 'statusBarItem.prominentBackground': '#FF0000',
     // 'statusBarItem.prominentHoverBackground': '#FF0000',
+    // TODO: Implement once something actually uses this so we can test it
+    // 'statusBarItem.errorBackground': ui.problems.error.hex(),
+    // 'statusBarItem.errorForeground': ui.text.complimentary.hex(),
 
     /**
      * Title Bar Colours
