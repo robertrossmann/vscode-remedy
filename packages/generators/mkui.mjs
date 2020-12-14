@@ -8,6 +8,7 @@ function mkui({ ui, code }) {
     'widget.shadow': ui.shadow.hex(),
     'selection.background': `${ui.text.primary.hex()}44`,
     descriptionForeground: ui.text.primary.hex(),
+    'sash.hoverBorder': ui.border.hex(),
 
     /**
      * Windows
