@@ -612,6 +612,7 @@ function mkui({ ui, code }) {
     'settings.checkboxBorder': ui.border.hex(),
     'settings.textInputBorder': ui.border.hex(),
     'settings.numberInputBorder': ui.border.hex(),
+    'settings.focusedRowBackground': `${ui.highlight.line.hex()}09`,
 
     /**
      * Breadcrumbs
