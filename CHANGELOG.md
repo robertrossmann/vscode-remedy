@@ -1,3 +1,10 @@
+# [4.26.0](https://github.com/robertrossmann/vscode-remedy/compare/4.25.0...4.26.0) (2021-01-04)
+
+
+### Features
+
+* customise settings' focused row background ([9612281](https://github.com/robertrossmann/vscode-remedy/commit/9612281c07fd7073d20ce00b63fecc59c0cd20f0))
+
 # [4.25.0](https://github.com/robertrossmann/vscode-remedy/compare/4.24.0...4.25.0) (2020-12-14)
 
 
