@@ -2,6 +2,7 @@ function common({ code }) {
   const primitives = {
     name: 'Primitive values',
     scope: [
+      'entity.name.tag',
       'constant.numeric',
       'constant.language',
       'support.type.builtin',
@@ -74,7 +75,6 @@ function common({ code }) {
   const classes = {
     name: 'Classes & namespaces',
     scope: [
-      'entity.name.tag',
       'entity.name.type.class',
       'entity.name.type.namespace',
       'entity.other.inherited-class',
