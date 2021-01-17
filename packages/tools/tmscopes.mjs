@@ -10,8 +10,10 @@ const java = mkscope(['source.java', 'meta.embedded.block.java'])
 const jsts = mkscope([
   'source.js',
   'source.ts',
+  'source.tsx',
   'meta.embedded.block.javascript',
   'meta.embedded.block.typescript',
+  'meta.embedded.block.typescriptreact',
 ])
 const json = mkscope(['source.json', 'meta.embedded.block.json'])
 const makefile = mkscope(['source.makefile', 'meta.embedded.block.makefile'])

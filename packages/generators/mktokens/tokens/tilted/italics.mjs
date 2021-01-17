@@ -62,7 +62,7 @@ const attributes = {
 const overrides = {
   scope: [
     ...css(['entity.name.tag']),
-    ...jsts(['storage.type.js', 'storage.type.ts']),
+    ...jsts(['storage.type.js', 'storage.type.ts', 'storage.type.tsx']),
     ...makefile(['meta.scope.prerequisites']),
   ],
   settings,

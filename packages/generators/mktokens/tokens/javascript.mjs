@@ -15,6 +15,7 @@ function javascript({ code }) {
     scope: [
       'source.js storage.type.js',
       'source.ts storage.type.ts',
+      'source.tsx storage.type.tsx',
       'meta.embedded.block.javascript storage.type.js',
       'meta.embedded.block.typescript storage.type.ts',
       ...jstsscope([
@@ -39,7 +40,9 @@ function javascript({ code }) {
   const types = {
     scope: [
       'source.ts meta.type.annotation entity.name.type',
+      'source.tsx meta.type.annotation entity.name.type',
       'meta.embedded.block.typescript meta.type.annotation entity.name.type',
+      'meta.embedded.block.typescriptreact meta.type.annotation entity.name.type',
     ],
     settings: {
       foreground: code.types,
