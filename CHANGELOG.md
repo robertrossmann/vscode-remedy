@@ -1,3 +1,11 @@
+## [4.26.1](https://github.com/robertrossmann/vscode-remedy/compare/4.26.0...4.26.1) (2021-01-17)
+
+
+### Bug Fixes
+
+* correctly apply colours to .tsx (TS React) files 🤦‍♂️ ([08104da](https://github.com/robertrossmann/vscode-remedy/commit/08104da2297f1d2834973ad86e34289772e5a376))
+* differentiate between built-in HTML tags and React components ([318c439](https://github.com/robertrossmann/vscode-remedy/commit/318c439964f9d5f7be1490bdfbfb2d74e53fe795)), closes [#22](https://github.com/robertrossmann/vscode-remedy/issues/22)
+
 # [4.26.0](https://github.com/robertrossmann/vscode-remedy/compare/4.25.0...4.26.0) (2021-01-04)
 
 
