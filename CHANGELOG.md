@@ -1,3 +1,10 @@
+# [4.27.0](https://github.com/robertrossmann/vscode-remedy/compare/4.26.1...4.27.0) (2021-03-05)
+
+
+### Features
+
+* adopt new quickInput colour customisations ([86d0b58](https://github.com/robertrossmann/vscode-remedy/commit/86d0b58fe8b0ff4877537338b3681c485a0777d7))
+
 ## [4.26.1](https://github.com/robertrossmann/vscode-remedy/compare/4.26.0...4.26.1) (2021-01-17)
 
 
