@@ -57,7 +57,7 @@
   },
   "displayName": "Remedy",
   "engines": {
-    "vscode": "^1.37.0"
+    "vscode": "^1.54.0"
   },
   "galleryBanner": {
     "color": "#2C2B2A",
