@@ -453,12 +453,11 @@ function mkui({ ui, code }) {
         : ui.background.panel.mix(ui.background.drop, 0.4).hex(),
       '66',
     ].join(''),
+    'statusBarItem.errorBackground': ui.problems.error.hex(),
+    'statusBarItem.errorForeground': ui.text.complimentary.hex(),
     // 'statusBarItem.prominentForeground': '#FF0000',
     // 'statusBarItem.prominentBackground': '#FF0000',
     // 'statusBarItem.prominentHoverBackground': '#FF0000',
-    // TODO: Implement once something actually uses this so we can test it
-    // 'statusBarItem.errorBackground': ui.problems.error.hex(),
-    // 'statusBarItem.errorForeground': ui.text.complimentary.hex(),
 
     /**
      * Title Bar Colours
