@@ -1,3 +1,10 @@
+# [4.28.0](https://github.com/robertrossmann/vscode-remedy/compare/4.27.0...4.28.0) (2021-03-10)
+
+
+### Features
+
+* adopt colours for error-like status bar items ([6ca6a95](https://github.com/robertrossmann/vscode-remedy/commit/6ca6a95aa8db92fe1a267e4505898908530b36a3))
+
 # [4.27.0](https://github.com/robertrossmann/vscode-remedy/compare/4.26.1...4.27.0) (2021-03-05)
 
 
