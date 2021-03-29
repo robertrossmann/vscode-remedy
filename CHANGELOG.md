@@ -1,3 +1,10 @@
+# [4.29.0](https://github.com/robertrossmann/vscode-remedy/compare/4.28.0...4.29.0) (2021-03-29)
+
+
+### Features
+
+* overhaul GitLens colour contributions ([fa1d200](https://github.com/robertrossmann/vscode-remedy/commit/fa1d200e778332501e212dbe693d2bc01ba82e11))
+
 # [4.28.0](https://github.com/robertrossmann/vscode-remedy/compare/4.27.0...4.28.0) (2021-03-10)
 
 
