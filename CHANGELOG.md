@@ -1,3 +1,10 @@
+# [4.31.0](https://github.com/robertrossmann/vscode-remedy/compare/4.30.0...4.31.0) (2021-05-06)
+
+
+### Features
+
+* customise the extension's star (rating) icon colour ([5fe2bad](https://github.com/robertrossmann/vscode-remedy/commit/5fe2bad12b727c4390874b098bc76a9874063d05))
+
 # [4.30.0](https://github.com/robertrossmann/vscode-remedy/compare/4.29.0...4.30.0) (2021-05-06)
 
 
