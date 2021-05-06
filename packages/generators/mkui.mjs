@@ -508,6 +508,16 @@ function mkui({ ui, code }) {
     'pickerGroup.foreground': ui.text.primary.hex(),
 
     /**
+     * Keybinding label colors
+     *
+     * Keybinding labels are shown when there is a keybinding associated with a command.
+     */
+    'keybindingLabel.background': `${ui.background.hover.hex()}66`,
+    'keybindingLabel.foreground': ui.text.primary.hex(),
+    'keybindingLabel.border': ui.border.hex(),
+    'keybindingLabel.bottomBorder': ui.border.hex(),
+
+    /**
      * Integrated Terminal Colours
      */
     'terminal.background': ui.background.panel.hex(),

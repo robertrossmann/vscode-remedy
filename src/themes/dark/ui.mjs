@@ -12,6 +12,7 @@ const background = {
   code: base.lighten(0.2).desaturate(0.1),
   panel: base,
   drop: text.primary,
+  hover: base.mix(text.primary, 0.15),
 }
 
 const border = background.panel.darken(0.2)
