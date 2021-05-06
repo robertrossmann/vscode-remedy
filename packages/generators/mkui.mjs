@@ -79,6 +79,15 @@ function mkui({ ui, code }) {
     'textPreformat.foreground': code.raw,
 
     /**
+     * Action colors
+     *
+     * A set of colors to control the interactions with actions across the workbench.
+     */
+    'toolbar.hoverBackground': `${ui.background.hover.hex()}66`,
+    'toolbar.hoverOutline': '#0000',
+    'toolbar.activeBackground': `${ui.background.hover.hex()}BB`,
+
+    /**
      * Button Control
      *
      * A set of colors for button widgets such as Open Folder button in the Explorer of a new
@@ -443,22 +452,12 @@ function mkui({ ui, code }) {
       ? ui.text.secondary.lighten(0.4).hex()
       : ui.text.secondary.darken(0.2).hex(),
     'statusBar.noFolderBackground': ui.background.panel.hex(),
-    'statusBarItem.hoverBackground': [
-      ui.background.panel.isDark()
-        ? ui.background.panel.mix(ui.background.drop, 0.1).hex()
-        : ui.background.panel.mix(ui.background.drop, 0.2).hex(),
-      '66',
-    ].join(''),
+    'statusBarItem.hoverBackground': `${ui.background.hover.hex()}66`,
     'statusBarItem.remoteBackground': ui.accent.hex(),
     'statusBarItem.remoteForeground': ui.text.complimentary.hex(),
     // 'statusBar.noFolderForeground': '#FF0000',
     // 'statusBar.noFolderBorder': '#FF0000',
-    'statusBarItem.activeBackground': [
-      ui.background.panel.isDark()
-        ? ui.background.panel.mix(ui.background.drop, 0.2).hex()
-        : ui.background.panel.mix(ui.background.drop, 0.4).hex(),
-      '66',
-    ].join(''),
+    'statusBarItem.activeBackground': `${ui.background.hover.hex()}BB`,
     'statusBarItem.errorBackground': ui.problems.error.hex(),
     'statusBarItem.errorForeground': ui.text.complimentary.hex(),
     // 'statusBarItem.prominentForeground': '#FF0000',
