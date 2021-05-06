@@ -1,3 +1,13 @@
+# [4.30.0](https://github.com/robertrossmann/vscode-remedy/compare/4.29.0...4.30.0) (2021-05-06)
+
+
+### Features
+
+* adopt colour for ports icons in Remote Development UI ([757c392](https://github.com/robertrossmann/vscode-remedy/commit/757c3928c043c7ebea6afb416aef3361504ad3be))
+* adopt colours for keyboard shortcut icons ([1cc0eb4](https://github.com/robertrossmann/vscode-remedy/commit/1cc0eb482ad6fad0fd0812a0585c015dd12af29f))
+* adopt experimental colours for Testing UI ([d2dcad0](https://github.com/robertrossmann/vscode-remedy/commit/d2dcad09e520d923d2e248674fb868860c098d66))
+* adopt new toolbar action icon colours ([0b353bf](https://github.com/robertrossmann/vscode-remedy/commit/0b353bf81e7aa04c6bd6afd9f97669cc05ea223d))
+
 # [4.29.0](https://github.com/robertrossmann/vscode-remedy/compare/4.28.0...4.29.0) (2021-03-29)
 
 
