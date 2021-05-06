@@ -505,6 +505,7 @@ function mkui({ ui, code }) {
     'extensionButton.prominentForeground': ui.text.complimentary.hex(),
     'extensionButton.prominentBackground': ui.accent.hex(),
     'extensionButton.prominentHoverBackground': ui.accent.lighten(0.25).hex(),
+    'extensionIcon.starForeground': ui.accent.hex(),
 
     /**
      * Quick Picker
