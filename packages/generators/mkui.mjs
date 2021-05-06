@@ -662,6 +662,29 @@ function mkui({ ui, code }) {
     // 'charts.foreground': ui.text.primary.hex(),
     // 'charts.lines': ui.text.secondary.hex(),
 
+    /**
+     * Testing Colors
+     *
+     * TODO: Experimental, re-visit once the API and UI stabilises
+     */
+    'testing.iconFailed': ui.icon.error.hex(),
+    'testing.iconErrored': ui.icon.error.hex(),
+    'testing.iconPassed': ui.icon.success.hex(),
+    'testing.runAction': ui.accent.hex(),
+    'testing.iconSkipped': ui.problems.info.hex(),
+    'testing.peekBorder': ui.border.hex(),
+    'testing.message.error.decorationForeground': ui.problems.error.hex(),
+    'testing.message.warning.decorationForeground': ui.problems.warning.hex(),
+    'testing.message.info.decorationForeground': ui.problems.info.hex(),
+    'testing.message.hint.decorationForeground': ui.problems.hint.hex(),
+    // 'testing.iconQueued': '',
+    // 'testing.iconUnset': '',
+    // 'testing.message.error.lineBackground': '',
+    // 'testing.message.warning.lineBackground': '',
+    // 'testing.message.info.lineBackground': '',
+    // 'testing.message.hint.lineBackground': '',
+
+
     // EXTENSIONS
 
     /**
