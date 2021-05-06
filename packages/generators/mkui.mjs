@@ -665,6 +665,11 @@ function mkui({ ui, code }) {
     // EXTENSIONS
 
     /**
+     * Remote Development
+     */
+    'ports.iconRunningProcessforeground': ui.icon.success.hex(),
+
+    /**
      * Error Lens
      */
     'errorLens.errorForeground': ui.problems.error.hex(),
