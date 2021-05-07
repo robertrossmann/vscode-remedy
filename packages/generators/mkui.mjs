@@ -711,6 +711,13 @@ function mkui({ ui, code }) {
     'ports.iconRunningProcessforeground': ui.icon.success.hex(),
 
     /**
+     * GitHub Pull Requests & Issues
+     */
+    'issues.newIssueDecoration': ui.text.secondary.hex(),
+    'issues.open': ui.icon.success.hex(),
+    'issues.closed': ui.icon.error.hex(),
+
+    /**
      * Error Lens
      */
     'errorLens.errorForeground': ui.problems.error.hex(),
