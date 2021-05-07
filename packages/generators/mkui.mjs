@@ -95,8 +95,8 @@ function mkui({ ui, code }) {
      */
     'button.background': ui.button.primary.hex(),
     'button.foreground': ui.text.complimentary.hex(),
-    'button.secondaryForeground': ui.button.secondary.hex(),
-    'button.secondaryBackground': ui.text.complimentary.hex(),
+    'button.secondaryBackground': ui.button.secondary.hex(),
+    'button.secondaryForeground': ui.text.complimentary.hex(),
     // 'button.secondaryHoverBackground': '#ff0000',
     // 'button.hoverBackground': '#ff0000',
     // 'button.border': '#ff0000',
