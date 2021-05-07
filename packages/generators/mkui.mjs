@@ -792,6 +792,11 @@ function mkui({ ui, code }) {
      */
     'sqltools.currentQueryBg': `${ui.highlight.word.matches.hex()}22`,
     'sqltools.currentQueryOutline': '#0000',
+
+    /**
+     * File Watcher
+     */
+    'filewatcher.error': ui.problems.error.hex(),
   }
 }
 
