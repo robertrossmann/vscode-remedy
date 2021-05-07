@@ -652,21 +652,29 @@ function mkui({ ui, code }) {
      * Notebook
      */
     'notebook.cellBorderColor': ui.border.hex(),
-    'notebook.cellHoverBackground': `${ui.background.panel.hex()}66`,
+    'notebook.cellHoverBackground': `${ui.highlight.line.hex()}09`,
     'notebook.cellInsertionIndicator': ui.accent.hex(),
-    'notebook.cellStatusBarItemHoverBackground': ui.accent.hex(),
+    'notebook.cellStatusBarItemHoverBackground': `${ui.background.hover.hex()}66`,
     'notebook.cellToolbarSeparator': ui.border.hex(),
-    'notebook.focusedCellBackground': ui.background.panel.hex(),
-    'notebook.focusedCellBorder': ui.border.hex(),
+    'notebook.focusedCellBackground': `${ui.highlight.line.hex()}09`,
+    'notebook.focusedCellBorder': `${ui.accent.hex()}66`,
+    'notebook.inactiveFocusedCellBorder': `${ui.accent.hex()}44`,
     'notebook.outputContainerBackgroundColor': ui.background.panel.hex(),
     'notebookStatusErrorIcon.foreground': ui.icon.error.hex(),
     'notebookStatusRunningIcon.foreground': ui.icon.foreground.hex(),
     'notebookStatusSuccessIcon.foreground': ui.icon.success.hex(),
+    'notebook.symbolHighlightBackground': `${ui.highlight.range.hex()}11`,
+    'notebook.selectedCellBackground': `${ui.highlight.selection.hex()}22`,
+    // 'notebook.selectedCellBorder': '#ff0000',
+
+    // 'notebook.focusedCellShadow': '#ff0000',
+    // 'notebook.focusedEditorBorder': '#ff0000',
+    // 'notebook.focusedRowBorder': '#ff0000',
+    // 'notebook.rowHoverBackground': '#ff0000',
     // 'notebookScrollbarSlider.activeBackground': '#ff0000',
     // 'notebookScrollbarSlider.background': '#ff0000',
-    // "notebookScrollbarSlider.hoverBackground": "#ff0000",
-    // 'notebook.symbolHighlightBackground': '#ff0000',
-    // 'notebook.focusedEditorBorder': '#ff0000',
+    // 'notebookScrollbarSlider.hoverBackground': '#ff0000',
+    // 'notebook.inactiveSelectedCellBorder': '#ff0000',
 
     /**
      * Charts
