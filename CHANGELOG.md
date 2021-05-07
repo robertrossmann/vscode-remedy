@@ -1,3 +1,17 @@
+# [4.32.0](https://github.com/robertrossmann/vscode-remedy/compare/4.31.0...4.32.0) (2021-05-07)
+
+
+### Bug Fixes
+
+* use correct colour for secondary buttons ([8bfbb97](https://github.com/robertrossmann/vscode-remedy/commit/8bfbb97c0d671e7550fb4ba57a88412bb35364b4))
+
+
+### Features
+
+* add colours for GitHub Pull Requests & Issues ([d37b9a9](https://github.com/robertrossmann/vscode-remedy/commit/d37b9a9f6d67300943b918ca79a00dccab6fc78a))
+* add custom colour for File Watcher extension ([0bcad51](https://github.com/robertrossmann/vscode-remedy/commit/0bcad51a3ef5771ead3a26009e99bd3a19c5c9e0))
+* refactor notebook colours ([7dec0d5](https://github.com/robertrossmann/vscode-remedy/commit/7dec0d5c50c82325a6356a78b6bca2c29e22cdcd))
+
 # [4.31.0](https://github.com/robertrossmann/vscode-remedy/compare/4.30.0...4.31.0) (2021-05-06)
 
 
