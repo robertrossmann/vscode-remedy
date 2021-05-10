@@ -805,6 +805,12 @@ function mkui({ ui, code }) {
      * File Watcher
      */
     'filewatcher.error': ui.problems.error.hex(),
+
+    /**
+     * Inline Parameters
+     */
+    'inlineparameters.annotationForeground': ui.text.secondary.hex(),
+    'inlineparameters.annotationBackground': ui.background.panel.hex(),
   }
 }
 
