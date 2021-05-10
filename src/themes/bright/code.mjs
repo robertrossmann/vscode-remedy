@@ -1,9 +1,9 @@
 import { foreground, normal, bright } from './colours'
 
 const plain = foreground.hex()
-const punctuation = bright.magenta.desaturate(0.6).hex()
-const primitives = normal.yellow.darken(0.2).hex()
-const comments = foreground.lighten(1).desaturate(0.6).hex()
+const punctuation = bright.magenta.lighten(0.15).desaturate(0.5).hex()
+const primitives = normal.yellow.hex()
+const comments = foreground.lighten(1.6).desaturate(0.5).hex()
 const language = normal.magenta.hex()
 const preprocessor = normal.cyan.hex()
 const functions = normal.blue.hex()
@@ -23,7 +23,7 @@ const regexp = {
 
 // Markdown & similar tokens in other source files
 const raw = normal.yellow.hex()
-const quotes = foreground.darken(0.3).desaturate(0.7).hex()
+const quotes = comments
 const links = normal.cyan.hex()
 const headings = bright.red.hex()
 
