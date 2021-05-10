@@ -1,6 +1,6 @@
 import * as color from 'color'
 
-const base = color('#2C2B2A')
+const base = color('#36302c')
 const normal = {
   black: color('#282A2E'),
   blue: color('#5F819D'),
@@ -11,7 +11,7 @@ const normal = {
   white: color('#707880'),
   yellow: color('#DE935F'),
   // Extras
-  orange: color('#cc6953'),
+  orange: color('#eb684b'),
 }
 
 const bright = {

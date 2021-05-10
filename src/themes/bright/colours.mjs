@@ -11,7 +11,7 @@ const normal = {
   white: color('#707880'),
   yellow: color('#DE935F'),
   // Extras
-  orange: color('#cc6953'),
+  orange: color('#eb684b'),
 }
 
 const bright = {

@@ -60,7 +60,7 @@
     "vscode": "^1.54.0"
   },
   "galleryBanner": {
-    "color": "#2C2B2A",
+    "color": "#36302c",
     "theme": "dark"
   },
   "homepage": "https://github.com/robertrossmann/vscode-remedy",
