@@ -1,3 +1,18 @@
+# [5.0.0](https://github.com/robertrossmann/vscode-remedy/compare/4.32.0...5.0.0) (2021-05-10)
+
+
+### Features
+
+* add colour customisation for Inline Parameters extension ([e70bbaa](https://github.com/robertrossmann/vscode-remedy/commit/e70bbaa67021abf7914510dec77078697d27228e))
+* overhaul bright variant 🎨 ([2d41e5f](https://github.com/robertrossmann/vscode-remedy/commit/2d41e5f871fc9e6984e4a46305906d3d91650754))
+* overhaul the dark variant 🎨 ([5bef5ca](https://github.com/robertrossmann/vscode-remedy/commit/5bef5caf94db419b168969bfd9f1be998ea22f65))
+
+
+### BREAKING CHANGES
+
+* The dark variant is now more... playful? It's definitely more brown-ish! The orange accents are also more vibrant, pronounced. Enjoy the spring update! ❤️
+* The Bright theme now looks more... bright. The font colours have been tweaked to provide overall better contrast all over the code and UI. Looking at the bright theme should be much more pleasant now.
+
 # [4.32.0](https://github.com/robertrossmann/vscode-remedy/compare/4.31.0...4.32.0) (2021-05-07)
 
 
