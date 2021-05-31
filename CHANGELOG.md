@@ -1,3 +1,10 @@
+# [5.1.0](https://github.com/robertrossmann/vscode-remedy/compare/5.0.0...5.1.0) (2021-05-31)
+
+
+### Features
+
+* properly implement Testing UI colour customisations 😍 ([41653b8](https://github.com/robertrossmann/vscode-remedy/commit/41653b8e19ad0def0794fb4723346b57a16f0f8c))
+
 # [5.0.0](https://github.com/robertrossmann/vscode-remedy/compare/4.32.0...5.0.0) (2021-05-10)
 
 
