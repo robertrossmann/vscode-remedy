@@ -34,12 +34,12 @@
     ]
   },
   "devDependencies": {
-    "@remedy/tools": "file:packages/tools",
-    "@remedy/generators": "file:packages/generators",
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
     "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "@remedy/generators": "file:packages/generators",
+    "@remedy/tools": "file:packages/tools",
     "@semantic-release/changelog": "^5.0.0",
     "@semantic-release/exec": "^5.0.0",
     "@semantic-release/git": "^9.0.0",
