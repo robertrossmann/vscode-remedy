@@ -11,9 +11,11 @@ const jsts = mkscope([
   'source.js',
   'source.ts',
   'source.tsx',
+  'source.svelte',
   'meta.embedded.block.javascript',
   'meta.embedded.block.typescript',
   'meta.embedded.block.typescriptreact',
+  'meta.embedded.block.svelte',
 ])
 const json = mkscope(['source.json', 'meta.embedded.block.json'])
 const makefile = mkscope(['source.makefile', 'meta.embedded.block.makefile'])

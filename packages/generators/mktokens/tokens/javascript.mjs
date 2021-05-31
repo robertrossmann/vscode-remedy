@@ -18,6 +18,8 @@ function javascript({ code }) {
       'source.tsx storage.type.tsx',
       'meta.embedded.block.javascript storage.type.js',
       'meta.embedded.block.typescript storage.type.ts',
+      'meta.embedded.block.svelte storage.type.js',
+      'meta.embedded.block.svelte storage.type.ts',
       ...jstsscope([
         'storage.type.class',
         'storage.type.function',
@@ -51,8 +53,10 @@ function javascript({ code }) {
 
   const attributes = {
     scope: jstsscope([
-    // JSX element attributes
+      // JSX element attributes
       'meta.tag.attributes entity.other.attribute-name',
+      // Svelte element attributes
+      'meta.attribute entity.other.attribute-name',
 
       'variable.other.constant.property',
     ]),

@@ -41,13 +41,14 @@ The following languages have been manually tweaked to provide best experience:
 - HTML & CSS & Less
 - Java
 - JavaScript & React
+- TypeScript & React
+- Svelte
 - JSON
 - Make
 - Markdown
 - PHP
 - Shell
 - SQL
-- TypeScript & React
 - YAML
 
 ## Screenshots
