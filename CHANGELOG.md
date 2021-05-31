@@ -1,3 +1,10 @@
+# [5.2.0](https://github.com/robertrossmann/vscode-remedy/compare/5.1.0...5.2.0) (2021-05-31)
+
+
+### Features
+
+* implement Svelte support 🚀 ([3d50e65](https://github.com/robertrossmann/vscode-remedy/commit/3d50e6530fdbb4a75ab80e06b0f083bf6e4922fa)), closes [#26](https://github.com/robertrossmann/vscode-remedy/issues/26)
+
 # [5.1.0](https://github.com/robertrossmann/vscode-remedy/compare/5.0.0...5.1.0) (2021-05-31)
 
 
