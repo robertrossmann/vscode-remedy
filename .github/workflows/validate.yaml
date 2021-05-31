@@ -7,7 +7,7 @@ on:
 
 jobs:
   validate:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     timeout-minutes: 10
     env:
       CI: 'true'
@@ -19,7 +19,7 @@ jobs:
 
       - uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 16
 
       - id: cache
         name: Cache node_modules
