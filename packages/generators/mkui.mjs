@@ -689,26 +689,24 @@ function mkui({ ui, code }) {
     // 'charts.lines': ui.text.secondary.hex(),
 
     /**
-     * Testing Colors
-     *
-     * TODO: Experimental, re-visit once the API and UI stabilises
+     * Testing UI
      */
     'testing.iconFailed': ui.icon.error.hex(),
     'testing.iconErrored': ui.icon.error.hex(),
     'testing.iconPassed': ui.icon.success.hex(),
+    'testing.iconQueued': ui.problems.info.hex(),
+    'testing.iconSkipped': ui.icon.inactive.hex(),
+    'testing.iconUnset': ui.problems.info.hex(),
     'testing.runAction': ui.accent.hex(),
-    'testing.iconSkipped': ui.problems.info.hex(),
     'testing.peekBorder': ui.border.hex(),
-    'testing.message.error.decorationForeground': ui.problems.error.hex(),
-    'testing.message.warning.decorationForeground': ui.problems.warning.hex(),
-    'testing.message.info.decorationForeground': ui.problems.info.hex(),
-    'testing.message.hint.decorationForeground': ui.problems.hint.hex(),
-    // 'testing.iconQueued': '',
-    // 'testing.iconUnset': '',
-    // 'testing.message.error.lineBackground': '',
-    // 'testing.message.warning.lineBackground': '',
-    // 'testing.message.info.lineBackground': '',
-    // 'testing.message.hint.lineBackground': '',
+    'testing.message.error.decorationForeground': ui.text.complimentary.hex(),
+    'testing.message.warning.decorationForeground': ui.text.complimentary.hex(),
+    'testing.message.info.decorationForeground': ui.text.complimentary.hex(),
+    'testing.message.hint.decorationForeground': ui.text.complimentary.hex(),
+    'testing.message.error.lineBackground': `${ui.problems.error.hex()}66`,
+    'testing.message.warning.lineBackground': `${ui.problems.warning.hex()}66`,
+    'testing.message.info.lineBackground': `${ui.problems.info.hex()}66`,
+    'testing.message.hint.lineBackground': `${ui.problems.hint.hex()}66`,
 
 
     // EXTENSIONS
