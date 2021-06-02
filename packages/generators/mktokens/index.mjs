@@ -9,6 +9,7 @@ function mktokens({ code, colours, tilts = false }) {
     ...tokens.csharp({ code }),
     ...tokens.css({ code, colours }),
     ...tokens.html({ code, colours }),
+    ...tokens.pug({ code, colours }),
     ...tokens.java({ code }),
     ...tokens.javascript({ code }),
     ...tokens.keyvaluelike({ code }),

@@ -9,6 +9,7 @@ import makefile from './makefile'
 import markdown from './markdown'
 import shell from './shell'
 import html from './html'
+import pug from './pug'
 import keyvaluelike from './keyvaluelike'
 import tilted from './tilted'
 
@@ -24,6 +25,7 @@ export {
   markdown,
   shell,
   html,
+  pug,
   keyvaluelike,
   tilted,
 }

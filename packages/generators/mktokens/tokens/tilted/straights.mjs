@@ -6,6 +6,7 @@ import {
   cc,
   css,
   cs,
+  pug,
 } from '@remedy/tools/tmscopes'
 
 const settings = {
@@ -35,6 +36,16 @@ const functions = {
   settings,
 }
 
+const classes = {
+  scope: [
+    ...pug([
+      'entity.other.attribute-name.class',
+      'entity.other.attribute-name.id',
+    ]),
+  ],
+  settings,
+}
+
 const constants = {
   scope: [
     ...css(['keyword.other.unit']),
@@ -60,6 +71,7 @@ export default [
   stringkeys,
   language,
   functions,
+  classes,
   constants,
   types,
   punctuation,

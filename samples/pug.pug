@@ -1,0 +1,78 @@
+extends /bases/_modal
+
+block variables
+  - var modalId = 'modalForm'
+
+
+block content
+  .modal-body.c-modal__body
+    body(class=authenticated ? 'authed' : 'anon')
+    input(
+      type='checkbox'
+      name='agreement'
+      checked
+    )
+    input(data-json=`
+    {
+      "very-long": "piece of ",
+      "data": true
+    }
+    `)
+    div(unescaped!="<code>")
+    input(type='checkbox' checked)
+    a(style={color: 'red', background: 'green'})
+    a#main-link(href="/test")
+    div#foo(data-bar="foo")&attributes({'data-foo': 'bar'})
+    // just some paragraphs
+    case friends
+      when 0
+      when 1
+        p you have very few friends
+      default
+        p you have #{friends} friends
+
+<!--[if gt IE 8]><!-->
+    <html lang="en">
+<!--<![endif]-->
+
+    #user
+    if user.description
+      h2.green Description
+      p.description= user.description
+    else if authorised
+      h2.blue Description
+      p.description.
+        User has no description,
+        why not add one...
+
+      :markdown-it(linkify langPrefix='highlight-')
+        # Markdown
+
+        Markdown document with http://links.com and
+
+        ```js
+        var codeBlocks;
+        ```
+
+    script
+    :cdata-js:babel(presets=['es2015'])
+      const myFunc = () => `This is ES2015`
+
+
+    h1.c-modal__title
+      | Modal Example
+    h4.c-modal__label
+      | Please fill out the blanks with an *
+    p.c-modal__text.
+      Lorem elit Lorem do duis enim mollit ad esse irure proident adipisicing occaecat do.
+      Tempor laborum occaecat in ea dolor nisi fugiat ex ut mollit pariatur tempor laborum.
+      Et qui eiusmod commodo dolore nisi excepteur dolor in eu est in irure enim.
+    p.c-modal__text.
+      Lorem elit Lorem do duis enim mollit ad esse irure proident adipisicing occaecat do.
+    h4.c-modal__label.h-mb-30
+      | Let's Start!
+    input.c-input.c-modal__input(type="text" placeholder="Country *")
+    input.c-input.c-modal__input(type="text" placeholder="Please put your Employee email")
+
+    .h-mt-10
+      button.c-btn.c-btn_small(data-dismiss="modal") Next

@@ -39,6 +39,7 @@ The following languages have been manually tweaked to provide best experience:
 - Go
 - GraphQL
 - HTML & CSS & Less
+- Pug
 - Java
 - JavaScript & React
 - TypeScript & React

@@ -1,6 +1,7 @@
 import {
   css,
   jsts,
+  pug,
   makefile,
 } from '@remedy/tools/tmscopes'
 
@@ -64,6 +65,7 @@ const overrides = {
     ...css(['entity.name.tag']),
     ...jsts(['storage.type.js', 'storage.type.ts', 'storage.type.tsx']),
     ...makefile(['meta.scope.prerequisites']),
+    ...pug(['storage.type.import.include']),
   ],
   settings,
 }

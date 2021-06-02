@@ -6,6 +6,7 @@ const cs = mkscope(['source.cs', 'meta.embedded.block.csharp'])
 const css = mkscope(['source.css', 'meta.embedded.block.css', 'meta.embedded.block.less'])
 const dotenv = mkscope(['source.env'])
 const html = mkscope(['text.html', 'meta.embedded.block.html'])
+const pug = mkscope(['text.pug'])
 const java = mkscope(['source.java', 'meta.embedded.block.java'])
 const jsts = mkscope([
   'source.js',
@@ -32,6 +33,7 @@ export {
   css,
   dotenv,
   html,
+  pug,
   java,
   jsts,
   json,
