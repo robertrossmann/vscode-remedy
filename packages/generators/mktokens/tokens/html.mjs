@@ -1,6 +1,14 @@
 import { html as htmlscope } from '@remedy/tools/tmscopes'
 
-function html({ code }) {
+function html({ code, colours }) {
+  const ids = {
+    scope: htmlscope([
+      'meta.attribute.id string.quoted',
+    ]),
+    settings: {
+      foreground: colours.normal.green.hex(),
+    },
+  }
   const attributes = {
     scope: htmlscope([
       'entity.other.attribute-name',
@@ -12,6 +20,7 @@ function html({ code }) {
 
   return [
     attributes,
+    ids,
   ]
 }
 

@@ -142,3 +142,11 @@
 .CodeMirror-merge-collapsed-line .CodeMirror-gutter-elt {
   display: none
 }
+
+div {
+  content: "..."
+}
+
+#id {
+  content: "..."
+}

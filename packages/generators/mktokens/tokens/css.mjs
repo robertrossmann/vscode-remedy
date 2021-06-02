@@ -6,7 +6,7 @@ function css({ code, colours }) {
       'entity.other.attribute-name.id',
     ]),
     settings: {
-      foreground: colours.normal.red.hex(),
+      foreground: colours.normal.green.hex(),
     },
   }
 
@@ -15,7 +15,16 @@ function css({ code, colours }) {
       'entity.name.tag',
     ]),
     settings: {
-      foreground: code.classes,
+      foreground: code.primitives,
+    },
+  }
+
+  const properties = {
+    scope: cssscope([
+      'support.type.property-name',
+    ]),
+    settings: {
+      foreground: code.plain,
     },
   }
 
@@ -24,7 +33,7 @@ function css({ code, colours }) {
       'entity.other.attribute-name.class',
     ]),
     settings: {
-      foreground: colours.bright.green.hex(),
+      foreground: code.classes,
     },
   }
 
@@ -33,7 +42,7 @@ function css({ code, colours }) {
       'entity.other.attribute-name.pseudo-element',
     ]),
     settings: {
-      foreground: colours.normal.cyan.hex(),
+      foreground: code.preprocessor,
     },
   }
 
@@ -42,7 +51,7 @@ function css({ code, colours }) {
       'variable',
     ]),
     settings: {
-      foreground: code.constants,
+      foreground: code.escapes,
     },
   }
 
@@ -73,6 +82,7 @@ function css({ code, colours }) {
     ids,
     pseudo,
     variables,
+    properties,
     constants,
     functions,
   ]

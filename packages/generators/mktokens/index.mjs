@@ -8,7 +8,7 @@ function mktokens({ code, colours, tilts = false }) {
     ...tokens.cpp({ code }),
     ...tokens.csharp({ code }),
     ...tokens.css({ code, colours }),
-    ...tokens.html({ code }),
+    ...tokens.html({ code, colours }),
     ...tokens.java({ code }),
     ...tokens.javascript({ code }),
     ...tokens.keyvaluelike({ code }),
