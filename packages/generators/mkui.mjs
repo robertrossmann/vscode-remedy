@@ -558,6 +558,8 @@ function mkui({ ui, code }) {
     'debugToolBar.border': ui.border.hex(),
     'editor.stackFrameHighlightBackground': `${ui.debug.frame.normal.hex()}33`,
     'editor.focusedStackFrameHighlightBackground': `${ui.debug.frame.focused.hex()}22`,
+    'editor.inlineValuesBackground': ui.background.panel.hex(),
+    'editor.inlineValuesForeground': ui.text.secondary.hex(),
     'debugIcon.breakpointForeground': ui.debug.breakpoint.active.hex(),
     'debugIcon.breakpointDisabledForeground': `${ui.debug.breakpoint.disabled.hex()}66`,
     'debugIcon.breakpointUnverifiedForeground': ui.debug.breakpoint.unverified.hex(),
