@@ -531,21 +531,25 @@ function mkui({ ui, code }) {
     'terminal.foreground': ui.text.primary.hex(),
     'terminalCursor.foreground': ui.text.primary.hex(),
     'terminal.selectionBackground': `${ui.text.primary.hex()}22`,
-    'terminal.ansiBlack': ui.terminal.normal.black.lighten(0.5).hex(),
+    'terminal.ansiBlack': ui.terminal.normal.black.hex(),
     'terminal.ansiBlue': ui.terminal.normal.blue.hex(),
     'terminal.ansiCyan': ui.terminal.normal.cyan.hex(),
     'terminal.ansiGreen': ui.terminal.normal.green.hex(),
     'terminal.ansiMagenta': ui.terminal.normal.magenta.hex(),
     'terminal.ansiRed': ui.terminal.normal.red.hex(),
-    'terminal.ansiWhite': ui.terminal.normal.white.lighten(0.2).hex(),
+    'terminal.ansiWhite': ui.terminal.normal.white.hex(),
     'terminal.ansiYellow': ui.terminal.normal.yellow.hex(),
-    'terminal.ansiBrightBlack': ui.terminal.bright.black.lighten(0.5).hex(),
+    'terminal.ansiBrightBlack': ui.background.panel.isDark()
+      ? ui.terminal.bright.black.lighten(0.5).hex()
+      : ui.terminal.bright.white.darken(0.2).hex(),
     'terminal.ansiBrightBlue': ui.terminal.bright.blue.hex(),
     'terminal.ansiBrightCyan': ui.terminal.bright.cyan.hex(),
     'terminal.ansiBrightGreen': ui.terminal.bright.green.hex(),
     'terminal.ansiBrightMagenta': ui.terminal.bright.magenta.hex(),
     'terminal.ansiBrightRed': ui.terminal.bright.red.hex(),
-    'terminal.ansiBrightWhite': ui.terminal.bright.white.lighten(0.2).hex(),
+    'terminal.ansiBrightWhite': ui.background.panel.isDark()
+      ? ui.terminal.bright.white.lighten(0.2).hex()
+      : ui.terminal.bright.black.lighten(0.5).hex(),
     'terminal.ansiBrightYellow': ui.terminal.bright.yellow.hex(),
     // 'terminalCursor.background': '#FF0000',
 
