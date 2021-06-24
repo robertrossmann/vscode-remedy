@@ -699,7 +699,7 @@ function mkui({ ui, code }) {
     'testing.iconQueued': ui.problems.info.hex(),
     'testing.iconSkipped': ui.icon.inactive.hex(),
     'testing.iconUnset': ui.problems.info.hex(),
-    'testing.runAction': ui.accent.hex(),
+    'testing.runAction': ui.text.secondary.hex(),
     'testing.peekBorder': ui.border.hex(),
     'testing.message.error.decorationForeground': ui.text.complimentary.hex(),
     'testing.message.warning.decorationForeground': ui.text.complimentary.hex(),
