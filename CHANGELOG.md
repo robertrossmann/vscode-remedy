@@ -1,3 +1,19 @@
+# [5.4.0](https://github.com/robertrossmann/vscode-remedy/compare/5.3.0...5.4.0) (2021-06-24)
+
+
+### Bug Fixes
+
+* improve terminal colours in bright theme ([7f1a330](https://github.com/robertrossmann/vscode-remedy/commit/7f1a330c95773be5389749ea379b127e09ea2701))
+* restore intended look for code completion suggestions ([2e52833](https://github.com/robertrossmann/vscode-remedy/commit/2e52833ff51c1b08a78c027c3076a6599811ee46))
+* use a distinct colour for disabled breakpoints ([1d13bfd](https://github.com/robertrossmann/vscode-remedy/commit/1d13bfda866fca97a6f19ef85e4c717103aff071))
+* use consistent button hovers in all theme variants ([bbc2c50](https://github.com/robertrossmann/vscode-remedy/commit/bbc2c5058b1538a504b3d4e264fb7f4322dd8a55))
+* use less distractive colour for "Run test" icon ([d157bee](https://github.com/robertrossmann/vscode-remedy/commit/d157bee4a6415ae5e1d5d2a6650a5b80f687cf90))
+
+
+### Features
+
+* add debug inline values colour contributions ([a8ab9ed](https://github.com/robertrossmann/vscode-remedy/commit/a8ab9ed95dc4bbf8d7a0acaec78c5076a24316f7))
+
 # [5.3.0](https://github.com/robertrossmann/vscode-remedy/compare/5.2.0...5.3.0) (2021-06-02)
 
 
