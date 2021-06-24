@@ -186,9 +186,11 @@ function mkui({ ui, code }) {
     'list.invalidItemForeground': ui.problems.error.hex(),
     'list.inactiveFocusBackground': `${ui.accent.hex()}11`,
     'quickInputList.focusBackground': `${ui.accent.hex()}44`,
+    // 'quickInputList.focusForeground': '#ff0000',
     // 'quickInput.background': '#ff0000',
     // 'quickInputTitle.background': '#ff0000',
     // 'list.focusForeground': '#ff0000',
+    // 'list.focusHighlightForeground': '#ff0000',
     // 'list.hoverForeground': '#ff0000',
     // 'list.inactiveSelectionForeground': '#ff0000',
     // 'listFilterWidget.outline': '#ff0000',
@@ -376,11 +378,13 @@ function mkui({ ui, code }) {
     'editorHoverWidget.border': ui.border.hex(),
     'editorSuggestWidget.background': ui.background.panel.hex(),
     'editorSuggestWidget.foreground': ui.text.primary.hex(),
-    'editorSuggestWidget.highlightForeground': ui.text.primary.hex(),
+    'editorSuggestWidget.highlightForeground': ui.accent.hex(),
+    'editorSuggestWidget.selectedBackground': `${ui.accent.hex()}66`,
+    'editorSuggestWidget.border': ui.border.hex(),
+    // 'editorSuggestWidget.selectedForeground': '#ff0000',
     'editorWidget.background': ui.background.panel.hex(),
     'editorWidget.resizeBorder': ui.accent.hex(),
     'editorWidget.border': ui.border.hex(),
-    'editorSuggestWidget.border': ui.border.hex(),
     // The Debug Exception widget is a peek view that shows in the editor when debug stops at an
     // exception.
     'debugExceptionWidget.background': ui.background.panel.hex(),
@@ -391,7 +395,6 @@ function mkui({ ui, code }) {
     'editorMarkerNavigationError.background': `${ui.problems.error.hex()}44`,
     'editorMarkerNavigationWarning.background': `${ui.problems.warning.hex()}44`,
     'editorMarkerNavigationInfo.background': `${ui.problems.info.hex()}44`,
-    'editorSuggestWidget.selectedBackground': `${ui.accent.hex()}AA`,
 
     /**
      * Peek View Colours
