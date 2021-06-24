@@ -67,7 +67,7 @@ const problems = {
 const debug = {
   breakpoint: {
     active: bright.red,
-    disabled: normal.red,
+    disabled: icon.inactive,
     unverified: normal.white,
   },
   frame: {
