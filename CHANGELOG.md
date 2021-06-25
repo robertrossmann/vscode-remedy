@@ -1,3 +1,11 @@
+# [5.5.0](https://github.com/robertrossmann/vscode-remedy/compare/5.4.0...5.5.0) (2021-06-25)
+
+
+### Features
+
+* consolidate bright yellow colour in bright theme ([d71a510](https://github.com/robertrossmann/vscode-remedy/commit/d71a5100395c22c1b24cc3f24cab5f71b86bab6f))
+* improve punctuation colours & git diff views ([b7279a4](https://github.com/robertrossmann/vscode-remedy/commit/b7279a47adb23abe1226af6d12af0844b96a6ce2))
+
 # [5.4.0](https://github.com/robertrossmann/vscode-remedy/compare/5.3.0...5.4.0) (2021-06-24)
 
 
