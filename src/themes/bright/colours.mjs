@@ -22,10 +22,10 @@ const bright = {
   magenta: color('#B294BB'),
   red: color('#CC6666'),
   white: color('#C5C8C6'),
-  yellow: color('#F0C674'),
+  yellow: color('#F0C674').darken(0.3).desaturate(0.1),
 }
 
-const foreground = bright.yellow.darken(0.7).desaturate(0.3)
+const foreground = bright.yellow.darken(0.55).desaturate(0.2)
 
 export {
   base,
