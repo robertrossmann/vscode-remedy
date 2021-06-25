@@ -1,9 +1,9 @@
 import { foreground, normal, bright } from './colours'
 
 const plain = foreground.hex()
-const punctuation = bright.magenta.lighten(0.15).desaturate(0.5).hex()
-const primitives = normal.yellow.hex()
 const comments = foreground.lighten(1.6).desaturate(0.5).hex()
+const punctuation = comments
+const primitives = normal.yellow.hex()
 const language = normal.magenta.hex()
 const preprocessor = normal.cyan.hex()
 const functions = normal.blue.hex()
