@@ -360,6 +360,9 @@ function mkui({ ui, code }) {
     'editor.foldBackground': `${ui.problems.info.hex()}11`,
     'editorGutter.commentRangeForeground': `${ui.text.secondary.hex()}99`,
     // 'editorGutter.background': '#FF0000',
+    // Inlay Hints
+    'editorInlayHint.foreground': ui.text.secondary.hex(),
+    'editorInlayHint.background': ui.background.panel.hex(),
 
     /**
      * Diff Editor Colours
