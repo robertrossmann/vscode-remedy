@@ -1,3 +1,10 @@
+# [5.6.0](https://github.com/robertrossmann/vscode-remedy/compare/5.5.0...5.6.0) (2021-07-20)
+
+
+### Features
+
+* add support for Inlay Hints ([9f1534b](https://github.com/robertrossmann/vscode-remedy/commit/9f1534bec58247a666605a7dc25cf91c533ce4af))
+
 # [5.5.0](https://github.com/robertrossmann/vscode-remedy/compare/5.4.0...5.5.0) (2021-06-25)
 
 
