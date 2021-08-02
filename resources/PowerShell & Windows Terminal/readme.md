@@ -19,4 +19,4 @@
 1. Open settings > personalization > colors
 2. Click [+] Custom Color
 3. Click "More ▿"
-4. Enter `#36302C`, or any Remedy color that you like!
+4. Enter `#252526` to match the VS Code title bar
