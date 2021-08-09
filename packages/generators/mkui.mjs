@@ -537,6 +537,7 @@ function mkui({ ui, code }) {
     'terminal.background': ui.background.panel.hex(),
     'terminal.border': ui.border.hex(),
     'terminal.foreground': ui.text.primary.hex(),
+    'terminal.tab.activeBorder': ui.accent.hex(),
     'terminalCursor.foreground': ui.text.primary.hex(),
     'terminal.selectionBackground': `${ui.text.primary.hex()}22`,
     'terminal.ansiBlack': ui.terminal.normal.black.hex(),
