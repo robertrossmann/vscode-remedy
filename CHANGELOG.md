@@ -1,3 +1,11 @@
+# [5.7.0](https://github.com/robertrossmann/vscode-remedy/compare/5.6.0...5.7.0) (2021-08-09)
+
+
+### Features
+
+* implement StatusBar warning colours ([2608694](https://github.com/robertrossmann/vscode-remedy/commit/2608694aae7399a08e4d0040e1874723ac20a8d2))
+* implement terminal tab active border colour ([400e188](https://github.com/robertrossmann/vscode-remedy/commit/400e18863c625f7cf8fa8f39ea2dd1817306e14c))
+
 # [5.6.0](https://github.com/robertrossmann/vscode-remedy/compare/5.5.0...5.6.0) (2021-07-20)
 
 
