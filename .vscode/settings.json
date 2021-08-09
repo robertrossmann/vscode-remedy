@@ -1,6 +1,5 @@
 {
   "editor.wordWrapColumn": 100,
-  "eslint.enable": true,
   "eslint.options": {
     "reportUnusedDisableDirectives": true
   },
@@ -28,7 +27,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "debug.javascript.usePreview": false,
+  "debug.javascript.usePreview": true,
   "todo-tree.filtering.excludeGlobs": [
     "samples/"
   ],
