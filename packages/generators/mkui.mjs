@@ -99,10 +99,10 @@ function mkui({ ui, code }) {
     'button.secondaryForeground': ui.text.complimentary.hex(),
     'button.hoverBackground': ui.button.primary.lighten(0.2).hex(),
     'button.secondaryHoverBackground': ui.button.secondary.lighten(0.2).hex(),
+    'checkbox.background': ui.background.panel.hex(),
+    'checkbox.foreground': code.primitives,
+    'checkbox.border': ui.border.hex(),
     // 'button.border': '#ff0000',
-    // 'checkbox.background': '#ff0000',
-    // 'checkbox.foreground': '#ff0000',
-    // 'checkbox.border': '#ff0000',
 
     /**
      * Dropdown Control
