@@ -1,3 +1,10 @@
+# [5.8.0](https://github.com/robertrossmann/vscode-remedy/compare/5.7.0...5.8.0) (2021-08-30)
+
+
+### Features
+
+* add proper colours to custom checkboxes ([c3fb60d](https://github.com/robertrossmann/vscode-remedy/commit/c3fb60d8cc2ebed8e0a3029cdb3d4cbcd5d7aacf))
+
 # [5.7.0](https://github.com/robertrossmann/vscode-remedy/compare/5.6.0...5.7.0) (2021-08-09)
 
 
