@@ -239,8 +239,9 @@ function mkui({ ui, code }) {
     'minimapGutter.addedBackground': ui.scm.added.hex(),
     'minimapGutter.modifiedBackground': ui.scm.modified.hex(),
     'minimapGutter.deletedBackground': ui.scm.deleted.hex(),
-    // 'minimapSlider.hoverBackground': '#ff0000',
-    // 'minimapSlider.background': '#ff0000',
+    'minimapSlider.background': `${ui.accent.hex()}22`,
+    'minimapSlider.hoverBackground': `${ui.accent.hex()}44`,
+    'minimapSlider.activeBackground': `${ui.accent.hex()}66`,
 
     /**
      * Editor Groups & Tabs
