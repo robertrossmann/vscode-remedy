@@ -1,3 +1,11 @@
+# [5.9.0](https://github.com/robertrossmann/vscode-remedy/compare/5.8.0...5.9.0) (2021-09-06)
+
+
+### Features
+
+* add theme colours to custom bracket foregrounds ([6fb6180](https://github.com/robertrossmann/vscode-remedy/commit/6fb6180af8f85cdf338a2090d8a9fcddaac90f35))
+* unify minimap colours with the scrollbars ([6fbdb61](https://github.com/robertrossmann/vscode-remedy/commit/6fbdb61ac5e65ecb4df7626b92061a796e9b3041))
+
 # [5.8.0](https://github.com/robertrossmann/vscode-remedy/compare/5.7.0...5.8.0) (2021-08-30)
 
 
