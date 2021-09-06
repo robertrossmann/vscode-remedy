@@ -13,7 +13,7 @@ BABEL_DEFAULTS = --extensions .mjs --relative --out-dir .
 # User-overridable
 BABEL_FLAGS :=
 ESLINT_FLAGS :=
-NPM_FLAGS :=
+NPM_FLAGS := --legacy-peer-deps
 
 CODEDIRS := src packages
 GITFILES := $(patsubst utils/githooks/%, .git/hooks/%, $(wildcard utils/githooks/*))
