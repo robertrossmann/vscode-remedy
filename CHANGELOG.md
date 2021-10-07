@@ -1,3 +1,10 @@
+# [5.10.0](https://github.com/robertrossmann/vscode-remedy/compare/5.9.0...5.10.0) (2021-10-07)
+
+
+### Features
+
+* tone down bracket/indent guide colours ([3995203](https://github.com/robertrossmann/vscode-remedy/commit/3995203371d7d393ea72ee7575b45a455dbb28e2))
+
 # [5.9.0](https://github.com/robertrossmann/vscode-remedy/compare/5.8.0...5.9.0) (2021-09-06)
 
 
