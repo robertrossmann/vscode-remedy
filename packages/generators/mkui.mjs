@@ -545,6 +545,9 @@ function mkui({ ui, code }) {
     'keybindingLabel.foreground': ui.text.primary.hex(),
     'keybindingLabel.border': ui.border.hex(),
     'keybindingLabel.bottomBorder': ui.border.hex(),
+    // Keyboard Shortcuts view
+    'keybindingTable.headerBackground': ui.background.panel.hex(),
+    'keybindingTable.rowsBackground': `${ui.background.panel.hex()}66`,
 
     /**
      * Integrated Terminal Colours
