@@ -570,6 +570,9 @@ function mkui({ ui, code }) {
       ? ui.terminal.bright.white.lighten(0.2).hex()
       : ui.terminal.bright.black.lighten(0.5).hex(),
     'terminal.ansiBrightYellow': ui.terminal.bright.yellow.hex(),
+    'terminalCommandDecoration.successBackground': ui.icon.success.hex(),
+    'terminalCommandDecoration.errorBackground': ui.icon.error.hex(),
+    'terminalCommandDecoration.defaultBackground': ui.icon.inactive.hex(),
     // 'terminalCursor.background': '#FF0000',
 
     /**
