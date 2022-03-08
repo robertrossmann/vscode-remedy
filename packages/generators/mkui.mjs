@@ -664,6 +664,7 @@ function mkui({ ui, code }) {
     'settings.textInputBorder': ui.border.hex(),
     'settings.numberInputBorder': ui.border.hex(),
     'settings.focusedRowBackground': `${ui.highlight.line.hex()}09`,
+    'settings.focusedRowBorder': `${ui.accent.hex()}66`,
 
     /**
      * Breadcrumbs
