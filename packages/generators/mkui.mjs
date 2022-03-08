@@ -462,6 +462,7 @@ function mkui({ ui, code }) {
     'statusBar.debuggingBackground': ui.accent.hex(),
     'statusBar.debuggingForeground': ui.text.complimentary.hex(),
     'statusBar.debuggingBorder': ui.border.hex(),
+    'statusBar.focusBorder': `${ui.accent.hex()}66`,
     'statusBar.foreground': ui.background.panel.isDark()
       ? ui.text.secondary.lighten(0.4).hex()
       : ui.text.secondary.darken(0.2).hex(),
@@ -476,6 +477,7 @@ function mkui({ ui, code }) {
     'statusBarItem.errorForeground': ui.text.complimentary.hex(),
     'statusBarItem.warningBackground': ui.problems.warning.hex(),
     'statusBarItem.warningForeground': ui.text.complimentary.hex(),
+    'statusBarItem.focusBorder': `${ui.accent.hex()}66`,
     // 'statusBarItem.prominentForeground': '#FF0000',
     // 'statusBarItem.prominentBackground': '#FF0000',
     // 'statusBarItem.prominentHoverBackground': '#FF0000',
