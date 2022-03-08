@@ -1,3 +1,15 @@
+# [5.11.0](https://github.com/robertrossmann/vscode-remedy/compare/5.10.0...5.11.0) (2022-03-08)
+
+
+### Features
+
+* add support for shell intergration's command status indicators ([ecac1d6](https://github.com/robertrossmann/vscode-remedy/commit/ecac1d6154ca25b8147244ec0d29a1102265e5cd))
+* add support for status bar focus borders ([494eb45](https://github.com/robertrossmann/vscode-remedy/commit/494eb4587ed1a74df9c7dfe42686d3f056c2cdc6))
+* properly style code completion texts in editors ([e684739](https://github.com/robertrossmann/vscode-remedy/commit/e684739bb759901013ce41b858368ec753c891d2))
+* update extension icon colours ([21ed1eb](https://github.com/robertrossmann/vscode-remedy/commit/21ed1ebddc86e1094a4b69ca9c2ebd5c96bcc016))
+* update focused row borders in Settings view ([471e37d](https://github.com/robertrossmann/vscode-remedy/commit/471e37da6f409371ee30147393ba72ddb2a54e75))
+* update keyboard shortcuts view colours ([bd9f34f](https://github.com/robertrossmann/vscode-remedy/commit/bd9f34ff6e288c45ee7f35cf302bc62dbffeb98a))
+
 # [5.10.0](https://github.com/robertrossmann/vscode-remedy/compare/5.9.0...5.10.0) (2021-10-07)
 
 
