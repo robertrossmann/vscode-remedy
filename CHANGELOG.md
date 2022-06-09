@@ -1,3 +1,12 @@
+# [5.12.0](https://github.com/robertrossmann/vscode-remedy/compare/5.11.0...5.12.0) (2022-06-09)
+
+
+### Features
+
+* add support for Command Center ([a1a0f48](https://github.com/robertrossmann/vscode-remedy/commit/a1a0f4853c44b65a2abcf598851d4e19616e2d95))
+* customise table column borders ([51d44aa](https://github.com/robertrossmann/vscode-remedy/commit/51d44aae51bca05f41ab72e9184046d55fe5ee30))
+* update Terminal's find match highlights ([45ce55c](https://github.com/robertrossmann/vscode-remedy/commit/45ce55c15b4d1ba87e7947c652352143ff3e8672))
+
 # [5.11.0](https://github.com/robertrossmann/vscode-remedy/compare/5.10.0...5.11.0) (2022-03-08)
 
 
