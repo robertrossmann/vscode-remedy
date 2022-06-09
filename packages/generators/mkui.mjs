@@ -172,6 +172,7 @@ function mkui({ ui, code }) {
      * inactive does not.
      */
     'tree.indentGuidesStroke': `${ui.text.secondary.hex()}99`,
+    'tree.tableColumnsBorder': ui.border.hex(),
     'list.activeSelectionBackground': `${ui.accent.hex()}AA`,
     'list.activeSelectionForeground': ui.text.primary.hex(),
     'list.hoverBackground': `${ui.accent.hex()}11`,
