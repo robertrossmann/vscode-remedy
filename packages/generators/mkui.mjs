@@ -214,6 +214,15 @@ function mkui({ ui, code }) {
     // 'activityBar.activeBackground': ui.background.code.hex(),
 
     /**
+     * Command Center
+     */
+    'commandCenter.background': ui.background.code.hex(),
+    'commandCenter.border': ui.border.hex(),
+    'commandCenter.foreground': ui.text.secondary.hex(),
+    'commandCenter.activeForeground': ui.text.primary.hex(),
+    'commandCenter.activeBackground': ui.background.code.hex(),
+
+    /**
      * Side Bar
      *
      * The Side Bar contains views like the Explorer and Search.
