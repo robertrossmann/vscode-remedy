@@ -71,8 +71,8 @@ const debug = {
     unverified: normal.white,
   },
   frame: {
-    normal: normal.green,
-    focused: bright.green,
+    normal: normal.blue,
+    focused: bright.blue,
   },
   icon: {
     start: normal.orange,
