@@ -1,3 +1,19 @@
+# [5.13.0](https://github.com/robertrossmann/vscode-remedy/compare/5.12.0...5.13.0) (2022-06-10)
+
+
+### Bug Fixes
+
+* reduce brightness of the Notification Centre header ([fd90459](https://github.com/robertrossmann/vscode-remedy/commit/fd904591468eacc5418055bc86a7406bd07c0782))
+* reduce error/warning status bar items' saturation ([cda5d2e](https://github.com/robertrossmann/vscode-remedy/commit/cda5d2e8bba7bea9a7b15dc70ab7d3d6231bfa9b))
+* use blue colors for debug frame highlights for bright theme ([c3ef77a](https://github.com/robertrossmann/vscode-remedy/commit/c3ef77a3ae4dd843914d7fb446c6413ba8cea44c))
+
+
+### Features
+
+* improve foreground contrast on buttons, badges for light theme ([59ea73b](https://github.com/robertrossmann/vscode-remedy/commit/59ea73b9214be975e9f4f596756af81006f77b7d))
+* use a more decent blue as debugging status bar indicator ([c310fe2](https://github.com/robertrossmann/vscode-remedy/commit/c310fe2b3f989eec7c689d1ffe26a24433d9fa99))
+* use less prominent button colour for Remote Development ([1ba35f4](https://github.com/robertrossmann/vscode-remedy/commit/1ba35f47414b87ab2afc6620d115f2ed23132209))
+
 # [5.12.0](https://github.com/robertrossmann/vscode-remedy/compare/5.11.0...5.12.0) (2022-06-09)
 
 
