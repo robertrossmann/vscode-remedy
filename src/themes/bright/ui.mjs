@@ -4,7 +4,7 @@ const text = {
   primary: foreground,
   secondary: foreground.lighten(1.2).desaturate(0.3),
   dimmed: foreground.lighten(1.6).desaturate(0.5),
-  contrast: base.lighten(0.8),
+  contrast: base,
   complimentary: bright.yellow.darken(0.9).desaturate(0.3),
 }
 

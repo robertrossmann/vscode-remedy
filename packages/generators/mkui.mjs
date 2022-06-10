@@ -94,9 +94,9 @@ function mkui({ ui, code }) {
      * window
      */
     'button.background': ui.button.primary.hex(),
-    'button.foreground': ui.text.complimentary.hex(),
+    'button.foreground': ui.text.contrast.hex(),
     'button.secondaryBackground': ui.button.secondary.hex(),
-    'button.secondaryForeground': ui.text.complimentary.hex(),
+    'button.secondaryForeground': ui.text.contrast.hex(),
     'button.hoverBackground': ui.button.primary.lighten(0.2).hex(),
     'button.secondaryHoverBackground': ui.button.secondary.lighten(0.2).hex(),
     'checkbox.background': ui.background.panel.hex(),
@@ -158,7 +158,7 @@ function mkui({ ui, code }) {
      * Badges are small information labels, for example, search results count.
      */
     'badge.background': ui.accent.hex(),
-    'badge.foreground': ui.text.complimentary.hex(),
+    'badge.foreground': ui.text.contrast.hex(),
 
     /**
      * Progress Bar
@@ -209,7 +209,7 @@ function mkui({ ui, code }) {
     'activityBar.foreground': ui.icon.foreground.hex(),
     'activityBar.inactiveForeground': ui.icon.inactive.hex(),
     'activityBarBadge.background': ui.accent.hex(),
-    'activityBarBadge.foreground': ui.text.complimentary.hex(),
+    'activityBarBadge.foreground': ui.text.contrast.hex(),
     // TODO(vscode): implement panelTitle.activeBackground colour contribution
     // 'activityBar.activeBackground': ui.background.code.hex(),
 
@@ -533,7 +533,7 @@ function mkui({ ui, code }) {
     /**
      * Extensions
      */
-    'extensionButton.prominentForeground': ui.text.complimentary.hex(),
+    'extensionButton.prominentForeground': ui.text.contrast.hex(),
     'extensionButton.prominentBackground': ui.accent.hex(),
     'extensionButton.prominentHoverBackground': ui.accent.lighten(0.25).hex(),
     'extensionIcon.starForeground': ui.accent.hex(),
