@@ -481,7 +481,7 @@ function mkui({ ui, code }) {
       : ui.text.secondary.darken(0.2).hex(),
     'statusBar.noFolderBackground': ui.background.panel.hex(),
     'statusBarItem.hoverBackground': `${ui.background.hover.hex()}66`,
-    'statusBarItem.remoteBackground': ui.accent.hex(),
+    'statusBarItem.remoteBackground': ui.button.secondary.hex(),
     'statusBarItem.remoteForeground': ui.text.complimentary.hex(),
     // 'statusBar.noFolderForeground': '#FF0000',
     // 'statusBar.noFolderBorder': '#FF0000',
