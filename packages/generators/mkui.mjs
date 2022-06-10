@@ -522,8 +522,8 @@ function mkui({ ui, code }) {
      * Notification Colours
      */
     'notifications.background': ui.background.panel.hex(),
-    'notificationCenterHeader.background': ui.accent.hex(),
-    'notificationCenterHeader.foreground': ui.text.complimentary.hex(),
+    'notificationCenterHeader.background': ui.border.hex(),
+    'notificationCenterHeader.foreground': ui.text.primary.hex(),
     'notificationCenter.border': ui.border.hex(),
     'notifications.border': ui.border.hex(),
     'notificationToast.border': ui.border.hex(),
