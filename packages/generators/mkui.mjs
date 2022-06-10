@@ -472,7 +472,7 @@ function mkui({ ui, code }) {
      */
     'statusBar.background': ui.background.panel.hex(),
     'statusBar.border': ui.border.hex(),
-    'statusBar.debuggingBackground': ui.accent.hex(),
+    'statusBar.debuggingBackground': `${ui.debug.indicator.hex()}99`,
     'statusBar.debuggingForeground': ui.text.complimentary.hex(),
     'statusBar.debuggingBorder': ui.border.hex(),
     'statusBar.focusBorder': `${ui.accent.hex()}66`,

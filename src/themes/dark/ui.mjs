@@ -65,6 +65,7 @@ const problems = {
 }
 
 const debug = {
+  indicator: bright.blue,
   breakpoint: {
     active: bright.red,
     disabled: icon.inactive,
