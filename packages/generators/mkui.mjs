@@ -659,6 +659,16 @@ function mkui({ ui, code }) {
     'gitDecoration.submoduleResourceForeground': ui.scm.untracked.hex(),
 
     /**
+     * Merge Conflict Editor
+     */
+    'mergeEditor.conflict.unhandledUnfocused.border': `${ui.scm.conflicting.hex()}44`,
+    'mergeEditor.conflict.unhandledFocused.border': `${ui.scm.conflicting.hex()}99`,
+    'mergeEditor.conflict.handledUnfocused.border': `${ui.scm.modified.hex()}44`,
+    'mergeEditor.conflict.handledFocused.border': `${ui.scm.modified.hex()}99`,
+    'mergeEditor.conflict.unhandled.minimapOverViewRuler': ui.scm.conflicting.hex(),
+    'mergeEditor.conflict.handled.minimapOverViewRuler': ui.scm.modified.hex(),
+
+    /**
      * Settings Editor Colours
      */
     'settings.headerForeground': ui.text.primary.hex(),
