@@ -1,3 +1,10 @@
+# [5.14.0](https://github.com/robertrossmann/vscode-remedy/compare/5.13.0...5.14.0) (2022-07-18)
+
+
+### Features
+
+* add support for Merge Conflict Editor ([309c0cf](https://github.com/robertrossmann/vscode-remedy/commit/309c0cf1b3ba5d96eeee058380bbc2a8ab7dd484))
+
 # [5.13.0](https://github.com/robertrossmann/vscode-remedy/compare/5.12.0...5.13.0) (2022-06-10)
 
 
