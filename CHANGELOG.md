@@ -1,3 +1,10 @@
+# [5.15.0](https://github.com/robertrossmann/vscode-remedy/compare/5.14.0...5.15.0) (2022-08-04)
+
+
+### Features
+
+* include new customisations for VS Code 1.70 ([4f98181](https://github.com/robertrossmann/vscode-remedy/commit/4f98181f99b53d5cebe5c1e4648d0b7196991240))
+
 # [5.14.0](https://github.com/robertrossmann/vscode-remedy/compare/5.13.0...5.14.0) (2022-07-18)
 
 
