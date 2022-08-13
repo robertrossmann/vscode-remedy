@@ -34,29 +34,26 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
-    "@babel/plugin-transform-modules-commonjs": "^7.5.0",
-    "@remedy/generators": "file:packages/generators",
-    "@remedy/tools": "file:packages/tools",
-    "@semantic-release/changelog": "^5.0.0",
-    "@semantic-release/exec": "^5.0.0",
-    "@semantic-release/git": "^9.0.0",
-    "@strv/commitlint-config": "^1.1.0",
-    "@strv/eslint-config-node": "^2.0.0",
-    "@strv/remark-config": "^1.0.2",
-    "babel-eslint": "^10.0.2",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/exec": "^6.0.0",
+    "@semantic-release/git": "^10.0.0",
+    "@strv/commitlint-config": "^2.0.0",
+    "@strv/eslint-config-node": "^3.0.0",
+    "@strv/eslint-config-typescript": "^3.0.0",
+    "@strv/remark-config": "^2.0.0",
+    "@types/color": "^3.0.2",
     "color": "^4.0.0",
-    "commitlint": "^13.1.0",
-    "eslint": "^7.32.0",
-    "remark-cli": "^10.0.0",
-    "semantic-release": "^17.2.3",
-    "source-map-support": "^0.5.13",
-    "vsce": "^1.66.0"
+    "commitlint": "^17.0.0",
+    "eslint": "^8.21.0",
+    "remark-cli": "^11.0.0",
+    "semantic-release": "^19.0.0",
+    "source-map-support": "^0.5.20",
+    "typescript": "^4.7.0",
+    "vsce": "^2.10.0"
   },
   "displayName": "Remedy",
   "engines": {
+    "node": ">=18",
     "vscode": "^1.54.0"
   },
   "galleryBanner": {
@@ -82,5 +79,8 @@
     "id": "5f2bb8f7-dc95-49f9-be2f-0278fa401434",
     "publisherDisplayName": "Robert Rossmann",
     "publisherId": "98352602-a18a-4e10-af4f-20f27045849c"
+  },
+  "dependencies": {
+    "tsconfig-paths": "^4.1.0"
   }
 }

@@ -4,6 +4,7 @@ node_modules
 # Local configuration
 .env
 .bashrc
+.zshrc
 .npmrc
 local.mk
 
@@ -16,16 +17,13 @@ local.mk
 /themes
 
 # Generated files
-/.nvmrc
 /docs
 /coverage
-/gh-pages
 *.vsix
 *.cpuprofile
+.buildstate
 
 # Garbage
-*.lerna_backup
-*.log
 *~
 *#
 .DS_Store

@@ -1,39 +1,29 @@
 {
-  "editor.wordWrapColumn": 100,
-  "eslint.options": {
-    "reportUnusedDisableDirectives": true
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   },
+  "editor.tabSize": 2,
+  "editor.wordWrapColumn": 100,
   "files.exclude": {
+    // Hide compiled sources from the Explorer view
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
     "**/*.log": true,
     "**/.DS_Store": true,
-    "**/.git": true,
-    ".eslintcache": true,
-    ".nyc_output": true,
-    "{src,packages}/**/*.js": true
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "javascript.format.enable": false,
-  "javascript.validate.enable": true,
-  "triggerTaskOnSave.on": true,
-  "triggerTaskOnSave.tasks": {
-    "make:themes": [
-      "**/*.mjs",
-      "babel.config.js"
-    ]
-  },
-  "typescript.format.enable": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "debug.javascript.usePreview": true,
-  "todo-tree.filtering.excludeGlobs": [
-    "samples/"
-  ],
   "github-actions.workflows.pinned.refresh.enabled": true,
   "github-actions.workflows.pinned.refresh.interval": 60,
   "github-actions.workflows.pinned.workflows": [
     ".github/workflows/validate.yaml"
-  ]
+  ],
+  "todo-tree.filtering.excludeGlobs": [
+    "samples/"
+  ],
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.format.enable": false,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

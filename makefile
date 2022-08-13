@@ -11,34 +11,35 @@ NPM_I := $(if $(CI), ci, install)
 BABEL_DEFAULTS = --extensions .mjs --relative --out-dir .
 
 # User-overridable
-BABEL_FLAGS :=
+TSC_FLAGS :=
 ESLINT_FLAGS :=
-NPM_FLAGS := --legacy-peer-deps
+NPM_FLAGS :=
 
-CODEDIRS := src packages
+CODEDIRS := src
 GITFILES := $(patsubst utils/githooks/%, .git/hooks/%, $(wildcard utils/githooks/*))
-SRCFILES := $(shell find src packages -type f -name "*.mjs")
-DSTFILES := $(patsubst %.mjs, %.js, $(SRCFILES))
+SRCFILES := $(shell find src -type f -name "*.ts")
 SRCTHEME := $(wildcard src/themes/*)
 DSTTHEME :=	$(patsubst src/themes/%, themes/%-color-theme.json, $(SRCTHEME))
 
 # Do this when make is invoked without targets
-all: precompile themes $(GITFILES)
+all: compile themes $(GITFILES)
 
 # GENERIC TARGETS
 
-node_modules: package.json
-	npm $(NPM_I) $(NPM_FLAGS) && touch node_modules
+.buildstate:
+	mkdir .buildstate
 
-# Default compilation target for all source files
-%.js: %.mjs node_modules babel.config.js
-	babel $< --out-file $@ $(BABEL_FLAGS)
+.buildstate/tsconfig.tsbuildinfo: node_modules tsconfig.json $(SRCFILES) .buildstate
+	tsc $(TSC_FLAGS) && touch $@
+
+node_modules: package.json
+	npm $(NPM_I) $(NPM_FLAGS) && touch $@
 
 # Default target for all possible git hooks
 .git/hooks/%: utils/githooks/%
 	cp $< $@
 
-themes/%-color-theme.json: src/themes/% $(DSTFILES)
+themes/%-color-theme.json: src/themes/% .buildstate/tsconfig.tsbuildinfo $(SRCFILES)
 	@mkdir -p themes
 	node src/bin/generate $< $@
 
@@ -49,21 +50,18 @@ themes/%-color-theme.json: src/themes/% $(DSTFILES)
 
 extension: remedy.vsix
 
-themes: $(DSTTHEME)
+themes: $(DSTTHEME) .buildstate/tsconfig.tsbuildinfo
 	node src/bin/refresh-package $(SRCTHEME)
 
-compile: $(DSTFILES)
+compile: .buildstate/tsconfig.tsbuildinfo
 
-precompile: install
-	babel $(CODEDIRS) $(BABEL_FLAGS) $(BABEL_DEFAULTS)
-
-watch/compile: precompile
-	babel $(CODEDIRS) $(BABEL_FLAGS) $(BABEL_DEFAULTS) --watch --skip-initial-build --verbose
+watch/compile: force install
+	tsc $(TSC_FLAGS) --watch
 
 install: node_modules $(GITFILES)
 
 lint: force install
-	eslint --cache --ext .mjs --report-unused-disable-directives $(ESLINT_FLAGS) .
+	eslint --cache $(ESLINT_FLAGS) .
 	remark --quiet .
 
 unlock: pristine
@@ -75,8 +73,8 @@ clean:
 	find . -not -path '*/node_modules/*' -name '*.log' -print -delete
 
 distclean: clean
-	rm -f $(shell find src packages -type f -name "*.js")
-	rm -rf themes
+	git clean -Xf src
+	rm -rf themes .buildstate
 
 pristine: distclean
 	rm -rf node_modules

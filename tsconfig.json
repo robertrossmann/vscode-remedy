@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "noEmitOnError": false,
+    "tsBuildInfoFile": ".buildstate/tsconfig.tsbuildinfo",
+    "importHelpers": true,
+    "resolveJsonModule": true,
+
+    "declaration": false,
+    "declarationMap": false,
+    "removeComments": true,
+    "inlineSourceMap": true,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": false,
+    "incremental": true,
+
+    // `strict` Enables the following rules:
+    // - alwaysStrict
+    // - strictNullChecks
+    // - strictBindCallApply
+    // - strictFunctionTypes
+    // - strictPropertyInitialization
+    // - noImplicitAny
+    // - noImplicitThis
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    "baseUrl": ".",
+    "useUnknownInCatchVariables": true,
+    "paths": {
+      "@remedy/*": [
+        "src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "samples"
+  ]
+}
