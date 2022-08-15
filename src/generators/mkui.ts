@@ -5,15 +5,23 @@ interface mkuiParams {
   code: CodePalette
 }
 
+/**
+ * Get the float representation of a channel's hex value as a range between 0 and 1 corresponding to 0x00 - 0xFF
+ * @private
+ */
+function ch(hex: number) {
+  return hex / 0xFF
+}
+
 function mkui({ ui, code }: mkuiParams): UIColourPalette {
   return {
     /**
      * Base Colours
      */
-    focusBorder: `${ui.accent.hex()}66`,
+    focusBorder: ui.accent.alpha(ch(0x66)).hexa(),
     foreground: ui.text.primary.hex(),
     'widget.shadow': ui.shadow.hex(),
-    'selection.background': `${ui.text.primary.hex()}44`,
+    'selection.background': ui.text.primary.alpha(ch(0x44)).hexa(),
     descriptionForeground: ui.text.primary.hex(),
     'sash.hoverBorder': ui.border.hex(),
 
@@ -90,9 +98,9 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
      *
      * A set of colors to control the interactions with actions across the workbench.
      */
-    'toolbar.hoverBackground': `${ui.background.hover.hex()}66`,
+    'toolbar.hoverBackground': ui.background.hover.alpha(ch(0x66)).hexa(),
     'toolbar.hoverOutline': '#0000',
-    'toolbar.activeBackground': `${ui.background.hover.hex()}BB`,
+    'toolbar.activeBackground': ui.background.hover.alpha(ch(0xbb)).hexa(),
 
     /**
      * Button Control
@@ -139,7 +147,7 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'inputValidation.infoBackground': ui.problems.info.hex(),
     'inputValidation.infoForeground': ui.text.contrast.hex(),
     'inputValidation.infoBorder': ui.problems.info.hex(),
-    'inputOption.activeBorder': `${ui.accent.hex()}66`,
+    'inputOption.activeBorder': ui.accent.alpha(ch(0x66)).hexa(),
     // TODO(vscode): Implement inputOption.foreground colour contribution
     // 'inputOption.activeForeground': '#ff0000',
     // 'input.foreground': '#ff0000',
@@ -147,7 +155,7 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     /**
      * Search Editor
      */
-    'searchEditor.findMatchBorder': `${ui.highlight.word.matches.hex()}44`,
+    'searchEditor.findMatchBorder': ui.highlight.word.matches.alpha(ch(0x44)).hexa(),
     // 'searchEditor.findMatchBackground': '#ff0000',
     // 'searchEditor.textInputBorder': '#ff0000,
 
@@ -155,9 +163,9 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
      * Scrollbar Control
      */
     'scrollbar.shadow': ui.shadow.hex(),
-    'scrollbarSlider.activeBackground': `${ui.accent.hex()}66`,
-    'scrollbarSlider.background': `${ui.accent.hex()}22`,
-    'scrollbarSlider.hoverBackground': `${ui.accent.hex()}44`,
+    'scrollbarSlider.activeBackground': ui.accent.alpha(ch(0x66)).hexa(),
+    'scrollbarSlider.background': ui.accent.alpha(ch(0x22)).hexa(),
+    'scrollbarSlider.hoverBackground': ui.accent.alpha(ch(0x44)).hexa(),
 
     /**
      * Badge
@@ -178,23 +186,23 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
      * Colors for list and trees like the File Explorer. An active list/tree has keyboard focus, an
      * inactive does not.
      */
-    'tree.indentGuidesStroke': `${ui.text.secondary.hex()}99`,
+    'tree.indentGuidesStroke': ui.text.secondary.alpha(ch(0x99)).hexa(),
     'tree.tableColumnsBorder': ui.border.hex(),
-    'list.activeSelectionBackground': `${ui.accent.hex()}AA`,
+    'list.activeSelectionBackground': ui.accent.alpha(ch(0xaa)).hexa(),
     'list.activeSelectionForeground': ui.text.primary.hex(),
-    'list.hoverBackground': `${ui.accent.hex()}11`,
+    'list.hoverBackground': ui.accent.alpha(ch(0x11)).hexa(),
     'listFilterWidget.background': ui.background.panel.hex(),
     'listFilterWidget.noMatchesOutline': ui.problems.error.hex(),
-    'list.inactiveSelectionBackground': `${ui.accent.hex()}22`,
+    'list.inactiveSelectionBackground': ui.accent.alpha(ch(0x22)).hexa(),
     'list.highlightForeground': ui.accent.hex(),
-    'list.dropBackground': `${ui.background.drop.hex()}22`,
+    'list.dropBackground': ui.background.drop.alpha(ch(0x22)).hexa(),
     'list.errorForeground': ui.problems.error.hex(),
     'list.warningForeground': ui.problems.warning.hex(),
     'list.deemphasizedForeground': ui.scm.ignored.hex(),
-    'list.filterMatchBackground': `${ui.highlight.word.matches.hex()}44`,
+    'list.filterMatchBackground': ui.highlight.word.matches.alpha(ch(0x44)).hexa(),
     'list.invalidItemForeground': ui.problems.error.hex(),
-    'list.inactiveFocusBackground': `${ui.accent.hex()}11`,
-    'quickInputList.focusBackground': `${ui.accent.hex()}44`,
+    'list.inactiveFocusBackground': ui.accent.alpha(ch(0x11)).hexa(),
+    'quickInputList.focusBackground': ui.accent.alpha(ch(0x44)).hexa(),
     // 'quickInputList.focusForeground': '#ff0000',
     // 'quickInput.background': '#ff0000',
     // 'quickInputTitle.background': '#ff0000',
@@ -241,7 +249,7 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'sideBarSectionHeader.foreground': ui.text.secondary.hex(),
     'sideBarSectionHeader.background': ui.background.panel.hex(),
     'sideBarSectionHeader.border': ui.border.hex(),
-    'sideBar.dropBackground': `${ui.background.drop.hex()}22`,
+    'sideBar.dropBackground': ui.background.drop.alpha(ch(0x22)).hexa(),
     'sideBarTitle.foreground': ui.text.secondary.hex(),
 
     /**
@@ -250,16 +258,16 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
      * The Minimap shows a minified version of the current file.
      */
     'minimap.background': ui.background.panel.hex(),
-    'minimap.findMatchHighlight': `${ui.highlight.word.matches.hex()}44`,
-    'minimap.selectionHighlight': `${ui.text.primary.hex()}AA`,
+    'minimap.findMatchHighlight': ui.highlight.word.matches.alpha(ch(0x44)).hexa(),
+    'minimap.selectionHighlight': ui.text.primary.alpha(ch(0xaa)).hexa(),
     'minimap.errorHighlight': ui.problems.error.hex(),
     'minimap.warningHighlight': ui.problems.warning.hex(),
     'minimapGutter.addedBackground': ui.scm.added.hex(),
     'minimapGutter.modifiedBackground': ui.scm.modified.hex(),
     'minimapGutter.deletedBackground': ui.scm.deleted.hex(),
-    'minimapSlider.background': `${ui.accent.hex()}22`,
-    'minimapSlider.hoverBackground': `${ui.accent.hex()}44`,
-    'minimapSlider.activeBackground': `${ui.accent.hex()}66`,
+    'minimapSlider.background': ui.accent.alpha(ch(0x22)).hexa(),
+    'minimapSlider.hoverBackground': ui.accent.alpha(ch(0x44)).hexa(),
+    'minimapSlider.activeBackground': ui.accent.alpha(ch(0x66)).hexa(),
 
     /**
      * Editor Groups & Tabs
@@ -268,7 +276,7 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
      * container of an editor. Multiple Tabs can be opened in one editor group.
      */
     'editorGroup.border': ui.border.hex(),
-    'editorGroup.dropBackground': `${ui.background.drop.hex()}22`,
+    'editorGroup.dropBackground': ui.background.drop.alpha(ch(0x22)).hexa(),
     'editorGroupHeader.noTabsBackground': ui.background.panel.hex(),
     'editorGroupHeader.tabsBackground': ui.background.panel.hex(),
     'tab.activeBackground': ui.background.code.hex(),
@@ -282,7 +290,7 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'tab.border': ui.background.panel.hex(),
     'tab.lastPinnedBorder': ui.border.hex(),
     'tab.inactiveBackground': ui.background.panel.hex(),
-    'tab.inactiveModifiedBorder': `${ui.accent.hex()}66`,
+    'tab.inactiveModifiedBorder': ui.accent.alpha(ch(0x66)).hexa(),
     'tab.hoverForeground': ui.text.primary.hex(),
     'editorPane.background': ui.background.panel.hex(),
     // 'editorGroupHeader.border': ui.border.hex(),
@@ -305,39 +313,39 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
      * Editor Colours
      */
     'editor.background': ui.background.code.hex(),
-    'editor.findMatchBackground': `${ui.highlight.word.matches.hex()}44`,
-    'editor.findMatchBorder': `${ui.highlight.word.matches.hex()}AA`,
-    'editor.findMatchHighlightBackground': `${ui.highlight.word.matches.hex()}33`,
-    'editor.findRangeHighlightBackground': `${ui.scm.added.hex()}11`,
+    'editor.findMatchBackground': ui.highlight.word.matches.alpha(ch(0x44)).hexa(),
+    'editor.findMatchBorder': ui.highlight.word.matches.alpha(ch(0xaa)).hexa(),
+    'editor.findMatchHighlightBackground': ui.highlight.word.matches.alpha(ch(0x33)).hexa(),
+    'editor.findRangeHighlightBackground': ui.scm.added.alpha(ch(0x11)).hexa(),
     'editor.foreground': ui.text.primary.hex(),
-    'editor.hoverHighlightBackground': `${ui.highlight.hover.hex()}11`,
-    'editor.lineHighlightBackground': `${ui.highlight.line.hex()}09`,
-    'editor.selectionBackground': `${ui.highlight.selection.hex()}22`,
-    'editor.selectionHighlightBackground': `${ui.highlight.selection.hex()}11`,
-    'editor.wordHighlightBackground': `${ui.highlight.word.highlight.hex()}11`,
-    'editor.wordHighlightStrongBackground': `${ui.highlight.word.source.hex()}33`,
-    'editor.wordHighlightStrongBorder': `${ui.highlight.word.source.hex()}AA`,
-    'editor.onTypeRenameBackground': `${ui.highlight.word.matches.hex()}33`,
+    'editor.hoverHighlightBackground': ui.highlight.hover.alpha(ch(0x11)).hexa(),
+    'editor.lineHighlightBackground': ui.highlight.line.alpha(ch(0x09)).hexa(),
+    'editor.selectionBackground': ui.highlight.selection.alpha(ch(0x22)).hexa(),
+    'editor.selectionHighlightBackground': ui.highlight.selection.alpha(ch(0x11)).hexa(),
+    'editor.wordHighlightBackground': ui.highlight.word.highlight.alpha(ch(0x11)).hexa(),
+    'editor.wordHighlightStrongBackground': ui.highlight.word.source.alpha(ch(0x33)).hexa(),
+    'editor.wordHighlightStrongBorder': ui.highlight.word.source.alpha(ch(0xaa)).hexa(),
+    'editor.onTypeRenameBackground': ui.highlight.word.matches.alpha(ch(0x33)).hexa(),
     'editorCursor.foreground': ui.text.primary.hex(),
-    'editorIndentGuide.activeBackground': `${ui.text.secondary.hex()}99`,
-    'editorIndentGuide.background': `${ui.text.secondary.hex()}33`,
+    'editorIndentGuide.activeBackground': ui.text.secondary.alpha(ch(0x99)).hexa(),
+    'editorIndentGuide.background': ui.text.secondary.alpha(ch(0x33)).hexa(),
     'editorLineNumber.activeForeground': ui.text.primary.hex(),
     'editorLineNumber.foreground': ui.text.secondary.hex(),
-    'editorRuler.foreground': `${ui.text.secondary.hex()}99`,
-    'editorWhitespace.foreground': `${ui.text.secondary.hex()}99`,
+    'editorRuler.foreground': ui.text.secondary.alpha(ch(0x99)).hexa(),
+    'editorWhitespace.foreground': ui.text.secondary.alpha(ch(0x99)).hexa(),
     'editorLink.activeForeground': ui.accent.hex(),
-    'editor.rangeHighlightBackground': `${ui.highlight.range.hex()}11`,
+    'editor.rangeHighlightBackground': ui.highlight.range.alpha(ch(0x11)).hexa(),
     'editorCursor.background': ui.background.panel.hex(),
-    'editorStickyScrollHover.background': `${ui.highlight.line.hex()}09`,
-    'editorBracketHighlight.foreground1': `${ui.terminal.bright.magenta.hex()}88`,
-    'editorBracketHighlight.foreground2': `${ui.terminal.bright.red.hex()}88`,
-    'editorBracketHighlight.foreground3': `${ui.terminal.bright.yellow.hex()}88`,
-    'editorBracketHighlight.foreground4': `${ui.terminal.bright.cyan.hex()}88`,
-    'editorBracketHighlight.foreground5': `${ui.terminal.bright.green.hex()}88`,
-    'editorBracketHighlight.foreground6': `${ui.terminal.bright.blue.hex()}88`,
+    'editorStickyScrollHover.background': ui.highlight.line.alpha(ch(0x09)).hexa(),
+    'editorBracketHighlight.foreground1': ui.terminal.bright.magenta.alpha(ch(0x88)).hexa(),
+    'editorBracketHighlight.foreground2': ui.terminal.bright.red.alpha(ch(0x88)).hexa(),
+    'editorBracketHighlight.foreground3': ui.terminal.bright.yellow.alpha(ch(0x88)).hexa(),
+    'editorBracketHighlight.foreground4': ui.terminal.bright.cyan.alpha(ch(0x88)).hexa(),
+    'editorBracketHighlight.foreground5': ui.terminal.bright.green.alpha(ch(0x88)).hexa(),
+    'editorBracketHighlight.foreground6': ui.terminal.bright.blue.alpha(ch(0x88)).hexa(),
     'editorBracketHighlight.unexpectedBracket.foreground': ui.problems.warning.hex(),
     'editorGhostText.foreground': ui.text.secondary.hex(),
-    'editorGhostText.background': `${ui.text.secondary.hex()}22`,
+    'editorGhostText.background': ui.text.secondary.alpha(ch(0x22)).hexa(),
     // 'editorGhostText.border': '#FF0000',
     // 'editor.wordHighlightBorder': '#FF0000',
     // 'editor.inactiveSelectionBackground': '#FF0000',
@@ -350,14 +358,14 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     // CodeLens
     'editorCodeLens.foreground': ui.text.secondary.hex(),
     // Bracket Matches
-    'editorBracketMatch.background': `${ui.text.secondary.hex()}33`,
-    'editorBracketMatch.border': `${ui.text.secondary.hex()}66`,
+    'editorBracketMatch.background': ui.text.secondary.alpha(ch(0x33)).hexa(),
+    'editorBracketMatch.border': ui.text.secondary.alpha(ch(0x66)).hexa(),
     // Overview Ruler
     'editorOverviewRuler.background': ui.background.panel.hex(),
     'editorOverviewRuler.border': ui.background.panel.hex(),
     'editorOverviewRuler.bracketMatchForeground': ui.text.secondary.hex(),
-    'editorOverviewRuler.findMatchForeground': `${ui.highlight.word.matches.hex()}AA`,
-    'editorOverviewRuler.wordHighlightForeground': `${ui.highlight.word.matches.hex()}99`,
+    'editorOverviewRuler.findMatchForeground': ui.highlight.word.matches.alpha(ch(0xaa)).hexa(),
+    'editorOverviewRuler.wordHighlightForeground': ui.highlight.word.matches.alpha(ch(0x99)).hexa(),
     'editorOverviewRuler.wordHighlightStrongForeground': ui.highlight.word.matches.hex(),
     'editorOverviewRuler.modifiedForeground': ui.scm.modified.hex(),
     'editorOverviewRuler.addedForeground': ui.scm.added.hex(),
@@ -365,7 +373,7 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'editorOverviewRuler.errorForeground': ui.problems.error.hex(),
     'editorOverviewRuler.warningForeground': ui.problems.warning.hex(),
     'editorOverviewRuler.infoForeground': ui.problems.info.hex(),
-    'editorOverviewRuler.rangeHighlightForeground': `${ui.accent.hex()}AA`,
+    'editorOverviewRuler.rangeHighlightForeground': ui.accent.alpha(ch(0xaa)).hexa(),
     // 'editorOverviewRuler.selectionHighlightForeground': '#FF0000',
     // Errors & Warnings
     'editorError.foreground': ui.problems.error.hex(),
@@ -387,8 +395,8 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'editorGutter.addedBackground': ui.scm.added.hex(),
     'editorGutter.deletedBackground': ui.scm.deleted.hex(),
     'editorGutter.foldingControlForeground': ui.text.secondary.hex(),
-    'editor.foldBackground': `${ui.problems.info.hex()}11`,
-    'editorGutter.commentRangeForeground': `${ui.text.secondary.hex()}99`,
+    'editor.foldBackground': ui.problems.info.alpha(ch(0x11)).hexa(),
+    'editorGutter.commentRangeForeground': ui.text.secondary.alpha(ch(0x99)).hexa(),
     // 'editorGutter.background': '#FF0000',
     // Inlay Hints
     'editorInlayHint.foreground': ui.text.secondary.hex(),
@@ -398,9 +406,9 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
      * Diff Editor Colours
      */
     'diffEditor.border': ui.border.hex(),
-    'diffEditor.diagonalFill': `${ui.text.secondary.hex()}44`,
-    'diffEditor.insertedTextBackground': `${ui.scm.added.hex()}11`,
-    'diffEditor.removedTextBackground': `${ui.scm.deleted.hex()}11`,
+    'diffEditor.diagonalFill': ui.text.secondary.alpha(ch(0x44)).hexa(),
+    'diffEditor.insertedTextBackground': ui.scm.added.alpha(ch(0x11)).hexa(),
+    'diffEditor.removedTextBackground': ui.scm.deleted.alpha(ch(0x11)).hexa(),
     // 'diffEditor.insertedTextBorder': '#FF0000',
     // 'diffEditor.removedTextBorder': '#FF0000',
 
@@ -412,7 +420,7 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'editorSuggestWidget.background': ui.background.panel.hex(),
     'editorSuggestWidget.foreground': ui.text.primary.hex(),
     'editorSuggestWidget.highlightForeground': ui.accent.hex(),
-    'editorSuggestWidget.selectedBackground': `${ui.accent.hex()}66`,
+    'editorSuggestWidget.selectedBackground': ui.accent.alpha(ch(0x66)).hexa(),
     'editorSuggestWidget.border': ui.border.hex(),
     // 'editorSuggestWidget.selectedForeground': '#ff0000',
     'editorWidget.background': ui.background.panel.hex(),
@@ -425,23 +433,23 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     // The editor marker view shows when navigating to errors and warnings in the editor (Go to Next
     // Error or Warning command)
     'editorMarkerNavigation.background': ui.background.panel.hex(),
-    'editorMarkerNavigationError.background': `${ui.problems.error.hex()}44`,
-    'editorMarkerNavigationWarning.background': `${ui.problems.warning.hex()}44`,
-    'editorMarkerNavigationInfo.background': `${ui.problems.info.hex()}44`,
+    'editorMarkerNavigationError.background': ui.problems.error.alpha(ch(0x44)).hexa(),
+    'editorMarkerNavigationWarning.background': ui.problems.warning.alpha(ch(0x44)).hexa(),
+    'editorMarkerNavigationInfo.background': ui.problems.info.alpha(ch(0x44)).hexa(),
 
     /**
      * Peek View Colours
      */
-    'peekView.border': `${ui.accent.hex()}99`,
+    'peekView.border': ui.accent.alpha(ch(0x99)).hexa(),
     'peekViewEditor.background': ui.background.code.hex(),
     'peekViewResult.fileForeground': ui.text.primary.hex(),
     'peekViewTitleLabel.foreground': ui.text.primary.hex(),
     'peekViewEditorGutter.background': ui.background.panel.hex(),
-    'peekViewEditor.matchHighlightBackground': `${ui.highlight.word.matches.hex()}22`,
+    'peekViewEditor.matchHighlightBackground': ui.highlight.word.matches.alpha(ch(0x22)).hexa(),
     'peekViewResult.background': ui.background.panel.hex(),
     'peekViewResult.lineForeground': ui.text.primary.hex(),
-    'peekViewResult.matchHighlightBackground': `${ui.highlight.word.matches.hex()}99`,
-    'peekViewResult.selectionBackground': `${ui.accent.hex()}99`,
+    'peekViewResult.matchHighlightBackground': ui.highlight.word.matches.alpha(ch(0x99)).hexa(),
+    'peekViewResult.selectionBackground': ui.accent.alpha(ch(0x99)).hexa(),
     'peekViewResult.selectionForeground': ui.text.primary.hex(),
     'peekViewTitle.background': ui.background.panel.hex(),
     'peekViewTitleDescription.foreground': ui.text.secondary.hex(),
@@ -450,9 +458,9 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     /**
      * Merge Conflicts
      */
-    'merge.currentHeaderBackground': `${ui.scm.conflicts.current.hex()}22`,
-    'merge.incomingHeaderBackground': `${ui.scm.conflicts.incoming.hex()}22`,
-    'merge.commonHeaderBackground': `${ui.scm.conflicts.common.hex()}22`,
+    'merge.currentHeaderBackground': ui.scm.conflicts.current.alpha(ch(0x22)).hexa(),
+    'merge.incomingHeaderBackground': ui.scm.conflicts.incoming.alpha(ch(0x22)).hexa(),
+    'merge.commonHeaderBackground': ui.scm.conflicts.common.alpha(ch(0x22)).hexa(),
     // 'editorOverviewRuler.currentContentForeground': '#FF0000',
     // 'editorOverviewRuler.incomingContentForeground': '#FF0000',
     // 'editorOverviewRuler.commonContentForeground': '#FF0000',
@@ -474,32 +482,32 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'panelSectionHeader.foreground': ui.text.secondary.hex(),
     'panelSectionHeader.border': ui.border.hex(),
     'panelSection.border': ui.border.hex(),
-    'panelSection.dropBackground': `${ui.background.drop.hex()}22`,
+    'panelSection.dropBackground': ui.background.drop.alpha(ch(0x22)).hexa(),
 
     /**
      * Status Bar Colours
      */
     'statusBar.background': ui.background.panel.hex(),
     'statusBar.border': ui.border.hex(),
-    'statusBar.debuggingBackground': `${ui.debug.indicator.hex()}99`,
+    'statusBar.debuggingBackground': ui.debug.indicator.alpha(ch(0x99)).hexa(),
     'statusBar.debuggingForeground': ui.text.complimentary.hex(),
     'statusBar.debuggingBorder': ui.border.hex(),
-    'statusBar.focusBorder': `${ui.accent.hex()}66`,
+    'statusBar.focusBorder': ui.accent.alpha(ch(0x66)).hexa(),
     'statusBar.foreground': ui.background.panel.isDark()
       ? ui.text.secondary.lighten(0.4).hex()
       : ui.text.secondary.darken(0.2).hex(),
     'statusBar.noFolderBackground': ui.background.panel.hex(),
-    'statusBarItem.hoverBackground': `${ui.background.hover.hex()}66`,
+    'statusBarItem.hoverBackground': ui.background.hover.alpha(ch(0x66)).hexa(),
     'statusBarItem.remoteBackground': ui.button.secondary.hex(),
     'statusBarItem.remoteForeground': ui.text.complimentary.hex(),
     // 'statusBar.noFolderForeground': '#FF0000',
     // 'statusBar.noFolderBorder': '#FF0000',
-    'statusBarItem.activeBackground': `${ui.background.hover.hex()}BB`,
-    'statusBarItem.errorBackground': `${ui.problems.error.hex()}99`,
+    'statusBarItem.activeBackground': ui.background.hover.alpha(ch(0xbb)).hexa(),
+    'statusBarItem.errorBackground': ui.problems.error.alpha(ch(0x99)).hexa(),
     'statusBarItem.errorForeground': ui.text.complimentary.hex(),
-    'statusBarItem.warningBackground': `${ui.problems.warning.hex()}99`,
+    'statusBarItem.warningBackground': ui.problems.warning.alpha(ch(0x99)).hexa(),
     'statusBarItem.warningForeground': ui.text.complimentary.hex(),
-    'statusBarItem.focusBorder': `${ui.accent.hex()}66`,
+    'statusBarItem.focusBorder': ui.accent.alpha(ch(0x66)).hexa(),
     // 'statusBarItem.prominentForeground': '#FF0000',
     // 'statusBarItem.prominentBackground': '#FF0000',
     // 'statusBarItem.prominentHoverBackground': '#FF0000',
@@ -520,7 +528,7 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'menubar.selectionBackground': ui.accent.hex(),
     'menu.foreground': ui.text.primary.hex(),
     'menu.background': ui.background.panel.hex(),
-    'menu.border': `${ui.accent.hex()}66`,
+    'menu.border': ui.accent.alpha(ch(0x66)).hexa(),
     'menu.selectionForeground': ui.text.primary.hex(),
     'menu.selectionBackground': ui.accent.hex(),
     'menu.separatorBackground': ui.border.hex(),
@@ -560,13 +568,13 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
      *
      * Keybinding labels are shown when there is a keybinding associated with a command.
      */
-    'keybindingLabel.background': `${ui.background.hover.hex()}66`,
+    'keybindingLabel.background': ui.background.hover.alpha(ch(0x66)).hexa(),
     'keybindingLabel.foreground': ui.text.primary.hex(),
     'keybindingLabel.border': ui.border.hex(),
     'keybindingLabel.bottomBorder': ui.border.hex(),
     // Keyboard Shortcuts view
     'keybindingTable.headerBackground': ui.background.panel.hex(),
-    'keybindingTable.rowsBackground': `${ui.background.panel.hex()}66`,
+    'keybindingTable.rowsBackground': ui.background.panel.alpha(ch(0x66)).hexa(),
 
     /**
      * Integrated Terminal Colours
@@ -575,11 +583,11 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'terminal.border': ui.border.hex(),
     'terminal.foreground': ui.text.primary.hex(),
     'terminal.tab.activeBorder': ui.accent.hex(),
-    'terminal.findMatchBackground': `${ui.highlight.word.matches.hex()}44`,
-    'terminal.findMatchBorder': `${ui.highlight.word.matches.hex()}AA`,
-    'terminal.findMatchHighlightBackground': `${ui.highlight.word.matches.hex()}33`,
+    'terminal.findMatchBackground': ui.highlight.word.matches.alpha(ch(0x44)).hexa(),
+    'terminal.findMatchBorder': ui.highlight.word.matches.alpha(ch(0xaa)).hexa(),
+    'terminal.findMatchHighlightBackground': ui.highlight.word.matches.alpha(ch(0x33)).hexa(),
     'terminalCursor.foreground': ui.text.primary.hex(),
-    'terminal.selectionBackground': `${ui.text.primary.hex()}22`,
+    'terminal.selectionBackground': ui.text.primary.alpha(ch(0x22)).hexa(),
     'terminal.ansiBlack': ui.terminal.normal.black.hex(),
     'terminal.ansiBlue': ui.terminal.normal.blue.hex(),
     'terminal.ansiCyan': ui.terminal.normal.cyan.hex(),
@@ -610,14 +618,14 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
      */
     'debugToolBar.background': ui.background.panel.hex(),
     'debugToolBar.border': ui.border.hex(),
-    'editor.stackFrameHighlightBackground': `${ui.debug.frame.normal.hex()}33`,
-    'editor.focusedStackFrameHighlightBackground': `${ui.debug.frame.focused.hex()}22`,
+    'editor.stackFrameHighlightBackground': ui.debug.frame.normal.alpha(ch(0x33)).hexa(),
+    'editor.focusedStackFrameHighlightBackground': ui.debug.frame.focused.alpha(ch(0x22)).hexa(),
     'editor.inlineValuesBackground': ui.background.panel.hex(),
     'editor.inlineValuesForeground': ui.text.secondary.hex(),
     'debugIcon.breakpointForeground': ui.debug.breakpoint.active.hex(),
-    'debugIcon.breakpointDisabledForeground': `${ui.debug.breakpoint.disabled.hex()}66`,
+    'debugIcon.breakpointDisabledForeground': ui.debug.breakpoint.disabled.alpha(ch(0x66)).hexa(),
     'debugIcon.breakpointUnverifiedForeground': ui.debug.breakpoint.unverified.hex(),
-    'debugIcon.breakpointStackframeForeground': `${ui.debug.frame.normal.hex()}99`,
+    'debugIcon.breakpointStackframeForeground': ui.debug.frame.normal.alpha(ch(0x99)).hexa(),
     'debugIcon.breakpointCurrentStackframeForeground': ui.debug.frame.focused.hex(),
     'debugIcon.startForeground': ui.debug.icon.start.hex(),
     'debugIcon.continueForeground': ui.debug.icon.continue.hex(),
@@ -633,7 +641,7 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'debugView.exceptionLabelBackground': ui.problems.error.hex(),
     'debugView.stateLabelForeground': ui.text.contrast.hex(),
     'debugView.stateLabelBackground': ui.problems.info.hex(),
-    'debugView.valueChangedHighlight': `${ui.problems.info.hex()}99`,
+    'debugView.valueChangedHighlight': ui.problems.info.alpha(ch(0x99)).hexa(),
     'debugTokenExpression.name': code.variables,
     'debugTokenExpression.value': ui.text.dimmed.hex(),
     'debugTokenExpression.string': code.strings,
@@ -670,10 +678,10 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     /**
      * Merge Conflict Editor
      */
-    'mergeEditor.conflict.unhandledUnfocused.border': `${ui.scm.conflicting.hex()}44`,
-    'mergeEditor.conflict.unhandledFocused.border': `${ui.scm.conflicting.hex()}99`,
-    'mergeEditor.conflict.handledUnfocused.border': `${ui.scm.modified.hex()}44`,
-    'mergeEditor.conflict.handledFocused.border': `${ui.scm.modified.hex()}99`,
+    'mergeEditor.conflict.unhandledUnfocused.border': ui.scm.conflicting.alpha(ch(0x44)).hexa(),
+    'mergeEditor.conflict.unhandledFocused.border': ui.scm.conflicting.alpha(ch(0x99)).hexa(),
+    'mergeEditor.conflict.handledUnfocused.border': ui.scm.modified.alpha(ch(0x44)).hexa(),
+    'mergeEditor.conflict.handledFocused.border': ui.scm.modified.alpha(ch(0x99)).hexa(),
     'mergeEditor.conflict.unhandled.minimapOverViewRuler': ui.scm.conflicting.hex(),
     'mergeEditor.conflict.handled.minimapOverViewRuler': ui.scm.modified.hex(),
 
@@ -695,8 +703,8 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'settings.checkboxBorder': ui.border.hex(),
     'settings.textInputBorder': ui.border.hex(),
     'settings.numberInputBorder': ui.border.hex(),
-    'settings.focusedRowBackground': `${ui.highlight.line.hex()}09`,
-    'settings.focusedRowBorder': `${ui.accent.hex()}66`,
+    'settings.focusedRowBackground': ui.highlight.line.alpha(ch(0x09)).hexa(),
+    'settings.focusedRowBorder': ui.accent.alpha(ch(0x66)).hexa(),
 
     /**
      * Breadcrumbs
@@ -710,28 +718,28 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     /**
      * Snippets
      */
-    'editor.snippetTabstopHighlightBackground': `${ui.highlight.word.matches.hex()}00`,
-    'editor.snippetFinalTabstopHighlightBackground': `${ui.highlight.word.matches.hex()}33`,
-    'editor.snippetFinalTabstopHighlightBorder': `${ui.highlight.word.matches.hex()}99`,
-    'editor.snippetTabstopHighlightBorder': `${ui.highlight.word.matches.hex()}99`,
+    'editor.snippetTabstopHighlightBackground': ui.highlight.word.matches.alpha(0).hexa(),
+    'editor.snippetFinalTabstopHighlightBackground': ui.highlight.word.matches.alpha(ch(0x33)).hexa(),
+    'editor.snippetFinalTabstopHighlightBorder': ui.highlight.word.matches.alpha(ch(0x99)).hexa(),
+    'editor.snippetTabstopHighlightBorder': ui.highlight.word.matches.alpha(ch(0x99)).hexa(),
 
     /**
      * Notebook
      */
     'notebook.cellBorderColor': ui.border.hex(),
-    'notebook.cellHoverBackground': `${ui.highlight.line.hex()}09`,
+    'notebook.cellHoverBackground': ui.highlight.line.alpha(ch(0x09)).hexa(),
     'notebook.cellInsertionIndicator': ui.accent.hex(),
-    'notebook.cellStatusBarItemHoverBackground': `${ui.background.hover.hex()}66`,
+    'notebook.cellStatusBarItemHoverBackground': ui.background.hover.alpha(ch(0x66)).hexa(),
     'notebook.cellToolbarSeparator': ui.border.hex(),
-    'notebook.focusedCellBackground': `${ui.highlight.line.hex()}09`,
-    'notebook.focusedCellBorder': `${ui.accent.hex()}66`,
-    'notebook.inactiveFocusedCellBorder': `${ui.accent.hex()}44`,
+    'notebook.focusedCellBackground': ui.highlight.line.alpha(ch(0x09)).hexa(),
+    'notebook.focusedCellBorder': ui.accent.alpha(ch(0x66)).hexa(),
+    'notebook.inactiveFocusedCellBorder': ui.accent.alpha(ch(0x44)).hexa(),
     'notebook.outputContainerBackgroundColor': ui.background.panel.hex(),
     'notebookStatusErrorIcon.foreground': ui.icon.error.hex(),
     'notebookStatusRunningIcon.foreground': ui.icon.foreground.hex(),
     'notebookStatusSuccessIcon.foreground': ui.icon.success.hex(),
-    'notebook.symbolHighlightBackground': `${ui.highlight.range.hex()}11`,
-    'notebook.selectedCellBackground': `${ui.highlight.selection.hex()}22`,
+    'notebook.symbolHighlightBackground': ui.highlight.range.alpha(ch(0x11)).hexa(),
+    'notebook.selectedCellBackground': ui.highlight.selection.alpha(ch(0x22)).hexa(),
     // 'notebook.selectedCellBorder': '#ff0000',
 
     // 'notebook.focusedCellShadow': '#ff0000',
@@ -768,8 +776,8 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'testing.peekBorder': ui.border.hex(),
     'testing.message.error.decorationForeground': ui.text.complimentary.hex(),
     'testing.message.info.decorationForeground': ui.text.complimentary.hex(),
-    'testing.message.error.lineBackground': `${ui.problems.error.hex()}66`,
-    'testing.message.info.lineBackground': `${ui.problems.info.hex()}66`,
+    'testing.message.error.lineBackground': ui.problems.error.alpha(ch(0x66)).hexa(),
+    'testing.message.info.lineBackground': ui.problems.info.alpha(ch(0x66)).hexa(),
 
 
     // EXTENSIONS
@@ -816,8 +824,8 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'gitlens.gutterForegroundColor': ui.text.secondary.hex(),
     'gitlens.gutterBackgroundColor': ui.background.code.hex(),
     'gitlens.gutterUncommittedForegroundColor': ui.scm.untracked.hex(),
-    'gitlens.lineHighlightBackgroundColor': `${ui.scm.added.hex()}11`,
-    'gitlens.lineHighlightOverviewRulerColor': `${ui.scm.added.hex()}11`,
+    'gitlens.lineHighlightBackgroundColor': ui.scm.added.alpha(ch(0x11)).hexa(),
+    'gitlens.lineHighlightOverviewRulerColor': ui.scm.added.alpha(ch(0x11)).hexa(),
     'gitlens.closedPullRequestIconColor': ui.icon.foreground.hex(),
     'gitlens.openPullRequestIconColor': ui.icon.foreground.hex(),
     'gitlens.mergedPullRequestIconColor': ui.icon.foreground.hex(),
@@ -842,24 +850,24 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     /**
      * LintLens
      */
-    'lintlens.annotationColor': `${ui.problems.hint.hex()}99`,
+    'lintlens.annotationColor': ui.problems.hint.alpha(ch(0x99)).hexa(),
 
     /**
      * Bookmarks
      */
     'bookmarks.overviewRuler': ui.problems.info.hex(),
-    'bookmarks.lineBackground': `${ui.problems.info.hex()}11`,
-    'bookmarks.lineBorder': `${ui.problems.info.hex()}66`,
+    'bookmarks.lineBackground': ui.problems.info.alpha(ch(0x11)).hexa(),
+    'bookmarks.lineBorder': ui.problems.info.alpha(ch(0x66)).hexa(),
 
     /**
      * Test Explorer
      */
-    'testExplorer.errorDecorationBackground': `${ui.problems.error.hex()}66`,
+    'testExplorer.errorDecorationBackground': ui.problems.error.alpha(ch(0x66)).hexa(),
 
     /**
      * SQL Tools
      */
-    'sqltools.currentQueryBg': `${ui.highlight.word.matches.hex()}22`,
+    'sqltools.currentQueryBg': ui.highlight.word.matches.alpha(ch(0x22)).hexa(),
     'sqltools.currentQueryOutline': '#0000',
 
     /**
