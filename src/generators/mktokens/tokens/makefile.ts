@@ -1,6 +1,6 @@
 import type { InputParams } from './InputParams'
 import { makefile as makefilescope } from '@remedy/tools/tmscopes'
-import type { TMRule } from '@remedy/types'
+import { TMFontStyle, type TMRule } from '@remedy/types'
 
 function makefile({ code, colours }: InputParams): TMRule[] {
   const variables = {
@@ -26,7 +26,7 @@ function makefile({ code, colours }: InputParams): TMRule[] {
       'entity.name.function.target',
     ]),
     settings: {
-      fontStyle: 'bold',
+      fontStyle: TMFontStyle.BOLD,
       foreground: colours.bright.yellow.hex(),
     },
   }

@@ -1,5 +1,5 @@
 import type { InputParams } from './InputParams'
-import type { TMRule } from '@remedy/types'
+import { TMFontStyle, type TMRule } from '@remedy/types'
 
 function common({ code }: InputParams): TMRule[] {
   const primitives = {
@@ -198,7 +198,7 @@ function common({ code }: InputParams): TMRule[] {
       'punctuation.definition.heading',
     ],
     settings: {
-      fontStyle: 'bold',
+      fontStyle: TMFontStyle.BOLD,
       foreground: code.decoratives.headings,
     },
   }

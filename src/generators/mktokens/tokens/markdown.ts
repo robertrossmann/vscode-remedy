@@ -1,6 +1,6 @@
 import type { InputParams } from './InputParams'
 import { markdown as markdownscope } from '@remedy/tools/tmscopes'
-import type { TMRule } from '@remedy/types'
+import { TMFontStyle, type TMRule } from '@remedy/types'
 
 function markdown({ code, colours }: InputParams): TMRule[] {
   const quotes = {
@@ -8,7 +8,7 @@ function markdown({ code, colours }: InputParams): TMRule[] {
       'markup.quote',
     ]),
     settings: {
-      fontStyle: 'italic',
+      fontStyle: TMFontStyle.ITALIC,
       foreground: code.decoratives.quotes,
     },
   }
@@ -66,7 +66,7 @@ function markdown({ code, colours }: InputParams): TMRule[] {
       'markup.italic',
     ]),
     settings: {
-      fontStyle: 'italic',
+      fontStyle: TMFontStyle.ITALIC,
       foreground: colours.bright.white.hex(),
     },
   }
