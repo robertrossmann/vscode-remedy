@@ -48,6 +48,7 @@
     "remark-cli": "^11.0.0",
     "semantic-release": "^19.0.0",
     "source-map-support": "^0.5.20",
+    "tsconfig-paths": "^4.1.0",
     "typescript": "^4.7.0",
     "vsce": "^2.10.0"
   },
@@ -79,8 +80,5 @@
     "id": "5f2bb8f7-dc95-49f9-be2f-0278fa401434",
     "publisherDisplayName": "Robert Rossmann",
     "publisherId": "98352602-a18a-4e10-af4f-20f27045849c"
-  },
-  "dependencies": {
-    "tsconfig-paths": "^4.1.0"
   }
 }
