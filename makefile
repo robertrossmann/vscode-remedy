@@ -7,15 +7,11 @@ export NODE_OPTIONS := --trace-deprecation
 # On developer machines, prefer the generally more flexible `npm install`. 💪
 NPM_I := $(if $(CI), ci, install)
 
-# Do not tamper with these
-BABEL_DEFAULTS = --extensions .mjs --relative --out-dir .
-
 # User-overridable
 TSC_FLAGS :=
 ESLINT_FLAGS :=
 NPM_FLAGS :=
 
-CODEDIRS := src
 GITFILES := $(patsubst utils/githooks/%, .git/hooks/%, $(wildcard utils/githooks/*))
 SRCFILES := $(shell find src -type f -name "*.ts")
 SRCTHEME := $(wildcard src/themes/*)
@@ -63,10 +59,6 @@ install: node_modules $(GITFILES)
 lint: force install
 	eslint --cache $(ESLINT_FLAGS) .
 	remark --quiet .
-
-unlock: pristine
-	rm -f package-lock.json
-	touch package.json
 
 clean:
 	rm -rf {.nyc_output,coverage,docs,.eslintcache} *.vsix
