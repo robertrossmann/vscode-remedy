@@ -1348,6 +1348,10 @@ interface UIColourPalette {
    */
   'mergeEditor.conflict.unhandled.minimapOverViewRuler'?: Color | string
   /**
+   * The background of the "Conflicting Lines" text.
+   */
+  'mergeEditor.conflictingLines.background'?: Color | string
+  /**
    * Minimap background color.
    */
   'minimap.background'?: Color | string

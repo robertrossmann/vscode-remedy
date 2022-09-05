@@ -680,12 +680,15 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     /**
      * Merge Conflict Editor
      */
-    'mergeEditor.conflict.unhandledUnfocused.border': ui.scm.conflicting.alpha(ch(0x44)).hexa(),
-    'mergeEditor.conflict.unhandledFocused.border': ui.scm.conflicting.alpha(ch(0x99)).hexa(),
-    'mergeEditor.conflict.handledUnfocused.border': ui.scm.modified.alpha(ch(0x44)).hexa(),
-    'mergeEditor.conflict.handledFocused.border': ui.scm.modified.alpha(ch(0x99)).hexa(),
+    'mergeEditor.conflict.unhandledUnfocused.border': ui.scm.conflicting.alpha(ch(0x22)).hexa(),
+    'mergeEditor.conflict.unhandledFocused.border': ui.scm.conflicting.alpha(ch(0x66)).hexa(),
     'mergeEditor.conflict.unhandled.minimapOverViewRuler': ui.scm.conflicting.hex(),
+    'mergeEditor.conflict.handledUnfocused.border': ui.scm.modified.alpha(ch(0x22)).hexa(),
+    'mergeEditor.conflict.handledFocused.border': ui.scm.modified.alpha(ch(0x66)).hexa(),
     'mergeEditor.conflict.handled.minimapOverViewRuler': ui.scm.modified.hex(),
+    'mergeEditor.change.background': ui.scm.conflicting.alpha(ch(0x11)).hexa(),
+    'mergeEditor.change.word.background': ui.scm.conflicting.alpha(ch(0x22)).hexa(),
+    'mergeEditor.conflictingLines.background': ui.scm.conflicting.alpha(ch(0x66)).hexa(),
 
     /**
      * Settings Editor Colours
