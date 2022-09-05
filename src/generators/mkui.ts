@@ -460,16 +460,16 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     /**
      * Merge Conflicts
      */
-    'merge.currentHeaderBackground': ui.scm.conflicts.current.alpha(ch(0x22)).hexa(),
-    'merge.incomingHeaderBackground': ui.scm.conflicts.incoming.alpha(ch(0x22)).hexa(),
-    'merge.commonHeaderBackground': ui.scm.conflicts.common.alpha(ch(0x22)).hexa(),
     'merge.border': ui.border.alpha(ch(0x99)).hexa(),
+    'merge.commonContentBackground': ui.scm.conflicts.common.alpha(ch(0x11)).hexa(),
+    'merge.commonHeaderBackground': ui.scm.conflicts.common.alpha(ch(0x33)).hexa(),
+    'merge.currentContentBackground': ui.scm.conflicts.current.alpha(ch(0x11)).hexa(),
+    'merge.currentHeaderBackground': ui.scm.conflicts.current.alpha(ch(0x33)).hexa(),
+    'merge.incomingContentBackground': ui.scm.conflicts.incoming.alpha(ch(0x11)).hexa(),
+    'merge.incomingHeaderBackground': ui.scm.conflicts.incoming.alpha(ch(0x33)).hexa(),
     // 'editorOverviewRuler.currentContentForeground': '#FF0000',
     // 'editorOverviewRuler.incomingContentForeground': '#FF0000',
     // 'editorOverviewRuler.commonContentForeground': '#FF0000',
-    // 'merge.commonContentBackground': '#FF0000',
-    // 'merge.currentContentBackground': '#FF0000',
-    // 'merge.incomingContentBackground': '#FF0000',
 
     /**
      * Panel Colours
