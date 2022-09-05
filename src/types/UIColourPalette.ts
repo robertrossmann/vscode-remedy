@@ -362,6 +362,22 @@ interface UIColourPalette {
    */
   'diffEditor.removedTextBorder'?: Color | string
   /**
+   * Background color for the margin where lines got inserted.
+   */
+  'diffEditorGutter.insertedLineBackground'?: Color | string
+  /**
+   * Background color for the margin where lines got removed.
+   */
+  'diffEditorGutter.removedLineBackground'?: Color | string
+  /**
+   * Diff overview ruler foreground for inserted content.
+   */
+  'diffEditorOverview.insertedForeground'?: Color | string
+  /**
+   * Diff overview ruler foreground for removed content.
+   */
+  'diffEditorOverview.removedForeground'?: Color | string
+  /**
    * Dropdown background.
    */
   'dropdown.background'?: Color | string
