@@ -341,9 +341,18 @@ interface UIColourPalette {
    */
   'diffEditor.insertedTextBackground'?: Color | string
   /**
+   * Background color for lines that got inserted. The color must not be opaque so as not to hide underlying
+   * decorations.
+   */
+  'diffEditor.insertedLineBackground'?: Color | string
+  /**
    * Outline color for the text that got inserted.
    */
   'diffEditor.insertedTextBorder'?: Color | string
+  /**
+   * Background color for lines that got removed. The color must not be opaque so as not to hide underlying decorations.
+   */
+  'diffEditor.removedLineBackground'?: Color | string
   /**
    * Background color for text that got removed. The color must not be opaque so as not to hide underlying decorations.
    */
