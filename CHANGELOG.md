@@ -1,3 +1,18 @@
+# [5.16.0](https://github.com/robertrossmann/vscode-remedy/compare/5.15.0...5.16.0) (2022-09-05)
+
+
+### Bug Fixes
+
+* use theme colours for git diff editor ([e6065a4](https://github.com/robertrossmann/vscode-remedy/commit/e6065a43e7570efe975273b37114444b667b6765))
+
+
+### Features
+
+* add a subtle merge border ([47aa27e](https://github.com/robertrossmann/vscode-remedy/commit/47aa27ebc846d7a866673adbe989163af5327594))
+* improve colours for merge editor ([9834593](https://github.com/robertrossmann/vscode-remedy/commit/983459334cd18e5a468577339895eb135e27c76c))
+* improve merge editor colours ([8c99e19](https://github.com/robertrossmann/vscode-remedy/commit/8c99e193fb75dfe517ee2373abed774728e61ceb))
+* rewrite to TypeScript 🚀 ([b3b78c3](https://github.com/robertrossmann/vscode-remedy/commit/b3b78c33995f9636ab7cf88ec153d972394f31b2))
+
 # [5.15.0](https://github.com/robertrossmann/vscode-remedy/compare/5.14.0...5.15.0) (2022-08-04)
 
 
