@@ -1,3 +1,10 @@
+## [5.16.1](https://github.com/robertrossmann/vscode-remedy/compare/5.16.0...5.16.1) (2022-09-06)
+
+
+### Bug Fixes
+
+* make menu selection backgrounds the same colour as quick pick ([1f728a1](https://github.com/robertrossmann/vscode-remedy/commit/1f728a17544836fe569d8ee9637f9668834cebfb))
+
 # [5.16.0](https://github.com/robertrossmann/vscode-remedy/compare/5.15.0...5.16.0) (2022-09-05)
 
 
