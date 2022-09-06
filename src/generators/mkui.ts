@@ -532,7 +532,7 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'menu.background': ui.background.panel.hex(),
     'menu.border': ui.accent.alpha(ch(0x66)).hexa(),
     'menu.selectionForeground': ui.text.primary.hex(),
-    'menu.selectionBackground': ui.accent.hex(),
+    'menu.selectionBackground': ui.accent.alpha(ch(0x44)).hexa(),
     'menu.separatorBackground': ui.border.hex(),
     // 'menubar.selectionBorder': '#FF0000',
     // 'menu.selectionBorder': '#FF0000',
