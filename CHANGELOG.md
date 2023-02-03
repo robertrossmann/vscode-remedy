@@ -1,3 +1,10 @@
+# [5.17.0](https://github.com/robertrossmann/vscode-remedy/compare/5.16.1...5.17.0) (2023-02-03)
+
+
+### Features
+
+* add new colour contributions from VS Code 1.75 ([eb0f53a](https://github.com/robertrossmann/vscode-remedy/commit/eb0f53a5b0bbf13d4862ae5e4d6c2a0aad6e3c1d))
+
 ## [5.16.1](https://github.com/robertrossmann/vscode-remedy/compare/5.16.0...5.16.1) (2022-09-06)
 
 
