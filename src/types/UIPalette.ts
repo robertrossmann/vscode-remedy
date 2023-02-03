@@ -39,6 +39,7 @@ interface UIPalette {
     conflicting: Color
     untracked: Color
     ignored: Color
+    merged: Color
     conflicts: {
       current: Color
       incoming: Color

@@ -38,6 +38,7 @@ const scm = {
   conflicting: bright.yellow,
   untracked: normal.white,
   ignored: text.dimmed,
+  merged: normal.magenta,
   conflicts: {
     current: bright.green,
     incoming: bright.blue,

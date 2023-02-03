@@ -1,917 +1,917 @@
 import type * as Color from 'color'
 
-interface UIColourPalette {
-  // [colorContribution: string]: color | string
+type ColourLike = Color | string
 
+interface UIColourPalette {
   /**
    * Activity Bar optional background color for the active element.
    */
-  'activityBar.activeBackground'?: Color | string
+  'activityBar.activeBackground'?: ColourLike
   /**
    * Activity Bar active indicator border color.
    */
-  'activityBar.activeBorder'?: Color | string
+  'activityBar.activeBorder'?: ColourLike
   /**
    * Activity bar focus border color for the active item.
    */
-  'activityBar.activeFocusBorder'?: Color | string
+  'activityBar.activeFocusBorder'?: ColourLike
   /**
    * Activity Bar background color.
    */
-  'activityBar.background'?: Color | string
+  'activityBar.background'?: ColourLike
   /**
    * Activity Bar border color with the Side Bar.
    */
-  'activityBar.border'?: Color | string
+  'activityBar.border'?: ColourLike
   /**
    * Drag and drop feedback color for the activity bar items. The activity bar is showing on the far left or right and
    * allows to switch between views of the side bar.
    */
-  'activityBar.dropBorder'?: Color | string
+  'activityBar.dropBorder'?: ColourLike
   /**
    * Activity Bar foreground color (for example used for the icons).
    */
-  'activityBar.foreground'?: Color | string
+  'activityBar.foreground'?: ColourLike
   /**
    * Activity Bar item foreground color when it is inactive.
    */
-  'activityBar.inactiveForeground'?: Color | string
+  'activityBar.inactiveForeground'?: ColourLike
   /**
    * Activity notification badge background color.
    */
-  'activityBarBadge.background'?: Color | string
+  'activityBarBadge.background'?: ColourLike
   /**
    * Activity notification badge foreground color.
    */
-  'activityBarBadge.foreground'?: Color | string
+  'activityBarBadge.foreground'?: ColourLike
   /**
    * Badge background color.
    */
-  'badge.background'?: Color | string
+  'badge.background'?: ColourLike
   /**
    * Badge foreground color.
    */
-  'badge.foreground'?: Color | string
+  'badge.foreground'?: ColourLike
   /**
    * Banner background color.
    */
-  'banner.background'?: Color | string
+  'banner.background'?: ColourLike
   /**
    * Banner foreground color.
    */
-  'banner.foreground'?: Color | string
+  'banner.foreground'?: ColourLike
   /**
    * Color for the icon in front of the banner text.
    */
-  'banner.iconForeground'?: Color | string
+  'banner.iconForeground'?: ColourLike
   /**
    * Color of selected breadcrumb items.
    */
-  'breadcrumb.activeSelectionForeground'?: Color | string
+  'breadcrumb.activeSelectionForeground'?: ColourLike
   /**
    * Background color of breadcrumb items.
    */
-  'breadcrumb.background'?: Color | string
+  'breadcrumb.background'?: ColourLike
   /**
    * Color of focused breadcrumb items.
    */
-  'breadcrumb.focusForeground'?: Color | string
+  'breadcrumb.focusForeground'?: ColourLike
   /**
    * Color of breadcrumb items.
    */
-  'breadcrumb.foreground'?: Color | string
+  'breadcrumb.foreground'?: ColourLike
   /**
    * Background color of breadcrumb item picker.
    */
-  'breadcrumbPicker.background'?: Color | string
+  'breadcrumbPicker.background'?: ColourLike
   /**
    * Button background color.
    */
-  'button.background'?: Color | string
+  'button.background'?: ColourLike
   /**
    * Button border color.
    */
-  'button.border'?: Color | string
+  'button.border'?: ColourLike
   /**
    * Button foreground color.
    */
-  'button.foreground'?: Color | string
+  'button.foreground'?: ColourLike
   /**
    * Button background color when hovering.
    */
-  'button.hoverBackground'?: Color | string
+  'button.hoverBackground'?: ColourLike
   /**
    * Secondary button background color.
    */
-  'button.secondaryBackground'?: Color | string
+  'button.secondaryBackground'?: ColourLike
   /**
    * Secondary button foreground color.
    */
-  'button.secondaryForeground'?: Color | string
+  'button.secondaryForeground'?: ColourLike
   /**
    * Secondary button background color when hovering.
    */
-  'button.secondaryHoverBackground'?: Color | string
+  'button.secondaryHoverBackground'?: ColourLike
   /**
    * Color for blue elements in charts.
    */
-  'charts.blue'?: Color | string
+  'charts.blue'?: ColourLike
   /**
    * Contrast color for text in charts.
    */
-  'charts.foreground'?: Color | string
+  'charts.foreground'?: ColourLike
   /**
    * Color for green elements in charts.
    */
-  'charts.green'?: Color | string
+  'charts.green'?: ColourLike
   /**
    * Color for lines in charts.
    */
-  'charts.lines'?: Color | string
+  'charts.lines'?: ColourLike
   /**
    * Color for orange elements in charts.
    */
-  'charts.orange'?: Color | string
+  'charts.orange'?: ColourLike
   /**
    * Color for purple elements in charts.
    */
-  'charts.purple'?: Color | string
+  'charts.purple'?: ColourLike
   /**
    * Color for red elements in charts.
    */
-  'charts.red'?: Color | string
+  'charts.red'?: ColourLike
   /**
    * Color for yellow elements in charts.
    */
-  'charts.yellow'?: Color | string
+  'charts.yellow'?: ColourLike
   /**
    * Background color of checkbox widget.
    */
-  'checkbox.background'?: Color | string
+  'checkbox.background'?: ColourLike
   /**
    * Border color of checkbox widget.
    */
-  'checkbox.border'?: Color | string
+  'checkbox.border'?: ColourLike
   /**
    * Foreground color of checkbox widget.
    */
-  'checkbox.foreground'?: Color | string
+  'checkbox.foreground'?: ColourLike
   /**
    * Background color of the command center.
    */
-  'commandCenter.background'?: Color | string
+  'commandCenter.background'?: ColourLike
   /**
    * Border color of the command center.
    */
-  'commandCenter.border'?: Color | string
+  'commandCenter.border'?: ColourLike
   /**
    * Foreground color of the command center.
    */
-  'commandCenter.foreground'?: Color | string
+  'commandCenter.foreground'?: ColourLike
   /**
    * Active foreground color of the command center.
    */
-  'commandCenter.activeForeground'?: Color | string
+  'commandCenter.activeForeground'?: ColourLike
   /**
    * Active background color of the command center.
    */
-  'commandCenter.activeBackground'?: Color | string
+  'commandCenter.activeBackground'?: ColourLike
   /**
    * An extra border around active elements to separate them from others for greater contrast.
    */
-  'contrastActiveBorder'?: Color | string
+  'contrastActiveBorder'?: ColourLike
   /**
    * An extra border around elements to separate them from others for greater contrast.
    */
-  'contrastBorder'?: Color | string
+  'contrastBorder'?: ColourLike
   /**
    * Foreground color for error messages in debug REPL console.
    */
-  'debugConsole.errorForeground'?: Color | string
+  'debugConsole.errorForeground'?: ColourLike
   /**
    * Foreground color for info messages in debug REPL console.
    */
-  'debugConsole.infoForeground'?: Color | string
+  'debugConsole.infoForeground'?: ColourLike
   /**
    * Foreground color for source filenames in debug REPL console.
    */
-  'debugConsole.sourceForeground'?: Color | string
+  'debugConsole.sourceForeground'?: ColourLike
   /**
    * Foreground color for warning messages in debug REPL console.
    */
-  'debugConsole.warningForeground'?: Color | string
+  'debugConsole.warningForeground'?: ColourLike
   /**
    * Foreground color for debug console input marker icon.
    */
-  'debugConsoleInputIcon.foreground'?: Color | string
+  'debugConsoleInputIcon.foreground'?: ColourLike
   /**
    * Exception widget background color.
    */
-  'debugExceptionWidget.background'?: Color | string
+  'debugExceptionWidget.background'?: ColourLike
   /**
    * Exception widget border color.
    */
-  'debugExceptionWidget.border'?: Color | string
+  'debugExceptionWidget.border'?: ColourLike
   /**
    * Icon color for the current breakpoint stack frame.
    */
-  'debugIcon.breakpointCurrentStackframeForeground'?: Color | string
+  'debugIcon.breakpointCurrentStackframeForeground'?: ColourLike
   /**
    * Icon color for disabled breakpoints.
    */
-  'debugIcon.breakpointDisabledForeground'?: Color | string
+  'debugIcon.breakpointDisabledForeground'?: ColourLike
   /**
    * Icon color for breakpoints.
    */
-  'debugIcon.breakpointForeground'?: Color | string
+  'debugIcon.breakpointForeground'?: ColourLike
   /**
    * Icon color for all breakpoint stack frames.
    */
-  'debugIcon.breakpointStackframeForeground'?: Color | string
+  'debugIcon.breakpointStackframeForeground'?: ColourLike
   /**
    * Icon color for unverified breakpoints.
    */
-  'debugIcon.breakpointUnverifiedForeground'?: Color | string
+  'debugIcon.breakpointUnverifiedForeground'?: ColourLike
   /**
    * Debug toolbar icon for continue.
    */
-  'debugIcon.continueForeground'?: Color | string
+  'debugIcon.continueForeground'?: ColourLike
   /**
    * Debug toolbar icon for disconnect.
    */
-  'debugIcon.disconnectForeground'?: Color | string
+  'debugIcon.disconnectForeground'?: ColourLike
   /**
    * Debug toolbar icon for pause.
    */
-  'debugIcon.pauseForeground'?: Color | string
+  'debugIcon.pauseForeground'?: ColourLike
   /**
    * Debug toolbar icon for restart.
    */
-  'debugIcon.restartForeground'?: Color | string
+  'debugIcon.restartForeground'?: ColourLike
   /**
    * Debug toolbar icon for start debugging.
    */
-  'debugIcon.startForeground'?: Color | string
+  'debugIcon.startForeground'?: ColourLike
   /**
    * Debug toolbar icon for step back.
    */
-  'debugIcon.stepBackForeground'?: Color | string
+  'debugIcon.stepBackForeground'?: ColourLike
   /**
    * Debug toolbar icon for step into.
    */
-  'debugIcon.stepIntoForeground'?: Color | string
+  'debugIcon.stepIntoForeground'?: ColourLike
   /**
    * Debug toolbar icon for step over.
    */
-  'debugIcon.stepOutForeground'?: Color | string
+  'debugIcon.stepOutForeground'?: ColourLike
   /**
    * Debug toolbar icon for step over.
    */
-  'debugIcon.stepOverForeground'?: Color | string
+  'debugIcon.stepOverForeground'?: ColourLike
   /**
    * Debug toolbar icon for stop.
    */
-  'debugIcon.stopForeground'?: Color | string
+  'debugIcon.stopForeground'?: ColourLike
   /**
    * Foreground color for booleans in debug views
    */
-  'debugTokenExpression.boolean'?: Color | string
+  'debugTokenExpression.boolean'?: ColourLike
   /**
    * Foreground color for expression errors in debug views
    */
-  'debugTokenExpression.error'?: Color | string
+  'debugTokenExpression.error'?: ColourLike
   /**
    * Foreground color for the token names shown in debug views (ie. the Variables or Watch view)
    */
-  'debugTokenExpression.name'?: Color | string
+  'debugTokenExpression.name'?: ColourLike
   /**
    * Foreground color for numbers in debug views
    */
-  'debugTokenExpression.number'?: Color | string
+  'debugTokenExpression.number'?: ColourLike
   /**
    * Foreground color for strings in debug views
    */
-  'debugTokenExpression.string'?: Color | string
+  'debugTokenExpression.string'?: ColourLike
   /**
    * Foreground color for the token values shown in debug views
    */
-  'debugTokenExpression.value'?: Color | string
+  'debugTokenExpression.value'?: ColourLike
   /**
    * Debug toolbar background color.
    */
-  'debugToolBar.background'?: Color | string
+  'debugToolBar.background'?: ColourLike
   /**
    * Debug toolbar border color.
    */
-  'debugToolBar.border'?: Color | string
+  'debugToolBar.border'?: ColourLike
   /**
    * Background color for a label shown in the CALL STACK view when the debugger breaks on an exception
    */
-  'debugView.exceptionLabelBackground'?: Color | string
+  'debugView.exceptionLabelBackground'?: ColourLike
   /**
    * Foreground color for a label shown in the CALL STACK view when the debugger breaks on an exception
    */
-  'debugView.exceptionLabelForeground'?: Color | string
+  'debugView.exceptionLabelForeground'?: ColourLike
   /**
    * Background color for a label in the CALL STACK view showing the current session's or thread's state
    */
-  'debugView.stateLabelBackground'?: Color | string
+  'debugView.stateLabelBackground'?: ColourLike
   /**
    * Foreground color for a label in the CALL STACK view showing the current session's or thread's state
    */
-  'debugView.stateLabelForeground'?: Color | string
+  'debugView.stateLabelForeground'?: ColourLike
   /**
    * Color used to highlight value changes in the debug views (ie. in the Variables view)
    */
-  'debugView.valueChangedHighlight'?: Color | string
+  'debugView.valueChangedHighlight'?: ColourLike
   /**
    * Foreground color for description text providing additional information, for example for a label.
    */
-  'descriptionForeground'?: Color | string
+  'descriptionForeground'?: ColourLike
   /**
    * Border color between the two text editors.
    */
-  'diffEditor.border'?: Color | string
+  'diffEditor.border'?: ColourLike
   /**
    * Color of the diff editor's diagonal fill. The diagonal fill is used in side-by-side diff views.
    */
-  'diffEditor.diagonalFill'?: Color | string
+  'diffEditor.diagonalFill'?: ColourLike
   /**
    * Background color for text that got inserted. The color must not be opaque so as not to hide underlying decorations.
    */
-  'diffEditor.insertedTextBackground'?: Color | string
+  'diffEditor.insertedTextBackground'?: ColourLike
   /**
    * Background color for lines that got inserted. The color must not be opaque so as not to hide underlying
    * decorations.
    */
-  'diffEditor.insertedLineBackground'?: Color | string
+  'diffEditor.insertedLineBackground'?: ColourLike
   /**
    * Outline color for the text that got inserted.
    */
-  'diffEditor.insertedTextBorder'?: Color | string
+  'diffEditor.insertedTextBorder'?: ColourLike
   /**
    * Background color for lines that got removed. The color must not be opaque so as not to hide underlying decorations.
    */
-  'diffEditor.removedLineBackground'?: Color | string
+  'diffEditor.removedLineBackground'?: ColourLike
   /**
    * Background color for text that got removed. The color must not be opaque so as not to hide underlying decorations.
    */
-  'diffEditor.removedTextBackground'?: Color | string
+  'diffEditor.removedTextBackground'?: ColourLike
   /**
    * Outline color for text that got removed.
    */
-  'diffEditor.removedTextBorder'?: Color | string
+  'diffEditor.removedTextBorder'?: ColourLike
   /**
    * Background color for the margin where lines got inserted.
    */
-  'diffEditorGutter.insertedLineBackground'?: Color | string
+  'diffEditorGutter.insertedLineBackground'?: ColourLike
   /**
    * Background color for the margin where lines got removed.
    */
-  'diffEditorGutter.removedLineBackground'?: Color | string
+  'diffEditorGutter.removedLineBackground'?: ColourLike
   /**
    * Diff overview ruler foreground for inserted content.
    */
-  'diffEditorOverview.insertedForeground'?: Color | string
+  'diffEditorOverview.insertedForeground'?: ColourLike
   /**
    * Diff overview ruler foreground for removed content.
    */
-  'diffEditorOverview.removedForeground'?: Color | string
+  'diffEditorOverview.removedForeground'?: ColourLike
   /**
    * Dropdown background.
    */
-  'dropdown.background'?: Color | string
+  'dropdown.background'?: ColourLike
   /**
    * Dropdown border.
    */
-  'dropdown.border'?: Color | string
+  'dropdown.border'?: ColourLike
   /**
    * Dropdown foreground.
    */
-  'dropdown.foreground'?: Color | string
+  'dropdown.foreground'?: ColourLike
   /**
    * Dropdown list background.
    */
-  'dropdown.listBackground'?: Color | string
+  'dropdown.listBackground'?: ColourLike
   /**
    * Editor background color.
    */
-  'editor.background'?: Color | string
+  'editor.background'?: ColourLike
   /**
    * Color of the current search match.
    */
-  'editor.findMatchBackground'?: Color | string
+  'editor.findMatchBackground'?: ColourLike
   /**
    * Border color of the current search match.
    */
-  'editor.findMatchBorder'?: Color | string
+  'editor.findMatchBorder'?: ColourLike
   /**
    * Color of the other search matches. The color must not be opaque so as not to hide underlying decorations.
    */
-  'editor.findMatchHighlightBackground'?: Color | string
+  'editor.findMatchHighlightBackground'?: ColourLike
   /**
    * Border color of the other search matches.
    */
-  'editor.findMatchHighlightBorder'?: Color | string
+  'editor.findMatchHighlightBorder'?: ColourLike
   /**
    * Color the range limiting the search (Enable 'Find in Selection' in the find widget). The color must not be opaque
    * so as not to hide underlying decorations.
    */
-  'editor.findRangeHighlightBackground'?: Color | string
+  'editor.findRangeHighlightBackground'?: ColourLike
   /**
    * Border color the range limiting the search (Enable 'Find in Selection' in the find widget).
    */
-  'editor.findRangeHighlightBorder'?: Color | string
+  'editor.findRangeHighlightBorder'?: ColourLike
   /**
    * Background color of the focused stack frame highlight in the editor.
    */
-  'editor.focusedStackFrameHighlightBackground'?: Color | string
+  'editor.focusedStackFrameHighlightBackground'?: ColourLike
   /**
    * Background color for folded ranges. The color must not be opaque so as not to hide underlying decorations.
    */
-  'editor.foldBackground'?: Color | string
+  'editor.foldBackground'?: ColourLike
   /**
    * Editor default foreground color.
    */
-  'editor.foreground'?: Color | string
+  'editor.foreground'?: ColourLike
   /**
    * Highlight below the word for which a hover is shown. The color must not be opaque so as not to hide underlying
    * decorations.
    */
-  'editor.hoverHighlightBackground'?: Color | string
+  'editor.hoverHighlightBackground'?: ColourLike
   /**
    * Color of the selection in an inactive editor. The color must not be opaque so as not to hide underlying
    * decorations.
    */
-  'editor.inactiveSelectionBackground'?: Color | string
+  'editor.inactiveSelectionBackground'?: ColourLike
   /**
    * Color for the debug inline value background.
    */
-  'editor.inlineValuesBackground'?: Color | string
+  'editor.inlineValuesBackground'?: ColourLike
   /**
    * Color for the debug inline value text.
    */
-  'editor.inlineValuesForeground'?: Color | string
+  'editor.inlineValuesForeground'?: ColourLike
   /**
    * Background color for the highlight of line at the cursor position.
    */
-  'editor.lineHighlightBackground'?: Color | string
+  'editor.lineHighlightBackground'?: ColourLike
   /**
    * Background color for the border around the line at the cursor position.
    */
-  'editor.lineHighlightBorder'?: Color | string
+  'editor.lineHighlightBorder'?: ColourLike
   /**
    * Background color when the editor is in linked editing mode.
    */
-  'editor.linkedEditingBackground'?: Color | string
+  'editor.linkedEditingBackground'?: ColourLike
   /**
    * Background color when the editor auto renames on type.
    */
-  'editor.onTypeRenameBackground'?: Color | string
+  'editor.onTypeRenameBackground'?: ColourLike
   /**
    * Background color of highlighted ranges, used by Quick Open, Symbol in File and Find features. The color must not be
    * opaque so as not to hide underlying decorations.
    */
-  'editor.rangeHighlightBackground'?: Color | string
+  'editor.rangeHighlightBackground'?: ColourLike
   /**
    * Background color of the border around highlighted ranges.
    */
-  'editor.rangeHighlightBorder'?: Color | string
+  'editor.rangeHighlightBorder'?: ColourLike
   /**
    * Color of the editor selection.
    */
-  'editor.selectionBackground'?: Color | string
+  'editor.selectionBackground'?: ColourLike
   /**
    * Color of the selected text for high contrast.
    */
-  'editor.selectionForeground'?: Color | string
+  'editor.selectionForeground'?: ColourLike
   /**
    * Color for regions with the same content as the selection. The color must not be opaque so as not to hide underlying
    * decorations.
    */
-  'editor.selectionHighlightBackground'?: Color | string
+  'editor.selectionHighlightBackground'?: ColourLike
   /**
    * Border color for regions with the same content as the selection.
    */
-  'editor.selectionHighlightBorder'?: Color | string
+  'editor.selectionHighlightBorder'?: ColourLike
   /**
    * Highlight background color of the final tabstop of a snippet.
    */
-  'editor.snippetFinalTabstopHighlightBackground'?: Color | string
+  'editor.snippetFinalTabstopHighlightBackground'?: ColourLike
   /**
    * Highlight border color of the final tabstop of a snippet.
    */
-  'editor.snippetFinalTabstopHighlightBorder'?: Color | string
+  'editor.snippetFinalTabstopHighlightBorder'?: ColourLike
   /**
    * Highlight background color of a snippet tabstop.
    */
-  'editor.snippetTabstopHighlightBackground'?: Color | string
+  'editor.snippetTabstopHighlightBackground'?: ColourLike
   /**
    * Highlight border color of a snippet tabstop.
    */
-  'editor.snippetTabstopHighlightBorder'?: Color | string
+  'editor.snippetTabstopHighlightBorder'?: ColourLike
   /**
    * Background color of the top stack frame highlight in the editor.
    */
-  'editor.stackFrameHighlightBackground'?: Color | string
+  'editor.stackFrameHighlightBackground'?: ColourLike
   /**
    * Background color of highlighted symbol. The color must not be opaque so as not to hide underlying decorations.
    */
-  'editor.symbolHighlightBackground'?: Color | string
+  'editor.symbolHighlightBackground'?: ColourLike
   /**
    * Background color of the border around highlighted symbols.
    */
-  'editor.symbolHighlightBorder'?: Color | string
+  'editor.symbolHighlightBorder'?: ColourLike
   /**
    * Background color of a symbol during read-access, for example when reading a variable. The color must not be opaque
    * so as not to hide underlying decorations.
    */
-  'editor.wordHighlightBackground'?: Color | string
+  'editor.wordHighlightBackground'?: ColourLike
   /**
    * Border color of a symbol during read-access, for example when reading a variable.
    */
-  'editor.wordHighlightBorder'?: Color | string
+  'editor.wordHighlightBorder'?: ColourLike
   /**
    * Background color of a symbol during write-access, for example when writing to a variable. The color must not be
    * opaque so as not to hide underlying decorations.
    */
-  'editor.wordHighlightStrongBackground'?: Color | string
+  'editor.wordHighlightStrongBackground'?: ColourLike
   /**
    * Border color of a symbol during write-access, for example when writing to a variable.
    */
-  'editor.wordHighlightStrongBorder'?: Color | string
+  'editor.wordHighlightStrongBorder'?: ColourLike
   /**
    * Foreground color of brackets (1). Requires enabling bracket pair colorization.
    */
-  'editorBracketHighlight.foreground1'?: Color | string
+  'editorBracketHighlight.foreground1'?: ColourLike
   /**
    * Foreground color of brackets (2). Requires enabling bracket pair colorization.
    */
-  'editorBracketHighlight.foreground2'?: Color | string
+  'editorBracketHighlight.foreground2'?: ColourLike
   /**
    * Foreground color of brackets (3). Requires enabling bracket pair colorization.
    */
-  'editorBracketHighlight.foreground3'?: Color | string
+  'editorBracketHighlight.foreground3'?: ColourLike
   /**
    * Foreground color of brackets (4). Requires enabling bracket pair colorization.
    */
-  'editorBracketHighlight.foreground4'?: Color | string
+  'editorBracketHighlight.foreground4'?: ColourLike
   /**
    * Foreground color of brackets (5). Requires enabling bracket pair colorization.
    */
-  'editorBracketHighlight.foreground5'?: Color | string
+  'editorBracketHighlight.foreground5'?: ColourLike
   /**
    * Foreground color of brackets (6). Requires enabling bracket pair colorization.
    */
-  'editorBracketHighlight.foreground6'?: Color | string
+  'editorBracketHighlight.foreground6'?: ColourLike
   /**
    * Foreground color of unexpected brackets.
    */
-  'editorBracketHighlight.unexpectedBracket.foreground'?: Color | string
+  'editorBracketHighlight.unexpectedBracket.foreground'?: ColourLike
   /**
    * Background color behind matching brackets.
    */
-  'editorBracketMatch.background'?: Color | string
+  'editorBracketMatch.background'?: ColourLike
   /**
    * Color for matching brackets boxes.
    */
-  'editorBracketMatch.border'?: Color | string
+  'editorBracketMatch.border'?: ColourLike
   /**
    * Foreground color of an editor CodeLens.
    */
-  'editorCodeLens.foreground'?: Color | string
+  'editorCodeLens.foreground'?: ColourLike
   /**
    * The background color of the editor cursor. Allows customizing the color of a character overlapped by a block
    * cursor.
    */
-  'editorCursor.background'?: Color | string
+  'editorCursor.background'?: ColourLike
   /**
    * Color of the editor cursor.
    */
-  'editorCursor.foreground'?: Color | string
+  'editorCursor.foreground'?: ColourLike
   /**
    * Background color of error text in the editor. The color must not be opaque so as not to hide underlying
    * decorations.
    */
-  'editorError.background'?: Color | string
+  'editorError.background'?: ColourLike
   /**
    * Border color of error boxes in the editor.
    */
-  'editorError.border'?: Color | string
+  'editorError.border'?: ColourLike
   /**
    * Foreground color of error squiggles in the editor.
    */
-  'editorError.foreground'?: Color | string
+  'editorError.foreground'?: ColourLike
   /**
    * Border color of the ghost text shown by inline completion providers and the suggest preview.
    */
-  'editorGhostText.border'?: Color | string
+  'editorGhostText.border'?: ColourLike
   /**
    * Background color of the ghost text in the editor.
    */
-  'editorGhostText.background'?: Color | string
+  'editorGhostText.background'?: ColourLike
   /**
    * Foreground color of the ghost text shown by inline completion providers and the suggest preview.
    */
-  'editorGhostText.foreground'?: Color | string
+  'editorGhostText.foreground'?: ColourLike
   /**
    * Color to separate multiple editor groups from each other.
    */
-  'editorGroup.border'?: Color | string
+  'editorGroup.border'?: ColourLike
   /**
    * Background color when dragging editors around.
    */
-  'editorGroup.dropBackground'?: Color | string
+  'editorGroup.dropBackground'?: ColourLike
   /**
    * Background color of an empty editor group.
    */
-  'editorGroup.emptyBackground'?: Color | string
+  'editorGroup.emptyBackground'?: ColourLike
   /**
    * Border color of an empty editor group that is focused.
    */
-  'editorGroup.focusedEmptyBorder'?: Color | string
+  'editorGroup.focusedEmptyBorder'?: ColourLike
   /**
    * Border color between editor group header and editor (below breadcrumbs if enabled).
    */
-  'editorGroupHeader.border'?: Color | string
+  'editorGroupHeader.border'?: ColourLike
   /**
    * Background color of the editor group title header when Tabs are disabled (set "workbench.editor.showTabs": false).
    */
-  'editorGroupHeader.noTabsBackground'?: Color | string
+  'editorGroupHeader.noTabsBackground'?: ColourLike
   /**
    * Background color of the Tabs container.
    */
-  'editorGroupHeader.tabsBackground'?: Color | string
+  'editorGroupHeader.tabsBackground'?: ColourLike
   /**
    * Border color below the editor tabs control when tabs are enabled.
    */
-  'editorGroupHeader.tabsBorder'?: Color | string
+  'editorGroupHeader.tabsBorder'?: ColourLike
   /**
    * Editor gutter background color for lines that are added.
    */
-  'editorGutter.addedBackground'?: Color | string
+  'editorGutter.addedBackground'?: ColourLike
   /**
    * Background color of the editor gutter. The gutter contains the glyph margins and the line numbers.
    */
-  'editorGutter.background'?: Color | string
+  'editorGutter.background'?: ColourLike
   /**
    * Editor gutter decoration color for commenting ranges.
    */
-  'editorGutter.commentRangeForeground'?: Color | string
+  'editorGutter.commentRangeForeground'?: ColourLike
   /**
    * Editor gutter background color for lines that are deleted.
    */
-  'editorGutter.deletedBackground'?: Color | string
+  'editorGutter.deletedBackground'?: ColourLike
   /**
    * Color of the folding control in the editor gutter.
    */
-  'editorGutter.foldingControlForeground'?: Color | string
+  'editorGutter.foldingControlForeground'?: ColourLike
   /**
    * Editor gutter background color for lines that are modified.
    */
-  'editorGutter.modifiedBackground'?: Color | string
+  'editorGutter.modifiedBackground'?: ColourLike
   /**
    * Border color of hint boxes in the editor.
    */
-  'editorHint.border'?: Color | string
+  'editorHint.border'?: ColourLike
   /**
    * Foreground color of hints in the editor.
    */
-  'editorHint.foreground'?: Color | string
+  'editorHint.foreground'?: ColourLike
   /**
    * Background color of the editor hover.
    */
-  'editorHoverWidget.background'?: Color | string
+  'editorHoverWidget.background'?: ColourLike
   /**
    * Border color of the editor hover.
    */
-  'editorHoverWidget.border'?: Color | string
+  'editorHoverWidget.border'?: ColourLike
   /**
    * Foreground color of the editor hover.
    */
-  'editorHoverWidget.foreground'?: Color | string
+  'editorHoverWidget.foreground'?: ColourLike
   /**
    * Background color of the editor hover status bar.
    */
-  'editorHoverWidget.statusBarBackground'?: Color | string
+  'editorHoverWidget.statusBarBackground'?: ColourLike
   /**
    * Color of the active editor indentation guide.
    */
-  'editorIndentGuide.activeBackground'?: Color | string
+  'editorIndentGuide.activeBackground'?: ColourLike
   /**
    * Color of the editor indentation guides.
    */
-  'editorIndentGuide.background'?: Color | string
+  'editorIndentGuide.background'?: ColourLike
   /**
    * Background color of info text in the editor. The color must not be opaque so as not to hide underlying decorations.
    */
-  'editorInfo.background'?: Color | string
+  'editorInfo.background'?: ColourLike
   /**
    * Border color of info boxes in the editor.
    */
-  'editorInfo.border'?: Color | string
+  'editorInfo.border'?: ColourLike
   /**
    * Foreground color of info squiggles in the editor.
    */
-  'editorInfo.foreground'?: Color | string
+  'editorInfo.foreground'?: ColourLike
   /**
    * Background color of inline hints.
    */
-  'editorInlayHint.background'?: Color | string
+  'editorInlayHint.background'?: ColourLike
   /**
    * Foreground color of inline hints.
    */
-  'editorInlayHint.foreground'?: Color | string
+  'editorInlayHint.foreground'?: ColourLike
   /**
    * Background color of inline hints for parameters
    */
-  'editorInlayHint.parameterBackground'?: Color | string
+  'editorInlayHint.parameterBackground'?: ColourLike
   /**
    * Foreground color of inline hints for parameters
    */
-  'editorInlayHint.parameterForeground'?: Color | string
+  'editorInlayHint.parameterForeground'?: ColourLike
   /**
    * Background color of inline hints for types
    */
-  'editorInlayHint.typeBackground'?: Color | string
+  'editorInlayHint.typeBackground'?: ColourLike
   /**
    * Foreground color of inline hints for types
    */
-  'editorInlayHint.typeForeground'?: Color | string
+  'editorInlayHint.typeForeground'?: ColourLike
   /**
    * The color used for the lightbulb actions icon.
    */
-  'editorLightBulb.foreground'?: Color | string
+  'editorLightBulb.foreground'?: ColourLike
   /**
    * The color used for the lightbulb auto fix actions icon.
    */
-  'editorLightBulbAutoFix.foreground'?: Color | string
+  'editorLightBulbAutoFix.foreground'?: ColourLike
   /**
    * Color of the active editor line number.
    */
-  'editorLineNumber.activeForeground'?: Color | string
+  'editorLineNumber.activeForeground'?: ColourLike
   /**
    * Color of editor line numbers.
    */
-  'editorLineNumber.foreground'?: Color | string
+  'editorLineNumber.foreground'?: ColourLike
   /**
    * Color of active links.
    */
-  'editorLink.activeForeground'?: Color | string
+  'editorLink.activeForeground'?: ColourLike
   /**
    * Editor marker navigation widget background.
    */
-  'editorMarkerNavigation.background'?: Color | string
+  'editorMarkerNavigation.background'?: ColourLike
   /**
    * Editor marker navigation widget error color.
    */
-  'editorMarkerNavigationError.background'?: Color | string
+  'editorMarkerNavigationError.background'?: ColourLike
   /**
    * Editor marker navigation widget error heading background.
    */
-  'editorMarkerNavigationError.headerBackground'?: Color | string
+  'editorMarkerNavigationError.headerBackground'?: ColourLike
   /**
    * Editor marker navigation widget info color.
    */
-  'editorMarkerNavigationInfo.background'?: Color | string
+  'editorMarkerNavigationInfo.background'?: ColourLike
   /**
    * Editor marker navigation widget info heading background.
    */
-  'editorMarkerNavigationInfo.headerBackground'?: Color | string
+  'editorMarkerNavigationInfo.headerBackground'?: ColourLike
   /**
    * Editor marker navigation widget warning color.
    */
-  'editorMarkerNavigationWarning.background'?: Color | string
+  'editorMarkerNavigationWarning.background'?: ColourLike
   /**
    * Editor marker navigation widget warning heading background.
    */
-  'editorMarkerNavigationWarning.headerBackground'?: Color | string
+  'editorMarkerNavigationWarning.headerBackground'?: ColourLike
   /**
    * Overview ruler marker color for added content.
    */
-  'editorOverviewRuler.addedForeground'?: Color | string
+  'editorOverviewRuler.addedForeground'?: ColourLike
   /**
    * Background color of the editor overview ruler. Only used when the minimap is enabled and placed on the right side
    * of the editor.
    */
-  'editorOverviewRuler.background'?: Color | string
+  'editorOverviewRuler.background'?: ColourLike
   /**
    * Color of the overview ruler border.
    */
-  'editorOverviewRuler.border'?: Color | string
+  'editorOverviewRuler.border'?: ColourLike
   /**
    * Overview ruler marker color for matching brackets.
    */
-  'editorOverviewRuler.bracketMatchForeground'?: Color | string
+  'editorOverviewRuler.bracketMatchForeground'?: ColourLike
   /**
    * Common ancestor overview ruler foreground for inline merge conflicts.
    */
-  'editorOverviewRuler.commonContentForeground'?: Color | string
+  'editorOverviewRuler.commonContentForeground'?: ColourLike
   /**
    * Current overview ruler foreground for inline merge conflicts.
    */
-  'editorOverviewRuler.currentContentForeground'?: Color | string
+  'editorOverviewRuler.currentContentForeground'?: ColourLike
   /**
    * Overview ruler marker color for deleted content.
    */
-  'editorOverviewRuler.deletedForeground'?: Color | string
+  'editorOverviewRuler.deletedForeground'?: ColourLike
   /**
    * Overview ruler marker color for errors.
    */
-  'editorOverviewRuler.errorForeground'?: Color | string
+  'editorOverviewRuler.errorForeground'?: ColourLike
   /**
    * Overview ruler marker color for find matches. The color must not be opaque so as not to hide underlying
    * decorations.
    */
-  'editorOverviewRuler.findMatchForeground'?: Color | string
+  'editorOverviewRuler.findMatchForeground'?: ColourLike
   /**
    * Incoming overview ruler foreground for inline merge conflicts.
    */
-  'editorOverviewRuler.incomingContentForeground'?: Color | string
+  'editorOverviewRuler.incomingContentForeground'?: ColourLike
   /**
    * Overview ruler marker color for infos.
    */
-  'editorOverviewRuler.infoForeground'?: Color | string
+  'editorOverviewRuler.infoForeground'?: ColourLike
   /**
    * Overview ruler marker color for modified content.
    */
-  'editorOverviewRuler.modifiedForeground'?: Color | string
+  'editorOverviewRuler.modifiedForeground'?: ColourLike
   /**
    * Overview ruler marker color for highlighted ranges, like by the Quick Open, Symbol in File and Find features. The
    * color must not be opaque so as not to hide underlying decorations.
    */
-  'editorOverviewRuler.rangeHighlightForeground'?: Color | string
+  'editorOverviewRuler.rangeHighlightForeground'?: ColourLike
   /**
    * Overview ruler marker color for selection highlights. The color must not be opaque so as not to hide underlying
    * decorations.
    */
-  'editorOverviewRuler.selectionHighlightForeground'?: Color | string
+  'editorOverviewRuler.selectionHighlightForeground'?: ColourLike
   /**
    * Overview ruler marker color for warnings.
    */
-  'editorOverviewRuler.warningForeground'?: Color | string
+  'editorOverviewRuler.warningForeground'?: ColourLike
   /**
    * Overview ruler marker color for symbol highlights. The color must not be opaque so as not to hide underlying
    * decorations.
    */
-  'editorOverviewRuler.wordHighlightForeground'?: Color | string
+  'editorOverviewRuler.wordHighlightForeground'?: ColourLike
   /**
    * Overview ruler marker color for write-access symbol highlights. The color must not be opaque so as not to hide
    * underlying decorations.
    */
-  'editorOverviewRuler.wordHighlightStrongForeground'?: Color | string
+  'editorOverviewRuler.wordHighlightStrongForeground'?: ColourLike
   /**
    * Background color of the editor pane visible on the left and right side of the centered editor layout.
    */
-  'editorPane.background'?: Color | string
+  'editorPane.background'?: ColourLike
   /**
    * Color of the editor rulers.
    */
-  'editorRuler.foreground'?: Color | string
+  'editorRuler.foreground'?: ColourLike
   /**
    * Editor sticky scroll background color.
    */
-  'editorStickyScroll.background'?: Color | string
+  'editorStickyScroll.background'?: ColourLike
   /**
    * Editor sticky scroll on hover background color.
    */
-  'editorStickyScrollHover.background'?: Color | string
+  'editorStickyScrollHover.background'?: ColourLike
   /**
    * Background color of the suggestion widget.
    */
-  'editorSuggestWidget.background'?: Color | string
+  'editorSuggestWidget.background'?: ColourLike
   /**
    * Border color of the suggestion widget.
    */
-  'editorSuggestWidget.border'?: Color | string
+  'editorSuggestWidget.border'?: ColourLike
   /**
    * Color of the match highlights in the suggest widget when an item is focused.
    */
-  'editorSuggestWidget.focusHighlightForeground'?: Color | string
+  'editorSuggestWidget.focusHighlightForeground'?: ColourLike
   /**
    * Foreground color of the suggestion widget.
    */
-  'editorSuggestWidget.foreground'?: Color | string
+  'editorSuggestWidget.foreground'?: ColourLike
   /**
    * Color of the match highlights in the suggestion widget.
    */
-  'editorSuggestWidget.highlightForeground'?: Color | string
+  'editorSuggestWidget.highlightForeground'?: ColourLike
   /**
    * Background color of the selected entry in the suggestion widget.
    */
-  'editorSuggestWidget.selectedBackground'?: Color | string
+  'editorSuggestWidget.selectedBackground'?: ColourLike
   /**
    * Foreground color of the selected entry in the suggest widget.
    */
-  'editorSuggestWidget.selectedForeground'?: Color | string
+  'editorSuggestWidget.selectedForeground'?: ColourLike
   /**
    * Icon foreground color of the selected entry in the suggest widget.
    */
-  'editorSuggestWidget.selectedIconForeground'?: Color | string
+  'editorSuggestWidget.selectedIconForeground'?: ColourLike
   /**
    * Border color of unnecessary (unused) source code in the editor.
    */
-  'editorUnnecessaryCode.border'?: Color | string
+  'editorUnnecessaryCode.border'?: ColourLike
   /**
    * Opacity of unnecessary (unused) source code in the editor.
    *
@@ -919,1554 +919,1558 @@ interface UIColourPalette {
    * opacity. For high contrast themes, use the "editorUnnecessaryCode.border" theme color to underline unnecessary code
    * instead of fading it out.
    */
-  'editorUnnecessaryCode.opacity'?: Color | string
+  'editorUnnecessaryCode.opacity'?: ColourLike
   /**
    * Background color of warning text in the editor. The color must not be opaque so as not to hide underlying
    * decorations.
    */
-  'editorWarning.background'?: Color | string
+  'editorWarning.background'?: ColourLike
   /**
    * Border color of warning boxes in the editor.
    */
-  'editorWarning.border'?: Color | string
+  'editorWarning.border'?: ColourLike
   /**
    * Foreground color of warning squiggles in the editor.
    */
-  'editorWarning.foreground'?: Color | string
+  'editorWarning.foreground'?: ColourLike
   /**
    * Color of whitespace characters in the editor.
    */
-  'editorWhitespace.foreground'?: Color | string
+  'editorWhitespace.foreground'?: ColourLike
   /**
    * Background color of editor widgets, such as Find/Replace.
    */
-  'editorWidget.background'?: Color | string
+  'editorWidget.background'?: ColourLike
   /**
    * Border color of the editor widget unless the widget does not contain a border or defines its own border color.
    */
-  'editorWidget.border'?: Color | string
+  'editorWidget.border'?: ColourLike
   /**
    * Foreground color of editor widgets, such as find/replace.
    */
-  'editorWidget.foreground'?: Color | string
+  'editorWidget.foreground'?: ColourLike
   /**
    * Border color of the resize bar of editor widgets. The color is only used if the widget chooses to have a resize
    * border and if the color is not overridden by a widget.
    */
-  'editorWidget.resizeBorder'?: Color | string
+  'editorWidget.resizeBorder'?: ColourLike
   /**
    * Overall foreground color for error messages (this color is only used if not overridden by a component).
    */
-  'errorForeground'?: Color | string
+  'errorForeground'?: ColourLike
   /**
    * Background color for the remote badge in the extensions view.
    */
-  'extensionBadge.remoteBackground'?: Color | string
+  'extensionBadge.remoteBackground'?: ColourLike
   /**
    * Foreground color for the remote badge in the extensions view.
    */
-  'extensionBadge.remoteForeground'?: Color | string
+  'extensionBadge.remoteForeground'?: ColourLike
   /**
    * Extension view button background color.
    */
-  'extensionButton.prominentBackground'?: Color | string
+  'extensionButton.prominentBackground'?: ColourLike
   /**
    * Extension view button foreground color (for example Install button).
    */
-  'extensionButton.prominentForeground'?: Color | string
+  'extensionButton.prominentForeground'?: ColourLike
   /**
    * Extension view button background hover color.
    */
-  'extensionButton.prominentHoverBackground'?: Color | string
+  'extensionButton.prominentHoverBackground'?: ColourLike
   /**
    * The icon color for pre-release extension.
    */
-  'extensionIcon.preReleaseForeground'?: Color | string
+  'extensionIcon.preReleaseForeground'?: ColourLike
   /**
    * The icon color for extension sponsor.
    */
-  'extensionIcon.sponsorForeground'?: Color | string
+  'extensionIcon.sponsorForeground'?: ColourLike
   /**
    * The icon color for extension ratings.
    */
-  'extensionIcon.starForeground'?: Color | string
+  'extensionIcon.starForeground'?: ColourLike
   /**
    * The icon color for extension verified publisher.
    */
-  'extensionIcon.verifiedForeground'?: Color | string
+  'extensionIcon.verifiedForeground'?: ColourLike
   /**
    * Overall border color for focused elements. This color is only used if not overridden by a component.
    */
-  'focusBorder'?: Color | string
+  'focusBorder'?: ColourLike
   /**
    * Overall foreground color. This color is only used if not overridden by a component.
    */
-  'foreground'?: Color | string
+  'foreground'?: ColourLike
   /**
    * Color for added Git resources. Used for file labels and the SCM viewlet.
    */
-  'gitDecoration.addedResourceForeground'?: Color | string
+  'gitDecoration.addedResourceForeground'?: ColourLike
   /**
    * Color for conflicting Git resources. Used for file labels and the SCM viewlet.
    */
-  'gitDecoration.conflictingResourceForeground'?: Color | string
+  'gitDecoration.conflictingResourceForeground'?: ColourLike
   /**
    * Color for deleted Git resources. Used for file labels and the SCM viewlet.
    */
-  'gitDecoration.deletedResourceForeground'?: Color | string
+  'gitDecoration.deletedResourceForeground'?: ColourLike
   /**
    * Color for ignored Git resources. Used for file labels and the SCM viewlet.
    */
-  'gitDecoration.ignoredResourceForeground'?: Color | string
+  'gitDecoration.ignoredResourceForeground'?: ColourLike
   /**
    * Color for modified Git resources. Used for file labels and the SCM viewlet.
    */
-  'gitDecoration.modifiedResourceForeground'?: Color | string
+  'gitDecoration.modifiedResourceForeground'?: ColourLike
   /**
    * Color for renamed or copied Git resources. Used for file labels and the SCM viewlet.
    */
-  'gitDecoration.renamedResourceForeground'?: Color | string
+  'gitDecoration.renamedResourceForeground'?: ColourLike
   /**
    * Color for staged deletions git decorations. Used for file labels and the SCM viewlet.
    */
-  'gitDecoration.stageDeletedResourceForeground'?: Color | string
+  'gitDecoration.stageDeletedResourceForeground'?: ColourLike
   /**
    * Color for staged modifications git decorations. Used for file labels and the SCM viewlet.
    */
-  'gitDecoration.stageModifiedResourceForeground'?: Color | string
+  'gitDecoration.stageModifiedResourceForeground'?: ColourLike
   /**
    * Color for submodule resources.
    */
-  'gitDecoration.submoduleResourceForeground'?: Color | string
+  'gitDecoration.submoduleResourceForeground'?: ColourLike
   /**
    * Color for untracked Git resources. Used for file labels and the SCM viewlet.
    */
-  'gitDecoration.untrackedResourceForeground'?: Color | string
+  'gitDecoration.untrackedResourceForeground'?: ColourLike
   /**
    * The default color for icons in the workbench.
    */
-  'icon.foreground'?: Color | string
+  'icon.foreground'?: ColourLike
   /**
    * Input box background.
    */
-  'input.background'?: Color | string
+  'input.background'?: ColourLike
   /**
    * Input box border.
    */
-  'input.border'?: Color | string
+  'input.border'?: ColourLike
   /**
    * Input box foreground.
    */
-  'input.foreground'?: Color | string
+  'input.foreground'?: ColourLike
   /**
    * Input box foreground color for placeholder text.
    */
-  'input.placeholderForeground'?: Color | string
+  'input.placeholderForeground'?: ColourLike
   /**
    * Background color of activated options in input fields.
    */
-  'inputOption.activeBackground'?: Color | string
+  'inputOption.activeBackground'?: ColourLike
   /**
    * Border color of activated options in input fields.
    */
-  'inputOption.activeBorder'?: Color | string
+  'inputOption.activeBorder'?: ColourLike
   /**
    * Foreground color of activated options in input fields.
    */
-  'inputOption.activeForeground'?: Color | string
+  'inputOption.activeForeground'?: ColourLike
   /**
    * Input validation background color for error severity.
    */
-  'inputValidation.errorBackground'?: Color | string
+  'inputValidation.errorBackground'?: ColourLike
   /**
    * Input validation border color for error severity.
    */
-  'inputValidation.errorBorder'?: Color | string
+  'inputValidation.errorBorder'?: ColourLike
   /**
    * Input validation foreground color for error severity.
    */
-  'inputValidation.errorForeground'?: Color | string
+  'inputValidation.errorForeground'?: ColourLike
   /**
    * Input validation background color for information severity.
    */
-  'inputValidation.infoBackground'?: Color | string
+  'inputValidation.infoBackground'?: ColourLike
   /**
    * Input validation border color for information severity.
    */
-  'inputValidation.infoBorder'?: Color | string
+  'inputValidation.infoBorder'?: ColourLike
   /**
    * Input validation foreground color for information severity.
    */
-  'inputValidation.infoForeground'?: Color | string
+  'inputValidation.infoForeground'?: ColourLike
   /**
    * Input validation background color for information warning.
    */
-  'inputValidation.warningBackground'?: Color | string
+  'inputValidation.warningBackground'?: ColourLike
   /**
    * Input validation border color for warning severity.
    */
-  'inputValidation.warningBorder'?: Color | string
+  'inputValidation.warningBorder'?: ColourLike
   /**
    * Input validation foreground color for warning severity.
    */
-  'inputValidation.warningForeground'?: Color | string
+  'inputValidation.warningForeground'?: ColourLike
   /**
    * Keybinding label background color. The keybinding label is used to represent a keyboard shortcut.
    */
-  'keybindingLabel.background'?: Color | string
+  'keybindingLabel.background'?: ColourLike
   /**
    * Keybinding label border color. The keybinding label is used to represent a keyboard shortcut.
    */
-  'keybindingLabel.border'?: Color | string
+  'keybindingLabel.border'?: ColourLike
   /**
    * Keybinding label border bottom color. The keybinding label is used to represent a keyboard shortcut.
    */
-  'keybindingLabel.bottomBorder'?: Color | string
+  'keybindingLabel.bottomBorder'?: ColourLike
   /**
    * Background color for the keyboard shortcuts table header.
    */
-  'keybindingTable.headerBackground'?: Color | string
+  'keybindingTable.headerBackground'?: ColourLike
   /**
    * Background color for the keyboard shortcuts table alternating rows.
    */
-  'keybindingTable.rowsBackground'?: Color | string
+  'keybindingTable.rowsBackground'?: ColourLike
   /**
    * Keybinding label foreground color. The keybinding label is used to represent a keyboard shortcut.
    */
-  'keybindingLabel.foreground'?: Color | string
+  'keybindingLabel.foreground'?: ColourLike
   /**
    * List/Tree background color for the selected item when the list/tree is active.
    */
-  'list.activeSelectionBackground'?: Color | string
+  'list.activeSelectionBackground'?: ColourLike
   /**
    * List/Tree foreground color for the selected item when the list/tree is active.
    */
-  'list.activeSelectionForeground'?: Color | string
+  'list.activeSelectionForeground'?: ColourLike
   /**
    * List/Tree icon foreground color for the selected item when the list/tree is active. An active list/tree has
    * keyboard focus, an inactive does not.
    */
-  'list.activeSelectionIconForeground'?: Color | string
+  'list.activeSelectionIconForeground'?: ColourLike
   /**
    * List/Tree foreground color for items that are deemphasized.
    */
-  'list.deemphasizedForeground'?: Color | string
+  'list.deemphasizedForeground'?: ColourLike
   /**
    * List/Tree drag and drop background when moving items around using the mouse.
    */
-  'list.dropBackground'?: Color | string
+  'list.dropBackground'?: ColourLike
   /**
    * Foreground color of list items containing errors.
    */
-  'list.errorForeground'?: Color | string
+  'list.errorForeground'?: ColourLike
   /**
    * Background color of the filtered matches in lists and trees.
    */
-  'list.filterMatchBackground'?: Color | string
+  'list.filterMatchBackground'?: ColourLike
   /**
    * Border color of the filtered matches in lists and trees.
    */
-  'list.filterMatchBorder'?: Color | string
+  'list.filterMatchBorder'?: ColourLike
   /**
    * List/Tree background color for the focused item when the list/tree is active.
    */
-  'list.focusBackground'?: Color | string
+  'list.focusBackground'?: ColourLike
   /**
    * List/Tree foreground color for the focused item when the list/tree is active. An active list/tree has keyboard
    * focus, an inactive does not.
    */
-  'list.focusForeground'?: Color | string
+  'list.focusForeground'?: ColourLike
   /**
    * List/Tree foreground color of the match highlights on actively focused items when searching inside the list/tree.
    */
-  'list.focusHighlightForeground'?: Color | string
+  'list.focusHighlightForeground'?: ColourLike
   /**
    * List/Tree outline color for the focused item when the list/tree is active. An active list/tree has keyboard focus,
    * an inactive does not.
    */
-  'list.focusOutline'?: Color | string
+  'list.focusOutline'?: ColourLike
   /**
    * List/Tree foreground color of the match highlights when searching inside the list/tree.
    */
-  'list.highlightForeground'?: Color | string
+  'list.highlightForeground'?: ColourLike
   /**
    * List/Tree background when hovering over items using the mouse.
    */
-  'list.hoverBackground'?: Color | string
+  'list.hoverBackground'?: ColourLike
   /**
    * List/Tree foreground when hovering over items using the mouse.
    */
-  'list.hoverForeground'?: Color | string
+  'list.hoverForeground'?: ColourLike
   /**
    * List background color for the focused item when the list is inactive. An active list has keyboard focus, an
    * inactive does not. Currently only supported in lists.
    */
-  'list.inactiveFocusBackground'?: Color | string
+  'list.inactiveFocusBackground'?: ColourLike
   /**
    * List/Tree outline color for the focused item when the list/tree is inactive. An active list/tree has keyboard
    * focus, an inactive does not.
    */
-  'list.inactiveFocusOutline'?: Color | string
+  'list.inactiveFocusOutline'?: ColourLike
   /**
    * List/Tree background color for the selected item when the list/tree is inactive.
    */
-  'list.inactiveSelectionBackground'?: Color | string
+  'list.inactiveSelectionBackground'?: ColourLike
   /**
    * List/Tree foreground color for the selected item when the list/tree is inactive. An active list/tree has keyboard
    * focus, an inactive does not.
    */
-  'list.inactiveSelectionForeground'?: Color | string
+  'list.inactiveSelectionForeground'?: ColourLike
   /**
    * List/Tree icon foreground color for the selected item when the list/tree is inactive. An active list/tree has
    * keyboard focus, an inactive does not.
    */
-  'list.inactiveSelectionIconForeground'?: Color | string
+  'list.inactiveSelectionIconForeground'?: ColourLike
   /**
    * List/Tree foreground color for invalid items, for example an unresolved root in explorer.
    */
-  'list.invalidItemForeground'?: Color | string
+  'list.invalidItemForeground'?: ColourLike
   /**
    * Foreground color of list items containing warnings.
    */
-  'list.warningForeground'?: Color | string
+  'list.warningForeground'?: ColourLike
   /**
    * List/Tree Filter background color of typed text when searching inside the list/tree.
    */
-  'listFilterWidget.background'?: Color | string
+  'listFilterWidget.background'?: ColourLike
   /**
    * List/Tree Filter Widget's outline color when no match is found of typed text when searching inside the list/tree.
    */
-  'listFilterWidget.noMatchesOutline'?: Color | string
+  'listFilterWidget.noMatchesOutline'?: ColourLike
   /**
    * List/Tree Filter Widget's outline color of typed text when searching inside the list/tree.
    */
-  'listFilterWidget.outline'?: Color | string
+  'listFilterWidget.outline'?: ColourLike
   /**
    * Background color of menu items.
    */
-  'menu.background'?: Color | string
+  'menu.background'?: ColourLike
   /**
    * Border color of menus.
    */
-  'menu.border'?: Color | string
+  'menu.border'?: ColourLike
   /**
    * Foreground color of menu items.
    */
-  'menu.foreground'?: Color | string
+  'menu.foreground'?: ColourLike
   /**
    * Background color of the selected menu item in menus.
    */
-  'menu.selectionBackground'?: Color | string
+  'menu.selectionBackground'?: ColourLike
   /**
    * Border color of the selected menu item in menus.
    */
-  'menu.selectionBorder'?: Color | string
+  'menu.selectionBorder'?: ColourLike
   /**
    * Foreground color of the selected menu item in menus.
    */
-  'menu.selectionForeground'?: Color | string
+  'menu.selectionForeground'?: ColourLike
   /**
    * Color of a separator menu item in menus.
    */
-  'menu.separatorBackground'?: Color | string
+  'menu.separatorBackground'?: ColourLike
   /**
    * Background color of the selected menu item in the menubar.
    */
-  'menubar.selectionBackground'?: Color | string
+  'menubar.selectionBackground'?: ColourLike
   /**
    * Border color of the selected menu item in the menubar.
    */
-  'menubar.selectionBorder'?: Color | string
+  'menubar.selectionBorder'?: ColourLike
   /**
    * Foreground color of the selected menu item in the menubar.
    */
-  'menubar.selectionForeground'?: Color | string
+  'menubar.selectionForeground'?: ColourLike
   /**
    * Border color on headers and the splitter in inline merge conflicts.
    */
-  'merge.border'?: Color | string
+  'merge.border'?: ColourLike
   /**
    * Common ancestor content background in inline merge-conflicts. The color must not be opaque so as not to hide
    * underlying decorations.
    */
-  'merge.commonContentBackground'?: Color | string
+  'merge.commonContentBackground'?: ColourLike
   /**
    * Common ancestor header background in inline merge-conflicts. The color must not be opaque so as not to hide
    * underlying decorations.
    */
-  'merge.commonHeaderBackground'?: Color | string
+  'merge.commonHeaderBackground'?: ColourLike
   /**
    * Current content background in inline merge conflicts. The color must not be opaque so as not to hide underlying
    * decorations.
    */
-  'merge.currentContentBackground'?: Color | string
+  'merge.currentContentBackground'?: ColourLike
   /**
    * Current header background in inline merge conflicts. The color must not be opaque so as not to hide underlying
    * decorations.
    */
-  'merge.currentHeaderBackground'?: Color | string
+  'merge.currentHeaderBackground'?: ColourLike
   /**
    * Incoming content background in inline merge conflicts. The color must not be opaque so as not to hide underlying
    * decorations.
    */
-  'merge.incomingContentBackground'?: Color | string
+  'merge.incomingContentBackground'?: ColourLike
   /**
    * Incoming header background in inline merge conflicts. The color must not be opaque so as not to hide underlying
    * decorations.
    */
-  'merge.incomingHeaderBackground'?: Color | string
+  'merge.incomingHeaderBackground'?: ColourLike
   /**
    * The background color for changes.
    */
-  'mergeEditor.change.background'?: Color | string
+  'mergeEditor.change.background'?: ColourLike
   /**
    * The background color for word changes.
    */
-  'mergeEditor.change.word.background'?: Color | string
+  'mergeEditor.change.word.background'?: ColourLike
   /**
    * The border color of unhandled unfocused conflicts.
    */
-  'mergeEditor.conflict.unhandledUnfocused.border'?: Color | string
+  'mergeEditor.conflict.unhandledUnfocused.border'?: ColourLike
   /**
    * The border color of unhandled focused conflicts.
    */
-  'mergeEditor.conflict.unhandledFocused.border'?: Color | string
+  'mergeEditor.conflict.unhandledFocused.border'?: ColourLike
   /**
    * The border color of handled unfocused conflicts.
    */
-  'mergeEditor.conflict.handledUnfocused.border'?: Color | string
+  'mergeEditor.conflict.handledUnfocused.border'?: ColourLike
   /**
    * The border color of handled focused conflicts.
    */
-  'mergeEditor.conflict.handledFocused.border'?: Color | string
+  'mergeEditor.conflict.handledFocused.border'?: ColourLike
   /**
    * The foreground color for changes in input 1.
    */
-  'mergeEditor.conflict.handled.minimapOverViewRuler'?: Color | string
+  'mergeEditor.conflict.handled.minimapOverViewRuler'?: ColourLike
   /**
    * The foreground color for changes in input 1.
    */
-  'mergeEditor.conflict.unhandled.minimapOverViewRuler'?: Color | string
+  'mergeEditor.conflict.unhandled.minimapOverViewRuler'?: ColourLike
   /**
    * The background of the "Conflicting Lines" text.
    */
-  'mergeEditor.conflictingLines.background'?: Color | string
+  'mergeEditor.conflictingLines.background'?: ColourLike
   /**
    * Minimap background color.
    */
-  'minimap.background'?: Color | string
+  'minimap.background'?: ColourLike
   /**
    * Highlight color for errors within the editor.
    */
-  'minimap.errorHighlight'?: Color | string
+  'minimap.errorHighlight'?: ColourLike
   /**
    * Highlight color for matches from search within files.
    */
-  'minimap.findMatchHighlight'?: Color | string
+  'minimap.findMatchHighlight'?: ColourLike
   /**
    * Opacity of foreground elements rendered in the minimap. For example, "#000000c0" will render the elements with 75%
    * opacity.
    */
-  'minimap.foregroundOpacity'?: Color | string
+  'minimap.foregroundOpacity'?: ColourLike
   /**
    * Highlight color for the editor selection.
    */
-  'minimap.selectionHighlight'?: Color | string
+  'minimap.selectionHighlight'?: ColourLike
   /**
    * Minimap marker color for repeating editor selections.
    */
-  'minimap.selectionOccurrenceHighlight'?: Color | string
+  'minimap.selectionOccurrenceHighlight'?: ColourLike
   /**
    * Highlight color for warnings within the editor.
    */
-  'minimap.warningHighlight'?: Color | string
+  'minimap.warningHighlight'?: ColourLike
   /**
    * Minimap gutter color for added content.
    */
-  'minimapGutter.addedBackground'?: Color | string
+  'minimapGutter.addedBackground'?: ColourLike
   /**
    * Minimap gutter color for deleted content.
    */
-  'minimapGutter.deletedBackground'?: Color | string
+  'minimapGutter.deletedBackground'?: ColourLike
   /**
    * Minimap gutter color for modified content.
    */
-  'minimapGutter.modifiedBackground'?: Color | string
+  'minimapGutter.modifiedBackground'?: ColourLike
   /**
    * Minimap slider background color when clicked on.
    */
-  'minimapSlider.activeBackground'?: Color | string
+  'minimapSlider.activeBackground'?: ColourLike
   /**
    * Minimap slider background color.
    */
-  'minimapSlider.background'?: Color | string
+  'minimapSlider.background'?: ColourLike
   /**
    * Minimap slider background color when hovering.
    */
-  'minimapSlider.hoverBackground'?: Color | string
+  'minimapSlider.hoverBackground'?: ColourLike
   /**
    * The border color for notebook cells.
    */
-  'notebook.cellBorderColor'?: Color | string
+  'notebook.cellBorderColor'?: ColourLike
   /**
    * The color of the notebook cell editor background
    */
-  'notebook.cellEditorBackground'?: Color | string
+  'notebook.cellEditorBackground'?: ColourLike
   /**
    * The background color of a cell when the cell is hovered.
    */
-  'notebook.cellHoverBackground'?: Color | string
+  'notebook.cellHoverBackground'?: ColourLike
   /**
    * The color of the notebook cell insertion indicator.
    */
-  'notebook.cellInsertionIndicator'?: Color | string
+  'notebook.cellInsertionIndicator'?: ColourLike
   /**
    * The background color of notebook cell status bar items.
    */
-  'notebook.cellStatusBarItemHoverBackground'?: Color | string
+  'notebook.cellStatusBarItemHoverBackground'?: ColourLike
   /**
    * The color of the separator in the cell bottom toolbar
    */
-  'notebook.cellToolbarSeparator'?: Color | string
+  'notebook.cellToolbarSeparator'?: ColourLike
   /**
    * The background color of a cell when the cell is focused.
    */
-  'notebook.focusedCellBackground'?: Color | string
+  'notebook.focusedCellBackground'?: ColourLike
   /**
    * The color of the cell's top and bottom border when the cell is focused.
    */
-  'notebook.focusedCellBorder'?: Color | string
+  'notebook.focusedCellBorder'?: ColourLike
   /**
    * The color of the notebook cell editor border.
    */
-  'notebook.focusedEditorBorder'?: Color | string
+  'notebook.focusedEditorBorder'?: ColourLike
   /**
    * The color of the cell's top and bottom border when a cell is focused while the primary focus is outside of the
    * editor.
    */
-  'notebook.inactiveFocusedCellBorder'?: Color | string
+  'notebook.inactiveFocusedCellBorder'?: ColourLike
   /**
    * The color of the cell's borders when multiple cells are selected.
    */
-  'notebook.inactiveSelectedCellBorder'?: Color | string
+  'notebook.inactiveSelectedCellBorder'?: ColourLike
   /**
    * The Color of the notebook output container background.
    */
-  'notebook.outputContainerBackgroundColor'?: Color | string
+  'notebook.outputContainerBackgroundColor'?: ColourLike
   /**
    * The border color of the notebook output container.
    */
-  'notebook.outputContainerBorderColor'?: Color | string
+  'notebook.outputContainerBorderColor'?: ColourLike
   /**
    * The background color of a cell when the cell is selected.
    */
-  'notebook.selectedCellBackground'?: Color | string
+  'notebook.selectedCellBackground'?: ColourLike
   /**
    * The color of the cell's top and bottom border when the cell is selected but not focused.
    */
-  'notebook.selectedCellBorder'?: Color | string
+  'notebook.selectedCellBorder'?: ColourLike
   /**
    * Background color of highlighted cell
    */
-  'notebook.symbolHighlightBackground'?: Color | string
+  'notebook.symbolHighlightBackground'?: ColourLike
   /**
    * Notebook scrollbar slider background color when clicked on.
    */
-  'notebookScrollbarSlider.activeBackground'?: Color | string
+  'notebookScrollbarSlider.activeBackground'?: ColourLike
   /**
    * Notebook scrollbar slider background color.
    */
-  'notebookScrollbarSlider.background'?: Color | string
+  'notebookScrollbarSlider.background'?: ColourLike
   /**
    * Notebook scrollbar slider background color when hovering.
    */
-  'notebookScrollbarSlider.hoverBackground'?: Color | string
+  'notebookScrollbarSlider.hoverBackground'?: ColourLike
   /**
    * The error icon color of notebook cells in the cell status bar.
    */
-  'notebookStatusErrorIcon.foreground'?: Color | string
+  'notebookStatusErrorIcon.foreground'?: ColourLike
   /**
    * The running icon color of notebook cells in the cell status bar.
    */
-  'notebookStatusRunningIcon.foreground'?: Color | string
+  'notebookStatusRunningIcon.foreground'?: ColourLike
   /**
    * The success icon color of notebook cells in the cell status bar.
    */
-  'notebookStatusSuccessIcon.foreground'?: Color | string
+  'notebookStatusSuccessIcon.foreground'?: ColourLike
   /**
    * Notification Center border color.
    */
-  'notificationCenter.border'?: Color | string
+  'notificationCenter.border'?: ColourLike
   /**
    * Notification Center header background color.
    */
-  'notificationCenterHeader.background'?: Color | string
+  'notificationCenterHeader.background'?: ColourLike
   /**
    * Notification Center header foreground color.
    */
-  'notificationCenterHeader.foreground'?: Color | string
+  'notificationCenterHeader.foreground'?: ColourLike
   /**
    * Notification links foreground color.
    */
-  'notificationLink.foreground'?: Color | string
+  'notificationLink.foreground'?: ColourLike
   /**
    * Notification background color.
    */
-  'notifications.background'?: Color | string
+  'notifications.background'?: ColourLike
   /**
    * Notification border color separating from other notifications in the Notification Center.
    */
-  'notifications.border'?: Color | string
+  'notifications.border'?: ColourLike
   /**
    * Notification foreground color.
    */
-  'notifications.foreground'?: Color | string
+  'notifications.foreground'?: ColourLike
   /**
    * The color used for the notification error icon.
    */
-  'notificationsErrorIcon.foreground'?: Color | string
+  'notificationsErrorIcon.foreground'?: ColourLike
   /**
    * The color used for the notification info icon.
    */
-  'notificationsInfoIcon.foreground'?: Color | string
+  'notificationsInfoIcon.foreground'?: ColourLike
   /**
    * The color used for the notification warning icon.
    */
-  'notificationsWarningIcon.foreground'?: Color | string
+  'notificationsWarningIcon.foreground'?: ColourLike
   /**
    * Notification toast border color.
    */
-  'notificationToast.border'?: Color | string
+  'notificationToast.border'?: ColourLike
   /**
    * Panel background color.
    */
-  'panel.background'?: Color | string
+  'panel.background'?: ColourLike
   /**
    * Panel border color to separate the panel from the editor.
    */
-  'panel.border'?: Color | string
+  'panel.border'?: ColourLike
   /**
    * Drag and drop feedback color for the panel titles. Panels are shown below the editor area and contain views like
    * output and integrated terminal.
    */
-  'panel.dropBorder'?: Color | string
+  'panel.dropBorder'?: ColourLike
   /**
    * Input box border for inputs in the panel.
    */
-  'panelInput.border'?: Color | string
+  'panelInput.border'?: ColourLike
   /**
    * Panel section border color used when multiple views are stacked horizontally in the panel. Panels are shown below
    * the editor area and contain views like output and integrated terminal.
    */
-  'panelSection.border'?: Color | string
+  'panelSection.border'?: ColourLike
   /**
    * Drag and drop feedback color for the panel sections. The color should have transparency so that the panel sections
    * can still shine through. Panels are shown below the editor area and contain views like output and integrated
    * terminal.
    */
-  'panelSection.dropBackground'?: Color | string
+  'panelSection.dropBackground'?: ColourLike
   /**
    * Panel section header background color. Panels are shown below the editor area and contain views like output and
    * integrated terminal.
    */
-  'panelSectionHeader.background'?: Color | string
+  'panelSectionHeader.background'?: ColourLike
   /**
    * Panel section header border color used when multiple views are stacked vertically in the panel. Panels are shown
    * below the editor area and contain views like output and integrated terminal.
    */
-  'panelSectionHeader.border'?: Color | string
+  'panelSectionHeader.border'?: ColourLike
   /**
    * Panel section header foreground color. Panels are shown below the editor area and contain views like output and
    * integrated terminal.
    */
-  'panelSectionHeader.foreground'?: Color | string
+  'panelSectionHeader.foreground'?: ColourLike
   /**
    * Border color for the active panel title.
    */
-  'panelTitle.activeBorder'?: Color | string
+  'panelTitle.activeBorder'?: ColourLike
   /**
    * Title color for the active panel.
    */
-  'panelTitle.activeForeground'?: Color | string
+  'panelTitle.activeForeground'?: ColourLike
   /**
    * Title color for the inactive panel.
    */
-  'panelTitle.inactiveForeground'?: Color | string
+  'panelTitle.inactiveForeground'?: ColourLike
   /**
    * Color of the peek view borders and arrow.
    */
-  'peekView.border'?: Color | string
+  'peekView.border'?: ColourLike
   /**
    * Background color of the peek view editor.
    */
-  'peekViewEditor.background'?: Color | string
+  'peekViewEditor.background'?: ColourLike
   /**
    * Match highlight color in the peek view editor.
    */
-  'peekViewEditor.matchHighlightBackground'?: Color | string
+  'peekViewEditor.matchHighlightBackground'?: ColourLike
   /**
    * Match highlight border color in the peek view editor.
    */
-  'peekViewEditor.matchHighlightBorder'?: Color | string
+  'peekViewEditor.matchHighlightBorder'?: ColourLike
   /**
    * Background color of the gutter in the peek view editor.
    */
-  'peekViewEditorGutter.background'?: Color | string
+  'peekViewEditorGutter.background'?: ColourLike
   /**
    * Background color of the peek view result list.
    */
-  'peekViewResult.background'?: Color | string
+  'peekViewResult.background'?: ColourLike
   /**
    * Foreground color for file nodes in the peek view result list.
    */
-  'peekViewResult.fileForeground'?: Color | string
+  'peekViewResult.fileForeground'?: ColourLike
   /**
    * Foreground color for line nodes in the peek view result list.
    */
-  'peekViewResult.lineForeground'?: Color | string
+  'peekViewResult.lineForeground'?: ColourLike
   /**
    * Match highlight color in the peek view result list.
    */
-  'peekViewResult.matchHighlightBackground'?: Color | string
+  'peekViewResult.matchHighlightBackground'?: ColourLike
   /**
    * Background color of the selected entry in the peek view result list.
    */
-  'peekViewResult.selectionBackground'?: Color | string
+  'peekViewResult.selectionBackground'?: ColourLike
   /**
    * Foreground color of the selected entry in the peek view result list.
    */
-  'peekViewResult.selectionForeground'?: Color | string
+  'peekViewResult.selectionForeground'?: ColourLike
   /**
    * Background color of the peek view title area.
    */
-  'peekViewTitle.background'?: Color | string
+  'peekViewTitle.background'?: ColourLike
   /**
    * Color of the peek view title info.
    */
-  'peekViewTitleDescription.foreground'?: Color | string
+  'peekViewTitleDescription.foreground'?: ColourLike
   /**
    * Color of the peek view title.
    */
-  'peekViewTitleLabel.foreground'?: Color | string
+  'peekViewTitleLabel.foreground'?: ColourLike
   /**
    * Quick picker (Quick Open) color for grouping borders.
    */
-  'pickerGroup.border'?: Color | string
+  'pickerGroup.border'?: ColourLike
   /**
    * Quick picker (Quick Open) color for grouping labels.
    */
-  'pickerGroup.foreground'?: Color | string
+  'pickerGroup.foreground'?: ColourLike
   /**
    * The color of the icon for a port that has an associated running process.
    */
-  'ports.iconRunningProcessForeground'?: Color | string
+  'ports.iconRunningProcessForeground'?: ColourLike
   /**
    * The color used for the problems error icon.
    */
-  'problemsErrorIcon.foreground'?: Color | string
+  'problemsErrorIcon.foreground'?: ColourLike
   /**
    * The color used for the problems info icon.
    */
-  'problemsInfoIcon.foreground'?: Color | string
+  'problemsInfoIcon.foreground'?: ColourLike
   /**
    * The color used for the problems warning icon.
    */
-  'problemsWarningIcon.foreground'?: Color | string
+  'problemsWarningIcon.foreground'?: ColourLike
   /**
    * Background color of the progress bar shown for long running operations.
    */
-  'progressBar.background'?: Color | string
+  'progressBar.background'?: ColourLike
   /**
    * Quick input background color. The quick input widget is the container for views like the color theme picker.
    */
-  'quickInput.background'?: Color | string
+  'quickInput.background'?: ColourLike
   /**
    * Quick input foreground color. The quick input widget is the container for views like the color theme picker.
    */
-  'quickInput.foreground'?: Color | string
+  'quickInput.foreground'?: ColourLike
   /**
    * Quick picker background color for the focused item.
    */
-  'quickInputList.focusBackground'?: Color | string
+  'quickInputList.focusBackground'?: ColourLike
   /**
    * Quick picker foreground color for the focused item.
    */
-  'quickInputList.focusForeground'?: Color | string
+  'quickInputList.focusForeground'?: ColourLike
   /**
    * Quick picker icon foreground color for the focused item.
    */
-  'quickInputList.focusIconForeground'?: Color | string
+  'quickInputList.focusIconForeground'?: ColourLike
   /**
    * Quick picker title background color. The quick picker widget is the container for pickers like the Command Palette.
    */
-  'quickInputTitle.background'?: Color | string
+  'quickInputTitle.background'?: ColourLike
   /**
    * The hover border color for draggable sashes.
    */
-  'sash.hoverBorder'?: Color | string
+  'sash.hoverBorder'?: ColourLike
   /**
    * SCM Provider separator border.
    */
-  'scm.providerBorder'?: Color | string
+  'scm.providerBorder'?: ColourLike
   /**
    * Scrollbar slider shadow to indicate that the view is scrolled.
    */
-  'scrollbar.shadow'?: Color | string
+  'scrollbar.shadow'?: ColourLike
   /**
    * Scrollbar slider background color when clicked on.
    */
-  'scrollbarSlider.activeBackground'?: Color | string
+  'scrollbarSlider.activeBackground'?: ColourLike
   /**
    * Scrollbar slider background color.
    */
-  'scrollbarSlider.background'?: Color | string
+  'scrollbarSlider.background'?: ColourLike
   /**
    * Scrollbar slider background color when hovering.
    */
-  'scrollbarSlider.hoverBackground'?: Color | string
+  'scrollbarSlider.hoverBackground'?: ColourLike
   /**
    * Color of the editor's results.
    */
-  'searchEditor.findMatchBackground'?: Color | string
+  'searchEditor.findMatchBackground'?: ColourLike
   /**
    * Border color of the editor's results.
    */
-  'searchEditor.findMatchBorder'?: Color | string
+  'searchEditor.findMatchBorder'?: ColourLike
   /**
    * Search editor text input box border.
    */
-  'searchEditor.textInputBorder'?: Color | string
+  'searchEditor.textInputBorder'?: ColourLike
   /**
    * Background color of text selections in the workbench (for input fields or text areas, does not apply to selections
    * within the editor and the terminal).
    */
-  'selection.background'?: Color | string
+  'selection.background'?: ColourLike
   /**
    * Checkbox background.
    */
-  'settings.checkboxBackground'?: Color | string
+  'settings.checkboxBackground'?: ColourLike
   /**
    * Checkbox border.
    */
-  'settings.checkboxBorder'?: Color | string
+  'settings.checkboxBorder'?: ColourLike
   /**
    * Checkbox foreground.
    */
-  'settings.checkboxForeground'?: Color | string
+  'settings.checkboxForeground'?: ColourLike
   /**
    * Dropdown background.
    */
-  'settings.dropdownBackground'?: Color | string
+  'settings.dropdownBackground'?: ColourLike
   /**
    * Dropdown border.
    */
-  'settings.dropdownBorder'?: Color | string
+  'settings.dropdownBorder'?: ColourLike
   /**
    * Dropdown foreground.
    */
-  'settings.dropdownForeground'?: Color | string
+  'settings.dropdownForeground'?: ColourLike
   /**
    * Dropdown list border.
    */
-  'settings.dropdownListBorder'?: Color | string
+  'settings.dropdownListBorder'?: ColourLike
   /**
    * Background color of a focused setting row.
    */
-  'settings.focusedRowBackground'?: Color | string
+  'settings.focusedRowBackground'?: ColourLike
   /**
    * The color of the row's top and bottom border when the row is focused.
    */
-  'settings.focusedRowBorder'?: Color | string
+  'settings.focusedRowBorder'?: ColourLike
   /**
    * The foreground color for a section header or active title.
    */
-  'settings.headerForeground'?: Color | string
+  'settings.headerForeground'?: ColourLike
   /**
    * The line that indicates a modified setting.
    */
-  'settings.modifiedItemIndicator'?: Color | string
+  'settings.modifiedItemIndicator'?: ColourLike
   /**
    * Number input box background.
    */
-  'settings.numberInputBackground'?: Color | string
+  'settings.numberInputBackground'?: ColourLike
   /**
    * Number input box border.
    */
-  'settings.numberInputBorder'?: Color | string
+  'settings.numberInputBorder'?: ColourLike
   /**
    * Number input box foreground.
    */
-  'settings.numberInputForeground'?: Color | string
+  'settings.numberInputForeground'?: ColourLike
   /**
    * The background color of a settings row when hovered.
    */
-  'settings.rowHoverBackground'?: Color | string
+  'settings.rowHoverBackground'?: ColourLike
+  /**
+   * The color of the Settings editor splitview sash border.
+   */
+  'settings.sashBorder'?: ColourLike
   /**
    * Text input box background.
    */
-  'settings.textInputBackground'?: Color | string
+  'settings.textInputBackground'?: ColourLike
   /**
    * Text input box border.
    */
-  'settings.textInputBorder'?: Color | string
+  'settings.textInputBorder'?: ColourLike
   /**
    * Text input box foreground.
    */
-  'settings.textInputForeground'?: Color | string
+  'settings.textInputForeground'?: ColourLike
   /**
    * Side Bar background color.
    */
-  'sideBar.background'?: Color | string
+  'sideBar.background'?: ColourLike
   /**
    * Side Bar border color on the side separating the editor.
    */
-  'sideBar.border'?: Color | string
+  'sideBar.border'?: ColourLike
   /**
    * Drag and drop feedback color for the side bar sections. The color should have transparency so that the side bar
    * sections can still shine through.
    */
-  'sideBar.dropBackground'?: Color | string
+  'sideBar.dropBackground'?: ColourLike
   /**
    * Side Bar foreground color. The Side Bar is the container for views like Explorer and Search.
    */
-  'sideBar.foreground'?: Color | string
+  'sideBar.foreground'?: ColourLike
   /**
    * Side Bar section header background color.
    */
-  'sideBarSectionHeader.background'?: Color | string
+  'sideBarSectionHeader.background'?: ColourLike
   /**
    * Side bar section header border color.
    */
-  'sideBarSectionHeader.border'?: Color | string
+  'sideBarSectionHeader.border'?: ColourLike
   /**
    * Side Bar section header foreground color.
    */
-  'sideBarSectionHeader.foreground'?: Color | string
+  'sideBarSectionHeader.foreground'?: ColourLike
   /**
    * Side Bar title foreground color.
    */
-  'sideBarTitle.foreground'?: Color | string
+  'sideBarTitle.foreground'?: ColourLike
   /**
    * Color to separate two editors from each other when shown side by side in an editor group.
    */
-  'sideBySideEditor.border'?: Color | string
+  'sideBySideEditor.border'?: ColourLike
   /**
    * Standard Status Bar background color.
    */
-  'statusBar.background'?: Color | string
+  'statusBar.background'?: ColourLike
   /**
    * Status Bar border color separating the Status Bar and editor.
    */
-  'statusBar.border'?: Color | string
+  'statusBar.border'?: ColourLike
   /**
    * Status Bar background color when a program is being debugged.
    */
-  'statusBar.debuggingBackground'?: Color | string
+  'statusBar.debuggingBackground'?: ColourLike
   /**
    * Status Bar border color separating the Status Bar and editor when a program is being debugged.
    */
-  'statusBar.debuggingBorder'?: Color | string
+  'statusBar.debuggingBorder'?: ColourLike
   /**
    * Status Bar foreground color when a program is being debugged.
    */
-  'statusBar.debuggingForeground'?: Color | string
+  'statusBar.debuggingForeground'?: ColourLike
   /**
    * Status Bar foreground color.
    */
-  'statusBar.foreground'?: Color | string
+  'statusBar.foreground'?: ColourLike
   /**
    * Status bar border color when focused on keyboard navigation. The status bar is shown in the bottom of the window.
    */
-  'statusBar.focusBorder'?: Color | string
+  'statusBar.focusBorder'?: ColourLike
   /**
    * Status Bar background color when no folder is opened.
    */
-  'statusBar.noFolderBackground'?: Color | string
+  'statusBar.noFolderBackground'?: ColourLike
   /**
    * Status Bar border color separating the Status Bar and editor when no folder is opened.
    */
-  'statusBar.noFolderBorder'?: Color | string
+  'statusBar.noFolderBorder'?: ColourLike
   /**
    * Status Bar foreground color when no folder is opened.
    */
-  'statusBar.noFolderForeground'?: Color | string
+  'statusBar.noFolderForeground'?: ColourLike
   /**
    * Status Bar item background color when clicking.
    */
-  'statusBarItem.activeBackground'?: Color | string
+  'statusBarItem.activeBackground'?: ColourLike
   /**
    * Status bar error items background color. Error items stand out from other status bar entries to indicate error
    * conditions.
    */
-  'statusBarItem.errorBackground'?: Color | string
+  'statusBarItem.errorBackground'?: ColourLike
   /**
    * Status bar error items foreground color. Error items stand out from other status bar entries to indicate error
    * conditions.
    */
-  'statusBarItem.errorForeground'?: Color | string
+  'statusBarItem.errorForeground'?: ColourLike
   /**
    * Status bar item border color when focused on keyboard navigation. The status bar is shown in the bottom of the
    * window.
    */
-  'statusBarItem.focusBorder'?: Color | string
+  'statusBarItem.focusBorder'?: ColourLike
   /**
    * Status Bar item background color when hovering.
    */
-  'statusBarItem.hoverBackground'?: Color | string
+  'statusBarItem.hoverBackground'?: ColourLike
   /**
    * Status Bar prominent items background color.
    */
-  'statusBarItem.prominentBackground'?: Color | string
+  'statusBarItem.prominentBackground'?: ColourLike
   /**
    * Status Bar prominent items foreground color.
    */
-  'statusBarItem.prominentForeground'?: Color | string
+  'statusBarItem.prominentForeground'?: ColourLike
   /**
    * Status Bar prominent items background color when hovering.
    */
-  'statusBarItem.prominentHoverBackground'?: Color | string
+  'statusBarItem.prominentHoverBackground'?: ColourLike
   /**
    * Background color for the remote indicator on the status bar.
    */
-  'statusBarItem.remoteBackground'?: Color | string
+  'statusBarItem.remoteBackground'?: ColourLike
   /**
    * Foreground color for the remote indicator on the status bar.
    */
-  'statusBarItem.remoteForeground'?: Color | string
+  'statusBarItem.remoteForeground'?: ColourLike
   /**
    * Status bar warning items background color. Warning items stand out from other status bar entries to indicate
    * warning conditions. The status bar is shown in the bottom of the window.
    */
-  'statusBarItem.warningBackground'?: Color | string
+  'statusBarItem.warningBackground'?: ColourLike
   /**
    * Status bar warning items foreground color. Warning items stand out from other status bar entries to indicate
    * warning conditions. The status bar is shown in the bottom of the window.
    */
-  'statusBarItem.warningForeground'?: Color | string
+  'statusBarItem.warningForeground'?: ColourLike
   /**
    * The foreground color for array symbols.
    */
-  'symbolIcon.arrayForeground'?: Color | string
+  'symbolIcon.arrayForeground'?: ColourLike
   /**
    * The foreground color for boolean symbols.
    */
-  'symbolIcon.booleanForeground'?: Color | string
+  'symbolIcon.booleanForeground'?: ColourLike
   /**
    * The foreground color for class symbols.
    */
-  'symbolIcon.classForeground'?: Color | string
+  'symbolIcon.classForeground'?: ColourLike
   /**
    * The foreground color for color symbols.
    */
-  'symbolIcon.colorForeground'?: Color | string
+  'symbolIcon.colorForeground'?: ColourLike
   /**
    * The foreground color for constant symbols.
    */
-  'symbolIcon.constantForeground'?: Color | string
+  'symbolIcon.constantForeground'?: ColourLike
   /**
    * The foreground color for constructor symbols.
    */
-  'symbolIcon.constructorForeground'?: Color | string
+  'symbolIcon.constructorForeground'?: ColourLike
   /**
    * The foreground color for enumerator symbols.
    */
-  'symbolIcon.enumeratorForeground'?: Color | string
+  'symbolIcon.enumeratorForeground'?: ColourLike
   /**
    * The foreground color for enumerator member symbols.
    */
-  'symbolIcon.enumeratorMemberForeground'?: Color | string
+  'symbolIcon.enumeratorMemberForeground'?: ColourLike
   /**
    * The foreground color for event symbols.
    */
-  'symbolIcon.eventForeground'?: Color | string
+  'symbolIcon.eventForeground'?: ColourLike
   /**
    * The foreground color for field symbols.
    */
-  'symbolIcon.fieldForeground'?: Color | string
+  'symbolIcon.fieldForeground'?: ColourLike
   /**
    * The foreground color for file symbols.
    */
-  'symbolIcon.fileForeground'?: Color | string
+  'symbolIcon.fileForeground'?: ColourLike
   /**
    * The foreground color for folder symbols.
    */
-  'symbolIcon.folderForeground'?: Color | string
+  'symbolIcon.folderForeground'?: ColourLike
   /**
    * The foreground color for function symbols.
    */
-  'symbolIcon.functionForeground'?: Color | string
+  'symbolIcon.functionForeground'?: ColourLike
   /**
    * The foreground color for interface symbols.
    */
-  'symbolIcon.interfaceForeground'?: Color | string
+  'symbolIcon.interfaceForeground'?: ColourLike
   /**
    * The foreground color for key symbols.
    */
-  'symbolIcon.keyForeground'?: Color | string
+  'symbolIcon.keyForeground'?: ColourLike
   /**
    * The foreground color for keyword symbols.
    */
-  'symbolIcon.keywordForeground'?: Color | string
+  'symbolIcon.keywordForeground'?: ColourLike
   /**
    * The foreground color for method symbols.
    */
-  'symbolIcon.methodForeground'?: Color | string
+  'symbolIcon.methodForeground'?: ColourLike
   /**
    * The foreground color for module symbols.
    */
-  'symbolIcon.moduleForeground'?: Color | string
+  'symbolIcon.moduleForeground'?: ColourLike
   /**
    * The foreground color for namespace symbols.
    */
-  'symbolIcon.namespaceForeground'?: Color | string
+  'symbolIcon.namespaceForeground'?: ColourLike
   /**
    * The foreground color for null symbols.
    */
-  'symbolIcon.nullForeground'?: Color | string
+  'symbolIcon.nullForeground'?: ColourLike
   /**
    * The foreground color for number symbols.
    */
-  'symbolIcon.numberForeground'?: Color | string
+  'symbolIcon.numberForeground'?: ColourLike
   /**
    * The foreground color for object symbols.
    */
-  'symbolIcon.objectForeground'?: Color | string
+  'symbolIcon.objectForeground'?: ColourLike
   /**
    * The foreground color for operator symbols.
    */
-  'symbolIcon.operatorForeground'?: Color | string
+  'symbolIcon.operatorForeground'?: ColourLike
   /**
    * The foreground color for package symbols.
    */
-  'symbolIcon.packageForeground'?: Color | string
+  'symbolIcon.packageForeground'?: ColourLike
   /**
    * The foreground color for property symbols.
    */
-  'symbolIcon.propertyForeground'?: Color | string
+  'symbolIcon.propertyForeground'?: ColourLike
   /**
    * The foreground color for reference symbols.
    */
-  'symbolIcon.referenceForeground'?: Color | string
+  'symbolIcon.referenceForeground'?: ColourLike
   /**
    * The foreground color for snippet symbols.
    */
-  'symbolIcon.snippetForeground'?: Color | string
+  'symbolIcon.snippetForeground'?: ColourLike
   /**
    * The foreground color for string symbols.
    */
-  'symbolIcon.stringForeground'?: Color | string
+  'symbolIcon.stringForeground'?: ColourLike
   /**
    * The foreground color for struct symbols.
    */
-  'symbolIcon.structForeground'?: Color | string
+  'symbolIcon.structForeground'?: ColourLike
   /**
    * The foreground color for text symbols.
    */
-  'symbolIcon.textForeground'?: Color | string
+  'symbolIcon.textForeground'?: ColourLike
   /**
    * The foreground color for type parameter symbols.
    */
-  'symbolIcon.typeParameterForeground'?: Color | string
+  'symbolIcon.typeParameterForeground'?: ColourLike
   /**
    * The foreground color for unit symbols.
    */
-  'symbolIcon.unitForeground'?: Color | string
+  'symbolIcon.unitForeground'?: ColourLike
   /**
    * The foreground color for variable symbols.
    */
-  'symbolIcon.variableForeground'?: Color | string
+  'symbolIcon.variableForeground'?: ColourLike
   /**
    * Active Tab background color in an active group.
    */
-  'tab.activeBackground'?: Color | string
+  'tab.activeBackground'?: ColourLike
   /**
    * Bottom border for the active tab.
    */
-  'tab.activeBorder'?: Color | string
+  'tab.activeBorder'?: ColourLike
   /**
    * Top border for the active tab.
    */
-  'tab.activeBorderTop'?: Color | string
+  'tab.activeBorderTop'?: ColourLike
   /**
    * Active Tab foreground color in an active group.
    */
-  'tab.activeForeground'?: Color | string
+  'tab.activeForeground'?: ColourLike
   /**
    * Border on the top of modified (dirty) active tabs in an active group.
    */
-  'tab.activeModifiedBorder'?: Color | string
+  'tab.activeModifiedBorder'?: ColourLike
   /**
    * Border to separate Tabs from each other.
    */
-  'tab.border'?: Color | string
+  'tab.border'?: ColourLike
   /**
    * Tab background color when hovering
    */
-  'tab.hoverBackground'?: Color | string
+  'tab.hoverBackground'?: ColourLike
   /**
    * Border to highlight tabs when hovering
    */
-  'tab.hoverBorder'?: Color | string
+  'tab.hoverBorder'?: ColourLike
   /**
    * Tab foreground color when hovering
    */
-  'tab.hoverForeground'?: Color | string
+  'tab.hoverForeground'?: ColourLike
   /**
    * Inactive Tab background color.
    */
-  'tab.inactiveBackground'?: Color | string
+  'tab.inactiveBackground'?: ColourLike
   /**
    * Inactive Tab foreground color in an active group.
    */
-  'tab.inactiveForeground'?: Color | string
+  'tab.inactiveForeground'?: ColourLike
   /**
    * Border on the top of modified (dirty) inactive tabs in an active group.
    */
-  'tab.inactiveModifiedBorder'?: Color | string
+  'tab.inactiveModifiedBorder'?: ColourLike
   /**
    * Border on the right of the last pinned editor to separate from unpinned editors.
    */
-  'tab.lastPinnedBorder'?: Color | string
+  'tab.lastPinnedBorder'?: ColourLike
   /**
    * Active Tab background color in an inactive editor group.
    */
-  'tab.unfocusedActiveBackground'?: Color | string
+  'tab.unfocusedActiveBackground'?: ColourLike
   /**
    * Bottom border for the active tab in an inactive editor group.
    */
-  'tab.unfocusedActiveBorder'?: Color | string
+  'tab.unfocusedActiveBorder'?: ColourLike
   /**
    * Top border for the active tab in an inactive editor group
    */
-  'tab.unfocusedActiveBorderTop'?: Color | string
+  'tab.unfocusedActiveBorderTop'?: ColourLike
   /**
    * Active tab foreground color in an inactive editor group.
    */
-  'tab.unfocusedActiveForeground'?: Color | string
+  'tab.unfocusedActiveForeground'?: ColourLike
   /**
    * Border on the top of modified (dirty) active tabs in an unfocused group.
    */
-  'tab.unfocusedActiveModifiedBorder'?: Color | string
+  'tab.unfocusedActiveModifiedBorder'?: ColourLike
   /**
    * Tab background color in an unfocused group when hovering
    */
-  'tab.unfocusedHoverBackground'?: Color | string
+  'tab.unfocusedHoverBackground'?: ColourLike
   /**
    * Border to highlight tabs in an unfocused group when hovering
    */
-  'tab.unfocusedHoverBorder'?: Color | string
+  'tab.unfocusedHoverBorder'?: ColourLike
   /**
    * Tab foreground color in an unfocused group when hovering
    */
-  'tab.unfocusedHoverForeground'?: Color | string
+  'tab.unfocusedHoverForeground'?: ColourLike
   /**
    * Inactive Tab background color in an unfocused group
    */
-  'tab.unfocusedInactiveBackground'?: Color | string
+  'tab.unfocusedInactiveBackground'?: ColourLike
   /**
    * Inactive tab foreground color in an inactive editor group.
    */
-  'tab.unfocusedInactiveForeground'?: Color | string
+  'tab.unfocusedInactiveForeground'?: ColourLike
   /**
    * Border on the top of modified (dirty) inactive tabs in an unfocused group.
    */
-  'tab.unfocusedInactiveModifiedBorder'?: Color | string
+  'tab.unfocusedInactiveModifiedBorder'?: ColourLike
   /**
    * 'Black' ANSI color in the terminal.
    */
-  'terminal.ansiBlack'?: Color | string
+  'terminal.ansiBlack'?: ColourLike
   /**
    * 'Blue' ANSI color in the terminal.
    */
-  'terminal.ansiBlue'?: Color | string
+  'terminal.ansiBlue'?: ColourLike
   /**
    * 'BrightBlack' ANSI color in the terminal.
    */
-  'terminal.ansiBrightBlack'?: Color | string
+  'terminal.ansiBrightBlack'?: ColourLike
   /**
    * 'BrightBlue' ANSI color in the terminal.
    */
-  'terminal.ansiBrightBlue'?: Color | string
+  'terminal.ansiBrightBlue'?: ColourLike
   /**
    * 'BrightCyan' ANSI color in the terminal.
    */
-  'terminal.ansiBrightCyan'?: Color | string
+  'terminal.ansiBrightCyan'?: ColourLike
   /**
    * 'BrightGreen' ANSI color in the terminal.
    */
-  'terminal.ansiBrightGreen'?: Color | string
+  'terminal.ansiBrightGreen'?: ColourLike
   /**
    * 'BrightMagenta' ANSI color in the terminal.
    */
-  'terminal.ansiBrightMagenta'?: Color | string
+  'terminal.ansiBrightMagenta'?: ColourLike
   /**
    * 'BrightRed' ANSI color in the terminal.
    */
-  'terminal.ansiBrightRed'?: Color | string
+  'terminal.ansiBrightRed'?: ColourLike
   /**
    * 'BrightWhite' ANSI color in the terminal.
    */
-  'terminal.ansiBrightWhite'?: Color | string
+  'terminal.ansiBrightWhite'?: ColourLike
   /**
    * 'BrightYellow' ANSI color in the terminal.
    */
-  'terminal.ansiBrightYellow'?: Color | string
+  'terminal.ansiBrightYellow'?: ColourLike
   /**
    * 'Cyan' ANSI color in the terminal.
    */
-  'terminal.ansiCyan'?: Color | string
+  'terminal.ansiCyan'?: ColourLike
   /**
    * 'Green' ANSI color in the terminal.
    */
-  'terminal.ansiGreen'?: Color | string
+  'terminal.ansiGreen'?: ColourLike
   /**
    * 'Magenta' ANSI color in the terminal.
    */
-  'terminal.ansiMagenta'?: Color | string
+  'terminal.ansiMagenta'?: ColourLike
   /**
    * 'Red' ANSI color in the terminal.
    */
-  'terminal.ansiRed'?: Color | string
+  'terminal.ansiRed'?: ColourLike
   /**
    * 'White' ANSI color in the terminal.
    */
-  'terminal.ansiWhite'?: Color | string
+  'terminal.ansiWhite'?: ColourLike
   /**
    * 'Yellow' ANSI color in the terminal.
    */
-  'terminal.ansiYellow'?: Color | string
+  'terminal.ansiYellow'?: ColourLike
   /**
    * The background of the Integrated Terminal's viewport.
    */
-  'terminal.background'?: Color | string
+  'terminal.background'?: ColourLike
   /**
    * The color of the border that separates split panes within the terminal. This defaults to panel.border.
    */
-  'terminal.border'?: Color | string
+  'terminal.border'?: ColourLike
   /**
    * The background color when dragging on top of terminals. The color should have transparency so that the terminal
    * contents can still shine through.
    */
-  'terminal.dropBackground'?: Color | string
+  'terminal.dropBackground'?: ColourLike
   /**
    * Color of the current search match in the terminal. The color must not be opaque so as not to hide underlying
    * terminal content.
    */
-  'terminal.findMatchBackground'?: Color | string
+  'terminal.findMatchBackground'?: ColourLike
   /**
    * Border color of the current search match in the terminal.
    */
-  'terminal.findMatchBorder'?: Color | string
+  'terminal.findMatchBorder'?: ColourLike
   /**
    * Color of the other search matches in the terminal. The color must not be opaque so as not to hide underlying
    * terminal content.
    */
-  'terminal.findMatchHighlightBackground'?: Color | string
+  'terminal.findMatchHighlightBackground'?: ColourLike
   /**
    * Border color of the other search matches in the terminal
    */
-  'terminal.findMatchHighlightBorder'?: Color | string
+  'terminal.findMatchHighlightBorder'?: ColourLike
   /**
    * The default foreground color of the Integrated Terminal.
    */
-  'terminal.foreground'?: Color | string
+  'terminal.foreground'?: ColourLike
   /**
    * The selection background color of the terminal.
    */
-  'terminal.selectionBackground'?: Color | string
+  'terminal.selectionBackground'?: ColourLike
   /**
    * Border on the side of the terminal tab in the panel. This defaults to tab.activeBorder.
    */
-  'terminal.tab.activeBorder'?: Color | string
+  'terminal.tab.activeBorder'?: ColourLike
   /**
    * The default terminal command decoration background color.
    */
-  'terminalCommandDecoration.defaultBackground'?: Color | string
+  'terminalCommandDecoration.defaultBackground'?: ColourLike
   /**
    * The terminal command decoration background color for successful commands.
    */
-  'terminalCommandDecoration.successBackground'?: Color | string
+  'terminalCommandDecoration.successBackground'?: ColourLike
   /**
    * The terminal command decoration background color for error commands.
    */
-  'terminalCommandDecoration.errorBackground'?: Color | string
+  'terminalCommandDecoration.errorBackground'?: ColourLike
   /**
    * The background color of the terminal cursor. Allows customizing the color of a character overlapped by a block
    * cursor.
    */
-  'terminalCursor.background'?: Color | string
+  'terminalCursor.background'?: ColourLike
   /**
    * The foreground color of the terminal cursor.
    */
-  'terminalCursor.foreground'?: Color | string
+  'terminalCursor.foreground'?: ColourLike
   /**
    * Color for the 'Errored' icon in the test explorer.
    */
-  'testing.iconErrored'?: Color | string
+  'testing.iconErrored'?: ColourLike
   /**
    * Color for the 'failed' icon in the test explorer.
    */
-  'testing.iconFailed'?: Color | string
+  'testing.iconFailed'?: ColourLike
   /**
    * Color for the 'passed' icon in the test explorer.
    */
-  'testing.iconPassed'?: Color | string
+  'testing.iconPassed'?: ColourLike
   /**
    * Color for the 'Queued' icon in the test explorer.
    */
-  'testing.iconQueued'?: Color | string
+  'testing.iconQueued'?: ColourLike
   /**
    * Color for the 'Skipped' icon in the test explorer.
    */
-  'testing.iconSkipped'?: Color | string
+  'testing.iconSkipped'?: ColourLike
   /**
    * Color for the 'Unset' icon in the test explorer.
    */
-  'testing.iconUnset'?: Color | string
+  'testing.iconUnset'?: ColourLike
   /**
    * Text color of test error messages shown inline in the editor.
    */
-  'testing.message.error.decorationForeground'?: Color | string
+  'testing.message.error.decorationForeground'?: ColourLike
   /**
    * Margin color beside error messages shown inline in the editor.
    */
-  'testing.message.error.lineBackground'?: Color | string
+  'testing.message.error.lineBackground'?: ColourLike
   /**
    * Text color of test info messages shown inline in the editor.
    */
-  'testing.message.info.decorationForeground'?: Color | string
+  'testing.message.info.decorationForeground'?: ColourLike
   /**
    * Margin color beside info messages shown inline in the editor.
    */
-  'testing.message.info.lineBackground'?: Color | string
+  'testing.message.info.lineBackground'?: ColourLike
   /**
    * Color of the peek view borders and arrow.
    */
-  'testing.peekBorder'?: Color | string
+  'testing.peekBorder'?: ColourLike
   /**
    * Color of the peek view borders and arrow.
    */
-  'testing.peekHeaderBackground'?: Color | string
+  'testing.peekHeaderBackground'?: ColourLike
   /**
    * Color for 'run' icons in the editor.
    */
-  'testing.runAction'?: Color | string
+  'testing.runAction'?: ColourLike
   /**
    * Background color for block quotes in text.
    */
-  'textBlockQuote.background'?: Color | string
+  'textBlockQuote.background'?: ColourLike
   /**
    * Border color for block quotes in text.
    */
-  'textBlockQuote.border'?: Color | string
+  'textBlockQuote.border'?: ColourLike
   /**
    * Background color for code blocks in text.
    */
-  'textCodeBlock.background'?: Color | string
+  'textCodeBlock.background'?: ColourLike
   /**
    * Foreground color for links in text when clicked on and on mouse hover.
    */
-  'textLink.activeForeground'?: Color | string
+  'textLink.activeForeground'?: ColourLike
   /**
    * Foreground color for links in text.
    */
-  'textLink.foreground'?: Color | string
+  'textLink.foreground'?: ColourLike
   /**
    * Foreground color for preformatted text segments.
    */
-  'textPreformat.foreground'?: Color | string
+  'textPreformat.foreground'?: ColourLike
   /**
    * Color for text separators.
    */
-  'textSeparator.foreground'?: Color | string
+  'textSeparator.foreground'?: ColourLike
   /**
    * Title Bar background when the window is active.
    */
-  'titleBar.activeBackground'?: Color | string
+  'titleBar.activeBackground'?: ColourLike
   /**
    * Title Bar foreground when the window is active.
    */
-  'titleBar.activeForeground'?: Color | string
+  'titleBar.activeForeground'?: ColourLike
   /**
    * Title bar border color.
    */
-  'titleBar.border'?: Color | string
+  'titleBar.border'?: ColourLike
   /**
    * Title Bar background when the window is inactive.
    */
-  'titleBar.inactiveBackground'?: Color | string
+  'titleBar.inactiveBackground'?: ColourLike
   /**
    * Title Bar foreground when the window is inactive.
    */
-  'titleBar.inactiveForeground'?: Color | string
+  'titleBar.inactiveForeground'?: ColourLike
   /**
    * Toolbar background when holding the mouse over actions
    */
-  'toolbar.activeBackground'?: Color | string
+  'toolbar.activeBackground'?: ColourLike
   /**
    * Toolbar background when hovering over actions using the mouse
    */
-  'toolbar.hoverBackground'?: Color | string
+  'toolbar.hoverBackground'?: ColourLike
   /**
    * Toolbar outline when hovering over actions using the mouse
    */
-  'toolbar.hoverOutline'?: Color | string
+  'toolbar.hoverOutline'?: ColourLike
   /**
    * Tree Widget's stroke color for indent guides.
    */
-  'tree.indentGuidesStroke'?: Color | string
+  'tree.indentGuidesStroke'?: ColourLike
   /**
    * Tree stroke color for the indentation guides.
    */
-  'tree.tableColumnsBorder'?: Color | string
+  'tree.tableColumnsBorder'?: ColourLike
   /**
    * Background color for the embedded editors on the Interactive Playground.
    */
-  'walkThrough.embeddedEditorBackground'?: Color | string
+  'walkThrough.embeddedEditorBackground'?: ColourLike
   /**
    * Background color for the Welcome page.
    */
-  'welcomePage.background'?: Color | string
+  'welcomePage.background'?: ColourLike
   /**
    * Background color for the buttons on the Welcome page.
    */
-  'welcomePage.buttonBackground'?: Color | string
+  'welcomePage.buttonBackground'?: ColourLike
   /**
    * Hover background color for the buttons on the Welcome page.
    */
-  'welcomePage.buttonHoverBackground'?: Color | string
+  'welcomePage.buttonHoverBackground'?: ColourLike
   /**
    * Foreground color for the Welcome page progress bars.
    */
-  'welcomePage.progress.background'?: Color | string
+  'welcomePage.progress.background'?: ColourLike
   /**
    * Background color for the Welcome page progress bars.
    */
-  'welcomePage.progress.foreground'?: Color | string
+  'welcomePage.progress.foreground'?: ColourLike
   /**
    * Background color for the tiles on the Get Started page.
    */
-  'welcomePage.tileBackground'?: Color | string
+  'welcomePage.tileBackground'?: ColourLike
   /**
    * Hover background color for the tiles on the Get Started.
    */
-  'welcomePage.tileHoverBackground'?: Color | string
+  'welcomePage.tileHoverBackground'?: ColourLike
   /**
    * Shadow color for the Welcome page walkthrough category buttons.
    */
-  'welcomePage.tileShadow.'?: Color | string
+  'welcomePage.tileShadow.'?: ColourLike
   /**
    * Shadow color of widgets such as Find/Replace inside the editor.
    */
-  'widget.shadow'?: Color | string
+  'widget.shadow'?: ColourLike
   /**
    * Border color for the active (focused) window.
    */
-  'window.activeBorder'?: Color | string
+  'window.activeBorder'?: ColourLike
   /**
    * Border color for the inactive (unfocused) windows.
    */
-  'window.inactiveBorder'?: Color | string
+  'window.inactiveBorder'?: ColourLike
 
 
   // -- GitHub Pull Requests & Issues
@@ -2474,95 +2478,115 @@ interface UIColourPalette {
   /**
    * The color used for the assignees and labels fields in a new issue editor.
    */
-  'issues.newIssueDecoration'?: Color | string
+  'issues.newIssueDecoration'?: ColourLike
   /**
    * The color used for indicating that an issue is open.
    */
-  'issues.open'?: Color | string
+  'issues.open'?: ColourLike
   /**
    * The color used for indicating that an issue is closed.
    */
-  'issues.closed'?: Color | string
+  'issues.closed'?: ColourLike
+  /**
+   * The color used for indicating that a pull request is open.
+   */
+  'pullRequests.open'?: ColourLike
+  /**
+   * The color used for indicating that a pull request is closed.
+   */
+  'pullRequests.closed'?: ColourLike
+  /**
+   * The color used for indicating that a pull request is a draft.
+   */
+  'pullRequests.draft'?: ColourLike
+  /**
+   * The color used for indicating that a pull request is merged.
+   */
+  'pullRequests.merged'?: ColourLike
+  /**
+   * The color used for indicating a notification on a pull request
+   */
+  'pullRequests.notification'?: ColourLike
 
 
   // -- Error Lens
 
-  'errorLens.errorBackground'?: Color | string
-  'errorLens.errorBackgroundLight'?: Color | string
-  'errorLens.errorForeground'?: Color | string
-  'errorLens.errorForegroundLight'?: Color | string
-  'errorLens.errorMessageBackground'?: Color | string
-  'errorLens.hintBackground'?: Color | string
-  'errorLens.hintBackgroundLight'?: Color | string
-  'errorLens.hintForeground'?: Color | string
-  'errorLens.hintForegroundLight'?: Color | string
-  'errorLens.hintMessageBackground'?: Color | string
-  'errorLens.infoBackground'?: Color | string
-  'errorLens.infoBackgroundLight'?: Color | string
-  'errorLens.infoForeground'?: Color | string
-  'errorLens.infoForegroundLight'?: Color | string
-  'errorLens.infoMessageBackground'?: Color | string
-  'errorLens.warningBackground'?: Color | string
-  'errorLens.warningBackgroundLight'?: Color | string
-  'errorLens.warningForeground'?: Color | string
-  'errorLens.warningForegroundLight'?: Color | string
-  'errorLens.warningMessageBackground'?: Color | string
+  'errorLens.errorBackground'?: ColourLike
+  'errorLens.errorBackgroundLight'?: ColourLike
+  'errorLens.errorForeground'?: ColourLike
+  'errorLens.errorForegroundLight'?: ColourLike
+  'errorLens.errorMessageBackground'?: ColourLike
+  'errorLens.hintBackground'?: ColourLike
+  'errorLens.hintBackgroundLight'?: ColourLike
+  'errorLens.hintForeground'?: ColourLike
+  'errorLens.hintForegroundLight'?: ColourLike
+  'errorLens.hintMessageBackground'?: ColourLike
+  'errorLens.infoBackground'?: ColourLike
+  'errorLens.infoBackgroundLight'?: ColourLike
+  'errorLens.infoForeground'?: ColourLike
+  'errorLens.infoForegroundLight'?: ColourLike
+  'errorLens.infoMessageBackground'?: ColourLike
+  'errorLens.warningBackground'?: ColourLike
+  'errorLens.warningBackgroundLight'?: ColourLike
+  'errorLens.warningForeground'?: ColourLike
+  'errorLens.warningForegroundLight'?: ColourLike
+  'errorLens.warningMessageBackground'?: ColourLike
 
 
   // -- GitLens
 
-  'gitlens.closedPullRequestIconColor'?: Color | string
-  'gitlens.decorations.addedForegroundColor'?: Color | string
-  'gitlens.decorations.branchAheadForegroundColor'?: Color | string
-  'gitlens.decorations.branchBehindForegroundColor'?: Color | string
-  'gitlens.decorations.branchDivergedForegroundColor'?: Color | string
-  'gitlens.decorations.branchUnpublishedForegroundColor'?: Color | string
-  'gitlens.decorations.branchUpToDateForegroundColor'?: Color | string
-  'gitlens.decorations.copiedForegroundColor'?: Color | string
-  'gitlens.decorations.deletedForegroundColor'?: Color | string
-  'gitlens.decorations.ignoredForegroundColor'?: Color | string
-  'gitlens.decorations.modifiedForegroundColor'?: Color | string
-  'gitlens.decorations.renamedForegroundColor'?: Color | string
-  'gitlens.decorations.untrackedForegroundColor'?: Color | string
-  'gitlens.gutterBackgroundColor'?: Color | string
-  'gitlens.gutterForegroundColor'?: Color | string
-  'gitlens.gutterUncommittedForegroundColor'?: Color | string
-  'gitlens.lineHighlightBackgroundColor'?: Color | string
-  'gitlens.lineHighlightOverviewRulerColor'?: Color | string
-  'gitlens.mergedPullRequestIconColor'?: Color | string
-  'gitlens.openPullRequestIconColor'?: Color | string
-  'gitlens.trailingLineBackgroundColor'?: Color | string
-  'gitlens.trailingLineForegroundColor'?: Color | string
-  'gitlens.unpublishedCommitIconColor'?: Color | string
-  'gitlens.unpulledChangesIconColor'?: Color | string
-  'gitlens.unpushlishedChangesIconColor'?: Color | string
+  'gitlens.closedPullRequestIconColor'?: ColourLike
+  'gitlens.decorations.addedForegroundColor'?: ColourLike
+  'gitlens.decorations.branchAheadForegroundColor'?: ColourLike
+  'gitlens.decorations.branchBehindForegroundColor'?: ColourLike
+  'gitlens.decorations.branchDivergedForegroundColor'?: ColourLike
+  'gitlens.decorations.branchUnpublishedForegroundColor'?: ColourLike
+  'gitlens.decorations.branchUpToDateForegroundColor'?: ColourLike
+  'gitlens.decorations.copiedForegroundColor'?: ColourLike
+  'gitlens.decorations.deletedForegroundColor'?: ColourLike
+  'gitlens.decorations.ignoredForegroundColor'?: ColourLike
+  'gitlens.decorations.modifiedForegroundColor'?: ColourLike
+  'gitlens.decorations.renamedForegroundColor'?: ColourLike
+  'gitlens.decorations.untrackedForegroundColor'?: ColourLike
+  'gitlens.gutterBackgroundColor'?: ColourLike
+  'gitlens.gutterForegroundColor'?: ColourLike
+  'gitlens.gutterUncommittedForegroundColor'?: ColourLike
+  'gitlens.lineHighlightBackgroundColor'?: ColourLike
+  'gitlens.lineHighlightOverviewRulerColor'?: ColourLike
+  'gitlens.mergedPullRequestIconColor'?: ColourLike
+  'gitlens.openPullRequestIconColor'?: ColourLike
+  'gitlens.trailingLineBackgroundColor'?: ColourLike
+  'gitlens.trailingLineForegroundColor'?: ColourLike
+  'gitlens.unpublishedCommitIconColor'?: ColourLike
+  'gitlens.unpulledChangesIconColor'?: ColourLike
+  'gitlens.unpushlishedChangesIconColor'?: ColourLike
 
 
   // -- LintLens
 
-  'lintlens.annotationColor'?: Color | string
+  'lintlens.annotationColor'?: ColourLike
 
 
   // -- Bookmarks
 
-  'bookmarks.overviewRuler'?: Color | string
-  'bookmarks.lineBackground'?: Color | string
-  'bookmarks.lineBorder'?: Color | string
+  'bookmarks.overviewRuler'?: ColourLike
+  'bookmarks.lineBackground'?: ColourLike
+  'bookmarks.lineBorder'?: ColourLike
 
 
   // -- Test Explorer
 
-  'testExplorer.errorDecorationBackground'?: Color | string
+  'testExplorer.errorDecorationBackground'?: ColourLike
 
 
   // -- SQL Tools
-  'sqltools.currentQueryBg'?: Color | string
-  'sqltools.currentQueryOutline'?: Color | string
+  'sqltools.currentQueryBg'?: ColourLike
+  'sqltools.currentQueryOutline'?: ColourLike
 
 
   // -- File Watcher
 
-  'filewatcher.error'?: Color | string
+  'filewatcher.error'?: ColourLike
 
   toJSON?(): Record<string, string>
 }

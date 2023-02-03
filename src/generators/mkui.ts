@@ -707,6 +707,7 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'settings.dropdownListBorder': ui.border.hex(),
     'settings.checkboxBorder': ui.border.hex(),
     'settings.textInputBorder': ui.border.hex(),
+    'settings.sashBorder': ui.border.hex(),
     'settings.numberInputBorder': ui.border.hex(),
     'settings.focusedRowBackground': ui.highlight.line.alpha(ch(0x09)).hexa(),
     'settings.focusedRowBorder': ui.accent.alpha(ch(0x66)).hexa(),
@@ -798,6 +799,11 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'issues.newIssueDecoration': ui.text.secondary.hex(),
     'issues.open': ui.icon.success.hex(),
     'issues.closed': ui.icon.error.hex(),
+    'pullRequests.open': ui.scm.added.hex(),
+    'pullRequests.closed': ui.scm.deleted.hex(),
+    'pullRequests.draft': ui.scm.untracked.hex(),
+    'pullRequests.merged': ui.scm.merged.hex(),
+    'pullRequests.notification': ui.problems.info.hex(),
 
     /**
      * Error Lens
