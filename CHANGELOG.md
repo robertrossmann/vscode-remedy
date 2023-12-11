@@ -1,3 +1,10 @@
+# [5.19.0](https://github.com/robertrossmann/vscode-remedy/compare/5.18.0...5.19.0) (2023-12-11)
+
+
+### Features
+
+* rework list selection highlights ([d969e10](https://github.com/robertrossmann/vscode-remedy/commit/d969e10ad07b6a1a3561c0c9f1aa2c34079bdad9))
+
 # [5.18.0](https://github.com/robertrossmann/vscode-remedy/compare/5.17.0...5.18.0) (2023-12-11)
 
 
