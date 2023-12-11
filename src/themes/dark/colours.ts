@@ -1,6 +1,6 @@
 import * as color from 'color'
 
-const base = color('#36302c')
+const base = color('#352B2A')
 const normal = {
   black: color('#282A2E'),
   blue: color('#5F819D'),
@@ -25,7 +25,7 @@ const bright = {
   yellow: color('#F0C674'),
 }
 
-const foreground = bright.yellow.lighten(0.25)
+const foreground = bright.yellow.lighten(0.2)
 
 export {
   base,

@@ -2,20 +2,20 @@ import { base, foreground, normal, bright } from './colours'
 
 const text = {
   primary: foreground,
-  secondary: foreground.lighten(1.2).desaturate(0.3),
+  secondary: foreground.lighten(0.5).desaturate(0.4),
   dimmed: foreground.lighten(1.6).desaturate(0.5),
   contrast: base,
   complimentary: bright.yellow.darken(0.9).desaturate(0.3),
 }
 
 const background = {
-  code: base.lighten(0.03),
+  code: base.lighten(0.06),
   panel: base,
   drop: text.primary,
   hover: base.mix(text.primary, 0.3),
 }
 
-const border = background.panel.darken(0.15).desaturate(0.3)
+const border = background.panel.darken(0.2).desaturate(0.3)
 const shadow = text.dimmed
 const accent = normal.orange
 
