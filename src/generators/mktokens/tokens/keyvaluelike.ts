@@ -1,11 +1,11 @@
-import type { InputParams } from './InputParams'
+import { type InputParams } from './InputParams'
 import {
   dotenv as dotenvscope,
   json as jsonscope,
   terraform as terraformscope,
   yaml as yamlscope,
 } from '@remedy/tools/tmscopes'
-import type { TMRule } from '@remedy/types'
+import { type TMRule } from '@remedy/types'
 
 function keyvaluelike({ code }: InputParams): TMRule[] {
   const keys = {

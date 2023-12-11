@@ -1,6 +1,6 @@
-import type { InputParams } from './InputParams'
+import { type InputParams } from './InputParams'
 import { cs as csscope } from '@remedy/tools/tmscopes'
-import type { TMRule } from '@remedy/types'
+import { type TMRule } from '@remedy/types'
 
 function csharp({ code }: InputParams): TMRule[] {
   const classes = {

@@ -4,7 +4,7 @@ import 'tsconfig-paths/register'
 import * as fs from 'fs'
 import * as path from 'path'
 import * as pkg from '../../package.json'
-import type { VSCTheme } from '@remedy/types'
+import { type VSCTheme } from '@remedy/types'
 
 const themefiles = process.argv.slice(2)
 const metadata = themefiles.map(file => {

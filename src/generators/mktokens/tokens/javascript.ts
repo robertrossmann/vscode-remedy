@@ -1,6 +1,6 @@
-import type { InputParams } from './InputParams'
+import { type InputParams } from './InputParams'
 import { jsts as jstsscope } from '@remedy/tools/tmscopes'
-import type { TMRule } from '@remedy/types'
+import { type TMRule } from '@remedy/types'
 
 function javascript({ code }: InputParams): TMRule[] {
   const builtins = {

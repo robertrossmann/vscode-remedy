@@ -1,5 +1,5 @@
 import { foreground, normal, bright } from './colours'
-import type { CodePalette } from '@remedy/types'
+import { type CodePalette } from '@remedy/types'
 
 const plain = foreground.hex()
 const comments = foreground.darken(0.5).desaturate(0.8).hex()

@@ -1,6 +1,11 @@
 import * as color from 'color'
 import * as tokens from './tokens'
-import type { CodePalette, ColourPalette, SemanticRules, TMRule } from '@remedy/types'
+import {
+  type CodePalette,
+  type ColourPalette,
+  type SemanticRules,
+  type TMRule,
+} from '@remedy/types'
 import { TMFontStyle } from '@remedy/types'
 
 interface InputParams {

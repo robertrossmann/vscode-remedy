@@ -1,4 +1,4 @@
-import type { InputParams } from './InputParams'
+import { type InputParams } from './InputParams'
 import { TMFontStyle, type TMRule } from '@remedy/types'
 
 function common({ code }: InputParams): TMRule[] {

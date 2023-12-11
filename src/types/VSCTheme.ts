@@ -1,4 +1,4 @@
-import type { UIColourPalette } from './UIColourPalette'
+import { type UIColourPalette } from './UIColourPalette'
 
 type HEXAColour = string
 

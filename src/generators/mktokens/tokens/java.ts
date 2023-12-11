@@ -1,6 +1,6 @@
-import type { InputParams } from './InputParams'
+import { type InputParams } from './InputParams'
 import { java as javascope } from '@remedy/tools/tmscopes'
-import type { TMRule } from '@remedy/types'
+import { type TMRule } from '@remedy/types'
 
 function java({ code }: InputParams): TMRule[] {
   const variables = {

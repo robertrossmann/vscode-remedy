@@ -1,6 +1,6 @@
-import type { InputParams } from './InputParams'
+import { type InputParams } from './InputParams'
 import { html as htmlscope } from '@remedy/tools/tmscopes'
-import type { TMRule } from '@remedy/types'
+import { type TMRule } from '@remedy/types'
 
 function html({ code, colours }: InputParams): TMRule[] {
   const ids = {

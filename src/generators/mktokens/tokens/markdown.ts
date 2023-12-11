@@ -1,4 +1,4 @@
-import type { InputParams } from './InputParams'
+import { type InputParams } from './InputParams'
 import { markdown as markdownscope } from '@remedy/tools/tmscopes'
 import { TMFontStyle, type TMRule } from '@remedy/types'
 

@@ -1,4 +1,8 @@
-import type { UIColourPalette, UIPalette, CodePalette } from '@remedy/types'
+import {
+  type UIColourPalette,
+  type UIPalette,
+  type CodePalette,
+} from '@remedy/types'
 
 interface mkuiParams {
   ui: UIPalette
