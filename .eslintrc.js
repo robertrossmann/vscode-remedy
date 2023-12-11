@@ -4,10 +4,6 @@ const rules = {
   // If your editor cannot show these to you, occasionally turn this off and run the linter
   'no-warning-comments': 0,
   'max-len': ['warn', 120],
-
-  '@typescript-eslint/explicit-function-return-type': 'off',
-  '@typescript-eslint/naming-convention': 'off',
-  'node/no-unsupported-features/es-syntax': 'off',
 }
 
 /** @type {import("eslint").Linter.Config} */
@@ -23,7 +19,7 @@ module.exports = {
   ],
 
   extends: [
-    '@strv/node/v16',
+    '@strv/node/v20',
     '@strv/node/optional',
     '@strv/node/style',
   ],
@@ -32,7 +28,7 @@ module.exports = {
   overrides: [{
     files: ['**/*.ts', '**/*.mts'],
     extends: [
-      '@strv/node/v16',
+      '@strv/node/v20',
       '@strv/node/optional',
       '@strv/node/style',
       '@strv/typescript',
@@ -40,7 +36,6 @@ module.exports = {
     ],
     parserOptions: {
       project: './tsconfig.json',
-      ecmaVersion: 2021,
     },
     rules,
   }],

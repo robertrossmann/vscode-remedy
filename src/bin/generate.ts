@@ -12,6 +12,7 @@ if (!entrypoint || !outfile) {
   throw new Error('Usage: generate <entrypoint> <outfile>')
 }
 
+// eslint-disable-next-line node/no-unsupported-features/es-syntax
 import(path.resolve(process.cwd(), entrypoint))
   .then(async ({ default: theme }: { default: VSCTheme }) => {
     const data = `${JSON.stringify(theme, null, 2)}\n`

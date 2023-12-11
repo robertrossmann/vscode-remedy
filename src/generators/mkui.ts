@@ -4,7 +4,7 @@ import {
   type CodePalette,
 } from '@remedy/types'
 
-interface mkuiParams {
+interface MKUIParams {
   ui: UIPalette
   code: CodePalette
 }
@@ -17,7 +17,7 @@ function ch(hex: number) {
   return hex / 0xFF
 }
 
-function mkui({ ui, code }: mkuiParams): UIColourPalette {
+function mkui({ ui, code }: MKUIParams): UIColourPalette {
   return {
     /**
      * Base Colours
