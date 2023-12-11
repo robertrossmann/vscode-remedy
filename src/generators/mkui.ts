@@ -92,6 +92,7 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
     'textBlockQuote.border': ui.accent.hex(),
     'textCodeBlock.background': ui.background.code.hex(),
     'textPreformat.foreground': code.decoratives.raw,
+    'textPreformat.background': ui.background.panel.hex(),
 
     /**
      * Action colors

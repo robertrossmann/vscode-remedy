@@ -2380,6 +2380,10 @@ interface UIColourPalette {
    */
   'textPreformat.foreground'?: ColourLike
   /**
+   * Background color for preformatted text segments.
+   */
+  'textPreformat.background'?: ColourLike
+  /**
    * Color for text separators.
    */
   'textSeparator.foreground'?: ColourLike
