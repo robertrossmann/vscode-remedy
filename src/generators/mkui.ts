@@ -408,10 +408,10 @@ function mkui({ ui, code }: mkuiParams): UIColourPalette {
      */
     'diffEditor.border': ui.border.hex(),
     'diffEditor.diagonalFill': ui.text.secondary.alpha(ch(0x44)).hexa(),
-    'diffEditor.insertedTextBackground': ui.scm.added.alpha(ch(0x33)).hexa(),
-    'diffEditor.insertedLineBackground': ui.scm.added.alpha(ch(0x22)).hexa(),
-    'diffEditor.removedTextBackground': ui.scm.deleted.alpha(ch(0x33)).hexa(),
-    'diffEditor.removedLineBackground': ui.scm.deleted.alpha(ch(0x22)).hexa(),
+    'diffEditor.insertedTextBackground': ui.scm.added.alpha(ch(0x22)).hexa(),
+    'diffEditor.insertedLineBackground': ui.scm.added.alpha(ch(0x09)).hexa(),
+    'diffEditor.removedTextBackground': ui.scm.deleted.alpha(ch(0x22)).hexa(),
+    'diffEditor.removedLineBackground': ui.scm.deleted.alpha(ch(0x09)).hexa(),
     // 'diffEditor.insertedTextBorder': ui.scm.added.alpha(ch(0x33)).hexa(),
     // 'diffEditor.removedTextBorder': ui.scm.deleted.alpha(ch(0x33)).hexa(),
 
