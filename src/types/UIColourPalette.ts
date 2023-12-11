@@ -1859,6 +1859,10 @@ interface UIColourPalette {
    */
   'statusBar.background'?: ColourLike
   /**
+   * Status Bar foreground color.
+   */
+  'statusBar.foreground'?: ColourLike
+  /**
    * Status Bar border color separating the Status Bar and editor.
    */
   'statusBar.border'?: ColourLike
@@ -1867,21 +1871,17 @@ interface UIColourPalette {
    */
   'statusBar.debuggingBackground'?: ColourLike
   /**
-   * Status Bar border color separating the Status Bar and editor when a program is being debugged.
-   */
-  'statusBar.debuggingBorder'?: ColourLike
-  /**
    * Status Bar foreground color when a program is being debugged.
    */
   'statusBar.debuggingForeground'?: ColourLike
   /**
-   * Status Bar foreground color.
+   * Status Bar border color separating the Status Bar and editor when a program is being debugged.
    */
-  'statusBar.foreground'?: ColourLike
+  'statusBar.debuggingBorder'?: ColourLike
   /**
-   * Status bar border color when focused on keyboard navigation. The status bar is shown in the bottom of the window.
+   * Status Bar foreground color when no folder is opened.
    */
-  'statusBar.focusBorder'?: ColourLike
+  'statusBar.noFolderForeground'?: ColourLike
   /**
    * Status Bar background color when no folder is opened.
    */
@@ -1891,40 +1891,30 @@ interface UIColourPalette {
    */
   'statusBar.noFolderBorder'?: ColourLike
   /**
-   * Status Bar foreground color when no folder is opened.
-   */
-  'statusBar.noFolderForeground'?: ColourLike
-  /**
    * Status Bar item background color when clicking.
    */
   'statusBarItem.activeBackground'?: ColourLike
   /**
-   * Status bar error items background color. Error items stand out from other status bar entries to indicate error
-   * conditions.
+   * Status bar item foreground color when hovering. The status bar is shown in the bottom of the window.
    */
-  'statusBarItem.errorBackground'?: ColourLike
-  /**
-   * Status bar error items foreground color. Error items stand out from other status bar entries to indicate error
-   * conditions.
-   */
-  'statusBarItem.errorForeground'?: ColourLike
-  /**
-   * Status bar item border color when focused on keyboard navigation. The status bar is shown in the bottom of the
-   * window.
-   */
-  'statusBarItem.focusBorder'?: ColourLike
+  'statusBarItem.hoverForeground'?: ColourLike
   /**
    * Status Bar item background color when hovering.
    */
   'statusBarItem.hoverBackground'?: ColourLike
   /**
+   * Status Bar prominent items foreground color.
+   */
+  'statusBarItem.prominentForeground'?: ColourLike
+  /**
    * Status Bar prominent items background color.
    */
   'statusBarItem.prominentBackground'?: ColourLike
   /**
-   * Status Bar prominent items foreground color.
+   * Status bar prominent items foreground color when hovering. Prominent items stand out from other status bar entries
+   * to indicate importance. The status bar is shown in the bottom of the window.
    */
-  'statusBarItem.prominentForeground'?: ColourLike
+  'statusBarItem.prominentHoverForeground'?: ColourLike
   /**
    * Status Bar prominent items background color when hovering.
    */
@@ -1938,6 +1928,34 @@ interface UIColourPalette {
    */
   'statusBarItem.remoteForeground'?: ColourLike
   /**
+   * Background color for the remote indicator on the status bar when hovering.
+   */
+  'statusBarItem.remoteHoverBackground'?: ColourLike
+  /**
+   * Foreground color for the remote indicator on the status bar when hovering.
+   */
+  'statusBarItem.remoteHoverForeground'?: ColourLike
+  /**
+   * Status bar error items background color. Error items stand out from other status bar entries to indicate error
+   * conditions.
+   */
+  'statusBarItem.errorBackground'?: ColourLike
+  /**
+   * Status bar error items foreground color. Error items stand out from other status bar entries to indicate error
+   * conditions.
+   */
+  'statusBarItem.errorForeground'?: ColourLike
+  /**
+   * Status bar error items background color when hovering. Error items stand out from other status bar entries to
+   * indicate error conditions. The status bar is shown in the bottom of the window.
+   */
+  'statusBarItem.errorHoverBackground'?: ColourLike
+  /**
+   * Status bar error items foreground color when hovering. Error items stand out from other status bar entries to
+   * indicate error conditions. The status bar is shown in the bottom of the window.
+   */
+  'statusBarItem.errorHoverForeground'?: ColourLike
+  /**
    * Status bar warning items background color. Warning items stand out from other status bar entries to indicate
    * warning conditions. The status bar is shown in the bottom of the window.
    */
@@ -1947,6 +1965,46 @@ interface UIColourPalette {
    * warning conditions. The status bar is shown in the bottom of the window.
    */
   'statusBarItem.warningForeground'?: ColourLike
+  /**
+   * Status bar warning items background color when hovering. Warning items stand out from other status bar entries to
+   * indicate warning conditions. The status bar is shown in the bottom of the window.
+   */
+  'statusBarItem.warningHoverBackground'?: ColourLike
+  /**
+   * Status bar warning items foreground color when hovering. Warning items stand out from other status bar entries to
+   * indicate warning conditions. The status bar is shown in the bottom of the window.
+   */
+  'statusBarItem.warningHoverForeground'?: ColourLike
+  /**
+   * Status bar item background color when hovering an item that contains two hovers. The status bar is shown in the
+   * bottom of the window.
+   */
+  'statusBarItem.compactHoverBackground'?: ColourLike
+  /**
+   * Status bar item border color when focused on keyboard navigation. The status bar is shown in the bottom of the
+   * window.
+   */
+  'statusBarItem.focusBorder'?: ColourLike
+  /**
+   * Status bar border color when focused on keyboard navigation. The status bar is shown in the bottom of the window.
+   */
+  'statusBar.focusBorder'?: ColourLike
+  /**
+   * Status bar item background color when the workbench is offline.
+   */
+  'statusBarItem.offlineBackground'?: ColourLike
+  /**
+   * Status bar item foreground color when the workbench is offline.
+   */
+  'statusBarItem.offlineForeground'?: ColourLike
+  /**
+   * Status bar item foreground hover color when the workbench is offline.
+   */
+  'statusBarItem.offlineHoverForeground'?: ColourLike
+  /**
+   * Status bar item background hover color when the workbench is offline.
+   */
+  'statusBarItem.offlineHoverBackground'?: ColourLike
   /**
    * The foreground color for array symbols.
    */
