@@ -1,3 +1,13 @@
+# [5.18.0](https://github.com/robertrossmann/vscode-remedy/compare/5.17.0...5.18.0) (2023-12-11)
+
+
+### Features
+
+* improve status bar colours 🎨 ([bf4f1b2](https://github.com/robertrossmann/vscode-remedy/commit/bf4f1b2c8e30b72f94fa3b7e196696213d895dd9))
+* support `textPreformat.background` ([93864e1](https://github.com/robertrossmann/vscode-remedy/commit/93864e1ce34820dd5e3df57881a1e410f2e71874))
+* theme overall feel overhaul 🎨 ([f419551](https://github.com/robertrossmann/vscode-remedy/commit/f419551c264b536c10f0bf1b4c2f86e47e291817))
+* tone down git diff highlights (added, removed) ([cb6e423](https://github.com/robertrossmann/vscode-remedy/commit/cb6e4234cad3bb8c97e5ce6dce02fa6e7bc64fcc))
+
 # [5.17.0](https://github.com/robertrossmann/vscode-remedy/compare/5.16.1...5.17.0) (2023-02-03)
 
 
