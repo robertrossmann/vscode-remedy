@@ -4,23 +4,21 @@
 
 # VS Code - Remedy
 
-![Built with GNU Make][make-badge]
-[![Marketplace][marketplace-badge]][marketplace-link]
+![Built with GNU Make][make-badge] [![Marketplace][marketplace-badge]][marketplace-link]
 
-> A dark & bright theme with orange accents with roots in Base16 - Eighties colour theme
-
-The theme features a orange accent throughout the UI. Code colours are based in the Base16 -
-Eighties colours. My goal is to provide a very consistent colour coding for various tokens, so that
-they look identical not just for a single language but also across all languages (ie. strings, type
-annotations, classes, language keywords etc. have the same colour regardless of the language you
-use). I believe I achieved that goal. 😍
-
+> A dark & bright theme with orange accents with roots in Base16 - Eighties colour theme.
 > Best used with [Operator Mono][operator-link].
 
 [![Showcase - Dark][screen-dark]][screen-dark]
 [![Showcase - Bright][screen-bright]][screen-bright]
 
 </div>
+
+## Features
+
+- very strong colour coding consistency not just for a single language but across all languages (ie. strings, variables, interfaces etc. are always the same colour)
+- consistent UI colours across the whole VS Code UI - panels have the same background colour, hovers behave the same way, git decorations look the same regardless of where they are displayed etc.
+- (optional) language tokens (`for`, `while`, `return` etc.) and strings are italicised for some extra swag (works best with the Operator Mono font)
 
 ## Installation
 
