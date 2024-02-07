@@ -624,6 +624,8 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'terminalCommandDecoration.successBackground': ui.icon.success.hex(),
     'terminalCommandDecoration.errorBackground': ui.icon.error.hex(),
     'terminalCommandDecoration.defaultBackground': ui.icon.inactive.hex(),
+    // TODO: This cannot have alpha channel because it leads to artifacts in the terminal UI (VS Code 1.86.0)
+    'terminalStickyScrollHover.background': ui.background.hover.hex(),
     // 'terminalCursor.background': '#FF0000',
 
     /**
