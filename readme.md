@@ -52,28 +52,6 @@ The following languages have been manually tweaked to provide best experience:
 - SQL
 - YAML
 
-## Screenshots
-
-### UI
-
-[![UI][screen-gui]][screen-gui]
-
-### Peek View
-
-[![Peek View][screen-peekview]][screen-peekview]
-
-### Find & Replace
-
-[![Find & Replace][screen-search]][screen-search]
-
-### GitLens
-
-[![GitLens][screen-gitlens]][screen-gitlens]
-
-### Diffs
-
-[![Diffs][screen-diff]][screen-diff]
-
 ## Additional resources
 
 ### Terminals
@@ -93,10 +71,5 @@ See the [LICENSE](LICENSE) file for information.
 [marketplace-badge]: https://img.shields.io/badge/Download%20On-Marketplace-brightgreen.svg?style=flat-square
 [marketplace-link]: https://marketplace.visualstudio.com/items?itemName=robertrossmann.remedy
 [operator-link]: https://www.typography.com/fonts/operator/styles/operatormono
-[screen-dark]: https://user-images.githubusercontent.com/3058150/73192537-758f1f80-4129-11ea-82b6-730062082ebc.png
-[screen-bright]: https://user-images.githubusercontent.com/3058150/74436488-d7a88e00-4e66-11ea-8d06-ce9129de16f1.png
-[screen-gui]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/gui.png
-[screen-peekview]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/peekview.png
-[screen-search]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/search.png
-[screen-gitlens]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/gitlens.png
-[screen-diff]: https://raw.githubusercontent.com/robertrossmann/vscode-remedy/master/resources/screenshots/diff.png
+[screen-dark]: https://github.com/robertrossmann/vscode-remedy/assets/3058150/e5c82f9d-f6e9-4038-b2a9-1b311a8267d5
+[screen-bright]: https://github.com/robertrossmann/vscode-remedy/assets/3058150/c516d441-2b83-4bdf-9a98-85bbd82af4ba
