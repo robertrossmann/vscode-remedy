@@ -1,3 +1,16 @@
+# [5.20.0](https://github.com/robertrossmann/vscode-remedy/compare/5.19.0...5.20.0) (2024-02-07)
+
+
+### Bug Fixes
+
+* revert the Marketplace gallery banner colour ([ebe3340](https://github.com/robertrossmann/vscode-remedy/commit/ebe334095fc841ff1f2876049642afcfae0f6327))
+
+
+### Features
+
+* add support for `terminalStickyScrollHover.background` 🎨 ([8b51343](https://github.com/robertrossmann/vscode-remedy/commit/8b513435acdd4d3b19f74d7a5fb8199d4d66333e))
+* add type definitions for new terminal UI colours ([cbbaaaf](https://github.com/robertrossmann/vscode-remedy/commit/cbbaaaff1ab5c0b4f954359629e0cb5da6db9b08))
+
 # [5.19.0](https://github.com/robertrossmann/vscode-remedy/compare/5.18.0...5.19.0) (2023-12-11)
 
 
