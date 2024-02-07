@@ -2353,6 +2353,14 @@ interface UIColourPalette {
    */
   'terminalCommandDecoration.errorBackground'?: ColourLike
   /**
+   * The overview ruler cursor color.
+   */
+  'terminalOverviewRuler.cursorForeground'?: ColourLike
+  /**
+   * Overview ruler marker color for find matches in the terminal.
+   */
+  'terminalOverviewRuler.findMatchForeground'?: ColourLike
+  /**
    * The background color of the terminal cursor. Allows customizing the color of a character overlapped by a block
    * cursor.
    */
@@ -2361,6 +2369,14 @@ interface UIColourPalette {
    * The foreground color of the terminal cursor.
    */
   'terminalCursor.foreground'?: ColourLike
+  /**
+   * The background color of the sticky scroll overlay in the terminal.
+   */
+  'terminalStickyScroll.background'?: ColourLike
+  /**
+   * The background color of the sticky scroll overlay in the terminal when hovered.
+   */
+  'terminalStickyScrollHover.background'?: ColourLike
   /**
    * Color for the 'Errored' icon in the test explorer.
    */
