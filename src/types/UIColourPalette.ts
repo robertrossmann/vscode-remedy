@@ -37,6 +37,35 @@ interface UIColourPalette {
    */
   'activityBar.inactiveForeground'?: ColourLike
   /**
+   * Active foreground color of the item in the Activity bar when it is on top. The activity allows to switch between
+   * views of the side bar.
+   */
+  'activityBarTop.foreground'?: ColourLike
+  /**
+   * Focus border color for the active item in the Activity bar when it is on top. The activity allows to switch between
+   * views of the side bar.
+   */
+  'activityBarTop.activeBorder'?: ColourLike
+  /**
+   * Inactive foreground color of the item in the Activity bar when it is on top. The activity allows to switch between
+   * views of the side bar.
+   */
+  'activityBarTop.inactiveForeground'?: ColourLike
+  /**
+   * Drag and drop feedback color for the items in the Activity bar when it is on top. The activity allows to switch
+   * between views of the side bar.
+   */
+  'activityBarTop.dropBorder'?: ColourLike
+  /**
+   * Background color of the activity bar when set to top / bottom.
+   */
+  'activityBarTop.background'?: ColourLike
+  /**
+   * Background color for the active item in the Activity bar when it is on top / bottom. The activity allows to switch
+   * between views of the side bar.
+   */
+  'activityBarTop.activeBackground'?: ColourLike
+  /**
    * Activity notification badge background color.
    */
   'activityBarBadge.background'?: ColourLike

@@ -229,6 +229,12 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'activityBar.border': ui.border.hex(),
     'activityBar.foreground': ui.icon.foreground.hex(),
     'activityBar.inactiveForeground': ui.icon.inactive.hex(),
+    'activityBarTop.foreground': ui.icon.foreground.hex(),
+    'activityBarTop.activeBorder': ui.accent.hex(),
+    'activityBarTop.inactiveForeground': ui.icon.inactive.hex(),
+    'activityBarTop.dropBorder': ui.accent.hex(),
+    'activityBarTop.background': ui.background.panel.hex(),
+    'activityBarTop.activeBackground': ui.background.panel.hex(),
     'activityBarBadge.background': ui.accent.hex(),
     'activityBarBadge.foreground': ui.text.contrast.hex(),
     // TODO(vscode): implement panelTitle.activeBackground colour contribution
