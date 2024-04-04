@@ -1,3 +1,10 @@
+# [5.21.0](https://github.com/robertrossmann/vscode-remedy/compare/5.20.0...5.21.0) (2024-04-04)
+
+
+### Features
+
+* add customisations for different Activity Bar positions ([4aaa593](https://github.com/robertrossmann/vscode-remedy/commit/4aaa593bbfda031b30dcdb42333716df483acfb2))
+
 # [5.20.0](https://github.com/robertrossmann/vscode-remedy/compare/5.19.0...5.20.0) (2024-02-07)
 
 
