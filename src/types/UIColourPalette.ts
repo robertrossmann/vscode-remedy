@@ -619,6 +619,22 @@ interface UIColourPalette {
    */
   'editorCursor.foreground'?: ColourLike
   /**
+   * Color of the primary editor cursor when multiple cursors are present.
+   */
+  'editorMultiCursor.primary.foreground'?: ColourLike
+  /**
+   * The background color of the primary editor cursor when multiple cursors are present. Allows customizing the color of a character overlapped by a block cursor.
+   */
+  'editorMultiCursor.primary.background'?: ColourLike
+  /**
+   * Color of secondary editor cursors when multiple cursors are present.
+   */
+  'editorMultiCursor.secondary.foreground'?: ColourLike
+  /**
+   * The background color of secondary editor cursors when multiple cursors are present. Allows customizing the color of a character overlapped by a block cursor.
+   */
+  'editorMultiCursor.secondary.background'?: ColourLike
+  /**
    * Background color of error text in the editor. The color must not be opaque so as not to hide underlying
    * decorations.
    */
