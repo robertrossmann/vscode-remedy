@@ -431,6 +431,42 @@ interface UIColourPalette {
    */
   'diffEditorOverview.removedForeground'?: ColourLike
   /**
+   * The color of unchanged blocks in diff editor.
+   */
+  'diffEditor.unchangedRegionBackground'?: ColourLike
+  /**
+   * The foreground color of unchanged blocks in the diff editor.
+   */
+  'diffEditor.unchangedRegionForeground'?: ColourLike
+  /**
+   * The color of the shadow around unchanged region widgets.
+   */
+  'diffEditor.unchangedRegionShadow'?: ColourLike
+  /**
+   * The background color of unchanged code in the diff editor.
+   */
+  'diffEditor.unchangedCodeBackground'?: ColourLike
+  /**
+   * The border color for text that got moved in the diff editor.
+   */
+  'diffEditor.move.border'?: ColourLike
+  /**
+   * The active border color for text that got moved in the diff editor.
+   */
+  'diffEditor.moveActive.border'?: ColourLike
+  /**
+   * The background color of the diff editor's header.
+   */
+  'multiDiffEditor.headerBackground'?: ColourLike
+  /**
+   * The background color of the multi file diff editor.
+   */
+  'multiDiffEditor.background'?: ColourLike
+  /**
+   * The border color of the multi file diff editor.
+   */
+  'multiDiffEditor.border'?: ColourLike
+  /**
    * Dropdown background.
    */
   'dropdown.background'?: ColourLike

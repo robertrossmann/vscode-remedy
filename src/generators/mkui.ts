@@ -424,8 +424,9 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'diffEditor.insertedLineBackground': ui.scm.added.alpha(ch(0x09)).hexa(),
     'diffEditor.removedTextBackground': ui.scm.deleted.alpha(ch(0x22)).hexa(),
     'diffEditor.removedLineBackground': ui.scm.deleted.alpha(ch(0x09)).hexa(),
-    // 'diffEditor.insertedTextBorder': ui.scm.added.alpha(ch(0x33)).hexa(),
-    // 'diffEditor.removedTextBorder': ui.scm.deleted.alpha(ch(0x33)).hexa(),
+    'diffEditor.unchangedCodeBackground': ui.scm.untracked.alpha(ch(0x22)).hexa(),
+    'diffEditor.unchangedRegionForeground': ui.text.secondary.hex(),
+    'multiDiffEditor.headerBackground': ui.background.panel.hex(),
 
     /**
      * Editor Widget Colours
