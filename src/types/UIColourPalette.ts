@@ -174,6 +174,30 @@ interface UIColourPalette {
    */
   'charts.yellow'?: ColourLike
   /**
+   * The border color of a chat request.
+   */
+  'chat.requestBorder'?: ColourLike
+  /**
+   * The background color of a chat request.
+   */
+  'chat.requestBackground'?: ColourLike
+  /**
+   * The background color of a chat slash command.
+   */
+  'chat.slashCommandBackground'?: ColourLike
+  /**
+   * The foreground color of a chat slash command.
+   */
+  'chat.slashCommandForeground'?: ColourLike
+  /**
+   * The background color of a chat avatar.
+   */
+  'chat.avatarBackground'?: ColourLike
+  /**
+   * The foreground color of a chat avatar.
+   */
+  'chat.avatarForeground'?: ColourLike
+  /**
    * Background color of checkbox widget.
    */
   'checkbox.background'?: ColourLike

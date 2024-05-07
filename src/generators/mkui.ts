@@ -806,6 +806,15 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'testing.message.error.lineBackground': ui.problems.error.alpha(ch(0x66)).hexa(),
     'testing.message.info.lineBackground': ui.problems.info.alpha(ch(0x66)).hexa(),
 
+    /**
+     * Chat
+     */
+    'chat.requestBorder': ui.border.hex(),
+    'chat.avatarForeground': ui.background.panel.hex(),
+    'chat.avatarBackground': ui.text.primary.hex(),
+    'chat.requestBackground': ui.background.code.hex(),
+    'chat.slashCommandForeground': ui.text.contrast.hex(),
+    'chat.slashCommandBackground': ui.accent.hex(),
 
     // EXTENSIONS
 
