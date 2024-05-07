@@ -1,3 +1,12 @@
+# [5.22.0](https://github.com/robertrossmann/vscode-remedy/compare/5.21.0...5.22.0) (2024-05-07)
+
+
+### Features
+
+* add Copilot Chat colour customisations 🤖 ([ff353ff](https://github.com/robertrossmann/vscode-remedy/commit/ff353ff6540183656b0631cfa16cc0fd7f8e0a61))
+* add customisation for disabled items 👏 ([14f2905](https://github.com/robertrossmann/vscode-remedy/commit/14f2905bcb385ebf9a1713446b45d157d75bae53))
+* some love for diff & multi-diff editors ❤️ ([a2b7a55](https://github.com/robertrossmann/vscode-remedy/commit/a2b7a5510e2b02340f769c3ba83eb94f89d72c9f))
+
 # [5.21.0](https://github.com/robertrossmann/vscode-remedy/compare/5.20.0...5.21.0) (2024-04-04)
 
 
