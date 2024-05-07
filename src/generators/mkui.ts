@@ -24,6 +24,7 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
      */
     focusBorder: ui.accent.alpha(ch(0x66)).hexa(),
     foreground: ui.text.primary.hex(),
+    disabledForeground: ui.text.dimmed.hex(),
     'widget.shadow': ui.shadow.hex(),
     'selection.background': ui.text.primary.alpha(ch(0x44)).hexa(),
     descriptionForeground: ui.text.primary.hex(),

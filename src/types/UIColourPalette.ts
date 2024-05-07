@@ -1112,6 +1112,10 @@ interface UIColourPalette {
    */
   'foreground'?: ColourLike
   /**
+   * Overall foreground for disabled elements. This color is only used if not overridden by a component.
+   */
+  'disabledForeground'?: ColourLike
+  /**
    * Color for added Git resources. Used for file labels and the SCM viewlet.
    */
   'gitDecoration.addedResourceForeground'?: ColourLike
