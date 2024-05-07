@@ -4,6 +4,10 @@ type ColourLike = Color | string
 
 interface UIColourPalette {
   /**
+   * Background color for toggled action items in action bar.
+   */
+  'actionBar.toggledBackground'?: ColourLike
+  /**
    * Activity Bar optional background color for the active element.
    */
   'activityBar.activeBackground'?: ColourLike
@@ -1853,6 +1857,22 @@ interface UIColourPalette {
    * SCM Provider separator border.
    */
   'scm.providerBorder'?: ColourLike
+  /**
+   * History item additions foreground color.
+   */
+  'scm.historyItemAdditionsForeground'?: ColourLike
+  /**
+   * History item deletions foreground color.
+   */
+  'scm.historyItemDeletionsForeground'?: ColourLike
+  /**
+   * History item statistics border color.
+   */
+  'scm.historyItemStatisticsBorder'?: ColourLike
+  /**
+   * History item selected statistics border color.
+   */
+  'scm.historyItemSelectedStatisticsBorder'?: ColourLike
   /**
    * Scrollbar slider shadow to indicate that the view is scrolled.
    */
