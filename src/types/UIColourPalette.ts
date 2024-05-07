@@ -1152,6 +1152,46 @@ interface UIColourPalette {
    */
   'icon.foreground'?: ColourLike
   /**
+   * Background color of the interactive editor widget.
+   */
+  'inlineChat.background'?: ColourLike
+  /**
+   * Border color of the interactive editor widget.
+   */
+  'inlineChat.border'?: ColourLike
+  /**
+   * Shadow color of the interactive editor widget.
+   */
+  'inlineChat.shadow'?: ColourLike
+  /**
+   * Background highlighting of the current interactive region. Must be transparent.
+   */
+  'inlineChat.regionHighlight'?: ColourLike
+  /**
+   * Border color of the interactive editor input.
+   */
+  'inlineChatInput.border'?: ColourLike
+  /**
+   * Border color of the interactive editor input when focused.
+   */
+  'inlineChatInput.focusBorder'?: ColourLike
+  /**
+   * Foreground color of the interactive editor input placeholder.
+   */
+  'inlineChatInput.placeholderForeground'?: ColourLike
+  /**
+   * Background color of the interactive editor input.
+   */
+  'inlineChatInput.background'?: ColourLike
+  /**
+   * Background color of inserted text in the interactive editor input.
+   */
+  'inlineChatDiff.inserted'?: ColourLike
+  /**
+   * Background color of removed text in the interactive editor input.
+   */
+  'inlineChatDiff.removed'?: ColourLike
+  /**
    * Input box background.
    */
   'input.background'?: ColourLike
