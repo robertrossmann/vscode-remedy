@@ -247,8 +247,10 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'commandCenter.background': ui.background.code.hex(),
     'commandCenter.border': ui.border.hex(),
     'commandCenter.foreground': ui.text.secondary.hex(),
-    'commandCenter.activeForeground': ui.text.primary.hex(),
+    'commandCenter.activeForeground': ui.text.secondary.hex(),
     'commandCenter.activeBackground': ui.background.code.hex(),
+    'commandCenter.activeBorder': ui.accent.hex(),
+    'commandCenter.inactiveBorder': ui.border.hex(),
 
     /**
      * Side Bar
