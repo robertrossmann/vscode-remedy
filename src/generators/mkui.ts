@@ -305,6 +305,7 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'tab.inactiveModifiedBorder': ui.accent.alpha(ch(0x66)).hexa(),
     'tab.hoverForeground': ui.text.primary.hex(),
     'editorPane.background': ui.background.panel.hex(),
+    'tab.dragAndDropBorder': ui.accent.hex(),
     // 'editorGroupHeader.border': ui.border.hex(),
     // 'editorGroupHeader.tabsBorder': '#FF0000',
     // 'editorGroup.emptyBackground': '#FF0000',
