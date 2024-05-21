@@ -724,38 +724,6 @@ interface UIColourPalette {
    */
   'editorGhostText.foreground'?: ColourLike
   /**
-   * Color to separate multiple editor groups from each other.
-   */
-  'editorGroup.border'?: ColourLike
-  /**
-   * Background color when dragging editors around.
-   */
-  'editorGroup.dropBackground'?: ColourLike
-  /**
-   * Background color of an empty editor group.
-   */
-  'editorGroup.emptyBackground'?: ColourLike
-  /**
-   * Border color of an empty editor group that is focused.
-   */
-  'editorGroup.focusedEmptyBorder'?: ColourLike
-  /**
-   * Border color between editor group header and editor (below breadcrumbs if enabled).
-   */
-  'editorGroupHeader.border'?: ColourLike
-  /**
-   * Background color of the editor group title header when Tabs are disabled (set "workbench.editor.showTabs": false).
-   */
-  'editorGroupHeader.noTabsBackground'?: ColourLike
-  /**
-   * Background color of the Tabs container.
-   */
-  'editorGroupHeader.tabsBackground'?: ColourLike
-  /**
-   * Border color below the editor tabs control when tabs are enabled.
-   */
-  'editorGroupHeader.tabsBorder'?: ColourLike
-  /**
    * Editor gutter background color for lines that are added.
    */
   'editorGutter.addedBackground'?: ColourLike
@@ -969,10 +937,6 @@ interface UIColourPalette {
    * underlying decorations.
    */
   'editorOverviewRuler.wordHighlightStrongForeground'?: ColourLike
-  /**
-   * Background color of the editor pane visible on the left and right side of the centered editor layout.
-   */
-  'editorPane.background'?: ColourLike
   /**
    * Color of the editor rulers.
    */
@@ -2307,101 +2271,161 @@ interface UIColourPalette {
    */
   'symbolIcon.variableForeground'?: ColourLike
   /**
+   * Color to separate multiple editor groups from each other.
+   */
+  'editorGroup.border'?: ColourLike
+  /**
+   * Background color when dragging editors around.
+   */
+  'editorGroup.dropBackground'?: ColourLike
+  /**
+   * Background color of the editor group title header when using single Tab (set "workbench.editor.showTabs": "single").
+   */
+  'editorGroupHeader.noTabsBackground'?: ColourLike
+  /**
+   * Background color of the Tabs container.
+   */
+  'editorGroupHeader.tabsBackground'?: ColourLike
+  /**
+   * Border color below the editor tabs control when tabs are enabled.
+   */
+  'editorGroupHeader.tabsBorder'?: ColourLike
+  /**
+   * Border color between editor group header and editor (below breadcrumbs if enabled).
+   */
+  'editorGroupHeader.border'?: ColourLike
+  /**
+   * Background color of an empty editor group.
+   */
+  'editorGroup.emptyBackground'?: ColourLike
+  /**
+   * Border color of an empty editor group that is focused.
+   */
+  'editorGroup.focusedEmptyBorder'?: ColourLike
+  /**
+   * Foreground color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
+   */
+  'editorGroup.dropIntoPromptForeground'?: ColourLike
+  /**
+   * Background color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
+   */
+  'editorGroup.dropIntoPromptBackground'?: ColourLike
+  /**
+   * Border color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
+   */
+  'editorGroup.dropIntoPromptBorder'?: ColourLike
+  /**
    * Active Tab background color in an active group.
    */
   'tab.activeBackground'?: ColourLike
-  /**
-   * Bottom border for the active tab.
-   */
-  'tab.activeBorder'?: ColourLike
-  /**
-   * Top border for the active tab.
-   */
-  'tab.activeBorderTop'?: ColourLike
-  /**
-   * Active Tab foreground color in an active group.
-   */
-  'tab.activeForeground'?: ColourLike
-  /**
-   * Border on the top of modified (dirty) active tabs in an active group.
-   */
-  'tab.activeModifiedBorder'?: ColourLike
-  /**
-   * Border to separate Tabs from each other.
-   */
-  'tab.border'?: ColourLike
-  /**
-   * Tab background color when hovering
-   */
-  'tab.hoverBackground'?: ColourLike
-  /**
-   * Border to highlight tabs when hovering
-   */
-  'tab.hoverBorder'?: ColourLike
-  /**
-   * Tab foreground color when hovering
-   */
-  'tab.hoverForeground'?: ColourLike
-  /**
-   * Inactive Tab background color.
-   */
-  'tab.inactiveBackground'?: ColourLike
-  /**
-   * Inactive Tab foreground color in an active group.
-   */
-  'tab.inactiveForeground'?: ColourLike
-  /**
-   * Border on the top of modified (dirty) inactive tabs in an active group.
-   */
-  'tab.inactiveModifiedBorder'?: ColourLike
-  /**
-   * Border on the right of the last pinned editor to separate from unpinned editors.
-   */
-  'tab.lastPinnedBorder'?: ColourLike
   /**
    * Active Tab background color in an inactive editor group.
    */
   'tab.unfocusedActiveBackground'?: ColourLike
   /**
+   * Active Tab foreground color in an active group.
+   */
+  'tab.activeForeground'?: ColourLike
+  /**
+   * Border to separate Tabs from each other.
+   */
+  'tab.border'?: ColourLike
+  /**
+   * Bottom border for the active tab.
+   */
+  'tab.activeBorder'?: ColourLike
+  /**
+   * Border between tabs to indicate that a tab can be inserted between two tabs. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.
+   */
+  'tab.dragAndDropBorder'?: ColourLike
+  /**
    * Bottom border for the active tab in an inactive editor group.
    */
   'tab.unfocusedActiveBorder'?: ColourLike
+  /**
+   * Top border for the active tab.
+   */
+  'tab.activeBorderTop'?: ColourLike
   /**
    * Top border for the active tab in an inactive editor group
    */
   'tab.unfocusedActiveBorderTop'?: ColourLike
   /**
-   * Active tab foreground color in an inactive editor group.
+   * Border on the right of the last pinned editor to separate from unpinned editors.
    */
-  'tab.unfocusedActiveForeground'?: ColourLike
+  'tab.lastPinnedBorder'?: ColourLike
   /**
-   * Border on the top of modified (dirty) active tabs in an unfocused group.
+   * Inactive Tab background color.
    */
-  'tab.unfocusedActiveModifiedBorder'?: ColourLike
-  /**
-   * Tab background color in an unfocused group when hovering
-   */
-  'tab.unfocusedHoverBackground'?: ColourLike
-  /**
-   * Border to highlight tabs in an unfocused group when hovering
-   */
-  'tab.unfocusedHoverBorder'?: ColourLike
-  /**
-   * Tab foreground color in an unfocused group when hovering
-   */
-  'tab.unfocusedHoverForeground'?: ColourLike
+  'tab.inactiveBackground'?: ColourLike
   /**
    * Inactive Tab background color in an unfocused group
    */
   'tab.unfocusedInactiveBackground'?: ColourLike
   /**
+   * Inactive Tab foreground color in an active group.
+   */
+  'tab.inactiveForeground'?: ColourLike
+  /**
+   * Active tab foreground color in an inactive editor group.
+   */
+  'tab.unfocusedActiveForeground'?: ColourLike
+  /**
    * Inactive tab foreground color in an inactive editor group.
    */
   'tab.unfocusedInactiveForeground'?: ColourLike
   /**
+   * Tab background color when hovering
+   */
+  'tab.hoverBackground'?: ColourLike
+  /**
+   * Tab background color in an unfocused group when hovering
+   */
+  'tab.unfocusedHoverBackground'?: ColourLike
+  /**
+   * Tab foreground color when hovering
+   */
+  'tab.hoverForeground'?: ColourLike
+  /**
+   * Tab foreground color in an unfocused group when hovering
+   */
+  'tab.unfocusedHoverForeground'?: ColourLike
+  /**
+   * Border to highlight tabs when hovering
+   */
+  'tab.hoverBorder'?: ColourLike
+  /**
+   * Border to highlight tabs in an unfocused group when hovering
+   */
+  'tab.unfocusedHoverBorder'?: ColourLike
+  /**
+   * Border on the top of modified (dirty) active tabs in an active group.
+   */
+  'tab.activeModifiedBorder'?: ColourLike
+  /**
+   * Border on the top of modified (dirty) inactive tabs in an active group.
+   */
+  'tab.inactiveModifiedBorder'?: ColourLike
+  /**
+   * Border on the top of modified (dirty) active tabs in an unfocused group.
+   */
+  'tab.unfocusedActiveModifiedBorder'?: ColourLike
+  /**
    * Border on the top of modified (dirty) inactive tabs in an unfocused group.
    */
   'tab.unfocusedInactiveModifiedBorder'?: ColourLike
+  /**
+   * Background color of the editor pane visible on the left and right side of the centered editor layout.
+   */
+  'editorPane.background'?: ColourLike
+  /**
+   * Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
+   */
+  'sideBySideEditor.horizontalBorder'?: ColourLike
+  /**
+   * Color to separate two editors from each other when shown side by side in an editor group from left to right.
+   */
+  'sideBySideEditor.verticalBorder'?: ColourLike
   /**
    * 'Black' ANSI color in the terminal.
    */
