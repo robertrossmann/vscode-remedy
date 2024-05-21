@@ -1,3 +1,16 @@
+# [5.23.0](https://github.com/robertrossmann/vscode-remedy/compare/5.22.0...5.23.0) (2024-05-21)
+
+
+### Bug Fixes
+
+* properly colourise tab drag & drop hover ([ca25a5e](https://github.com/robertrossmann/vscode-remedy/commit/ca25a5eb820f87756066d5cc901eae8893c12225))
+
+
+### Features
+
+* command center tweaks ([9bd9221](https://github.com/robertrossmann/vscode-remedy/commit/9bd92218979e41170866b51d5d5e5bb4dafca36e))
+* completely re-generate types for colour customisations 💪 ([c1a89d9](https://github.com/robertrossmann/vscode-remedy/commit/c1a89d9bcb6673eeedc69f910811d66c84cbfce0))
+
 # [5.22.0](https://github.com/robertrossmann/vscode-remedy/compare/5.21.0...5.22.0) (2024-05-07)
 
 
