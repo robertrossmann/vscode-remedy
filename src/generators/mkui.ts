@@ -333,7 +333,6 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'editor.foreground': ui.text.primary.hex(),
     'editor.hoverHighlightBackground': ui.highlight.hover.alpha(ch(0x11)).hexa(),
     'editor.lineHighlightBackground': ui.highlight.line.alpha(ch(0x09)).hexa(),
-    'editor.onTypeRenameBackground': ui.highlight.word.matches.alpha(ch(0x33)).hexa(),
     'editor.rangeHighlightBackground': ui.highlight.range.alpha(ch(0x11)).hexa(),
     'editor.selectionBackground': ui.highlight.selection.alpha(ch(0x22)).hexa(),
     'editor.selectionHighlightBackground': ui.highlight.selection.alpha(ch(0x11)).hexa(),
@@ -683,10 +682,6 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     /**
      * Welcome Page
      */
-    'welcomePage.buttonBackground': ui.background.panel.hex(),
-    'welcomePage.buttonHoverBackground': ui.background.panel.isDark()
-      ? ui.background.panel.lighten(0.1).hex()
-      : ui.background.panel.darken(0.1).hex(),
     'walkThrough.embeddedEditorBackground': ui.background.panel.hex(),
     // 'welcomePage.background': '#FF0000',
 
