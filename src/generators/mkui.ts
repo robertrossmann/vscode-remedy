@@ -209,14 +209,6 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'list.invalidItemForeground': ui.problems.error.hex(),
     'list.inactiveFocusBackground': ui.highlight.hover.alpha(ch(0x09)).hexa(),
     'quickInputList.focusBackground': ui.accent.alpha(ch(0x99)).hexa(),
-    // 'quickInputList.focusForeground': '#ff0000',
-    // 'quickInput.background': '#ff0000',
-    // 'quickInputTitle.background': '#ff0000',
-    // 'list.focusForeground': '#ff0000',
-    // 'list.focusHighlightForeground': '#ff0000',
-    // 'list.hoverForeground': '#ff0000',
-    // 'list.inactiveSelectionForeground': '#ff0000',
-    // 'listFilterWidget.outline': '#ff0000',
 
     /**
      * Activity Bar
@@ -308,6 +300,8 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'tab.hoverForeground': ui.text.primary.hex(),
     'editorPane.background': ui.background.panel.hex(),
     'tab.dragAndDropBorder': ui.accent.hex(),
+    'tab.selectedBackground': ui.background.panel.hex(),
+    'tab.selectedBorderTop': ui.accent.hex(),
     // 'editorGroupHeader.border': ui.border.hex(),
     // 'editorGroupHeader.tabsBorder': '#FF0000',
     // 'editorGroup.emptyBackground': '#FF0000',
@@ -333,6 +327,7 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'editor.findMatchHighlightBackground': ui.highlight.word.matches.alpha(ch(0x33)).hexa(),
     'editor.findRangeHighlightBackground': ui.scm.added.alpha(ch(0x11)).hexa(),
     'editor.foreground': ui.text.primary.hex(),
+    'editor.foldPlaceholderForeground': ui.text.secondary.hex(),
     'editor.hoverHighlightBackground': ui.highlight.hover.alpha(ch(0x11)).hexa(),
     'editor.lineHighlightBackground': ui.highlight.line.alpha(ch(0x09)).hexa(),
     'editor.rangeHighlightBackground': ui.highlight.range.alpha(ch(0x11)).hexa(),
@@ -636,9 +631,7 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'terminalCommandDecoration.successBackground': ui.icon.success.hex(),
     'terminalCommandDecoration.errorBackground': ui.icon.error.hex(),
     'terminalCommandDecoration.defaultBackground': ui.icon.inactive.hex(),
-    // TODO: This cannot have alpha channel because it leads to artifacts in the terminal UI (VS Code 1.86.0)
-    'terminalStickyScrollHover.background': ui.background.hover.hex(),
-    // 'terminalCursor.background': '#FF0000',
+    'terminalStickyScrollHover.background': ui.background.hover.alpha(ch(0x99)).hexa(),
 
     /**
      * Debug

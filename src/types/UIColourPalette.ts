@@ -1,4 +1,4 @@
-/** eslint-disable max-len */
+/* eslint-disable max-len */
 import type * as Color from 'color'
 
 type ColourLike = Color | string
@@ -19,7 +19,7 @@ interface UIColourPalette {
   'activityBar.background'?: ColourLike
   /** Activity Bar border color with the Side Bar. */
   'activityBar.border'?: ColourLike
-  /** Drag and drop feedback color for the activity bar items. The activity bar is showing on the far left or right and allows to switch between views  */
+  /** Drag and drop feedback color for the activity bar items. The activity bar is showing on the far left or right and allows to switch between views of the side bar. */
   'activityBar.dropBorder'?: ColourLike
   /** Activity Bar foreground color (for example used for the icons). */
   'activityBar.foreground'?: ColourLike
@@ -29,7 +29,7 @@ interface UIColourPalette {
   'activityBarBadge.background'?: ColourLike
   /** Activity notification badge foreground color. */
   'activityBarBadge.foreground'?: ColourLike
-  /** Background color for the active item in the Activity bar when it is on top / bottom. The activity allows to switch between views of the  */
+  /** Background color for the active item in the Activity bar when it is on top / bottom. The activity allows to switch between views of the side bar. */
   'activityBarTop.activeBackground'?: ColourLike
   /** Focus border color for the active item in the Activity bar when it is on top. The activity allows to switch between views of the side bar. */
   'activityBarTop.activeBorder'?: ColourLike
@@ -39,7 +39,7 @@ interface UIColourPalette {
   'activityBarTop.dropBorder'?: ColourLike
   /** Active foreground color of the item in the Activity bar when it is on top. The activity allows to switch between views of the side bar. */
   'activityBarTop.foreground'?: ColourLike
-  /** Inactive foreground color of the item in the Activity bar when it is on top. The activity allows to switch between views of the side  */
+  /** Inactive foreground color of the item in the Activity bar when it is on top. The activity allows to switch between views of the side bar. */
   'activityBarTop.inactiveForeground'?: ColourLike
   /** Badge background color. */
   'badge.background'?: ColourLike
@@ -195,6 +195,8 @@ interface UIColourPalette {
   'debugTokenExpression.number'?: ColourLike
   /** Foreground color for strings in debug views. */
   'debugTokenExpression.string'?: ColourLike
+  /** Foreground color for the token types shown in the debug views (ie. the Variables or Watch view). */
+  'debugTokenExpression.type'?: ColourLike
   /** Foreground color for the token values shown in debug views. */
   'debugTokenExpression.value'?: ColourLike
   /** Debug toolbar background color. */
@@ -265,11 +267,15 @@ interface UIColourPalette {
   'editor.findMatchBackground'?: ColourLike
   /** Border color of the current search match. */
   'editor.findMatchBorder'?: ColourLike
+  /** Text color of the current search match. */
+  'editor.findMatchForeground'?: ColourLike
   /** Color of the other search matches. The color must not be opaque so as not to hide underlying decorations. */
   'editor.findMatchHighlightBackground'?: ColourLike
   /** Border color of the other search matches. */
   'editor.findMatchHighlightBorder'?: ColourLike
-  /** Color the range limiting the search (Enable 'Find in Selection' in the find widget). The color must not be opaque so as not to hide  */
+  /** Foreground color of the other search matches. */
+  'editor.findMatchHighlightForeground'?: ColourLike
+  /** Color the range limiting the search (Enable 'Find in Selection' in the find widget). The color must not be opaque so as not to hide underlying decorations. */
   'editor.findRangeHighlightBackground'?: ColourLike
   /** Border color the range limiting the search (Enable 'Find in Selection' in the find widget). */
   'editor.findRangeHighlightBorder'?: ColourLike
@@ -277,6 +283,8 @@ interface UIColourPalette {
   'editor.focusedStackFrameHighlightBackground'?: ColourLike
   /** Background color for folded ranges. The color must not be opaque so as not to hide underlying decorations. */
   'editor.foldBackground'?: ColourLike
+  /** Color of the collapsed text after the first line of a folded range. */
+  'editor.foldPlaceholderForeground'?: ColourLike
   /** Editor default foreground color. */
   'editor.foreground'?: ColourLike
   /** Highlight below the word for which a hover is shown. The color must not be opaque so as not to hide underlying decorations. */
@@ -293,7 +301,9 @@ interface UIColourPalette {
   'editor.lineHighlightBorder'?: ColourLike
   /** Background color when the editor is in linked editing mode. */
   'editor.linkedEditingBackground'?: ColourLike
-  /** Background color of highlighted ranges, used by Quick Open, Symbol in File and Find features. The color must not be opaque so as not to  */
+  /** Foreground color of the placeholder text in the editor. */
+  'editor.placeholder.foreground'?: ColourLike
+  /** Background color of highlighted ranges, used by Quick Open, Symbol in File and Find features. The color must not be opaque so as not to hide underlying decorations. */
   'editor.rangeHighlightBackground'?: ColourLike
   /** Background color of the border around highlighted ranges. */
   'editor.rangeHighlightBorder'?: ColourLike
@@ -319,11 +329,11 @@ interface UIColourPalette {
   'editor.symbolHighlightBackground'?: ColourLike
   /** Background color of the border around highlighted symbols. */
   'editor.symbolHighlightBorder'?: ColourLike
-  /** Background color of a symbol during read-access, for example when reading a variable. The color must not be opaque so as not to hide  */
+  /** Background color of a symbol during read-access, for example when reading a variable. The color must not be opaque so as not to hide underlying decorations. */
   'editor.wordHighlightBackground'?: ColourLike
   /** Border color of a symbol during read-access, for example when reading a variable. */
   'editor.wordHighlightBorder'?: ColourLike
-  /** Background color of a symbol during write-access, for example when writing to a variable. The color must not be opaque so as not  */
+  /** Background color of a symbol during write-access, for example when writing to a variable. The color must not be opaque so as not to hide underlying decorations. */
   'editor.wordHighlightStrongBackground'?: ColourLike
   /** Border color of a symbol during write-access, for example when writing to a variable. */
   'editor.wordHighlightStrongBorder'?: ColourLike
@@ -405,11 +415,11 @@ interface UIColourPalette {
   'editorGroup.border'?: ColourLike
   /** Background color when dragging editors around. */
   'editorGroup.dropBackground'?: ColourLike
-  /** Background color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into  */
+  /** Background color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor. */
   'editorGroup.dropIntoPromptBackground'?: ColourLike
-  /** Border color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the  */
+  /** Border color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor. */
   'editorGroup.dropIntoPromptBorder'?: ColourLike
-  /** Foreground color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into  */
+  /** Foreground color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor. */
   'editorGroup.dropIntoPromptForeground'?: ColourLike
   /** Background color of an empty editor group. */
   'editorGroup.emptyBackground'?: ColourLike
@@ -527,11 +537,11 @@ interface UIColourPalette {
   'editorMarkerNavigationWarning.background'?: ColourLike
   /** Editor marker navigation widget warning heading background. */
   'editorMarkerNavigationWarning.headerBackground'?: ColourLike
-  /** The background color of the primary editor cursor when multiple cursors are present. Allows customizing the color of a character  */
+  /** The background color of the primary editor cursor when multiple cursors are present. Allows customizing the color of a character overlapped by a block cursor. */
   'editorMultiCursor.primary.background'?: ColourLike
   /** Color of the primary editor cursor when multiple cursors are present. */
   'editorMultiCursor.primary.foreground'?: ColourLike
-  /** The background color of secondary editor cursors when multiple cursors are present. Allows customizing the color of a character  */
+  /** The background color of secondary editor cursors when multiple cursors are present. Allows customizing the color of a character overlapped by a block cursor. */
   'editorMultiCursor.secondary.background'?: ColourLike
   /** Color of secondary editor cursors when multiple cursors are present. */
   'editorMultiCursor.secondary.foreground'?: ColourLike
@@ -567,17 +577,17 @@ interface UIColourPalette {
   'editorOverviewRuler.inlineChatRemoved'?: ColourLike
   /** Overview ruler marker color for modified content. */
   'editorOverviewRuler.modifiedForeground'?: ColourLike
-  /** Overview ruler marker color for highlighted ranges, like by the Quick Open, Symbol in File and Find features. The color  */
+  /** Overview ruler marker color for highlighted ranges, like by the Quick Open, Symbol in File and Find features. The color must not be opaque so as not to hide underlying decorations. */
   'editorOverviewRuler.rangeHighlightForeground'?: ColourLike
-  /** Overview ruler marker color for selection highlights. The color must not be opaque so as not to hide underlying  */
+  /** Overview ruler marker color for selection highlights. The color must not be opaque so as not to hide underlying decorations. */
   'editorOverviewRuler.selectionHighlightForeground'?: ColourLike
   /** Overview ruler marker color for warnings. */
   'editorOverviewRuler.warningForeground'?: ColourLike
   /** Overview ruler marker color for symbol highlights. The color must not be opaque so as not to hide underlying decorations. */
   'editorOverviewRuler.wordHighlightForeground'?: ColourLike
-  /** Overview ruler marker color for write-access symbol highlights. The color must not be opaque so as not to hide  */
+  /** Overview ruler marker color for write-access symbol highlights. The color must not be opaque so as not to hide underlying decorations. */
   'editorOverviewRuler.wordHighlightStrongForeground'?: ColourLike
-  /** Overview ruler marker color of a textual occurrence for a symbol. The color must not be opaque so as not to hide  */
+  /** Overview ruler marker color of a textual occurrence for a symbol. The color must not be opaque so as not to hide underlying decorations. */
   'editorOverviewRuler.wordHighlightTextForeground'?: ColourLike
   /** Background color of the editor pane visible on the left and right side of the centered editor layout. */
   'editorPane.background'?: ColourLike
@@ -615,7 +625,7 @@ interface UIColourPalette {
   'editorUnicodeHighlight.border'?: ColourLike
   /** Border color of unnecessary (unused) source code in the editor. */
   'editorUnnecessaryCode.border'?: ColourLike
-  /** Opacity of unnecessary (unused) source code in the editor. For example, `"#000000c0"` will render the code with 75% opacity. For high  */
+  /** Opacity of unnecessary (unused) source code in the editor. For example, `"#000000c0"` will render the code with 75% opacity. For high contrast themes, use the `"editorUnnecessaryCode.border"` theme color to underline unnecessary code instead of fading it out. */
   'editorUnnecessaryCode.opacity'?: ColourLike
   /** Background color of warning text in the editor. The color must not be opaque so as not to hide underlying decorations. */
   'editorWarning.background'?: ColourLike
@@ -633,7 +643,7 @@ interface UIColourPalette {
   'editorWidget.border'?: ColourLike
   /** Foreground color of editor widgets, such as find/replace. */
   'editorWidget.foreground'?: ColourLike
-  /** Border color of the resize bar of editor widgets. The color is only used if the widget chooses to have a resize border and if the color is  */
+  /** Border color of the resize bar of editor widgets. The color is only used if the widget chooses to have a resize border and if the color is not overridden by a widget. */
   'editorWidget.resizeBorder'?: ColourLike
   /** Overall foreground color for error messages (this color is only used if not overridden by a component). */
   'errorForeground'?: ColourLike
@@ -693,8 +703,8 @@ interface UIColourPalette {
   'inlineChat.background'?: ColourLike
   /** Border color of the interactive editor widget. */
   'inlineChat.border'?: ColourLike
-  /** Background highlighting of the current interactive region. Must be transparent. */
-  'inlineChat.regionHighlight'?: ColourLike
+  /** Foreground color of the interactive editor widget */
+  'inlineChat.foreground'?: ColourLike
   /** Shadow color of the interactive editor widget. */
   'inlineChat.shadow'?: ColourLike
   /** Background color of inserted text in the interactive editor input. */
@@ -763,7 +773,7 @@ interface UIColourPalette {
   'list.activeSelectionBackground'?: ColourLike
   /** List/Tree foreground color for the selected item when the list/tree is active. */
   'list.activeSelectionForeground'?: ColourLike
-  /** List/Tree icon foreground color for the selected item when the list/tree is active. An active list/tree has keyboard focus, an  */
+  /** List/Tree icon foreground color for the selected item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not. */
   'list.activeSelectionIconForeground'?: ColourLike
   /** List/Tree foreground color for items that are deemphasized. */
   'list.deemphasizedForeground'?: ColourLike
@@ -777,7 +787,7 @@ interface UIColourPalette {
   'list.filterMatchBackground'?: ColourLike
   /** Border color of the filtered matches in lists and trees. */
   'list.filterMatchBorder'?: ColourLike
-  /** List/Tree outline color for the focused item when the list/tree is active and selected. An active list/tree has keyboard focus, an  */
+  /** List/Tree outline color for the focused item when the list/tree is active and selected. An active list/tree has keyboard focus, an inactive does not. */
   'list.focusAndSelectionOutline'?: ColourLike
   /** List/Tree background color for the focused item when the list/tree is active. */
   'list.focusBackground'?: ColourLike
@@ -793,15 +803,15 @@ interface UIColourPalette {
   'list.hoverBackground'?: ColourLike
   /** List/Tree foreground when hovering over items using the mouse. */
   'list.hoverForeground'?: ColourLike
-  /** List background color for the focused item when the list is inactive. An active list has keyboard focus, an inactive does not. Currently  */
+  /** List background color for the focused item when the list is inactive. An active list has keyboard focus, an inactive does not. Currently only supported in lists. */
   'list.inactiveFocusBackground'?: ColourLike
   /** List/Tree outline color for the focused item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not. */
   'list.inactiveFocusOutline'?: ColourLike
   /** List/Tree background color for the selected item when the list/tree is inactive. */
   'list.inactiveSelectionBackground'?: ColourLike
-  /** List/Tree foreground color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive  */
+  /** List/Tree foreground color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not. */
   'list.inactiveSelectionForeground'?: ColourLike
-  /** List/Tree icon foreground color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an  */
+  /** List/Tree icon foreground color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not. */
   'list.inactiveSelectionIconForeground'?: ColourLike
   /** List/Tree foreground color for invalid items, for example an unresolved root in explorer. */
   'list.invalidItemForeground'?: ColourLike
@@ -991,13 +1001,13 @@ interface UIColourPalette {
   'panel.dropBorder'?: ColourLike
   /** Input box border for inputs in the panel. */
   'panelInput.border'?: ColourLike
-  /** Panel section border color used when multiple views are stacked horizontally in the panel. Panels are shown below the editor area and contain views  */
+  /** Panel section border color used when multiple views are stacked horizontally in the panel. Panels are shown below the editor area and contain views like output and integrated terminal. */
   'panelSection.border'?: ColourLike
-  /** Drag and drop feedback color for the panel sections. The color should have transparency so that the panel sections can still shine through.  */
+  /** Drag and drop feedback color for the panel sections. The color should have transparency so that the panel sections can still shine through. Panels are shown below the editor area and contain views like output and integrated terminal. */
   'panelSection.dropBackground'?: ColourLike
   /** Panel section header background color. Panels are shown below the editor area and contain views like output and integrated terminal. */
   'panelSectionHeader.background'?: ColourLike
-  /** Panel section header border color used when multiple views are stacked vertically in the panel. Panels are shown below the editor area and  */
+  /** Panel section header border color used when multiple views are stacked vertically in the panel. Panels are shown below the editor area and contain views like output and integrated terminal. */
   'panelSectionHeader.border'?: ColourLike
   /** Panel section header foreground color. Panels are shown below the editor area and contain views like output and integrated terminal. */
   'panelSectionHeader.foreground'?: ColourLike
@@ -1059,6 +1069,8 @@ interface UIColourPalette {
   'profileBadge.background'?: ColourLike
   /** Profile badge foreground color. The profile badge shows on top of the settings gear icon in the activity bar. */
   'profileBadge.foreground'?: ColourLike
+  /** The color of the Profiles editor splitview sash border. */
+  'profiles.sashBorder'?: ColourLike
   /** Background color of the progress bar shown for long running operations. */
   'progressBar.background'?: ColourLike
   /** Quick input background color. The quick input widget is the container for views like the color theme picker. */
@@ -1091,7 +1103,7 @@ interface UIColourPalette {
   'scrollbarSlider.background'?: ColourLike
   /** Scrollbar slider background color when hovering. */
   'scrollbarSlider.hoverBackground'?: ColourLike
-  /** Color of the text in the search viewlet's completion message. For example, this color is used in the text that says "`{x} results in {y}  */
+  /** Color of the text in the search viewlet's completion message. For example, this color is used in the text that says "`{x} results in {y} files`". */
   'search.resultsInfoForeground'?: ColourLike
   /** Color of the editor's results. */
   'searchEditor.findMatchBackground'?: ColourLike
@@ -1099,7 +1111,7 @@ interface UIColourPalette {
   'searchEditor.findMatchBorder'?: ColourLike
   /** Search editor text input box border. */
   'searchEditor.textInputBorder'?: ColourLike
-  /** Background color of text selections in the workbench (for input fields or text areas, does not apply to selections within the editor and the  */
+  /** Background color of text selections in the workbench (for input fields or text areas, does not apply to selections within the editor and the terminal). */
   'selection.background'?: ColourLike
   /** Checkbox background. */
   'settings.checkboxBackground'?: ColourLike
@@ -1197,15 +1209,15 @@ interface UIColourPalette {
   'statusBar.noFolderForeground'?: ColourLike
   /** Status Bar item background color when clicking. */
   'statusBarItem.activeBackground'?: ColourLike
-  /** Status bar item background color when hovering an item that contains two hovers. The status bar is shown in the bottom of the  */
+  /** Status bar item background color when hovering an item that contains two hovers. The status bar is shown in the bottom of the window. */
   'statusBarItem.compactHoverBackground'?: ColourLike
   /** Status bar error items background color. Error items stand out from other status bar entries to indicate error conditions. */
   'statusBarItem.errorBackground'?: ColourLike
   /** Status bar error items foreground color. Error items stand out from other status bar entries to indicate error conditions. */
   'statusBarItem.errorForeground'?: ColourLike
-  /** Status bar error items background color when hovering. Error items stand out from other status bar entries to indicate error  */
+  /** Status bar error items background color when hovering. Error items stand out from other status bar entries to indicate error conditions. The status bar is shown in the bottom of the window. */
   'statusBarItem.errorHoverBackground'?: ColourLike
-  /** Status bar error items foreground color when hovering. Error items stand out from other status bar entries to indicate error  */
+  /** Status bar error items foreground color when hovering. Error items stand out from other status bar entries to indicate error conditions. The status bar is shown in the bottom of the window. */
   'statusBarItem.errorHoverForeground'?: ColourLike
   /** Status bar item border color when focused on keyboard navigation. The status bar is shown in the bottom of the window. */
   'statusBarItem.focusBorder'?: ColourLike
@@ -1227,7 +1239,7 @@ interface UIColourPalette {
   'statusBarItem.prominentForeground'?: ColourLike
   /** Status Bar prominent items background color when hovering. */
   'statusBarItem.prominentHoverBackground'?: ColourLike
-  /** Status bar prominent items foreground color when hovering. Prominent items stand out from other status bar entries to indicate  */
+  /** Status bar prominent items foreground color when hovering. Prominent items stand out from other status bar entries to indicate importance. The status bar is shown in the bottom of the window. */
   'statusBarItem.prominentHoverForeground'?: ColourLike
   /** Background color for the remote indicator on the status bar. */
   'statusBarItem.remoteBackground'?: ColourLike
@@ -1237,13 +1249,13 @@ interface UIColourPalette {
   'statusBarItem.remoteHoverBackground'?: ColourLike
   /** Foreground color for the remote indicator on the status bar when hovering. */
   'statusBarItem.remoteHoverForeground'?: ColourLike
-  /** Status bar warning items background color. Warning items stand out from other status bar entries to indicate warning conditions. The  */
+  /** Status bar warning items background color. Warning items stand out from other status bar entries to indicate warning conditions. The status bar is shown in the bottom of the window. */
   'statusBarItem.warningBackground'?: ColourLike
-  /** Status bar warning items foreground color. Warning items stand out from other status bar entries to indicate warning conditions. The  */
+  /** Status bar warning items foreground color. Warning items stand out from other status bar entries to indicate warning conditions. The status bar is shown in the bottom of the window. */
   'statusBarItem.warningForeground'?: ColourLike
-  /** Status bar warning items background color when hovering. Warning items stand out from other status bar entries to indicate warning  */
+  /** Status bar warning items background color when hovering. Warning items stand out from other status bar entries to indicate warning conditions. The status bar is shown in the bottom of the window. */
   'statusBarItem.warningHoverBackground'?: ColourLike
-  /** Status bar warning items foreground color when hovering. Warning items stand out from other status bar entries to indicate warning  */
+  /** Status bar warning items foreground color when hovering. Warning items stand out from other status bar entries to indicate warning conditions. The status bar is shown in the bottom of the window. */
   'statusBarItem.warningHoverForeground'?: ColourLike
   /** The foreground color for array symbols. */
   'symbolIcon.arrayForeground'?: ColourLike
@@ -1323,7 +1335,7 @@ interface UIColourPalette {
   'tab.activeModifiedBorder'?: ColourLike
   /** Border to separate Tabs from each other. */
   'tab.border'?: ColourLike
-  /** Border between tabs to indicate that a tab can be inserted between two tabs. Tabs are the containers for editors in the editor area. Multiple  */
+  /** Border between tabs to indicate that a tab can be inserted between two tabs. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups. */
   'tab.dragAndDropBorder'?: ColourLike
   /** Tab background color when hovering */
   'tab.hoverBackground'?: ColourLike
@@ -1339,6 +1351,12 @@ interface UIColourPalette {
   'tab.inactiveModifiedBorder'?: ColourLike
   /** Border on the right of the last pinned editor to separate from unpinned editors. */
   'tab.lastPinnedBorder'?: ColourLike
+  /** Background of a selected tab. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups. */
+  'tab.selectedBackground'?: ColourLike
+  /** Border to the top of a selected tab. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups. */
+  'tab.selectedBorderTop'?: ColourLike
+  /** Foreground of a selected tab. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups. */
+  'tab.selectedForeground'?: ColourLike
   /** Active Tab background color in an inactive editor group. */
   'tab.unfocusedActiveBackground'?: ColourLike
   /** Bottom border for the active tab in an inactive editor group. */
@@ -1397,7 +1415,7 @@ interface UIColourPalette {
   'terminal.background'?: ColourLike
   /** The color of the border that separates split panes within the terminal. This defaults to panel.border. */
   'terminal.border'?: ColourLike
-  /** The background color when dragging on top of terminals. The color should have transparency so that the terminal contents can still shine  */
+  /** The background color when dragging on top of terminals. The color should have transparency so that the terminal contents can still shine through. */
   'terminal.dropBackground'?: ColourLike
   /** Color of the current search match in the terminal. The color must not be opaque so as not to hide underlying terminal content. */
   'terminal.findMatchBackground'?: ColourLike
@@ -1413,9 +1431,11 @@ interface UIColourPalette {
   'terminal.hoverHighlightBackground'?: ColourLike
   /** The selection background color of the terminal when it does not have focus. */
   'terminal.inactiveSelectionBackground'?: ColourLike
+  /** Foreground color of the terminal initial hint. */
+  'terminal.initialHintForeground'?: ColourLike
   /** The selection background color of the terminal. */
   'terminal.selectionBackground'?: ColourLike
-  /** The selection foreground color of the terminal. When this is null the selection foreground will be retained and have the minimum contrast  */
+  /** The selection foreground color of the terminal. When this is null the selection foreground will be retained and have the minimum contrast ratio feature applied. */
   'terminal.selectionForeground'?: ColourLike
   /** Border on the side of the terminal tab in the panel. This defaults to `tab.activeBorder`. */
   'terminal.tab.activeBorder'?: ColourLike
@@ -1435,6 +1455,8 @@ interface UIColourPalette {
   'terminalOverviewRuler.findMatchForeground'?: ColourLike
   /** The background color of the sticky scroll overlay in the terminal. */
   'terminalStickyScroll.background'?: ColourLike
+  /** The border of the sticky scroll overlay in the terminal. */
+  'terminalStickyScroll.border'?: ColourLike
   /** The background color of the sticky scroll overlay in the terminal when hovered. */
   'terminalStickyScrollHover.background'?: ColourLike
   /** Background for the badge indicating execution count */
