@@ -1,3 +1,10 @@
+# [5.24.0](https://github.com/robertrossmann/vscode-remedy/compare/5.23.0...5.24.0) (2024-07-05)
+
+
+### Features
+
+* some additions from VS Code 1.91 release 🎉 ([565227f](https://github.com/robertrossmann/vscode-remedy/commit/565227f29a9cbc5e979f2d6a0b8a25b94c55400b))
+
 # [5.23.0](https://github.com/robertrossmann/vscode-remedy/compare/5.22.0...5.23.0) (2024-05-21)
 
 
