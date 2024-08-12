@@ -663,6 +663,7 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'debugView.stateLabelBackground': ui.problems.info.hex(),
     'debugView.valueChangedHighlight': ui.problems.info.alpha(ch(0x99)).hexa(),
     'debugTokenExpression.name': code.variables,
+    'debugTokenExpression.type': code.types,
     'debugTokenExpression.value': ui.text.dimmed.hex(),
     'debugTokenExpression.string': code.strings,
     'debugTokenExpression.boolean': code.primitives,
