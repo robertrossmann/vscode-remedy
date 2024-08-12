@@ -1,3 +1,10 @@
+## [5.24.1](https://github.com/robertrossmann/vscode-remedy/compare/5.24.0...5.24.1) (2024-08-12)
+
+
+### Bug Fixes
+
+* properly style types in debug panel ([78b3723](https://github.com/robertrossmann/vscode-remedy/commit/78b37236acf9bb1260f72dae6e1f38e30f1ac5c8))
+
 # [5.24.0](https://github.com/robertrossmann/vscode-remedy/compare/5.23.0...5.24.0) (2024-07-05)
 
 
