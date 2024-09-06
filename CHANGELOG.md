@@ -1,3 +1,12 @@
+# [5.25.0](https://github.com/robertrossmann/vscode-remedy/compare/5.24.1...5.25.0) (2024-09-06)
+
+
+### Features
+
+* add customisations for SCM history graph 😍 ([266c69a](https://github.com/robertrossmann/vscode-remedy/commit/266c69af48e738b701efeebb4a76249504ef756b))
+* add new terminal-related colours 🖥️ ([48c4801](https://github.com/robertrossmann/vscode-remedy/commit/48c4801d6e83771f89d7107e1d80db4afeeff986))
+* add styling for Profile editor's new radio buttons 🎨 ([906cfbb](https://github.com/robertrossmann/vscode-remedy/commit/906cfbb8ae161f3f880914240777bc2d93ff5875))
+
 ## [5.24.1](https://github.com/robertrossmann/vscode-remedy/compare/5.24.0...5.24.1) (2024-08-12)
 
 
