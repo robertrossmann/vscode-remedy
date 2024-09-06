@@ -123,7 +123,13 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'checkbox.background': ui.background.panel.hex(),
     'checkbox.foreground': code.primitives,
     'checkbox.border': ui.border.hex(),
-    // 'button.border': '#ff0000',
+    // 'button.border': ui.border.hex(),
+    'radio.activeBackground': ui.button.primary.hex(),
+    'radio.activeBorder': ui.border.hex(),
+    'radio.activeForeground': ui.text.contrast.hex(),
+    'radio.inactiveBackground': ui.background.panel.hex(),
+    'radio.inactiveBorder': ui.border.hex(),
+    'radio.inactiveHoverBackground': ui.highlight.hover.alpha(ch(0x11)).hexa(),
 
     /**
      * Dropdown Control
