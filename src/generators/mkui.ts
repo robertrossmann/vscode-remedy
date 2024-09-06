@@ -793,6 +793,19 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     // 'charts.lines': ui.text.secondary.hex(),
 
     /**
+     * SCM graph
+     */
+    'scmGraph.historyItemGroupBase': ui.terminal.normal.green.hex(),
+    'scmGraph.historyItemGroupLocal': ui.terminal.bright.red.hex(),
+    'scmGraph.foreground1': ui.terminal.normal.yellow.hex(),
+    'scmGraph.foreground2': ui.terminal.normal.blue.hex(),
+    'scmGraph.foreground3': ui.terminal.normal.magenta.hex(),
+    'scmGraph.historyItemGroupRemote': ui.terminal.bright.blue.hex(),
+    // 'scmGraph.historyItemHoverAdditionsForeground': ui.scm.added.hex(),
+    // 'scmGraph.historyItemHoverDeletionsForeground': ui.scm.deleted.hex(),
+    // 'scmGraph.historyItemHoverLabelForeground': '#ff0000',
+
+    /**
      * Testing UI
      */
     'testing.iconFailed': ui.icon.error.hex(),
