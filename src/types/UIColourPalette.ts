@@ -341,6 +341,14 @@ interface UIColourPalette {
   'editor.wordHighlightTextBackground'?: ColourLike
   /** Border color of a textual occurrence for a symbol. */
   'editor.wordHighlightTextBorder'?: ColourLike
+  /** Action List background color. */
+  'editorActionList.background'?: ColourLike
+  /** Action List background color for the focused item. */
+  'editorActionList.focusBackground'?: ColourLike
+  /** Action List foreground color for the focused item. */
+  'editorActionList.focusForeground'?: ColourLike
+  /** Action List foreground color. */
+  'editorActionList.foreground'?: ColourLike
   /** Foreground color of brackets (1). Requires enabling bracket pair colorization. */
   'editorBracketHighlight.foreground1'?: ColourLike
   /** Foreground color of brackets (2). Requires enabling bracket pair colorization. */
@@ -1085,6 +1093,20 @@ interface UIColourPalette {
   'quickInputList.focusIconForeground'?: ColourLike
   /** Quick picker title background color. The quick picker widget is the container for pickers like the Command Palette. */
   'quickInputTitle.background'?: ColourLike
+  /** Background color of active radio option. */
+  'radio.activeBackground'?: ColourLike
+  /** Border color of the active radio option. */
+  'radio.activeBorder'?: ColourLike
+  /** Foreground color of active radio option. */
+  'radio.activeForeground'?: ColourLike
+  /** Background color of inactive radio option. */
+  'radio.inactiveBackground'?: ColourLike
+  /** Border color of the inactive radio option. */
+  'radio.inactiveBorder'?: ColourLike
+  /** Foreground color of inactive radio option. */
+  'radio.inactiveForeground'?: ColourLike
+  /** Background color of inactive active radio option when hovering. */
+  'radio.inactiveHoverBackground'?: ColourLike
   /** The hover border color for draggable sashes. */
   'sash.hoverBorder'?: ColourLike
   /** History item additions foreground color. */
@@ -1095,6 +1117,24 @@ interface UIColourPalette {
   'scm.historyItemSelectedStatisticsBorder'?: ColourLike
   /** History item statistics border color. */
   'scm.historyItemStatisticsBorder'?: ColourLike
+  /** Source control graph foreground color (1). */
+  'scmGraph.foreground1'?: ColourLike
+  /** Source control graph foreground color (2). */
+  'scmGraph.foreground2'?: ColourLike
+  /** Source control graph foreground color (3). */
+  'scmGraph.foreground3'?: ColourLike
+  /** Base history item group color. */
+  'scmGraph.historyItemGroupBase'?: ColourLike
+  /** Local history item group color. */
+  'scmGraph.historyItemGroupLocal'?: ColourLike
+  /** Remote history item group color. */
+  'scmGraph.historyItemGroupRemote'?: ColourLike
+  /** History item hover additions foreground color. */
+  'scmGraph.historyItemHoverAdditionsForeground'?: ColourLike
+  /** History item hover deletions foreground color. */
+  'scmGraph.historyItemHoverDeletionsForeground'?: ColourLike
+  /** History item hover label foreground color. */
+  'scmGraph.historyItemHoverLabelForeground'?: ColourLike
   /** Scrollbar slider shadow to indicate that the view is scrolled. */
   'scrollbar.shadow'?: ColourLike
   /** Scrollbar slider background color when clicked on. */
@@ -1445,10 +1485,14 @@ interface UIColourPalette {
   'terminalCommandDecoration.errorBackground'?: ColourLike
   /** The terminal command decoration background color for successful commands. */
   'terminalCommandDecoration.successBackground'?: ColourLike
+  /** The foreground color of the terminal command guide that appears to the left of a command and its output on hover. */
+  'terminalCommandGuide.foreground'?: ColourLike
   /** The background color of the terminal cursor. Allows customizing the color of a character overlapped by a block cursor. */
   'terminalCursor.background'?: ColourLike
   /** The foreground color of the terminal cursor. */
   'terminalCursor.foreground'?: ColourLike
+  /** The overview ruler left-side border color. */
+  'terminalOverviewRuler.border'?: ColourLike
   /** The overview ruler cursor color. */
   'terminalOverviewRuler.cursorForeground'?: ColourLike
   /** Overview ruler marker color for find matches in the terminal. */
