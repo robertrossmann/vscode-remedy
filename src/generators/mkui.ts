@@ -637,7 +637,9 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'terminalCommandDecoration.successBackground': ui.icon.success.hex(),
     'terminalCommandDecoration.errorBackground': ui.icon.error.hex(),
     'terminalCommandDecoration.defaultBackground': ui.icon.inactive.hex(),
+    'terminalCommandGuide.foreground': ui.background.hover.hex(),
     'terminalStickyScrollHover.background': ui.background.hover.alpha(ch(0x99)).hexa(),
+    'terminalOverviewRuler.border': ui.border.hex(),
 
     /**
      * Debug
