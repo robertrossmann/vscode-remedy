@@ -1,3 +1,10 @@
+## [5.25.1](https://github.com/robertrossmann/vscode-remedy/compare/5.25.0...5.25.1) (2024-09-19)
+
+
+### Bug Fixes
+
+* terminal sticky scroll hover background does not support alpha channel ([5df8209](https://github.com/robertrossmann/vscode-remedy/commit/5df82091b619a005744e24c433c7756cb18ed5e2)), closes [#40](https://github.com/robertrossmann/vscode-remedy/issues/40)
+
 # [5.25.0](https://github.com/robertrossmann/vscode-remedy/compare/5.24.1...5.25.0) (2024-09-06)
 
 
