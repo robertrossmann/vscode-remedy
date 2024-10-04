@@ -1,3 +1,11 @@
+# [5.26.0](https://github.com/robertrossmann/vscode-remedy/compare/5.25.1...5.26.0) (2024-10-04)
+
+
+### Features
+
+* add support for Activity Bar badges (warn, err) ([b2346b1](https://github.com/robertrossmann/vscode-remedy/commit/b2346b1b7e8a1b53aeedd73cfebe2f5ade39c412))
+* update colours for source control graph ([b752b73](https://github.com/robertrossmann/vscode-remedy/commit/b752b73aec7a81016ac2f4950b7087fdabca0feb))
+
 ## [5.25.1](https://github.com/robertrossmann/vscode-remedy/compare/5.25.0...5.25.1) (2024-09-19)
 
 
