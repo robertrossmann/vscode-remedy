@@ -236,6 +236,10 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'activityBarTop.activeBackground': ui.background.panel.hex(),
     'activityBarBadge.background': ui.accent.hex(),
     'activityBarBadge.foreground': ui.text.contrast.hex(),
+    'activityErrorBadge.background': ui.problems.error.hex(),
+    'activityErrorBadge.foreground': ui.text.contrast.hex(),
+    'activityWarningBadge.background': ui.problems.warning.hex(),
+    'activityWarningBadge.foreground': ui.text.contrast.hex(),
     // TODO(vscode): implement panelTitle.activeBackground colour contribution
     // 'activityBar.activeBackground': ui.background.code.hex(),
 
