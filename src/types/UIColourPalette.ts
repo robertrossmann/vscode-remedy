@@ -41,6 +41,14 @@ interface UIColourPalette {
   'activityBarTop.foreground'?: ColourLike
   /** Inactive foreground color of the item in the Activity bar when it is on top. The activity allows to switch between views of the side bar. */
   'activityBarTop.inactiveForeground'?: ColourLike
+  /** Background color of the error activity badge */
+  'activityErrorBadge.background'?: ColourLike
+  /** Foreground color of the error activity badge */
+  'activityErrorBadge.foreground'?: ColourLike
+  /** Background color of the warning activity badge */
+  'activityWarningBadge.background'?: ColourLike
+  /** Foreground color of the warning activity badge */
+  'activityWarningBadge.foreground'?: ColourLike
   /** Badge background color. */
   'badge.background'?: ColourLike
   /** Badge foreground color. */
@@ -1109,32 +1117,32 @@ interface UIColourPalette {
   'radio.inactiveHoverBackground'?: ColourLike
   /** The hover border color for draggable sashes. */
   'sash.hoverBorder'?: ColourLike
-  /** History item additions foreground color. */
-  'scm.historyItemAdditionsForeground'?: ColourLike
-  /** History item deletions foreground color. */
-  'scm.historyItemDeletionsForeground'?: ColourLike
-  /** History item selected statistics border color. */
-  'scm.historyItemSelectedStatisticsBorder'?: ColourLike
-  /** History item statistics border color. */
-  'scm.historyItemStatisticsBorder'?: ColourLike
   /** Source control graph foreground color (1). */
   'scmGraph.foreground1'?: ColourLike
   /** Source control graph foreground color (2). */
   'scmGraph.foreground2'?: ColourLike
   /** Source control graph foreground color (3). */
   'scmGraph.foreground3'?: ColourLike
-  /** Base history item group color. */
-  'scmGraph.historyItemGroupBase'?: ColourLike
-  /** Local history item group color. */
-  'scmGraph.historyItemGroupLocal'?: ColourLike
-  /** Remote history item group color. */
-  'scmGraph.historyItemGroupRemote'?: ColourLike
+  /** Source control graph foreground color (4). */
+  'scmGraph.foreground4'?: ColourLike
+  /** Source control graph foreground color (5). */
+  'scmGraph.foreground5'?: ColourLike
+  /** History item base reference color. */
+  'scmGraph.historyItemBaseRefColor'?: ColourLike
   /** History item hover additions foreground color. */
   'scmGraph.historyItemHoverAdditionsForeground'?: ColourLike
+  /** History item hover default label background color. */
+  'scmGraph.historyItemHoverDefaultLabelBackground'?: ColourLike
+  /** History item hover default label foreground color. */
+  'scmGraph.historyItemHoverDefaultLabelForeground'?: ColourLike
   /** History item hover deletions foreground color. */
   'scmGraph.historyItemHoverDeletionsForeground'?: ColourLike
   /** History item hover label foreground color. */
   'scmGraph.historyItemHoverLabelForeground'?: ColourLike
+  /** History item reference color. */
+  'scmGraph.historyItemRefColor'?: ColourLike
+  /** History item remote reference color. */
+  'scmGraph.historyItemRemoteRefColor'?: ColourLike
   /** Scrollbar slider shadow to indicate that the view is scrolled. */
   'scrollbar.shadow'?: ColourLike
   /** Scrollbar slider background color when clicked on. */
