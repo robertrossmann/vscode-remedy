@@ -2,6 +2,8 @@
 .github
 .gitignore
 .vscode
+.zshrc
+.bashrc
 
 # Dependencies
 node_modules
@@ -24,6 +26,8 @@ resources/**/*.png
 .*rc.js
 *.config.js
 makefile
+tsconfig.json
 
 # Generated files
+.buildstate
 *.vsix
