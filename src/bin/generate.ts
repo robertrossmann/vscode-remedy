@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unused-modules */
 import 'source-map-support/register'
 import 'tsconfig-paths/register'
 import * as fs from 'fs/promises'
@@ -12,7 +11,6 @@ if (!entrypoint || !outfile) {
   throw new Error('Usage: generate <entrypoint> <outfile>')
 }
 
-// eslint-disable-next-line node/no-unsupported-features/es-syntax
 import(path.resolve(process.cwd(), entrypoint))
   .then(async ({ default: theme }: { default: VSCTheme }) => {
     const data = `${JSON.stringify(theme, null, 2)}\n`

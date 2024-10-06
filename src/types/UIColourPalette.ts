@@ -1,4 +1,4 @@
-/* eslint-disable max-len */
+/* eslint-disable @stylistic/max-len */
 import type * as Color from 'color'
 
 type ColourLike = Color | string
@@ -146,9 +146,9 @@ interface UIColourPalette {
   /** Icon color for unresolved comments. */
   'commentsView.unresolvedIcon'?: ColourLike
   /** An extra border around active elements to separate them from others for greater contrast. */
-  'contrastActiveBorder'?: ColourLike
+  contrastActiveBorder?: ColourLike
   /** An extra border around elements to separate them from others for greater contrast. */
-  'contrastBorder'?: ColourLike
+  contrastBorder?: ColourLike
   /** Foreground color for error messages in debug REPL console. */
   'debugConsole.errorForeground'?: ColourLike
   /** Foreground color for info messages in debug REPL console. */
@@ -222,7 +222,7 @@ interface UIColourPalette {
   /** Color used to highlight value changes in the debug views (such as in the Variables view). */
   'debugView.valueChangedHighlight'?: ColourLike
   /** Foreground color for description text providing additional information, for example for a label. */
-  'descriptionForeground'?: ColourLike
+  descriptionForeground?: ColourLike
   /** Border color between the two text editors. */
   'diffEditor.border'?: ColourLike
   /** Color of the diff editor's diagonal fill. The diagonal fill is used in side-by-side diff views. */
@@ -260,7 +260,7 @@ interface UIColourPalette {
   /** Diff overview ruler foreground for removed content. */
   'diffEditorOverview.removedForeground'?: ColourLike
   /** Overall foreground for disabled elements. This color is only used if not overridden by a component. */
-  'disabledForeground'?: ColourLike
+  disabledForeground?: ColourLike
   /** Dropdown background. */
   'dropdown.background'?: ColourLike
   /** Dropdown border. */
@@ -662,7 +662,7 @@ interface UIColourPalette {
   /** Border color of the resize bar of editor widgets. The color is only used if the widget chooses to have a resize border and if the color is not overridden by a widget. */
   'editorWidget.resizeBorder'?: ColourLike
   /** Overall foreground color for error messages (this color is only used if not overridden by a component). */
-  'errorForeground'?: ColourLike
+  errorForeground?: ColourLike
   /** Background color for the remote badge in the extensions view. */
   'extensionBadge.remoteBackground'?: ColourLike
   /** Foreground color for the remote badge in the extensions view. */
@@ -690,9 +690,9 @@ interface UIColourPalette {
   /** The icon color for extension verified publisher. */
   'extensionIcon.verifiedForeground'?: ColourLike
   /** Overall border color for focused elements. This color is only used if not overridden by a component. */
-  'focusBorder'?: ColourLike
+  focusBorder?: ColourLike
   /** Overall foreground color. This color is only used if not overridden by a component. */
-  'foreground'?: ColourLike
+  foreground?: ColourLike
   /** Color for added Git resources. Used for file labels and the SCM viewlet. */
   'gitDecoration.addedResourceForeground'?: ColourLike
   /** Color for conflicting Git resources. Used for file labels and the SCM viewlet. */

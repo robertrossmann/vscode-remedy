@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unused-modules */
 import 'source-map-support/register'
 import 'tsconfig-paths/register'
 import * as fs from 'fs'

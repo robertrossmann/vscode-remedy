@@ -1,4 +1,4 @@
-import type { CodePalette, ColourPalette } from '@remedy/types'
+import { type CodePalette, type ColourPalette } from '@remedy/types'
 
 interface InputParams {
   code: CodePalette
@@ -6,5 +6,5 @@ interface InputParams {
 }
 
 export {
-  InputParams
+  InputParams,
 }
