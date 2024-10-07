@@ -807,6 +807,11 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'scmGraph.historyItemBaseRefColor': ui.terminal.bright.green.hex(),
     'scmGraph.historyItemRefColor': ui.terminal.normal.green.hex(),
     'scmGraph.historyItemRemoteRefColor': ui.terminal.normal.yellow.hex(),
+    'scmGraph.historyItemHoverAdditionsForeground': ui.scm.added.hex(),
+    'scmGraph.historyItemHoverDeletionsForeground': ui.scm.deleted.hex(),
+    'scmGraph.historyItemHoverDefaultLabelForeground': ui.text.contrast.hex(),
+    'scmGraph.historyItemHoverDefaultLabelBackground': ui.scm.modified.hex(),
+    'scmGraph.historyItemHoverLabelForeground': ui.text.contrast.hex(),
 
     /**
      * Testing UI
