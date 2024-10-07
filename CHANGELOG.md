@@ -1,3 +1,10 @@
+# [5.27.0](https://github.com/robertrossmann/vscode-remedy/compare/5.26.0...5.27.0) (2024-10-07)
+
+
+### Features
+
+* add more colours to VS Code's SCM graph 🎨 ([8429111](https://github.com/robertrossmann/vscode-remedy/commit/84291117a484893e62731a9e07624d246d6c0d87))
+
 # [5.26.0](https://github.com/robertrossmann/vscode-remedy/compare/5.25.1...5.26.0) (2024-10-04)
 
 
