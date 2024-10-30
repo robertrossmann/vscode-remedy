@@ -105,6 +105,8 @@ interface UIColourPalette {
   'chat.avatarBackground'?: ColourLike
   /** The foreground color of a chat avatar. */
   'chat.avatarForeground'?: ColourLike
+  /** The foreground color of a chat edited file in the edited file list. */
+  'chat.editedFileForeground'?: ColourLike
   /** The background color of a chat request. */
   'chat.requestBackground'?: ColourLike
   /** The border color of a chat request. */
@@ -271,6 +273,8 @@ interface UIColourPalette {
   'dropdown.listBackground'?: ColourLike
   /** Editor background color. */
   'editor.background'?: ColourLike
+  /** The border color for an IME composition. */
+  'editor.compositionBorder'?: ColourLike
   /** Color of the current search match. */
   'editor.findMatchBackground'?: ColourLike
   /** Border color of the current search match. */
