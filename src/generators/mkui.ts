@@ -616,6 +616,7 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'terminal.findMatchBackground': ui.highlight.word.matches.alpha(ch(0x44)).hexa(),
     'terminal.findMatchBorder': ui.highlight.word.matches.alpha(ch(0xaa)).hexa(),
     'terminal.findMatchHighlightBackground': ui.highlight.word.matches.alpha(ch(0x33)).hexa(),
+    'terminal.initialHintForeground': ui.text.dimmed.hex(),
     'terminalCursor.foreground': ui.text.primary.hex(),
     'terminal.selectionBackground': ui.text.primary.alpha(ch(0x22)).hexa(),
     'terminal.ansiBlack': ui.terminal.normal.black.hex(),
