@@ -1,3 +1,10 @@
+# [5.28.0](https://github.com/robertrossmann/vscode-remedy/compare/5.27.0...5.28.0) (2024-11-19)
+
+
+### Features
+
+* add support for Terminal's initial hint foreground ([76a9a99](https://github.com/robertrossmann/vscode-remedy/commit/76a9a999d386feb0aa554f37fcb00ee8fd59acfb))
+
 # [5.27.0](https://github.com/robertrossmann/vscode-remedy/compare/5.26.0...5.27.0) (2024-10-07)
 
 
