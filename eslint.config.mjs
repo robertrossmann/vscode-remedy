@@ -12,7 +12,7 @@ const globs = {
   dts: '**/*.d.ts',
 }
 
-/** @type {Array<import("eslint").Linter.FlatConfig>} */
+/** @type {Array<import("eslint").Linter.Config>} */
 const config = [
   { linterOptions: {
     reportUnusedDisableDirectives: true,
@@ -25,33 +25,11 @@ const config = [
   { files: [globs.ts, globs.dts], ...ts },
   { files: [globs.ts, globs.dts], ...tsopt },
   { files: [globs.ts, globs.dts], ...tsstyle },
-
-  { files: [globs.ts, globs.dts],
-    languageOptions: {
-      parserOptions: { project: './tsconfig.json' },
-    },
-    rules: {} },
-
-  { files: [globs.ts, globs.dts, globs.mjs],
-    rules: {
-      // We depend on TypeScript to catch unresolved module paths
-      'import/no-unresolved': 'off',
-      'import/no-extraneous-dependencies': ['error', {
-        devDependencies: [
-          globs.ts,
-          globs.dts,
-          globs.mjs,
-          globs.js,
-        ],
-      }],
-    } },
-  {
-    ignores: [
-      globs.js,
-      'node_modules',
-      'samples',
-    ],
-  },
+  { ignores: [
+    globs.js,
+    'node_modules',
+    'samples',
+  ] },
 ]
 
 export default config
