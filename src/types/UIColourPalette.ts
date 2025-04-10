@@ -85,6 +85,12 @@ interface UIColourPalette {
   'button.secondaryHoverBackground'?: ColourLike
   /** Button separator color. */
   'button.separator'?: ColourLike
+  /** Axis color for the chart. */
+  'chart.axis'?: ColourLike
+  /** Guide line for the chart. */
+  'chart.guide'?: ColourLike
+  /** Line color for the chart. */
+  'chart.line'?: ColourLike
   /** Color for blue elements in charts. */
   'charts.blue'?: ColourLike
   /** Contrast color for text in charts. */
@@ -467,6 +473,10 @@ interface UIColourPalette {
   'editorGutter.deletedBackground'?: ColourLike
   /** Color of the folding control in the editor gutter. */
   'editorGutter.foldingControlForeground'?: ColourLike
+  /** Editor gutter decoration color for gutter item background. This color should be opaque. */
+  'editorGutter.itemBackground'?: ColourLike
+  /** Editor gutter decoration color for gutter item glyphs. */
+  'editorGutter.itemGlyphForeground'?: ColourLike
   /** Editor gutter background color for lines that are modified. */
   'editorGutter.modifiedBackground'?: ColourLike
   /** Border color of hint boxes in the editor. */
@@ -557,6 +567,8 @@ interface UIColourPalette {
   'editorMarkerNavigationWarning.background'?: ColourLike
   /** Editor marker navigation widget warning heading background. */
   'editorMarkerNavigationWarning.headerBackground'?: ColourLike
+  /** Minimap marker color for inline chat inserted content. */
+  'editorMinimap.inlineChatInserted'?: ColourLike
   /** The background color of the primary editor cursor when multiple cursors are present. Allows customizing the color of a character overlapped by a block cursor. */
   'editorMultiCursor.primary.background'?: ColourLike
   /** Color of the primary editor cursor when multiple cursors are present. */
@@ -687,6 +699,8 @@ interface UIColourPalette {
   'extensionButton.separator'?: ColourLike
   /** The icon color for pre-release extension. */
   'extensionIcon.preReleaseForeground'?: ColourLike
+  /** The icon color for private extensions. */
+  'extensionIcon.privateForeground'?: ColourLike
   /** The icon color for extension sponsor. */
   'extensionIcon.sponsorForeground'?: ColourLike
   /** The icon color for extension ratings. */
@@ -697,6 +711,22 @@ interface UIColourPalette {
   focusBorder?: ColourLike
   /** Overall foreground color. This color is only used if not overridden by a component. */
   foreground?: ColourLike
+  /** Gauge background color. */
+  'gauge.background'?: ColourLike
+  /** Gauge border color. */
+  'gauge.border'?: ColourLike
+  /** Gauge error background color. */
+  'gauge.errorBackground'?: ColourLike
+  /** Gauge error foreground color. */
+  'gauge.errorForeground'?: ColourLike
+  /** Gauge foreground color. */
+  'gauge.foreground'?: ColourLike
+  /** Gauge warning background color. */
+  'gauge.warningBackground'?: ColourLike
+  /** Gauge warning foreground color. */
+  'gauge.warningForeground'?: ColourLike
+  /** Color for the blame editor decoration. */
+  'git.blame.editorDecorationForeground'?: ColourLike
   /** Color for added Git resources. Used for file labels and the SCM viewlet. */
   'gitDecoration.addedResourceForeground'?: ColourLike
   /** Color for conflicting Git resources. Used for file labels and the SCM viewlet. */
@@ -739,6 +769,36 @@ interface UIColourPalette {
   'inlineChatInput.focusBorder'?: ColourLike
   /** Foreground color of the interactive editor input placeholder. */
   'inlineChatInput.placeholderForeground'?: ColourLike
+  /** Background color for the inline edit gutter indicator. */
+  'inlineEdit.gutterIndicator.background'?: ColourLike
+  /** Background color for the primary inline edit gutter indicator. */
+  'inlineEdit.gutterIndicator.primaryBackground'?: ColourLike
+  /** Foreground color for the primary inline edit gutter indicator. */
+  'inlineEdit.gutterIndicator.primaryForeground'?: ColourLike
+  /** Background color for the secondary inline edit gutter indicator. */
+  'inlineEdit.gutterIndicator.secondaryBackground'?: ColourLike
+  /** Foreground color for the secondary inline edit gutter indicator. */
+  'inlineEdit.gutterIndicator.secondaryForeground'?: ColourLike
+  /** Background color for the successful inline edit gutter indicator. */
+  'inlineEdit.gutterIndicator.successfulBackground'?: ColourLike
+  /** Foreground color for the successful inline edit gutter indicator. */
+  'inlineEdit.gutterIndicator.successfulForeground'?: ColourLike
+  /** Background color for the modified text in inline edits. */
+  'inlineEdit.modifiedBackground'?: ColourLike
+  /** Border color for the modified text in inline edits. */
+  'inlineEdit.modifiedBorder'?: ColourLike
+  /** Background color for the changed lines in the modified text of inline edits. */
+  'inlineEdit.modifiedChangedLineBackground'?: ColourLike
+  /** Overlay color for the changed text in the modified text of inline edits. */
+  'inlineEdit.modifiedChangedTextBackground'?: ColourLike
+  /** Background color for the original text in inline edits. */
+  'inlineEdit.originalBackground'?: ColourLike
+  /** Border color for the original text in inline edits. */
+  'inlineEdit.originalBorder'?: ColourLike
+  /** Background color for the changed lines in the original text of inline edits. */
+  'inlineEdit.originalChangedLineBackground'?: ColourLike
+  /** Overlay color for the changed text in the original text of inline edits. */
+  'inlineEdit.originalChangedTextBackground'?: ColourLike
   /** Input box background. */
   'input.background'?: ColourLike
   /** Input box border. */
@@ -907,6 +967,8 @@ interface UIColourPalette {
   'mergeEditor.conflictingLines.background'?: ColourLike
   /** Minimap background color. */
   'minimap.background'?: ColourLike
+  /** Color of pending edit regions in the minimap. */
+  'minimap.chatEditHighlight'?: ColourLike
   /** Highlight color for errors within the editor. */
   'minimap.errorHighlight'?: ColourLike
   /** Highlight color for matches from search within files. */
@@ -1041,8 +1103,14 @@ interface UIColourPalette {
   'panelTitle.activeBorder'?: ColourLike
   /** Title color for the active panel. */
   'panelTitle.activeForeground'?: ColourLike
+  /** Panel title border color on the bottom, separating the title from the views. Panels are shown below the editor area and contain views like output and integrated terminal. */
+  'panelTitle.border'?: ColourLike
   /** Title color for the inactive panel. */
   'panelTitle.inactiveForeground'?: ColourLike
+  /** Panel title badge background color. Panels are shown below the editor area and contain views like output and integrated terminal. */
+  'panelTitleBadge.background'?: ColourLike
+  /** Panel title badge foreground color. Panels are shown below the editor area and contain views like output and integrated terminal. */
+  'panelTitleBadge.foreground'?: ColourLike
   /** Color of the peek view borders and arrow. */
   'peekView.border'?: ColourLike
   /** Background color of the peek view editor. */
@@ -1231,6 +1299,8 @@ interface UIColourPalette {
   'sideBarStickyScroll.shadow'?: ColourLike
   /** Side bar title background color. The side bar is the container for views like explorer and search. */
   'sideBarTitle.background'?: ColourLike
+  /** Side bar title border color on the bottom, separating the title from the views. The side bar is the container for views like explorer and search. */
+  'sideBarTitle.border'?: ColourLike
   /** Side Bar title foreground color. */
   'sideBarTitle.foreground'?: ColourLike
   /** Color to separate two editors from each other when shown side by side in an editor group from top to bottom. */
@@ -1515,6 +1585,24 @@ interface UIColourPalette {
   'terminalStickyScroll.border'?: ColourLike
   /** The background color of the sticky scroll overlay in the terminal when hovered. */
   'terminalStickyScrollHover.background'?: ColourLike
+  /** The foreground color for an alias icon. These icons will appear in the terminal suggest widget */
+  'terminalSymbolIcon.aliasForeground'?: ColourLike
+  /** The foreground color for an argument icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.argumentForeground'?: ColourLike
+  /** The foreground color for a file icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.fileForeground'?: ColourLike
+  /** The foreground color for an flag icon. These icons will appear in the terminal suggest widget */
+  'terminalSymbolIcon.flagForeground'?: ColourLike
+  /** The foreground color for a folder icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.folderForeground'?: ColourLike
+  /** The foreground color for an inline suggestion icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.inlineSuggestionForeground'?: ColourLike
+  /** The foreground color for a method icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.methodForeground'?: ColourLike
+  /** The foreground color for an option icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.optionForeground'?: ColourLike
+  /** The foreground color for an enum member icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.optionValueForeground'?: ColourLike
   /** Background for the badge indicating execution count */
   'testing.coverCountBadgeBackground'?: ColourLike
   /** Foreground for the badge indicating execution count */
@@ -1549,8 +1637,12 @@ interface UIColourPalette {
   'testing.iconUnset.retired'?: ColourLike
   /** Color for the 'Unset' icon in the test explorer. */
   'testing.iconUnset'?: ColourLike
+  /** Background color of test error messages shown inline in the editor. */
+  'testing.message.error.badgeBackground'?: ColourLike
+  /** Border color of test error messages shown inline in the editor. */
+  'testing.message.error.badgeBorder'?: ColourLike
   /** Text color of test error messages shown inline in the editor. */
-  'testing.message.error.decorationForeground'?: ColourLike
+  'testing.message.error.badgeForeground'?: ColourLike
   /** Margin color beside error messages shown inline in the editor. */
   'testing.message.error.lineBackground'?: ColourLike
   /** Text color of test info messages shown inline in the editor. */
