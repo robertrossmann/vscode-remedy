@@ -825,7 +825,7 @@ function mkui({ ui, code }: MKUIParams): UIColourPalette {
     'testing.iconUnset': ui.problems.info.hex(),
     'testing.runAction': ui.text.secondary.hex(),
     'testing.peekBorder': ui.border.hex(),
-    'testing.message.error.decorationForeground': ui.text.complimentary.hex(),
+    'testing.message.error.badgeForeground': ui.text.complimentary.hex(),
     'testing.message.info.decorationForeground': ui.text.complimentary.hex(),
     'testing.message.error.lineBackground': ui.problems.error.alpha(ch(0x66)).hexa(),
     'testing.message.info.lineBackground': ui.problems.info.alpha(ch(0x66)).hexa(),
