@@ -1,0 +1,9 @@
+{
+  "name": "@vscode/types",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Theming-related type definitions for Visual Studio Code",
+  "exports": {
+    ".": "./index.js"
+  }
+}

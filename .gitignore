@@ -9,6 +9,7 @@ node_modules
 local.mk
 
 # Compiled files
+tsconfig.tsbuildinfo
 **/*.js
 **/*.js.map
 !*.config.js
@@ -21,7 +22,6 @@ local.mk
 /coverage
 *.vsix
 *.cpuprofile
-.buildstate
 
 # Garbage
 *~

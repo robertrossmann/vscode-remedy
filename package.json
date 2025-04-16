@@ -50,14 +50,15 @@
     "semantic-release": "^24.1.0",
     "source-map-support": "^0.5.20",
     "tsconfig-paths": "^4.1.0",
-    "tslib": "^2.7.0",
-    "typescript": "^5.6.2"
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3"
   },
   "displayName": "Remedy",
   "engines": {
     "node": ">=22",
     "vscode": "^1.54.0"
   },
+  "type": "module",
   "galleryBanner": {
     "color": "#2c2b2a",
     "theme": "dark"
@@ -77,6 +78,9 @@
     "type": "git",
     "url": "https://github.com/robertrossmann/vscode-remedy.git"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "__metadata": {
     "id": "5f2bb8f7-dc95-49f9-be2f-0278fa401434",
     "publisherDisplayName": "Robert Rossmann",

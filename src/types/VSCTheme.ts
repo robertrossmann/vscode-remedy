@@ -1,22 +1,11 @@
 import { type UIColourPalette } from './UIColourPalette'
 
-type HEXAColour = string
+type HexaColour = string
 
 enum ThemeType {
   LIGHT = 'vs',
   DARK = 'vs-dark',
   HIGH_CONTRAST = 'hc-black',
-}
-
-enum TMFontStyle {
-  NORMAL = '',
-  ITALIC = 'italic',
-  BOLD = 'bold',
-}
-
-interface TMRuleSetting {
-  foreground?: HEXAColour
-  fontStyle?: TMFontStyle
 }
 
 interface TMRule {
@@ -25,15 +14,26 @@ interface TMRule {
   settings: TMRuleSetting
 }
 
+interface TMRuleSetting {
+  foreground?: HexaColour
+  fontStyle?: TMFontStyle
+}
+
+enum TMFontStyle {
+  NORMAL = '',
+  ITALIC = 'italic',
+  BOLD = 'bold',
+}
+
 interface SemanticRuleSetting {
-  foreground: HEXAColour
+  foreground: HexaColour
   bold: boolean
   italic: boolean
   underline: boolean
 }
 
 interface SemanticRules {
-  [target: string]: SemanticRuleSetting | TMRuleSetting | HEXAColour
+  [target: string]: SemanticRuleSetting | TMRuleSetting | HexaColour
 }
 
 interface VSCTheme {

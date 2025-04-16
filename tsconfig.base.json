@@ -1,0 +1,32 @@
+// The base TS config defines the common compiler settings for all project references in this repository.
+{
+  "compilerOptions": {
+    // Produce ES Modules for Node.js instead of CommonJS
+    "target": "ES2024",
+    "module": "NodeNext",
+    "lib": ["ES2024"],
+
+    "incremental": true,
+    "noEmitOnError": false,
+    // Use `tslib` for helper functions
+    "importHelpers": true,
+    "inlineSourceMap": true,
+    "skipLibCheck": true,
+
+    // `strict` Enables the following rules:
+    // - alwaysStrict
+    // - strictNullChecks
+    // - strictBindCallApply
+    // - strictFunctionTypes
+    // - strictPropertyInitialization
+    // - noImplicitAny
+    // - noImplicitThis
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "useUnknownInCatchVariables": true
+  }
+}

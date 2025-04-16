@@ -15,9 +15,13 @@ function javascript({ code }: InputParams): TMRule[] {
 
   const language = {
     scope: [
+      'decorator',
       'source.js storage.type.js',
       'source.ts storage.type.ts',
       'source.tsx storage.type.tsx',
+      'source.js meta.decorator.js punctuation.decorator',
+      'source.ts meta.decorator.ts punctuation.decorator',
+      'source.tsx meta.decorator.tsx punctuation.decorator',
       'meta.embedded.block.javascript storage.type.js',
       'meta.embedded.block.typescript storage.type.ts',
       'meta.embedded.block.svelte storage.type.js',
