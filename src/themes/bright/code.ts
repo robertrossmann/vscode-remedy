@@ -1,41 +1,41 @@
-import { foreground, normal, bright } from './colours'
-import { type CodePalette } from '@remedy/types'
+import { palette } from './colours.js'
+import { type CodeColourPalette } from '@remedy/themegen'
 
-const plain = foreground.hex()
-const comments = foreground.lighten(1.6).desaturate(0.5).hex()
+const plain = palette.foreground
+const comments = palette.foreground.lighten(1.6).desaturate(0.5)
 const punctuation = comments
-const primitives = normal.yellow.hex()
-const language = normal.magenta.hex()
-const preprocessor = normal.cyan.hex()
-const functions = normal.blue.hex()
-const classes = bright.yellow.hex()
-const types = bright.red.hex()
-const variables = foreground.hex()
-const dockblockVariables = normal.white.hex()
-const constants = bright.red.hex()
-const strings = normal.green.hex()
-const escapes = normal.white.hex()
+const primitives = palette.normal.yellow
+const language = palette.normal.magenta
+const preprocessor = palette.normal.cyan
+const functions = palette.normal.blue
+const classes = palette.bright.yellow
+const types = palette.bright.red
+const variables = palette.foreground
+const dockblockVariables = palette.normal.white
+const constants = palette.bright.red
+const strings = palette.normal.green
+const escapes = palette.normal.white
 
 const regexp = {
-  sequences: bright.cyan.hex(),
-  ranges: bright.red.hex(),
-  charsets: normal.red.hex(),
+  sequences: palette.bright.cyan,
+  ranges: palette.bright.red,
+  charsets: palette.normal.red,
 }
 
 // Markdown & similar tokens in other source files
 const decoratives = {
-  raw: normal.yellow.hex(),
+  raw: palette.normal.yellow,
   quotes: comments,
-  links: normal.cyan.hex(),
-  headings: bright.red.hex(),
+  links: palette.normal.cyan,
+  headings: palette.bright.red,
 }
 
 // JSON, YAML etc.
 const keyvaluelike = {
-  keys: bright.red.hex(),
+  keys: palette.bright.red,
 }
 
-const code: CodePalette = {
+const code: CodeColourPalette = {
   plain,
   punctuation,
   primitives,

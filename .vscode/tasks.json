@@ -4,19 +4,57 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "make:install",
-      "detail": "Install Node.js dependencies",
+      "label": "make: compile",
+      "detail": "Compile the project",
       "type": "process",
-      "command": "make",
+      "command": "/usr/bin/make",
       "args": [
-        "install"
+        "compile"
       ],
-      "group": "build",
+      "group": {
+        "kind": "build",
+      },
       "presentation": {
-        "showReuseMessage": false,
+        "revealProblems": "onProblem",
         "clear": true
       },
-      "problemMatcher": []
+      "icon": {
+        "id": "files",
+        "color": "terminal.ansiGreen"
+      },
+      "problemMatcher": [
+        "$tsc"
+      ]
+    },
+    {
+      "label": "make: compile/watch",
+      "detail": "Start TypeScript compiler in watch mode",
+      "type": "process",
+      "command": "/usr/bin/make",
+      "args": [
+        "compile/watch"
+      ],
+      "problemMatcher": [
+        "$tsc-watch"
+      ],
+      "group": "build",
+      "isBackground": true,
+      "runOptions": {
+        "instanceLimit": 1,
+        "runOn": "folderOpen"
+      },
+      "presentation": {
+        "echo": false,
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": true,
+        "reveal": "never",
+        "revealProblems": "never"
+      },
+      "icon": {
+        "id": "files",
+        "color": "terminal.ansiYellow"
+      }
     },
     {
       "label": "make:themes",
@@ -34,7 +72,11 @@
         "reveal": "silent",
         "clear": true
       },
-      "problemMatcher": []
+      "problemMatcher": [],
+      "icon": {
+        "id": "package",
+        "color": "terminal.ansiBlue"
+      }
     },
     {
       "label": "make:lint",
@@ -52,21 +94,29 @@
         "reveal": "silent",
         "clear": true
       },
-      "problemMatcher": "$eslint-stylish"
+      "problemMatcher": "$eslint-stylish",
+      "icon": {
+        "id": "eye",
+        "color": "terminal.ansiGreen"
+      }
     },
     {
-      "label": "make:pristine",
-      "detail": "Remove all compiled artifacts and drop node_modules",
+      "label": "make:distclean",
+      "detail": "Remove all compiled artifacts",
       "type": "process",
       "command": "make",
       "args": [
-        "pristine"
+        "distclean"
       ],
       "group": "none",
       "presentation": {
         "clear": true
       },
-      "problemMatcher": []
+      "problemMatcher": [],
+      "icon": {
+        "id": "trash",
+        "color": "terminal.ansiRed"
+      }
     }
   ]
 }

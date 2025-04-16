@@ -1,0 +1,83 @@
+import { type TMRule } from '@remedy/vscode-types'
+import { type ThemeInfo } from '../../index.js'
+import { jsts as jstsscope } from './scopes/tmscopes.js'
+
+function javascript(info: ThemeInfo): TMRule[] {
+  const builtins = {
+    scope: jstsscope([
+      'support.variable.object',
+      'support.type.object.module',
+    ]),
+    settings: {
+      foreground: info.code.primitives,
+    },
+  }
+
+  const language = {
+    scope: [
+      'decorator',
+      'source.js storage.type.js',
+      'source.ts storage.type.ts',
+      'source.tsx storage.type.tsx',
+      'source.js meta.decorator.js punctuation.decorator',
+      'source.ts meta.decorator.ts punctuation.decorator',
+      'source.tsx meta.decorator.tsx punctuation.decorator',
+      'meta.embedded.block.javascript storage.type.js',
+      'meta.embedded.block.typescript storage.type.ts',
+      'meta.embedded.block.svelte storage.type.js',
+      'meta.embedded.block.svelte storage.type.ts',
+      ...jstsscope([
+        'storage.type.class',
+        'storage.type.function',
+      ]),
+    ],
+    settings: {
+      foreground: info.code.language,
+    },
+  }
+
+  const classes = {
+    scope: jstsscope([
+      'new.expr entity.name.type',
+    ]),
+    settings: {
+      foreground: info.code.classes,
+    },
+  }
+
+  const types = {
+    scope: [
+      'source.ts meta.type.annotation entity.name.type',
+      'source.tsx meta.type.annotation entity.name.type',
+      'meta.embedded.block.typescript meta.type.annotation entity.name.type',
+      'meta.embedded.block.typescriptreact meta.type.annotation entity.name.type',
+    ],
+    settings: {
+      foreground: info.code.types,
+    },
+  }
+
+  const attributes = {
+    scope: jstsscope([
+      // JSX element attributes
+      'meta.tag.attributes entity.other.attribute-name',
+      // Svelte element attributes
+      'meta.attribute entity.other.attribute-name',
+
+      'variable.other.constant.property',
+    ]),
+    settings: {
+      foreground: info.code.constants,
+    },
+  }
+
+  return [
+    builtins,
+    language,
+    classes,
+    attributes,
+    types,
+  ]
+}
+
+export default javascript

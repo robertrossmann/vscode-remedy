@@ -1,48 +1,49 @@
-import { base, foreground, normal, bright } from './colours'
+import { palette } from './colours.js'
+import { type UIColourPalette } from '@remedy/themegen'
 
 const text = {
-  primary: foreground,
-  secondary: foreground.lighten(0.5).desaturate(0.4),
-  dimmed: foreground.lighten(1.6).desaturate(0.5),
-  contrast: base,
-  complimentary: bright.yellow.darken(0.9).desaturate(0.3),
+  primary: palette.foreground,
+  secondary: palette.foreground.lighten(0.5).desaturate(0.4),
+  dimmed: palette.foreground.lighten(1.6).desaturate(0.5),
+  contrast: palette.base,
+  complimentary: palette.bright.yellow.darken(0.9).desaturate(0.3),
 }
 
 const background = {
-  code: base.lighten(0.06),
-  panel: base,
+  code: palette.base.lighten(0.06),
+  panel: palette.base,
   drop: text.primary,
-  hover: base.mix(text.primary, 0.3),
+  hover: palette.base.mix(text.primary, 0.3),
 }
 
 const border = background.panel.darken(0.2).desaturate(0.3)
 const shadow = text.dimmed
-const accent = normal.orange
+const accent = palette.normal.orange
 
 const button = {
   primary: accent,
-  secondary: normal.yellow,
+  secondary: palette.normal.yellow,
 }
 
 const icon = {
   foreground: text.primary,
   inactive: text.dimmed,
-  error: normal.red,
-  success: normal.green,
+  error: palette.normal.red,
+  success: palette.normal.green,
 }
 
 const scm = {
-  added: bright.green,
-  modified: bright.blue,
-  deleted: bright.red,
-  conflicting: bright.yellow,
-  untracked: normal.white,
+  added: palette.bright.green,
+  modified: palette.bright.blue,
+  deleted: palette.bright.red,
+  conflicting: palette.bright.yellow,
+  untracked: palette.normal.white,
   ignored: text.dimmed,
-  merged: normal.magenta,
+  merged: palette.normal.magenta,
   conflicts: {
-    current: bright.green,
-    incoming: bright.blue,
-    common: bright.white,
+    current: palette.bright.green,
+    incoming: palette.bright.blue,
+    common: palette.bright.white,
   },
 }
 
@@ -50,7 +51,7 @@ const highlight = {
   line: text.primary,
   word: {
     highlight: text.primary,
-    matches: normal.cyan,
+    matches: palette.normal.cyan,
     source: accent,
   },
   selection: text.primary,
@@ -59,60 +60,60 @@ const highlight = {
 }
 
 const problems = {
-  error: normal.red,
-  warning: normal.yellow,
-  info: normal.blue,
-  hint: normal.white,
+  error: palette.normal.red,
+  warning: palette.normal.yellow,
+  info: palette.normal.blue,
+  hint: palette.normal.white,
 }
 
 const debug = {
-  indicator: bright.blue,
+  indicator: palette.bright.blue,
   breakpoint: {
-    active: bright.red,
+    active: palette.bright.red,
     disabled: icon.inactive,
-    unverified: normal.white,
+    unverified: palette.normal.white,
   },
   frame: {
-    normal: normal.blue,
-    focused: bright.blue,
+    normal: palette.normal.blue,
+    focused: palette.bright.blue,
   },
   icon: {
-    start: normal.orange,
-    pause: normal.orange,
-    continue: normal.orange,
-    next: bright.blue,
-    back: bright.blue,
-    into: bright.blue,
-    out: bright.blue,
-    restart: bright.green,
-    stop: normal.red,
+    start: palette.normal.orange,
+    pause: palette.normal.orange,
+    continue: palette.normal.orange,
+    next: palette.bright.blue,
+    back: palette.bright.blue,
+    into: palette.bright.blue,
+    out: palette.bright.blue,
+    restart: palette.bright.green,
+    stop: palette.normal.red,
   },
 }
 
 const terminal = {
   normal: {
-    black: normal.black,
-    blue: normal.blue,
-    cyan: normal.cyan,
-    green: normal.green,
-    magenta: normal.magenta,
-    red: normal.red,
-    white: normal.white,
-    yellow: normal.yellow,
+    black: palette.normal.black,
+    blue: palette.normal.blue,
+    cyan: palette.normal.cyan,
+    green: palette.normal.green,
+    magenta: palette.normal.magenta,
+    red: palette.normal.red,
+    white: palette.normal.white,
+    yellow: palette.normal.yellow,
   },
   bright: {
-    black: bright.black,
-    blue: bright.blue,
-    cyan: bright.cyan,
-    green: bright.green,
-    magenta: bright.magenta,
-    red: bright.red,
-    white: bright.white,
-    yellow: bright.yellow,
+    black: palette.bright.black,
+    blue: palette.bright.blue,
+    cyan: palette.bright.cyan,
+    green: palette.bright.green,
+    magenta: palette.bright.magenta,
+    red: palette.bright.red,
+    white: palette.bright.white,
+    yellow: palette.bright.yellow,
   },
 }
 
-export {
+const ui: UIColourPalette = {
   button,
   background,
   border,
@@ -125,4 +126,8 @@ export {
   problems,
   debug,
   terminal,
+}
+
+export {
+  ui,
 }

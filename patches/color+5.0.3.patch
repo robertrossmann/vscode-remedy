@@ -1,0 +1,15 @@
+diff --git a/node_modules/color/index.js b/node_modules/color/index.js
+index 5a3e268..1afee8d 100644
+--- a/node_modules/color/index.js
++++ b/node_modules/color/index.js
+@@ -117,7 +117,9 @@ Color.prototype = {
+ 	},
+ 
+ 	toJSON() {
+-		return this[this.model]();
++		return this.alpha() < 1
++      ? this.hexa()
++      : this.hex();
+ 	},
+ 
+ 	string(places) {

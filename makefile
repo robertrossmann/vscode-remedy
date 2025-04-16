@@ -8,7 +8,7 @@ export NODE_OPTIONS := --trace-deprecation
 NPM_I := $(if $(CI), ci, install)
 
 # User-overridable
-TSC_FLAGS :=
+TSC_FLAGS := --build
 ESLINT_FLAGS :=
 NPM_FLAGS :=
 
@@ -22,22 +22,21 @@ all: compile themes $(GITFILES)
 
 # GENERIC TARGETS
 
-.buildstate:
-	mkdir .buildstate
-
-.buildstate/tsconfig.tsbuildinfo: node_modules tsconfig.json $(SRCFILES) .buildstate
+tsconfig.tsbuildinfo: node_modules tsconfig.json $(SRCFILES)
 	tsc $(TSC_FLAGS) && touch $@
 
-node_modules: package.json
+node_modules: package-lock.json package.json
 	npm $(NPM_I) $(NPM_FLAGS) && touch $@
+
+package-lock.json: package.json
 
 # Default target for all possible git hooks
 .git/hooks/%: utils/githooks/%
 	cp $< $@
 
-themes/%-color-theme.json: src/themes/% .buildstate/tsconfig.tsbuildinfo $(SRCFILES)
+themes/%-color-theme.json: src/themes/% tsconfig.tsbuildinfo $(SRCFILES)
 	@mkdir -p themes
-	node src/bin/generate $< $@
+	node src/bin/generate $(basename $*) $@
 
 %.vsix: $(DSTTHEME)
 	vsce package --out $@
@@ -46,12 +45,12 @@ themes/%-color-theme.json: src/themes/% .buildstate/tsconfig.tsbuildinfo $(SRCFI
 
 extension: remedy.vsix
 
-themes: $(DSTTHEME) .buildstate/tsconfig.tsbuildinfo
+themes: $(DSTTHEME) tsconfig.tsbuildinfo
 	node src/bin/refresh-package $(SRCTHEME)
 
-compile: .buildstate/tsconfig.tsbuildinfo
+compile: tsconfig.tsbuildinfo
 
-watch/compile: force install
+compile/watch: force install
 	tsc $(TSC_FLAGS) --watch
 
 install: node_modules $(GITFILES)
@@ -65,8 +64,8 @@ clean:
 	find . -not -path '*/node_modules/*' -name '*.log' -print -delete
 
 distclean: clean
-	git clean -Xf src
-	rm -rf themes .buildstate
+	git clean -Xf src packages
+	rm -rf themes tsconfig.tsbuildinfo packages/*/tsconfig.tsbuildinfo
 
 pristine: distclean
 	rm -rf node_modules

@@ -1,0 +1,15 @@
+{
+  "name": "@remedy/vscode-types",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Theming-related type definitions for Visual Studio Code",
+  "exports": {
+    ".": "./index.js"
+  },
+  "dependencies": {
+    "color": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/color": "^4.2.0"
+  }
+}

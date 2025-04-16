@@ -1,28 +1,30 @@
-import type * as Color from 'color'
+import { type ColorInstance } from 'color'
 
 interface ColourPalette {
+  base: ColorInstance
+  foreground: ColorInstance
   normal: {
-    black: Color
-    blue: Color
-    cyan: Color
-    green: Color
-    magenta: Color
-    red: Color
-    white: Color
-    yellow: Color
+    black: ColorInstance
+    blue: ColorInstance
+    cyan: ColorInstance
+    green: ColorInstance
+    magenta: ColorInstance
+    red: ColorInstance
+    white: ColorInstance
+    yellow: ColorInstance
     // Extras
-    orange: Color
+    orange: ColorInstance
   }
 
   bright: {
-    black: Color
-    blue: Color
-    cyan: Color
-    green: Color
-    magenta: Color
-    red: Color
-    white: Color
-    yellow: Color
+    black: ColorInstance
+    blue: ColorInstance
+    cyan: ColorInstance
+    green: ColorInstance
+    magenta: ColorInstance
+    red: ColorInstance
+    white: ColorInstance
+    yellow: ColorInstance
   }
 }
 

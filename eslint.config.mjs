@@ -1,3 +1,5 @@
+// eslint-disable-next-line import/no-unresolved
+import { defineConfig } from 'eslint/config'
 import node from '@strv/eslint-config-node'
 import nodeopt from '@strv/eslint-config-node/optional'
 import nodestyle from '@strv/eslint-config-node/style'
@@ -9,27 +11,35 @@ const globs = {
   js: '**/*.js',
   mjs: '**/*.mjs',
   ts: '**/*.ts',
-  dts: '**/*.d.ts',
 }
 
-/** @type {Array<import("eslint").Linter.Config>} */
-const config = [
-  { linterOptions: {
-    reportUnusedDisableDirectives: true,
-  } },
-
-  { files: [globs.ts, globs.dts, globs.mjs], ...node },
-  { files: [globs.ts, globs.dts, globs.mjs], ...nodeopt },
-  { files: [globs.ts, globs.dts, globs.mjs], ...nodestyle },
-
-  { files: [globs.ts, globs.dts], ...ts },
-  { files: [globs.ts, globs.dts], ...tsopt },
-  { files: [globs.ts, globs.dts], ...tsstyle },
-  { ignores: [
+export default defineConfig([{
+  ignores: [
     globs.js,
     'node_modules',
-    'samples',
-  ] },
-]
-
-export default config
+    'samples/*',
+    '!eslint.config.mjs',
+    '!commitlint.config.mjs',
+    '!release.config.cjs',
+    '!.remarkrc.cjs',
+  ],
+}, {
+  linterOptions: {
+    reportUnusedDisableDirectives: true,
+    reportUnusedInlineConfigs: 'warn',
+  },
+}, {
+  files: [globs.ts, globs.mjs],
+  extends: [
+    node,
+    nodeopt,
+    nodestyle,
+  ],
+}, {
+  files: [globs.ts],
+  extends: [
+    ts,
+    tsopt,
+    tsstyle,
+  ],
+}])

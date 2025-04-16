@@ -1,35 +1,40 @@
-import * as color from 'color'
+import Color from 'color'
+import { type ColourPalette } from '../../types/ColourPalette.js'
 
-const base = color('#FCEED1')
+const base = new Color('#FCEED1')
 const normal = {
-  black: color('#282A2E'),
-  blue: color('#5F819D'),
-  cyan: color('#5E8D87'),
-  green: color('#8C9440'),
-  magenta: color('#85678F'),
-  red: color('#A54242'),
-  white: color('#707880'),
-  yellow: color('#DE935F'),
+  black: new Color('#282A2E'),
+  blue: new Color('#5F819D'),
+  cyan: new Color('#5E8D87'),
+  green: new Color('#8C9440'),
+  magenta: new Color('#85678F'),
+  red: new Color('#A54242'),
+  white: new Color('#707880'),
+  yellow: new Color('#DE935F'),
   // Extras
-  orange: color('#eb684b'),
+  orange: new Color('#eb684b'),
 }
 
 const bright = {
-  black: color('#373B41'),
-  blue: color('#81A2BE'),
-  cyan: color('#8ABEB7'),
-  green: color('#B5BD68'),
-  magenta: color('#B294BB'),
-  red: color('#CC6666'),
-  white: color('#C5C8C6'),
-  yellow: color('#F0C674').darken(0.3).desaturate(0.1),
+  black: new Color('#373B41'),
+  blue: new Color('#81A2BE'),
+  cyan: new Color('#8ABEB7'),
+  green: new Color('#B5BD68'),
+  magenta: new Color('#B294BB'),
+  red: new Color('#CC6666'),
+  white: new Color('#C5C8C6'),
+  yellow: new Color('#F0C674').darken(0.3).desaturate(0.1),
 }
 
 const foreground = bright.yellow.darken(0.6)
 
-export {
+const palette: ColourPalette = {
   base,
   foreground,
   normal,
   bright,
+}
+
+export {
+  palette,
 }

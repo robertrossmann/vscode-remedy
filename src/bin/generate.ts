@@ -1,23 +1,16 @@
-import 'source-map-support/register'
-import 'tsconfig-paths/register'
-import * as fs from 'fs/promises'
-import * as path from 'path'
-import { type VSCTheme } from '@remedy/types'
+import * as fs from 'node:fs/promises'
+import * as path from 'node:path'
+import { type Theme } from '@remedy/vscode-types'
 
-const entrypoint = process.argv[2]
+const themename = process.argv[2]
 const outfile = process.argv[3]
 
-if (!entrypoint || !outfile) {
+if (!themename || !outfile) {
   throw new Error('Usage: generate <entrypoint> <outfile>')
 }
 
-import(path.resolve(process.cwd(), entrypoint))
-  .then(async ({ default: theme }: { default: VSCTheme }) => {
-    const data = `${JSON.stringify(theme, null, 2)}\n`
-    const destination = path.resolve(process.cwd(), outfile)
+const theme = (await import(`#themes/${themename}`) as { default: Theme }).default
+const data = `${JSON.stringify(theme, null, 2)}\n`
+const destination = path.resolve(process.cwd(), outfile)
 
-    await fs.writeFile(destination, data)
-  })
-  .catch((err: Error) => {
-    throw err
-  })
+await fs.writeFile(destination, data)

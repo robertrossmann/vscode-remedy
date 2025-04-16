@@ -1,16 +1,14 @@
-import * as ui from '../bright/ui'
-import { code } from '../bright/code'
-import * as colours from '../bright/colours'
-import { mkui, mktokens, mksemantictokens } from '@remedy/generators'
-import { type VSCTheme, ThemeType } from '@remedy/types'
+import { ui } from '../bright/ui.js'
+import { code } from '../bright/code.js'
+import { ThemeGen } from '@remedy/themegen'
+import { ThemeType } from '@remedy/vscode-types'
 
-const theme: VSCTheme = {
+const theme = new ThemeGen({
   name: 'Remedy - Bright (Tilted)',
   type: ThemeType.LIGHT,
-  colors: mkui({ ui, code }),
-  tokenColors: mktokens({ code, colours, tilts: true }),
-  semanticHighlighting: true,
-  semanticTokenColors: mksemantictokens({ code, colours, tilts: true }),
-}
+  tilts: true,
+  code,
+  ui,
+})
 
-export default theme
+export default theme.build()
