@@ -17,7 +17,7 @@ function makefile(info: ThemeInfo): TMRule[] {
       'meta.scope.prerequisites',
     ]),
     settings: {
-      foreground: info.code.types,
+      foreground: info.code.primitives,
     },
   }
 
@@ -42,10 +42,19 @@ function makefile(info: ThemeInfo): TMRule[] {
 
   const functioncalls = {
     scope: makefilescope([
-      'meta.scope.function-call',
+      'support.function',
     ]),
     settings: {
       foreground: info.code.functions,
+    },
+  }
+
+  const assignments = {
+    scope: makefilescope([
+      'punctuation.separator.key-value',
+    ]),
+    settings: {
+      foreground: info.code.language,
     },
   }
 
@@ -55,6 +64,7 @@ function makefile(info: ThemeInfo): TMRule[] {
     targets,
     builtintargets,
     functioncalls,
+    assignments,
   ]
 }
 

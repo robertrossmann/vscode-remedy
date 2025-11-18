@@ -13,7 +13,7 @@ ESLINT_FLAGS :=
 NPM_FLAGS :=
 
 GITFILES := $(patsubst utils/githooks/%, .git/hooks/%, $(wildcard utils/githooks/*))
-SRCFILES := $(shell find src -type f -name "*.ts")
+SRCFILES := $(shell find src packages -type f -name "*.ts")
 SRCTHEME := $(wildcard src/themes/*)
 DSTTHEME :=	$(patsubst src/themes/%, themes/%-color-theme.json, $(SRCTHEME))
 
