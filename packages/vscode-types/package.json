@@ -6,6 +6,9 @@
   "exports": {
     ".": "./index.js"
   },
+  "engines": {
+    "node": ">=25"
+  },
   "dependencies": {
     "color": "^5.0.3"
   },

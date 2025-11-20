@@ -2,7 +2,7 @@
 import { type ColorInstance } from 'color'
 
 /**
- * Source: https://github.com/microsoft/vscode-docs/blob/main/api/references/theme-color.md
+ * Source: https://raw.githubusercontent.com/microsoft/vscode-docs/refs/heads/main/api/references/theme-color.md
  */
 interface UIColours {
   /** Background color for toggled action items in action bar. */
@@ -109,16 +109,30 @@ interface UIColours {
   'chat.avatarBackground'?: ColorInstance
   /** The foreground color of a chat avatar. */
   'chat.avatarForeground'?: ColorInstance
+  /** Chat checkpoint separator color. */
+  'chat.checkpointSeparator'?: ColorInstance
   /** The foreground color of a chat edited file in the edited file list. */
   'chat.editedFileForeground'?: ColorInstance
+  /** Foreground color of lines added in chat code block pill. */
+  'chat.linesAddedForeground'?: ColorInstance
+  /** Foreground color of lines removed in chat code block pill. */
+  'chat.linesRemovedForeground'?: ColorInstance
   /** The background color of a chat request. */
   'chat.requestBackground'?: ColorInstance
   /** The border color of a chat request. */
   'chat.requestBorder'?: ColorInstance
+  /** Background color of the chat request bubble. */
+  'chat.requestBubbleBackground'?: ColorInstance
+  /** Background color of the chat request bubble on hover. */
+  'chat.requestBubbleHoverBackground'?: ColorInstance
+  /** Border color of code blocks within the chat request bubble. */
+  'chat.requestCodeBorder'?: ColorInstance
   /** The background color of a chat slash command. */
   'chat.slashCommandBackground'?: ColorInstance
   /** The foreground color of a chat slash command. */
   'chat.slashCommandForeground'?: ColorInstance
+  /** The color of the Chat Management editor splitview sash border. */
+  'chatManagement.sashBorder'?: ColorInstance
   /** Background color of checkbox widget. */
   'checkbox.background'?: ColorInstance
   /** Border color of checkbox widget. */
@@ -639,6 +653,8 @@ interface UIColours {
   'editorStickyScroll.border'?: ColorInstance
   /** Shadow color of sticky scroll in the editor. */
   'editorStickyScroll.shadow'?: ColorInstance
+  /** Background color of the gutter part of sticky scroll in the editor. */
+  'editorStickyScrollGutter.background'?: ColorInstance
   /** Editor sticky scroll on hover background color. */
   'editorStickyScrollHover.background'?: ColorInstance
   /** Background color of the suggestion widget. */
@@ -923,6 +939,18 @@ interface UIColours {
   'listFilterWidget.outline'?: ColorInstance
   /** Shadow color of the type filter widget in lists and tree. */
   'listFilterWidget.shadow'?: ColorInstance
+  /** Foreground color for caution alerts in markdown. */
+  'markdownAlert.caution.foreground'?: ColorInstance
+  /** Foreground color for important alerts in markdown. */
+  'markdownAlert.important.foreground'?: ColorInstance
+  /** Foreground color for note alerts in markdown. */
+  'markdownAlert.note.foreground'?: ColorInstance
+  /** Foreground color for tip alerts in markdown. */
+  'markdownAlert.tip.foreground'?: ColorInstance
+  /** Foreground color for warning alerts in markdown. */
+  'markdownAlert.warning.foreground'?: ColorInstance
+  /** The icon color for mcp starred. */
+  'mcpIcon.starForeground'?: ColorInstance
   /** Background color of menu items. */
   'menu.background'?: ColorInstance
   /** Border color of menus. */
@@ -1141,6 +1169,8 @@ interface UIColours {
   'peekViewEditorGutter.background'?: ColorInstance
   /** Background color of sticky scroll in the peek view editor. */
   'peekViewEditorStickyScroll.background'?: ColorInstance
+  /** Background color of the gutter part of sticky scroll in the peek view editor. */
+  'peekViewEditorStickyScrollGutter.background'?: ColorInstance
   /** Background color of the peek view result list. */
   'peekViewResult.background'?: ColorInstance
   /** Foreground color for file nodes in the peek view result list. */
@@ -1179,10 +1209,6 @@ interface UIColours {
   'profiles.sashBorder'?: ColorInstance
   /** Background color of the progress bar shown for long running operations. */
   'progressBar.background'?: ColorInstance
-  /** Background color of a Front Matter header block. */
-  'prompt.frontMatter.background'?: ColorInstance
-  /** Background color of an inactive Front Matter header block. */
-  'prompt.frontMatter.inactiveBackground'?: ColorInstance
   /** Quick input background color. The quick input widget is the container for views like the color theme picker. */
   'quickInput.background'?: ColorInstance
   /** Quick input foreground color. The quick input widget is the container for views like the color theme picker. */
@@ -1237,6 +1263,8 @@ interface UIColours {
   'scmGraph.historyItemRefColor'?: ColorInstance
   /** History item remote reference color. */
   'scmGraph.historyItemRemoteRefColor'?: ColorInstance
+  /** Scrollbar track background color. */
+  'scrollbar.background'?: ColorInstance
   /** Scrollbar slider shadow to indicate that the view is scrolled. */
   'scrollbar.shadow'?: ColorInstance
   /** Scrollbar slider background color when clicked on. */
@@ -1611,6 +1639,10 @@ interface UIColours {
   'terminalSymbolIcon.aliasForeground'?: ColorInstance
   /** The foreground color for an argument icon. These icons will appear in the terminal suggest widget. */
   'terminalSymbolIcon.argumentForeground'?: ColorInstance
+  /** The foreground color for a branch icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.branchForeground'?: ColorInstance
+  /** The foreground color for a commit icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.commitForeground'?: ColorInstance
   /** The foreground color for a file icon. These icons will appear in the terminal suggest widget. */
   'terminalSymbolIcon.fileForeground'?: ColorInstance
   /** The foreground color for an flag icon. These icons will appear in the terminal suggest widget */
@@ -1625,6 +1657,22 @@ interface UIColours {
   'terminalSymbolIcon.optionForeground'?: ColorInstance
   /** The foreground color for an enum member icon. These icons will appear in the terminal suggest widget. */
   'terminalSymbolIcon.optionValueForeground'?: ColorInstance
+  /** The foreground color for a completed pull request icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.pullRequestDoneForeground'?: ColorInstance
+  /** The foreground color for a pull request icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.pullRequestForeground'?: ColorInstance
+  /** The foreground color for a remote icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.remoteForeground'?: ColorInstance
+  /** The foreground color for a stash icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.stashForeground'?: ColorInstance
+  /** The foreground color for a symbolic link file icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.symbolicLinkFileForeground'?: ColorInstance
+  /** The foreground color for a symbolic link folder icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.symbolicLinkFolderForeground'?: ColorInstance
+  /** The foreground color for a plaintext suggestion. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.symbolText'?: ColorInstance
+  /** The foreground color for a tag icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.tagForeground'?: ColorInstance
   /** Background for the badge indicating execution count */
   'testing.coverCountBadgeBackground'?: ColorInstance
   /** Foreground for the badge indicating execution count */
@@ -1635,30 +1683,30 @@ interface UIColours {
   'testing.coveredBorder'?: ColorInstance
   /** Gutter color of regions where code was covered. */
   'testing.coveredGutterBackground'?: ColorInstance
-  /** Retired color for the 'Errored' icon in the test explorer. */
-  'testing.iconErrored.retired'?: ColorInstance
   /** Color for the 'Errored' icon in the test explorer. */
   'testing.iconErrored'?: ColorInstance
-  /** Retired color for the 'failed' icon in the test explorer. */
-  'testing.iconFailed.retired'?: ColorInstance
+  /** Retired color for the 'Errored' icon in the test explorer. */
+  'testing.iconErrored.retired'?: ColorInstance
   /** Color for the 'failed' icon in the test explorer. */
   'testing.iconFailed'?: ColorInstance
-  /** Retired color for the 'passed' icon in the test explorer. */
-  'testing.iconPassed.retired'?: ColorInstance
+  /** Retired color for the 'failed' icon in the test explorer. */
+  'testing.iconFailed.retired'?: ColorInstance
   /** Color for the 'passed' icon in the test explorer. */
   'testing.iconPassed'?: ColorInstance
-  /** Retired color for the 'Queued' icon in the test explorer. */
-  'testing.iconQueued.retired'?: ColorInstance
+  /** Retired color for the 'passed' icon in the test explorer. */
+  'testing.iconPassed.retired'?: ColorInstance
   /** Color for the 'Queued' icon in the test explorer. */
   'testing.iconQueued'?: ColorInstance
-  /** Retired color for the 'Skipped' icon in the test explorer. */
-  'testing.iconSkipped.retired'?: ColorInstance
+  /** Retired color for the 'Queued' icon in the test explorer. */
+  'testing.iconQueued.retired'?: ColorInstance
   /** Color for the 'Skipped' icon in the test explorer. */
   'testing.iconSkipped'?: ColorInstance
-  /** Retired color for the 'Unset' icon in the test explorer. */
-  'testing.iconUnset.retired'?: ColorInstance
+  /** Retired color for the 'Skipped' icon in the test explorer. */
+  'testing.iconSkipped.retired'?: ColorInstance
   /** Color for the 'Unset' icon in the test explorer. */
   'testing.iconUnset'?: ColorInstance
+  /** Retired color for the 'Unset' icon in the test explorer. */
+  'testing.iconUnset.retired'?: ColorInstance
   /** Background color of test error messages shown inline in the editor. */
   'testing.message.error.badgeBackground'?: ColorInstance
   /** Border color of test error messages shown inline in the editor. */
@@ -1754,123 +1802,6 @@ interface UIColours {
   /** Border color for the inactive (unfocused) windows. */
   'window.inactiveBorder'?: ColorInstance
 
-
-  // -- GitHub Pull Requests & Issues
-
-  /**
-   * The color used for the assignees and labels fields in a new issue editor.
-   */
-  'issues.newIssueDecoration'?: ColorInstance
-  /**
-   * The color used for indicating that an issue is open.
-   */
-  'issues.open'?: ColorInstance
-  /**
-   * The color used for indicating that an issue is closed.
-   */
-  'issues.closed'?: ColorInstance
-  /**
-   * The color used for indicating that a pull request is open.
-   */
-  'pullRequests.open'?: ColorInstance
-  /**
-   * The color used for indicating that a pull request is closed.
-   */
-  'pullRequests.closed'?: ColorInstance
-  /**
-   * The color used for indicating that a pull request is a draft.
-   */
-  'pullRequests.draft'?: ColorInstance
-  /**
-   * The color used for indicating that a pull request is merged.
-   */
-  'pullRequests.merged'?: ColorInstance
-  /**
-   * The color used for indicating a notification on a pull request
-   */
-  'pullRequests.notification'?: ColorInstance
-
-
-  // -- Error Lens
-
-  'errorLens.errorBackground'?: ColorInstance
-  'errorLens.errorBackgroundLight'?: ColorInstance
-  'errorLens.errorForeground'?: ColorInstance
-  'errorLens.errorForegroundLight'?: ColorInstance
-  'errorLens.errorMessageBackground'?: ColorInstance
-  'errorLens.hintBackground'?: ColorInstance
-  'errorLens.hintBackgroundLight'?: ColorInstance
-  'errorLens.hintForeground'?: ColorInstance
-  'errorLens.hintForegroundLight'?: ColorInstance
-  'errorLens.hintMessageBackground'?: ColorInstance
-  'errorLens.infoBackground'?: ColorInstance
-  'errorLens.infoBackgroundLight'?: ColorInstance
-  'errorLens.infoForeground'?: ColorInstance
-  'errorLens.infoForegroundLight'?: ColorInstance
-  'errorLens.infoMessageBackground'?: ColorInstance
-  'errorLens.warningBackground'?: ColorInstance
-  'errorLens.warningBackgroundLight'?: ColorInstance
-  'errorLens.warningForeground'?: ColorInstance
-  'errorLens.warningForegroundLight'?: ColorInstance
-  'errorLens.warningMessageBackground'?: ColorInstance
-
-
-  // -- GitLens
-
-  'gitlens.closedPullRequestIconColor'?: ColorInstance
-  'gitlens.decorations.addedForegroundColor'?: ColorInstance
-  'gitlens.decorations.branchAheadForegroundColor'?: ColorInstance
-  'gitlens.decorations.branchBehindForegroundColor'?: ColorInstance
-  'gitlens.decorations.branchDivergedForegroundColor'?: ColorInstance
-  'gitlens.decorations.branchUnpublishedForegroundColor'?: ColorInstance
-  'gitlens.decorations.branchUpToDateForegroundColor'?: ColorInstance
-  'gitlens.decorations.copiedForegroundColor'?: ColorInstance
-  'gitlens.decorations.deletedForegroundColor'?: ColorInstance
-  'gitlens.decorations.ignoredForegroundColor'?: ColorInstance
-  'gitlens.decorations.modifiedForegroundColor'?: ColorInstance
-  'gitlens.decorations.renamedForegroundColor'?: ColorInstance
-  'gitlens.decorations.untrackedForegroundColor'?: ColorInstance
-  'gitlens.gutterBackgroundColor'?: ColorInstance
-  'gitlens.gutterForegroundColor'?: ColorInstance
-  'gitlens.gutterUncommittedForegroundColor'?: ColorInstance
-  'gitlens.lineHighlightBackgroundColor'?: ColorInstance
-  'gitlens.lineHighlightOverviewRulerColor'?: ColorInstance
-  'gitlens.mergedPullRequestIconColor'?: ColorInstance
-  'gitlens.openPullRequestIconColor'?: ColorInstance
-  'gitlens.trailingLineBackgroundColor'?: ColorInstance
-  'gitlens.trailingLineForegroundColor'?: ColorInstance
-  'gitlens.unpublishedCommitIconColor'?: ColorInstance
-  'gitlens.unpulledChangesIconColor'?: ColorInstance
-  'gitlens.unpushlishedChangesIconColor'?: ColorInstance
-
-
-  // -- LintLens
-
-  'lintlens.annotationColor'?: ColorInstance
-
-
-  // -- Bookmarks
-
-  'bookmarks.overviewRuler'?: ColorInstance
-  'bookmarks.lineBackground'?: ColorInstance
-  'bookmarks.lineBorder'?: ColorInstance
-
-
-  // -- Test Explorer
-
-  'testExplorer.errorDecorationBackground'?: ColorInstance
-
-
-  // -- SQL Tools
-  'sqltools.currentQueryBg'?: ColorInstance
-  'sqltools.currentQueryOutline'?: ColorInstance
-
-
-  // -- File Watcher
-
-  'filewatcher.error'?: ColorInstance
-
-  toJSON?(): Record<string, string>
 }
 
 export {

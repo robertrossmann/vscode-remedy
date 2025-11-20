@@ -7,9 +7,7 @@
     "packages/**/*.d.ts": {
       "when": "$(basename).ts"
     },
-    "packages/**/*.d.ts.map": {
-      "when": "$(basename).ts"
-    },
+    "packages/**/*.d.ts.map": true,
     "**/*.log": true,
     "**/.DS_Store": true,
   },
