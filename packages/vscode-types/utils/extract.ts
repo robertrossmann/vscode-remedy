@@ -5,7 +5,7 @@ import * as url from 'node:url'
 const catalog = new Map<string, string>()
 const data = await fetch('https://raw.githubusercontent.com/microsoft/vscode-docs/refs/heads/main/api/references/theme-color.md')
 const file = await data.text()
-const destfile = url.fileURLToPath(import.meta.resolve('../UIColours.ts'))
+const destfile = url.fileURLToPath(import.meta.resolve('../VSCColorContributions.ts'))
 const filter = /^\s?-\s?`(?<token>.*)`\s?:\s?(?<description>.*)$/iu
 
 for (const line of file.split(os.EOL)) {
@@ -25,14 +25,14 @@ import { type ColorInstance } from 'color'
 /**
  * Source: https://raw.githubusercontent.com/microsoft/vscode-docs/refs/heads/main/api/references/theme-color.md
  */
-interface UIColours {
+interface VSCColorContributions {
 ${sorted
   .map(([token, description]) => `  /** ${description.trim()} */\n  '${token.trim()}'?: ColorInstance\n`)
   .join('')}
 }
 
 export {
-  UIColours,
+  VSCColorContributions,
 }
 `
 

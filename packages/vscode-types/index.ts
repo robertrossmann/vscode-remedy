@@ -1,4 +1,6 @@
 export * from './textmate.js'
 export * from './semantic.js'
+export * from './VSCColorContributions.js'
+export * from './ExtensionColorContributions.js'
 export * from './UIColours.js'
 export * from './theme.js'
